@@ -19,7 +19,7 @@ router.get('/me', authenticate, handle((req) => {
   const userId = req.user.sub;
 
   const user = db.prepare(
-    'SELECT id, name, mobile, functionary_type, state, district, total_points, lang, role, created_at FROM users WHERE id=?'
+    'SELECT id, name, mobile, functionary_type, state, district, total_points, language, role, created_at FROM users WHERE id=?'
   ).get(userId);
   if (!user) throw Object.assign(new Error('User not found'), { status: 404 });
 
@@ -39,7 +39,7 @@ router.get('/me', authenticate, handle((req) => {
   return { user, badges, recentSessions: sessions };
 }));
 
-// PATCH /api/user/me — update lang or name
+// PATCH /api/user/me — update language or name
 router.patch('/me', authenticate, handle((req) => {
   const db = getDb();
   const userId = req.user.sub;
@@ -47,7 +47,7 @@ router.patch('/me', authenticate, handle((req) => {
 
   if (lang !== undefined) {
     if (!['en', 'hi'].includes(lang)) throw Object.assign(new Error('Invalid lang'), { status: 400 });
-    db.prepare('UPDATE users SET lang=? WHERE id=?').run(lang, userId);
+    db.prepare('UPDATE users SET language=? WHERE id=?').run(lang, userId);
   }
   if (name !== undefined) {
     if (!name.trim()) throw Object.assign(new Error('Name required'), { status: 400 });
@@ -55,7 +55,7 @@ router.patch('/me', authenticate, handle((req) => {
   }
 
   return db.prepare(
-    'SELECT id, name, mobile, functionary_type, state, district, total_points, lang, role FROM users WHERE id=?'
+    'SELECT id, name, mobile, functionary_type, state, district, total_points, language, role FROM users WHERE id=?'
   ).get(userId);
 }));
 

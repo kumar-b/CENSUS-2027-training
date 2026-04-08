@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { getDb } = require('../db/database');
 
-const FUNCTIONARY_TYPES = ['Enumerator', 'Supervisor', 'Charge Officer', 'Field Trainer', 'Census Staff (General)'];
+const FUNCTIONARY_TYPES = ['Enumerator', 'Supervisor', 'Charge Officer', 'Field Trainer', 'Census Staff General'];
 
 function register({ mobile, password, name, functionary_type, state, district }) {
   if (!FUNCTIONARY_TYPES.includes(functionary_type)) {
@@ -18,7 +18,9 @@ function register({ mobile, password, name, functionary_type, state, district })
     VALUES (?, ?, ?, ?, ?, ?)
   `).run(mobile, password_hash, name, functionary_type, state, district);
 
-  return { id: result.lastInsertRowid, mobile, name, functionary_type, state, district };
+  const user = db.prepare('SELECT * FROM users WHERE id = ?').get(result.lastInsertRowid);
+  const { accessToken, refreshToken } = issueTokens(user);
+  return { accessToken, refreshToken, user: safeUser(user) };
 }
 
 function login({ mobile, password }) {
@@ -31,7 +33,8 @@ function login({ mobile, password }) {
 
   db.prepare('UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?').run(user.id);
 
-  return { tokens: issueTokens(user), user: safeUser(user) };
+  const { accessToken, refreshToken } = issueTokens(user);
+  return { accessToken, refreshToken, user: safeUser(user) };
 }
 
 function issueTokens(user) {
@@ -51,7 +54,7 @@ function refresh(refreshToken) {
   const db = getDb();
   const user = db.prepare('SELECT * FROM users WHERE id = ?').get(payload.sub);
   if (!user) throw Object.assign(new Error('User not found'), { status: 401 });
-  return { tokens: issueTokens(user) };
+  return issueTokens(user);
 }
 
 function safeUser(user) {

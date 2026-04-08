@@ -13,10 +13,9 @@ export const useAuthStore = create((set) => ({
       const { data } = await api.get('/user/me');
       set({ user: data.user, loading: false });
       // Sync language from server
-      if (data.user.lang) {
-        const lang = data.user.lang;
-        localStorage.setItem('lang', lang);
-        i18n.changeLanguage(lang);
+      if (data.user.language) {
+        localStorage.setItem('lang', data.user.language);
+        i18n.changeLanguage(data.user.language);
       }
     } catch {
       localStorage.removeItem('accessToken');
