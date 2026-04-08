@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  api:
+    build: ./server
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - db_data:/data
+      - ./QA:/app/QA:ro
+    networks:
+      - internal
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - client_build:/usr/share/nginx/html:ro
+    depends_on:
+      - api
+    networks:
+      - internal
+
+volumes:
+  db_data:
+  client_build:
+
+networks:
+  internal:
