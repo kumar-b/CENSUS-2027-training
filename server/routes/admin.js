@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
-const { authenticate } = require('../middleware/auth');
+const authenticate = require('../middleware/auth');
 const adminOnly = require('../middleware/adminOnly');
 const { getDb } = require('../db/database');
 

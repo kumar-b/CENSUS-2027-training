@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { authenticate } = require('../middleware/auth');
+const authenticate = require('../middleware/auth');
 const { getDailyLeaderboard, getOverallLeaderboard } = require('../services/leaderboardService');
 
 function handle(fn) {
