@@ -48,10 +48,6 @@ function hasCompletedDailyToday(userId) {
 function startSession({ userId, mode, chapter }) {
   const db = getDb();
 
-  if (mode === 'daily' && hasCompletedDailyToday(userId)) {
-    throw Object.assign(new Error('Daily quiz already completed today'), { status: 409 });
-  }
-
   // Resume incomplete practice session
   if (mode === 'practice') {
     const existing = db.prepare(

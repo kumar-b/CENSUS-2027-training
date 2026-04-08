@@ -1,0 +1,122 @@
+[
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "easy",
+    "question_en": "Who is an Enumerator in the context of Census?",
+    "question_hi": "जनगणना के संदर्भ में गणनाकार कौन होता है?",
+    "options_en": ["A government officer who supervises the census", "A field worker who visits households and collects data", "A data entry operator at the district office", "A person who prints census forms"],
+    "options_hi": ["एक सरकारी अधिकारी जो जनगणना की निगरानी करता है", "एक क्षेत्र कार्यकर्ता जो घरों में जाकर डेटा एकत्र करता है", "जिला कार्यालय में डेटा प्रविष्टि ऑपरेटर", "जनगणना फॉर्म छापने वाला व्यक्ति"],
+    "correct_option": 1,
+    "explanation_en": "An Enumerator is a field-level worker who visits each household in their assigned area to collect census data.",
+    "explanation_hi": "गणनाकार एक क्षेत्रीय कार्यकर्ता है जो जनगणना डेटा एकत्र करने के लिए अपने निर्धारित क्षेत्र के प्रत्येक घर का दौरा करता है।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "easy",
+    "question_en": "What is the role of a Supervisor in the Census?",
+    "question_hi": "जनगणना में पर्यवेक्षक की क्या भूमिका होती है?",
+    "options_en": ["To fill in household forms directly", "To supervise and guide a group of enumerators", "To print census reports", "To manage the census budget"],
+    "options_hi": ["घरेलू फॉर्म सीधे भरना", "गणनाकारों के एक समूह का पर्यवेक्षण और मार्गदर्शन करना", "जनगणना रिपोर्ट प्रिंट करना", "जनगणना बजट का प्रबंधन करना"],
+    "correct_option": 1,
+    "explanation_en": "A Supervisor oversees and guides a group of 4–5 Enumerators, checks their work, and ensures data quality.",
+    "explanation_hi": "पर्यवेक्षक 4-5 गणनाकारों के समूह की निगरानी और मार्गदर्शन करता है, उनके काम की जांच करता है और डेटा की गुणवत्ता सुनिश्चित करता है।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "medium",
+    "question_en": "How many households is an Enumerator typically assigned in a Census block?",
+    "question_hi": "एक जनगणना खंड में एक गणनाकार को आमतौर पर कितने घर सौंपे जाते हैं?",
+    "options_en": ["50–100", "100–150", "150–200", "200–300"],
+    "options_hi": ["50–100", "100–150", "150–200", "200–300"],
+    "correct_option": 1,
+    "explanation_en": "Each Enumerator is typically assigned 100–150 households in an Enumeration Block (EB).",
+    "explanation_hi": "प्रत्येक गणनाकार को सामान्यतः एक गणना खंड में 100–150 घर सौंपे जाते हैं।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "medium",
+    "question_en": "What must an Enumerator do before starting enumeration in an area?",
+    "question_hi": "किसी क्षेत्र में गणना शुरू करने से पहले गणनाकार को क्या करना चाहिए?",
+    "options_en": ["Submit a police report", "Prepare an Enumeration Block map and list of buildings", "Collect fees from residents", "Wait for special government orders"],
+    "options_hi": ["पुलिस रिपोर्ट जमा करें", "गणना खंड का नक्शा और इमारतों की सूची तैयार करें", "निवासियों से शुल्क एकत्र करें", "विशेष सरकारी आदेशों की प्रतीक्षा करें"],
+    "correct_option": 1,
+    "explanation_en": "Before enumeration, the Enumerator must prepare the EB map showing all buildings and their layout to ensure complete coverage.",
+    "explanation_hi": "गणना से पहले, गणनाकार को पूर्ण कवरेज सुनिश्चित करने के लिए सभी इमारतों और उनके लेआउट को दर्शाने वाला EB नक्शा तैयार करना होगा।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "easy",
+    "question_en": "Which document serves as the Enumerator's official identity during field work?",
+    "question_hi": "क्षेत्र कार्य के दौरान गणनाकार की आधिकारिक पहचान के रूप में कौन सा दस्तावेज़ काम आता है?",
+    "options_en": ["Voter ID card", "Identity card issued by the census authority", "Aadhaar card", "Employee ID of their regular job"],
+    "options_hi": ["मतदाता पहचान पत्र", "जनगणना प्राधिकरण द्वारा जारी पहचान पत्र", "आधार कार्ड", "नियमित नौकरी का कर्मचारी ID"],
+    "correct_option": 1,
+    "explanation_en": "The census authority issues an official identity card to each Enumerator which they must carry and show to respondents.",
+    "explanation_hi": "जनगणना प्राधिकरण प्रत्येक गणनाकार को एक आधिकारिक पहचान पत्र जारी करता है जो उन्हें साथ रखना होगा और उत्तरदाताओं को दिखाना होगा।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "medium",
+    "question_en": "What is the duty of an Enumerator if a household is absent during the first visit?",
+    "question_hi": "पहली यात्रा के दौरान कोई परिवार अनुपस्थित हो तो गणनाकार का क्या कर्तव्य है?",
+    "options_en": ["Skip that household permanently", "Make a revisit at a convenient time", "Ask neighbours to fill the form", "Leave the form in the mailbox"],
+    "options_hi": ["उस परिवार को स्थायी रूप से छोड़ दें", "सुविधाजनक समय पर दोबारा जाएं", "पड़ोसियों से फॉर्म भरवाएं", "फॉर्म मेलबॉक्स में छोड़ें"],
+    "correct_option": 1,
+    "explanation_en": "The Enumerator must make a revisit at a time convenient to the household — no household should be left out.",
+    "explanation_hi": "गणनाकार को परिवार के लिए सुविधाजनक समय पर दोबारा जाना होगा — कोई भी परिवार छूटना नहीं चाहिए।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "hard",
+    "question_en": "In which language should an Enumerator fill the Census schedule?",
+    "question_hi": "गणनाकार को जनगणना अनुसूची किस भाषा में भरनी चाहिए?",
+    "options_en": ["Only in English", "Only in Hindi", "In the language specified by the state government for the district", "In the language preferred by the respondent"],
+    "options_hi": ["केवल अंग्रेजी में", "केवल हिंदी में", "जिले के लिए राज्य सरकार द्वारा निर्दिष्ट भाषा में", "उत्तरदाता की पसंदीदा भाषा में"],
+    "correct_option": 2,
+    "explanation_en": "The Enumerator fills the schedule in the language prescribed for that state/district. For Chhattisgarh, this is Hindi.",
+    "explanation_hi": "गणनाकार उस राज्य/जिले के लिए निर्धारित भाषा में अनुसूची भरता है। छत्तीसगढ़ के लिए यह हिंदी है।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "hard",
+    "question_en": "What is the role of a Charge Officer in the Census?",
+    "question_hi": "जनगणना में प्रभारी अधिकारी की क्या भूमिका होती है?",
+    "options_en": ["They directly collect data from households", "They manage and supervise all supervisors in a charge area", "They are responsible only for data entry", "They prepare census publications"],
+    "options_hi": ["वे सीधे घरों से डेटा एकत्र करते हैं", "वे एक प्रभार क्षेत्र में सभी पर्यवेक्षकों का प्रबंधन और निगरानी करते हैं", "वे केवल डेटा प्रविष्टि के लिए उत्तरदायी हैं", "वे जनगणना प्रकाशन तैयार करते हैं"],
+    "correct_option": 1,
+    "explanation_en": "A Charge Officer manages all Supervisors in their charge area, coordinates logistics, and is accountable for the quality and completeness of enumeration.",
+    "explanation_hi": "प्रभारी अधिकारी अपने प्रभार क्षेत्र में सभी पर्यवेक्षकों का प्रबंधन करता है, लॉजिस्टिक्स का समन्वय करता है और गणना की गुणवत्ता और पूर्णता के लिए जिम्मेदार होता है।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "medium",
+    "question_en": "An Enumerator must maintain which important record listing all buildings in their assigned area?",
+    "question_hi": "गणनाकार को अपने निर्धारित क्षेत्र की सभी इमारतों को सूचीबद्ध करने वाला कौन सा महत्वपूर्ण रिकॉर्ड रखना होगा?",
+    "options_en": ["Voter list", "Abridged Houselists (AHL)", "Property tax register", "Municipal records"],
+    "options_hi": ["मतदाता सूची", "संक्षिप्त गृह सूची (AHL)", "संपत्ति कर रजिस्टर", "नगरपालिका रिकॉर्ड"],
+    "correct_option": 1,
+    "explanation_en": "The Enumerator must maintain Abridged Houselists (AHL) listing all buildings and census houses in their Enumeration Block.",
+    "explanation_hi": "गणनाकार को संक्षिप्त गृह सूची (AHL) बनाए रखनी होगी जिसमें उनके गणना खंड की सभी इमारतें और जनगणना गृह सूचीबद्ध होंगे।"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities",
+    "difficulty": "easy",
+    "question_en": "Can an Enumerator share respondent's personal data with others?",
+    "question_hi": "क्या गणनाकार उत्तरदाता का व्यक्तिगत डेटा दूसरों के साथ साझा कर सकता है?",
+    "options_en": ["Yes, with local officials", "Yes, with family members", "No, census data is strictly confidential", "Yes, for research purposes"],
+    "options_hi": ["हाँ, स्थानीय अधिकारियों के साथ", "हाँ, परिवार के सदस्यों के साथ", "नहीं, जनगणना डेटा पूर्णतः गोपनीय है", "हाँ, शोध उद्देश्यों के लिए"],
+    "correct_option": 2,
+    "explanation_en": "Census data is strictly confidential under the Census Act, 1948. An Enumerator cannot share individual data with anyone.",
+    "explanation_hi": "जनगणना अधिनियम, 1948 के तहत जनगणना डेटा पूर्णतः गोपनीय है। गणनाकार व्यक्तिगत डेटा किसी के साथ साझा नहीं कर सकता।"
+  }
+]

@@ -82,25 +82,58 @@ function runMigrations(db) {
     );
   `);
 
-  // Seed default badges if table is empty
+  // Add photo column if not present (safe to run on existing DBs)
+  const cols = db.prepare('PRAGMA table_info(users)').all().map(c => c.name);
+  if (!cols.includes('photo')) {
+    db.exec('ALTER TABLE users ADD COLUMN photo TEXT');
+  }
+
+  // Fix Chapter Master badge: criteria_type should be 'perfect_chapter', not 'chapters_completed' with value 1
+  db.prepare(
+    "UPDATE badges SET criteria_type='perfect_chapter', description_en='Score 100% on a full chapter practice', description_hi='अध्याय अभ्यास में 100% अंक प्राप्त करें' WHERE name_en='Chapter Master'"
+  ).run();
+
+  // Upsert all badges by name — add missing ones, leave existing ones untouched
+  const upsertBadge = (name_en, name_hi, desc_en, desc_hi, icon, criteria_type, criteria_value) => {
+    const exists = db.prepare('SELECT id FROM badges WHERE name_en=?').get(name_en);
+    if (!exists) {
+      db.prepare(`
+        INSERT INTO badges (name_en, name_hi, description_en, description_hi, icon, criteria_type, criteria_value)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+      `).run(name_en, name_hi, desc_en, desc_hi, icon, criteria_type, criteria_value);
+    }
+  };
+
+  // Original badges (idempotent — only inserts if table was empty initially)
   const count = db.prepare('SELECT COUNT(*) as c FROM badges').get();
   if (count.c === 0) {
     const insert = db.prepare(`
       INSERT INTO badges (name_en, name_hi, description_en, description_hi, icon, criteria_type, criteria_value)
       VALUES (?, ?, ?, ?, ?, ?, ?)
     `);
-    const seedBadges = db.transaction(() => {
+    db.transaction(() => {
       insert.run('First Step', 'पहला कदम', 'Complete your first quiz', 'पहली प्रश्नोत्तरी पूरी करें', '🌟', 'quizzes_completed', 1);
       insert.run('On Fire', 'जोश में', '10 correct answers in a row', 'लगातार 10 सही उत्तर', '🔥', 'streak', 10);
       insert.run('Week Warrior', 'सप्ताह योद्धा', 'Complete daily quiz 7 days in a row', '7 दिन लगातार दैनिक प्रश्नोत्तरी', '📅', 'daily_streak', 7);
       insert.run('Perfect Score', 'पूर्ण अंक', '100% on a timed quiz', 'समयबद्ध प्रश्नोत्तरी में 100%', '💯', 'perfect_timed', 1);
-      insert.run('Chapter Master', 'अध्याय विशेषज्ञ', 'Complete all questions in a chapter', 'एक अध्याय के सभी प्रश्न पूरे करें', '📚', 'chapters_completed', 1);
+      insert.run('Chapter Master', 'अध्याय विशेषज्ञ', 'Score 100% on a full chapter practice', 'अध्याय अभ्यास में 100% अंक प्राप्त करें', '📚', 'perfect_chapter', 1);
       insert.run('Census Expert', 'जनगणना विशेषज्ञ', 'Complete all 6 chapters', 'सभी 6 अध्याय पूरे करें', '🏆', 'chapters_completed', 6);
       insert.run('Top of the Day', 'दिन के शीर्ष', 'Rank #1 on daily leaderboard', 'दैनिक लीडरबोर्ड पर #1', '🥇', 'daily_rank_1', 1);
-      insert.run('Star Enumerator', 'स्टार गणनाकार', 'Earn 500 points as Enumerator', 'गणनाकार के रूप में 500 अंक', '⭐', 'points', 500);
-    });
-    seedBadges();
+      insert.run('Star Enumerator', 'स्टार गणनाकार', 'Earn 500 total points', '500 कुल अंक अर्जित करें', '⭐', 'points', 500);
+    })();
   }
+
+  // New badges (added incrementally — safe on existing DBs)
+  upsertBadge('Quick Learner', 'तेज़ सीखने वाला', 'Complete 5 quizzes', '5 प्रश्नोत्तरी पूरी करें', '⚡', 'quizzes_completed', 5);
+  upsertBadge('Dedicated', 'समर्पित', 'Complete 25 quizzes', '25 प्रश्नोत्तरी पूरी करें', '🎓', 'quizzes_completed', 25);
+  upsertBadge('Century', 'शतक', '100 correct answers in total', 'कुल 100 सही उत्तर', '💯', 'total_correct', 100);
+  upsertBadge('All-Rounder', 'ऑल राउंडर', 'Try all three quiz modes', 'तीनों क्विज़ मोड आज़माएं', '🌈', 'all_modes', 1);
+  upsertBadge('Speed Star', 'स्पीड स्टार', 'Score 100% on 3 timed quizzes', '3 समयबद्ध प्रश्नोत्तरी में 100%', '🚀', 'perfect_timed', 3);
+  upsertBadge('Chapter Champion', 'अध्याय चैम्पियन', 'Score 100% on 3 different chapters', '3 अलग अध्यायों में 100%', '🏅', 'perfect_chapter', 3);
+  upsertBadge('Daily Devotee', 'नियमित साधक', 'Complete daily quiz 3 days in a row', '3 दिन लगातार दैनिक प्रश्नोत्तरी', '📅', 'daily_streak', 3);
+  upsertBadge('High Scorer', 'उच्च स्कोरर', 'Earn 1000 total points', '1000 कुल अंक अर्जित करें', '💎', 'points', 1000);
+  upsertBadge('Legend', 'किंवदंती', 'Earn 5000 total points', '5000 कुल अंक अर्जित करें', '👑', 'points', 5000);
+  upsertBadge('Practice Makes Perfect', 'अभ्यास से सफलता', 'Complete practice in 3 chapters', '3 अध्यायों में अभ्यास पूरा करें', '🔄', 'chapters_completed', 3);
 }
 
 module.exports = { runMigrations };

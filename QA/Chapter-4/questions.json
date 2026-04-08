@@ -1,0 +1,122 @@
+[
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "easy",
+    "question_en": "What is the first phase of Census 2027 field operations called?",
+    "question_hi": "जनगणना 2027 के क्षेत्रीय कार्यों के पहले चरण को क्या कहा जाता है?",
+    "options_en": ["Population Enumeration", "Houselisting and Housing Census", "NPR Update", "Data Verification"],
+    "options_hi": ["जनसंख्या गणना", "मकान सूचीकरण और आवास जनगणना", "NPR अपडेट", "डेटा सत्यापन"],
+    "correct_option": 1,
+    "explanation_en": "The first phase is the Houselisting and Housing Census, during which buildings and census houses are listed and data on housing conditions is collected.",
+    "explanation_hi": "पहला चरण मकान सूचीकरण और आवास जनगणना है, जिसके दौरान इमारतों और जनगणना घरों की सूची बनाई जाती है।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "easy",
+    "question_en": "What is a 'Census House' as defined in the Census?",
+    "question_hi": "जनगणना में 'जनगणना गृह' की परिभाषा क्या है?",
+    "options_en": ["Any government building", "Any building with a separate main entrance used for any purpose", "Only residential buildings", "Only buildings with more than 2 rooms"],
+    "options_hi": ["कोई भी सरकारी इमारत", "किसी भी उद्देश्य के लिए उपयोग किए जाने वाले अलग मुख्य प्रवेश द्वार वाली कोई भी इमारत", "केवल आवासीय इमारतें", "केवल 2 से अधिक कमरों वाली इमारतें"],
+    "correct_option": 1,
+    "explanation_en": "A Census House is any structure with a separate main entrance used or intended to be used for residential, commercial, or any other purpose.",
+    "explanation_hi": "जनगणना गृह एक अलग मुख्य प्रवेश द्वार वाली कोई भी संरचना है जो आवासीय, व्यावसायिक या किसी अन्य उद्देश्य के लिए उपयोग की जाती है।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "medium",
+    "question_en": "What unique number is given to each building during the Houselisting operation?",
+    "question_hi": "मकान सूचीकरण अभियान के दौरान प्रत्येक इमारत को क्या अनोखी संख्या दी जाती है?",
+    "options_en": ["House number already on the door", "Survey number from land records", "A unique Building/Census House Number painted on the wall", "Ward number from municipality"],
+    "options_hi": ["दरवाजे पर पहले से लिखा घर नंबर", "भूमि रिकॉर्ड से सर्वेक्षण संख्या", "दीवार पर लिखी एक अनोखी इमारत/जनगणना गृह संख्या", "नगरपालिका से वार्ड संख्या"],
+    "correct_option": 2,
+    "explanation_en": "During Houselisting, each building is assigned a unique census number that is painted on the wall for identification purposes.",
+    "explanation_hi": "मकान सूचीकरण के दौरान, पहचान के लिए प्रत्येक इमारत को एक अनोखी जनगणना संख्या दी जाती है जो दीवार पर लिखी जाती है।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "medium",
+    "question_en": "During Houselisting, what information is collected about each Census House?",
+    "question_hi": "मकान सूचीकरण के दौरान प्रत्येक जनगणना गृह के बारे में क्या जानकारी एकत्र की जाती है?",
+    "options_en": ["Only the owner's name", "Use of building, condition, type of construction material, amenities available", "Only the number of rooms", "Only the market value"],
+    "options_hi": ["केवल मालिक का नाम", "इमारत का उपयोग, स्थिति, निर्माण सामग्री का प्रकार, उपलब्ध सुविधाएं", "केवल कमरों की संख्या", "केवल बाजार मूल्य"],
+    "correct_option": 1,
+    "explanation_en": "During Houselisting, data is collected on use of the building, structural condition, construction materials for walls/roof/floor, and household amenities.",
+    "explanation_hi": "मकान सूचीकरण के दौरान, इमारत के उपयोग, संरचनात्मक स्थिति, दीवारों/छत/फर्श के निर्माण सामग्री और घरेलू सुविधाओं पर डेटा एकत्र किया जाता है।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "easy",
+    "question_en": "What is a 'Household' in Census terminology?",
+    "question_hi": "जनगणना शब्दावली में 'परिवार' क्या है?",
+    "options_en": ["Only a married couple with children", "A group of persons who normally live together and take meals from a common kitchen", "Only blood relatives living together", "Any group of people in the same building"],
+    "options_hi": ["केवल बच्चों वाला विवाहित जोड़ा", "व्यक्तियों का एक समूह जो सामान्यतः एक साथ रहते हैं और एक साझा रसोई से भोजन करते हैं", "केवल एक साथ रहने वाले रक्त संबंधी", "एक ही इमारत में लोगों का कोई समूह"],
+    "correct_option": 1,
+    "explanation_en": "A household in Census is a group of persons normally living together and sharing a common kitchen — they need not be related.",
+    "explanation_hi": "जनगणना में परिवार व्यक्तियों का एक समूह है जो सामान्यतः एक साथ रहते हैं और साझा रसोई से भोजन करते हैं — उनका रक्त संबंध आवश्यक नहीं।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "hard",
+    "question_en": "What does the Enumerator mark on the building after completing its Houselisting entry?",
+    "question_hi": "मकान सूचीकरण प्रविष्टि पूरी करने के बाद गणनाकार इमारत पर क्या चिह्नित करता है?",
+    "options_en": ["A red cross sign", "The census house number along with the Enumerator's initials", "Nothing — recording is only digital", "A government sticker"],
+    "options_hi": ["लाल क्रॉस का चिह्न", "जनगणना गृह संख्या के साथ गणनाकार के आद्याक्षर", "कुछ नहीं — रिकॉर्डिंग केवल डिजिटल है", "एक सरकारी स्टिकर"],
+    "correct_option": 1,
+    "explanation_en": "After listing, the Enumerator marks the census house number and their initials on the wall of the building as a permanent record.",
+    "explanation_hi": "सूचीकरण के बाद, गणनाकार स्थायी रिकॉर्ड के रूप में इमारत की दीवार पर जनगणना गृह संख्या और अपने आद्याक्षर लिखता है।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT collected during the Houselisting phase?",
+    "question_hi": "निम्नलिखित में से कौन सी जानकारी मकान सूचीकरण चरण में एकत्र नहीं की जाती?",
+    "options_en": ["Type of fuel used for cooking", "Religion of household members", "Source of drinking water", "Availability of latrine"],
+    "options_hi": ["खाना पकाने के लिए उपयोग किया जाने वाला ईंधन का प्रकार", "परिवार के सदस्यों का धर्म", "पीने के पानी का स्रोत", "शौचालय की उपलब्धता"],
+    "correct_option": 1,
+    "explanation_en": "Religion of household members is collected during Population Enumeration (Phase 2), not during Houselisting (Phase 1).",
+    "explanation_hi": "परिवार के सदस्यों का धर्म जनसंख्या गणना (चरण 2) के दौरान एकत्र किया जाता है, मकान सूचीकरण (चरण 1) के दौरान नहीं।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "hard",
+    "question_en": "What is an Enumeration Block (EB)?",
+    "question_hi": "गणना खंड (EB) क्या होता है?",
+    "options_en": ["A government office block", "A compact area with 100–150 households assigned to one Enumerator", "A city ward", "A district subdivision"],
+    "options_hi": ["एक सरकारी कार्यालय खंड", "100–150 घरों वाला एक सघन क्षेत्र जो एक गणनाकार को सौंपा जाता है", "एक शहर वार्ड", "एक जिला उपखंड"],
+    "correct_option": 1,
+    "explanation_en": "An Enumeration Block (EB) is a compact area containing 100–150 households (approximately) assigned to a single Enumerator for the census operation.",
+    "explanation_hi": "गणना खंड (EB) एक सघन क्षेत्र है जिसमें लगभग 100–150 घर होते हैं और जो एक एकल गणनाकार को जनगणना अभियान के लिए सौंपा जाता है।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "medium",
+    "question_en": "During Houselisting, how does the Enumerator handle a locked/vacant house?",
+    "question_hi": "मकान सूचीकरण के दौरान गणनाकार बंद/खाली घर को कैसे संभालता है?",
+    "options_en": ["Skip it entirely", "Record it as 'Vacant' or 'Locked' with basic visible details", "Break in to fill the form", "Ask neighbours for all details"],
+    "options_hi": ["इसे पूरी तरह छोड़ दें", "बुनियादी दृश्यमान विवरण के साथ 'रिक्त' या 'बंद' के रूप में दर्ज करें", "फॉर्म भरने के लिए अंदर प्रवेश करें", "सभी विवरण पड़ोसियों से पूछें"],
+    "correct_option": 1,
+    "explanation_en": "A locked or vacant house is recorded with visible information (building type, use) and marked as 'Locked' or 'Vacant' — it is not skipped.",
+    "explanation_hi": "बंद या खाली घर को दृश्यमान जानकारी (भवन प्रकार, उपयोग) के साथ दर्ज किया जाता है और 'बंद' या 'रिक्त' के रूप में चिह्नित किया जाता है।"
+  },
+  {
+    "chapter": 4,
+    "topic": "Houselisting and Housing Census",
+    "difficulty": "easy",
+    "question_en": "What is the purpose of preparing a layout map during Houselisting?",
+    "question_hi": "मकान सूचीकरण के दौरान लेआउट मानचित्र तैयार करने का उद्देश्य क्या है?",
+    "options_en": ["To plan road construction", "To show the location of all buildings and ensure no area is missed", "To mark government property", "To assess property tax"],
+    "options_hi": ["सड़क निर्माण की योजना बनाना", "सभी इमारतों का स्थान दिखाना और यह सुनिश्चित करना कि कोई क्षेत्र छूटे नहीं", "सरकारी संपत्ति चिह्नित करना", "संपत्ति कर का आकलन करना"],
+    "correct_option": 1,
+    "explanation_en": "The layout map shows the location of all buildings in the Enumeration Block to ensure complete coverage — no building should be missed.",
+    "explanation_hi": "लेआउट मानचित्र गणना खंड में सभी इमारतों का स्थान दर्शाता है ताकि पूर्ण कवरेज सुनिश्चित हो — कोई भी इमारत छूटनी नहीं चाहिए।"
+  }
+]

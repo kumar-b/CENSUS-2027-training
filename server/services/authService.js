@@ -18,9 +18,7 @@ function register({ mobile, password, name, functionary_type, state, district })
     VALUES (?, ?, ?, ?, ?, ?)
   `).run(mobile, password_hash, name, functionary_type, state, district);
 
-  const user = db.prepare('SELECT * FROM users WHERE id = ?').get(result.lastInsertRowid);
-  const { accessToken, refreshToken } = issueTokens(user);
-  return { accessToken, refreshToken, user: safeUser(user) };
+  return { id: result.lastInsertRowid, mobile, name, functionary_type, state, district };
 }
 
 function login({ mobile, password }) {
@@ -33,8 +31,7 @@ function login({ mobile, password }) {
 
   db.prepare('UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?').run(user.id);
 
-  const { accessToken, refreshToken } = issueTokens(user);
-  return { accessToken, refreshToken, user: safeUser(user) };
+  return { tokens: issueTokens(user), user: safeUser(user) };
 }
 
 function issueTokens(user) {
@@ -54,7 +51,7 @@ function refresh(refreshToken) {
   const db = getDb();
   const user = db.prepare('SELECT * FROM users WHERE id = ?').get(payload.sub);
   if (!user) throw Object.assign(new Error('User not found'), { status: 401 });
-  return issueTokens(user);
+  return { tokens: issueTokens(user) };
 }
 
 function safeUser(user) {
@@ -62,4 +59,4 @@ function safeUser(user) {
   return rest;
 }
 
-module.exports = { register, login, refresh, safeUser };
+module.exports = { register, login, refresh, safeUser, issueTokens };

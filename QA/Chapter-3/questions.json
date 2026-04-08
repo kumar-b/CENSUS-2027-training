@@ -1,0 +1,122 @@
+[
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "easy",
+    "question_en": "Under which Act is participation in the Census compulsory?",
+    "question_hi": "किस अधिनियम के अंतर्गत जनगणना में भागीदारी अनिवार्य है?",
+    "options_en": ["The Indian Penal Code", "The Census Act, 1948", "The Right to Information Act", "The Statistics Act, 2008"],
+    "options_hi": ["भारतीय दंड संहिता", "जनगणना अधिनियम, 1948", "सूचना का अधिकार अधिनियम", "सांख्यिकी अधिनियम, 2008"],
+    "correct_option": 1,
+    "explanation_en": "The Census Act, 1948 makes it compulsory for all residents to provide correct information to Enumerators.",
+    "explanation_hi": "जनगणना अधिनियम, 1948 सभी निवासियों के लिए गणनाकारों को सही जानकारी देना अनिवार्य बनाता है।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "medium",
+    "question_en": "What is the penalty for giving false information to a Census Enumerator?",
+    "question_hi": "जनगणना गणनाकार को गलत जानकारी देने पर क्या दंड है?",
+    "options_en": ["No penalty", "Fine up to ₹1,000", "Imprisonment up to 1 year", "Fine and/or imprisonment"],
+    "options_hi": ["कोई दंड नहीं", "₹1,000 तक जुर्माना", "1 वर्ष तक कारावास", "जुर्माना और/या कारावास"],
+    "correct_option": 3,
+    "explanation_en": "Under the Census Act, 1948, giving false information can result in a fine and/or imprisonment. Respondents must give accurate information.",
+    "explanation_hi": "जनगणना अधिनियम, 1948 के तहत, गलत जानकारी देने पर जुर्माना और/या कारावास हो सकता है। उत्तरदाताओं को सटीक जानकारी देनी होगी।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "easy",
+    "question_en": "Can Census data collected from individuals be used for taxation purposes?",
+    "question_hi": "क्या व्यक्तियों से एकत्र जनगणना डेटा का उपयोग कर उद्देश्यों के लिए किया जा सकता है?",
+    "options_en": ["Yes, by the Income Tax Department", "Yes, by local municipalities", "No, census data is confidential and cannot be used for such purposes", "Yes, by the state government"],
+    "options_hi": ["हाँ, आयकर विभाग द्वारा", "हाँ, स्थानीय नगरपालिकाओं द्वारा", "नहीं, जनगणना डेटा गोपनीय है और ऐसे उद्देश्यों के लिए उपयोग नहीं किया जा सकता", "हाँ, राज्य सरकार द्वारा"],
+    "correct_option": 2,
+    "explanation_en": "Census data is strictly confidential. It cannot be used for taxation, legal proceedings, or any purpose other than statistical analysis.",
+    "explanation_hi": "जनगणना डेटा पूर्णतः गोपनीय है। इसका उपयोग कराधान, कानूनी कार्यवाही, या सांख्यिकीय विश्लेषण के अलावा किसी अन्य उद्देश्य के लिए नहीं किया जा सकता।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "medium",
+    "question_en": "An Enumerator's appointment, duties, and powers are notified through which document?",
+    "question_hi": "गणनाकार की नियुक्ति, कर्तव्य और अधिकार किस दस्तावेज़ के माध्यम से अधिसूचित किए जाते हैं?",
+    "options_en": ["Employment letter", "Official Gazette notification", "Aadhaar card", "Police verification report"],
+    "options_hi": ["रोजगार पत्र", "आधिकारिक राजपत्र अधिसूचना", "आधार कार्ड", "पुलिस सत्यापन रिपोर्ट"],
+    "correct_option": 1,
+    "explanation_en": "Enumerators are appointed and their powers are notified through the Official Gazette under the Census Act, giving them legal authority.",
+    "explanation_hi": "गणनाकारों की नियुक्ति की जाती है और उनके अधिकार जनगणना अधिनियम के तहत आधिकारिक राजपत्र के माध्यम से अधिसूचित किए जाते हैं।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "hard",
+    "question_en": "What protection does the Census Act, 1948 provide to Enumerators?",
+    "question_hi": "जनगणना अधिनियम, 1948 गणनाकारों को क्या सुरक्षा प्रदान करता है?",
+    "options_en": ["Salary protection", "Legal immunity for acts done in good faith during census duty", "Housing benefits", "Pension after census work"],
+    "options_hi": ["वेतन सुरक्षा", "जनगणना कार्य के दौरान सद्भावना से किए गए कार्यों के लिए कानूनी प्रतिरक्षा", "आवास लाभ", "जनगणना कार्य के बाद पेंशन"],
+    "correct_option": 1,
+    "explanation_en": "The Census Act provides legal protection to Enumerators for acts performed in good faith during their census duties — they cannot be sued for such acts.",
+    "explanation_hi": "जनगणना अधिनियम गणनाकारों को उनके जनगणना कार्य के दौरान सद्भावना से किए गए कार्यों के लिए कानूनी सुरक्षा प्रदान करता है।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "medium",
+    "question_en": "What right does an Enumerator have when a respondent refuses to give information?",
+    "question_hi": "जब कोई उत्तरदाता जानकारी देने से इनकार करे तो गणनाकार को क्या अधिकार है?",
+    "options_en": ["Force entry into the house", "Report the refusal to their supervisor who can take legal action", "Leave without recording anything", "Contact police immediately"],
+    "options_hi": ["घर में जबरन प्रवेश करना", "अपने पर्यवेक्षक को इनकार की रिपोर्ट करना जो कानूनी कार्रवाई कर सकते हैं", "कुछ भी दर्ज किए बिना चले जाना", "तुरंत पुलिस से संपर्क करना"],
+    "correct_option": 1,
+    "explanation_en": "If a respondent refuses, the Enumerator should report to the Supervisor. Refusal to give information is an offence under the Census Act.",
+    "explanation_hi": "यदि कोई उत्तरदाता इनकार करता है, तो गणनाकार को पर्यवेक्षक को रिपोर्ट करना चाहिए। जनगणना अधिनियम के तहत जानकारी देने से इनकार करना अपराध है।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "easy",
+    "question_en": "Can an individual inspect their own census schedule after submission?",
+    "question_hi": "क्या कोई व्यक्ति जमा करने के बाद अपनी जनगणना अनुसूची की जांच कर सकता है?",
+    "options_en": ["Yes, anytime on request", "Yes, but only within 30 days", "No, census schedules are kept confidential", "Yes, through RTI"],
+    "options_hi": ["हाँ, अनुरोध पर कभी भी", "हाँ, लेकिन केवल 30 दिनों के भीतर", "नहीं, जनगणना अनुसूचियां गोपनीय रखी जाती हैं", "हाँ, RTI के माध्यम से"],
+    "correct_option": 2,
+    "explanation_en": "Census schedules are kept strictly confidential. Even the individual respondent cannot access their own schedule after submission.",
+    "explanation_hi": "जनगणना अनुसूचियां पूर्णतः गोपनीय रखी जाती हैं। जमा करने के बाद व्यक्तिगत उत्तरदाता भी अपनी अनुसूची तक नहीं पहुंच सकता।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "hard",
+    "question_en": "Under Census Act 1948, who can requisition any public record or document needed for census purposes?",
+    "question_hi": "जनगणना अधिनियम 1948 के अंतर्गत जनगणना उद्देश्यों के लिए आवश्यक किसी भी सार्वजनिक रिकॉर्ड या दस्तावेज़ की माँग कौन कर सकता है?",
+    "options_en": ["Any Enumerator", "Only the Registrar General of India", "Census Commissioner or authorized officer", "District Collector"],
+    "options_hi": ["कोई भी गणनाकार", "केवल भारत के महापंजीयक", "जनगणना आयुक्त या अधिकृत अधिकारी", "जिला कलेक्टर"],
+    "correct_option": 2,
+    "explanation_en": "The Census Commissioner or any officer authorized by the Registrar General can requisition public records for census purposes.",
+    "explanation_hi": "जनगणना आयुक्त या महापंजीयक द्वारा अधिकृत कोई भी अधिकारी जनगणना उद्देश्यों के लिए सार्वजनिक रिकॉर्ड की माँग कर सकता है।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "medium",
+    "question_en": "What happens to Census data collected from individuals after the Census is complete?",
+    "question_hi": "जनगणना पूरी होने के बाद व्यक्तियों से एकत्र जनगणना डेटा का क्या होता है?",
+    "options_en": ["It is published online for public access", "It is aggregated into statistics — individual data is never published", "It is shared with state governments", "It is sold to research institutions"],
+    "options_hi": ["इसे सार्वजनिक पहुंच के लिए ऑनलाइन प्रकाशित किया जाता है", "इसे आंकड़ों में समेकित किया जाता है — व्यक्तिगत डेटा कभी प्रकाशित नहीं होता", "इसे राज्य सरकारों के साथ साझा किया जाता है", "इसे शोध संस्थानों को बेचा जाता है"],
+    "correct_option": 1,
+    "explanation_en": "Individual census data is aggregated into statistical tables. No individual-level data is ever published or shared.",
+    "explanation_hi": "व्यक्तिगत जनगणना डेटा को सांख्यिकीय तालिकाओं में समेकित किया जाता है। कोई भी व्यक्तिगत-स्तर का डेटा कभी प्रकाशित या साझा नहीं किया जाता।"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions",
+    "difficulty": "easy",
+    "question_en": "Who appoints Enumerators for the Census?",
+    "question_hi": "जनगणना के लिए गणनाकारों की नियुक्ति कौन करता है?",
+    "options_en": ["The Prime Minister", "Local elected representatives", "The Census Commissioner / State government officials", "The Supreme Court"],
+    "options_hi": ["प्रधानमंत्री", "स्थानीय निर्वाचित प्रतिनिधि", "जनगणना आयुक्त / राज्य सरकार के अधिकारी", "सर्वोच्च न्यायालय"],
+    "correct_option": 2,
+    "explanation_en": "Enumerators are appointed by Census Commissioners or authorized State government officials, often from among existing government employees.",
+    "explanation_hi": "गणनाकारों की नियुक्ति जनगणना आयुक्तों या अधिकृत राज्य सरकार के अधिकारियों द्वारा की जाती है, अक्सर मौजूदा सरकारी कर्मचारियों में से।"
+  }
+]

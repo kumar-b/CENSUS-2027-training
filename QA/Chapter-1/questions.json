@@ -1,0 +1,122 @@
+[
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the primary purpose of the Census?",
+    "question_hi": "जनगणना का मुख्य उद्देश्य क्या है?",
+    "options_en": ["To collect tax data", "To count and collect data about the population", "To register voters", "To survey agricultural land"],
+    "options_hi": ["कर डेटा एकत्र करना", "जनसंख्या की गणना और डेटा संग्रह करना", "मतदाताओं का पंजीकरण करना", "कृषि भूमि का सर्वेक्षण करना"],
+    "correct_option": 1,
+    "explanation_en": "The Census is a complete enumeration of the population to collect demographic, social, and economic data.",
+    "explanation_hi": "जनगणना जनसंख्या की पूर्ण गणना है जिसमें जनसांख्यिकीय, सामाजिक और आर्थिक डेटा एकत्र किया जाता है।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "How often is the Census conducted in India?",
+    "question_hi": "भारत में जनगणना कितने वर्षों में एक बार होती है?",
+    "options_en": ["Every 5 years", "Every 10 years", "Every 15 years", "Every 20 years"],
+    "options_hi": ["हर 5 वर्ष में", "हर 10 वर्ष में", "हर 15 वर्ष में", "हर 20 वर्ष में"],
+    "correct_option": 1,
+    "explanation_en": "India conducts the Census every 10 years. The last Census was in 2011 and Census 2027 will be the next one.",
+    "explanation_hi": "भारत हर 10 वर्ष में जनगणना करता है। पिछली जनगणना 2011 में हुई थी और अगली जनगणना 2027 होगी।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "In which year is Census 2027 scheduled to begin its field operations?",
+    "question_hi": "जनगणना 2027 की क्षेत्रीय गतिविधियाँ किस वर्ष से शुरू होने वाली हैं?",
+    "options_en": ["2025", "2026", "2027", "2028"],
+    "options_hi": ["2025", "2026", "2027", "2028"],
+    "correct_option": 1,
+    "explanation_en": "Census 2027 field operations (Houselisting) are scheduled to begin in 2026.",
+    "explanation_hi": "जनगणना 2027 की क्षेत्रीय गतिविधियाँ (मकान सूचीकरण) 2026 में शुरू होने वाली हैं।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Which ministry is responsible for conducting the Census in India?",
+    "question_hi": "भारत में जनगणना कराने के लिए कौन सा मंत्रालय उत्तरदायी है?",
+    "options_en": ["Ministry of Finance", "Ministry of Home Affairs", "Ministry of Statistics", "Ministry of Education"],
+    "options_hi": ["वित्त मंत्रालय", "गृह मंत्रालय", "सांख्यिकी मंत्रालय", "शिक्षा मंत्रालय"],
+    "correct_option": 1,
+    "explanation_en": "The Census is conducted under the Ministry of Home Affairs through the Office of the Registrar General of India (RGI).",
+    "explanation_hi": "जनगणना गृह मंत्रालय के अंतर्गत भारत के महापंजीयक के कार्यालय द्वारा संचालित की जाती है।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "The Census data is primarily used for which purpose?",
+    "question_hi": "जनगणना डेटा मुख्य रूप से किस उद्देश्य के लिए उपयोग किया जाता है?",
+    "options_en": ["Election campaigning", "Planning government schemes and resource allocation", "Setting bank interest rates", "Determining export quotas"],
+    "options_hi": ["चुनाव प्रचार", "सरकारी योजनाओं की योजना और संसाधन आवंटन", "बैंक ब्याज दरें निर्धारित करना", "निर्यात कोटा निर्धारण"],
+    "correct_option": 1,
+    "explanation_en": "Census data is used for planning government schemes, allocating resources, delimiting constituencies, and tracking development progress.",
+    "explanation_hi": "जनगणना डेटा सरकारी योजनाओं की योजना, संसाधन आवंटन, निर्वाचन क्षेत्रों के सीमांकन और विकास प्रगति के लिए उपयोग किया जाता है।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Census 2027 will use which new approach compared to previous censuses?",
+    "question_hi": "जनगणना 2027 में पिछली जनगणनाओं की तुलना में कौन सा नया दृष्टिकोण अपनाया जाएगा?",
+    "options_en": ["Only paper-based forms", "Digital data collection using mobile apps", "Telephone interviews only", "Postal questionnaires"],
+    "options_hi": ["केवल कागज़-आधारित फॉर्म", "मोबाइल ऐप का उपयोग करके डिजिटल डेटा संग्रह", "केवल टेलीफोन साक्षात्कार", "डाक प्रश्नावली"],
+    "correct_option": 1,
+    "explanation_en": "Census 2027 will use digital data collection through mobile applications (eCensus), making it India's first digital census.",
+    "explanation_hi": "जनगणना 2027 में मोबाइल एप्लिकेशन (ई-जनगणना) के माध्यम से डिजिटल डेटा संग्रह होगा, जो भारत की पहली डिजिटल जनगणना होगी।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "The Census of India is governed by which Act?",
+    "question_hi": "भारत की जनगणना किस अधिनियम द्वारा संचालित होती है?",
+    "options_en": ["The Statistics Act, 2008", "The Census Act, 1948", "The Registration of Births and Deaths Act, 1969", "The Population Act, 1955"],
+    "options_hi": ["सांख्यिकी अधिनियम, 2008", "जनगणना अधिनियम, 1948", "जन्म और मृत्यु पंजीकरण अधिनियम, 1969", "जनसंख्या अधिनियम, 1955"],
+    "correct_option": 1,
+    "explanation_en": "The Census of India is conducted under the Census Act, 1948, which makes participation mandatory and the data confidential.",
+    "explanation_hi": "भारत की जनगणना जनगणना अधिनियम, 1948 के तहत संचालित होती है, जो भागीदारी को अनिवार्य और डेटा को गोपनीय बनाता है।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What does NPR stand for in the context of Census 2027?",
+    "question_hi": "जनगणना 2027 के संदर्भ में NPR का क्या अर्थ है?",
+    "options_en": ["National Population Register", "National Planning Record", "National Poverty Report", "National Property Registry"],
+    "options_hi": ["राष्ट्रीय जनसंख्या रजिस्टर", "राष्ट्रीय योजना रिकॉर्ड", "राष्ट्रीय गरीबी रिपोर्ट", "राष्ट्रीय संपत्ति रजिस्ट्री"],
+    "correct_option": 0,
+    "explanation_en": "NPR stands for National Population Register — a database of usual residents of India, updated alongside the Census.",
+    "explanation_hi": "NPR का अर्थ है राष्ट्रीय जनसंख्या रजिस्टर — भारत के सामान्य निवासियों का एक डेटाबेस जो जनगणना के साथ अपडेट किया जाता है।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "The Census covers which of the following populations?",
+    "question_hi": "जनगणना में निम्नलिखित में से किस जनसंख्या को शामिल किया जाता है?",
+    "options_en": ["Only citizens of India", "All usual residents including foreigners", "Only people above 18 years", "Only people below 60 years"],
+    "options_hi": ["केवल भारत के नागरिक", "विदेशियों सहित सभी सामान्य निवासी", "केवल 18 वर्ष से अधिक लोग", "केवल 60 वर्ष से कम लोग"],
+    "correct_option": 1,
+    "explanation_en": "The Census covers all usual residents of India, including foreign nationals living in India, regardless of citizenship or age.",
+    "explanation_hi": "जनगणना में भारत के सभी सामान्य निवासी शामिल होते हैं, जिनमें नागरिकता या आयु की परवाह किए बिना भारत में रहने वाले विदेशी नागरिक भी शामिल हैं।"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "How many phases does the Census operation typically have?",
+    "question_hi": "जनगणना अभियान में सामान्यतः कितने चरण होते हैं?",
+    "options_en": ["One phase", "Two phases", "Three phases", "Four phases"],
+    "options_hi": ["एक चरण", "दो चरण", "तीन चरण", "चार चरण"],
+    "correct_option": 1,
+    "explanation_en": "The Census has two main phases: Phase 1 is Houselisting & Housing Census, and Phase 2 is Population Enumeration.",
+    "explanation_hi": "जनगणना के दो मुख्य चरण हैं: चरण 1 मकान सूचीकरण और आवास जनगणना, और चरण 2 जनसंख्या गणना।"
+  }
+]

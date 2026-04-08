@@ -1,0 +1,122 @@
+[
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "easy",
+    "question_en": "What is the second phase of Census 2027 called?",
+    "question_hi": "जनगणना 2027 के दूसरे चरण को क्या कहा जाता है?",
+    "options_en": ["Houselisting", "Population Enumeration", "Data Processing", "Verification Phase"],
+    "options_hi": ["मकान सूचीकरण", "जनसंख्या गणना", "डेटा प्रसंस्करण", "सत्यापन चरण"],
+    "correct_option": 1,
+    "explanation_en": "The second phase is Population Enumeration, during which detailed demographic information is collected from each household.",
+    "explanation_hi": "दूसरा चरण जनसंख्या गणना है, जिसके दौरान प्रत्येक परिवार से विस्तृत जनसांख्यिकीय जानकारी एकत्र की जाती है।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "easy",
+    "question_en": "What is Self-Enumeration (SE) in Census 2027?",
+    "question_hi": "जनगणना 2027 में स्व-गणना (SE) क्या है?",
+    "options_en": ["Counting yourself without assistance", "An option for households to fill their own census schedule online", "A process only for government employees", "A method for counting homeless people"],
+    "options_hi": ["बिना सहायता के स्वयं गिनना", "घरों के लिए अपनी जनगणना अनुसूची ऑनलाइन भरने का एक विकल्प", "केवल सरकारी कर्मचारियों के लिए एक प्रक्रिया", "बेघर लोगों को गिनने की एक विधि"],
+    "correct_option": 1,
+    "explanation_en": "Self-Enumeration (SE) is a new feature in Census 2027 where educated households can fill their census schedule themselves through a mobile app or portal.",
+    "explanation_hi": "स्व-गणना (SE) जनगणना 2027 की एक नई सुविधा है जहाँ शिक्षित परिवार मोबाइल ऐप या पोर्टल के माध्यम से अपनी जनगणना अनुसूची स्वयं भर सकते हैं।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "medium",
+    "question_en": "Who is the 'Head of Household' for Census purposes?",
+    "question_hi": "जनगणना उद्देश्यों के लिए 'परिवार का मुखिया' कौन होता है?",
+    "options_en": ["Always the oldest male member", "The person recognised as head by the household members themselves", "The person who owns the house", "The person with the highest income"],
+    "options_hi": ["हमेशा सबसे बुजुर्ग पुरुष सदस्य", "वह व्यक्ति जिसे परिवार के सदस्य स्वयं मुखिया मानते हैं", "घर का मालिक", "सबसे अधिक आय वाला व्यक्ति"],
+    "correct_option": 1,
+    "explanation_en": "The Head of Household is the person recognised as head by the household members — it could be male or female, oldest or not.",
+    "explanation_hi": "परिवार का मुखिया वह व्यक्ति है जिसे परिवार के सदस्य स्वयं मुखिया के रूप में मानते हैं — यह पुरुष या महिला, बुजुर्ग या न बुजुर्ग कोई भी हो सकता है।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "medium",
+    "question_en": "During Population Enumeration, what does the Enumerator do after Self-Enumeration households complete their schedule?",
+    "question_hi": "जनसंख्या गणना के दौरान, स्व-गणना परिवारों द्वारा अनुसूची पूरी करने के बाद गणनाकार क्या करता है?",
+    "options_en": ["Nothing — SE households are excluded", "Verify and validate the self-filled schedule", "Redo the entire schedule", "Report them to the supervisor"],
+    "options_hi": ["कुछ नहीं — SE परिवार बाहर हैं", "स्वयं भरी अनुसूची की जांच और सत्यापन करें", "पूरी अनुसूची दोबारा भरें", "उन्हें पर्यवेक्षक को रिपोर्ट करें"],
+    "correct_option": 1,
+    "explanation_en": "The Enumerator must visit SE households to verify the self-filled schedule, correct any errors, and confirm completeness.",
+    "explanation_hi": "गणनाकार को स्व-गणना परिवारों के पास जाकर स्वयं भरी अनुसूची की जांच करनी होगी, किसी भी त्रुटि को सुधारना होगा और पूर्णता की पुष्टि करनी होगी।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "easy",
+    "question_en": "For Population Enumeration, who is counted as a 'usual resident' of a household?",
+    "question_hi": "जनसंख्या गणना के लिए, किसे परिवार का 'सामान्य निवासी' माना जाता है?",
+    "options_en": ["Anyone physically present on census night", "A person who normally lives there for 6 months or more in a year", "Only those with address proof", "Only registered tenants"],
+    "options_hi": ["जनगणना रात को शारीरिक रूप से उपस्थित कोई भी व्यक्ति", "वह व्यक्ति जो सामान्यतः वर्ष में 6 माह या अधिक समय वहाँ रहता है", "केवल पते के प्रमाण वाले", "केवल पंजीकृत किरायेदार"],
+    "correct_option": 1,
+    "explanation_en": "A 'usual resident' is someone who normally lives at that address for 6 months or more per year. Temporary visitors are counted at their usual residence.",
+    "explanation_hi": "'सामान्य निवासी' वह व्यक्ति है जो सामान्यतः उस पते पर प्रति वर्ष 6 माह या अधिक समय रहता है। अस्थायी आगंतुकों को उनके सामान्य निवास पर गिना जाता है।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "hard",
+    "question_en": "Which of the following data items is collected during Population Enumeration?",
+    "question_hi": "निम्नलिखित में से कौन सा डेटा जनसंख्या गणना के दौरान एकत्र किया जाता है?",
+    "options_en": ["Building construction material", "Type of latrine facility", "Mother tongue and religion", "Market value of property"],
+    "options_hi": ["भवन निर्माण सामग्री", "शौचालय सुविधा का प्रकार", "मातृभाषा और धर्म", "संपत्ति का बाजार मूल्य"],
+    "correct_option": 2,
+    "explanation_en": "During Population Enumeration, individual-level data including mother tongue, religion, SC/ST status, disability, and economic activity is collected.",
+    "explanation_hi": "जनसंख्या गणना के दौरान मातृभाषा, धर्म, SC/ST स्थिति, विकलांगता और आर्थिक गतिविधि सहित व्यक्तिगत-स्तर का डेटा एकत्र किया जाता है।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "medium",
+    "question_en": "How is a newborn baby included in the Census?",
+    "question_hi": "नवजात शिशु को जनगणना में कैसे शामिल किया जाता है?",
+    "options_en": ["Not included until 1 year old", "Included as a member of the household", "Only included if registered in hospital", "Counted separately in birth records"],
+    "options_hi": ["1 वर्ष की आयु तक शामिल नहीं", "परिवार के सदस्य के रूप में शामिल", "केवल तब शामिल जब अस्पताल में पंजीकृत हो", "जन्म रिकॉर्ड में अलग से गिना जाता है"],
+    "correct_option": 1,
+    "explanation_en": "A newborn baby, even a few days old, is included as a member of the household during enumeration.",
+    "explanation_hi": "एक नवजात शिशु, भले ही कुछ दिन का हो, गणना के दौरान परिवार के सदस्य के रूप में शामिल किया जाता है।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "hard",
+    "question_en": "What is the 'Reference Night' in Population Enumeration?",
+    "question_hi": "जनसंख्या गणना में 'संदर्भ रात' क्या है?",
+    "options_en": ["The night before training begins", "A specific night on which the population is counted — people present that night are counted there", "The night when forms are submitted", "The last night of enumeration"],
+    "options_hi": ["प्रशिक्षण शुरू होने से पहले की रात", "एक विशिष्ट रात जिस पर जनसंख्या की गिनती की जाती है — उस रात वहाँ उपस्थित लोगों को वहीं गिना जाता है", "जब फॉर्म जमा किए जाते हैं वह रात", "गणना की अंतिम रात"],
+    "correct_option": 1,
+    "explanation_en": "The Reference Night is a specified night during enumeration on which everyone is counted at the place where they actually are — ensuring no one is counted twice.",
+    "explanation_hi": "संदर्भ रात गणना के दौरान एक निर्दिष्ट रात है जिस पर प्रत्येक व्यक्ति को उस स्थान पर गिना जाता है जहाँ वे वास्तव में हैं।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "medium",
+    "question_en": "Where are homeless people counted during Population Enumeration?",
+    "question_hi": "जनसंख्या गणना के दौरान बेघर लोगों को कहाँ गिना जाता है?",
+    "options_en": ["They are not counted", "At the place where they actually sleep on the reference night", "At the nearest government shelter", "At the police station"],
+    "options_hi": ["उन्हें नहीं गिना जाता", "संदर्भ रात को जहाँ वे वास्तव में सोते हैं उस स्थान पर", "निकटतम सरकारी आश्रय स्थल पर", "पुलिस स्टेशन पर"],
+    "correct_option": 1,
+    "explanation_en": "Homeless people (houseless population) are counted at the place where they actually sleep on the reference night — streets, footpaths, etc.",
+    "explanation_hi": "बेघर लोग (बिना घर की आबादी) को संदर्भ रात को जहाँ वे वास्तव में सोते हैं उस स्थान पर गिना जाता है — सड़कें, फुटपाथ आदि।"
+  },
+  {
+    "chapter": 5,
+    "topic": "Population Enumeration and Self-Enumeration",
+    "difficulty": "easy",
+    "question_en": "Which information about a person's occupation is collected during the Census?",
+    "question_hi": "जनगणना के दौरान व्यक्ति के व्यवसाय के बारे में कौन सी जानकारी एकत्र की जाती है?",
+    "options_en": ["Salary details", "Main and marginal work activity, type of work, and work location", "Company name and job title", "Only whether employed or unemployed"],
+    "options_hi": ["वेतन विवरण", "मुख्य और सीमांत कार्य गतिविधि, कार्य का प्रकार और कार्य स्थान", "कंपनी का नाम और पद", "केवल नियोजित या बेरोजगार"],
+    "correct_option": 1,
+    "explanation_en": "The census collects data on main and marginal work activity, type of work, industry, and work location — providing a detailed employment picture.",
+    "explanation_hi": "जनगणना मुख्य और सीमांत कार्य गतिविधि, कार्य का प्रकार, उद्योग और कार्य स्थान पर डेटा एकत्र करती है।"
+  }
+]

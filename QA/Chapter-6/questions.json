@@ -1,0 +1,122 @@
+[
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "easy",
+    "question_en": "What is the eCensus mobile application used for?",
+    "question_hi": "eCensus मोबाइल एप्लिकेशन का उपयोग किस लिए किया जाता है?",
+    "options_en": ["Sending messages to supervisors", "Digital data collection during Houselisting and Population Enumeration", "Paying salary to Enumerators", "Printing census forms"],
+    "options_hi": ["पर्यवेक्षकों को संदेश भेजना", "मकान सूचीकरण और जनसंख्या गणना के दौरान डिजिटल डेटा संग्रह", "गणनाकारों को वेतन का भुगतान", "जनगणना फॉर्म प्रिंट करना"],
+    "correct_option": 1,
+    "explanation_en": "The eCensus mobile app is used by Enumerators to digitally collect and submit houselisting and population enumeration data.",
+    "explanation_hi": "eCensus मोबाइल ऐप का उपयोग गणनाकारों द्वारा मकान सूचीकरण और जनसंख्या गणना डेटा को डिजिटल रूप से एकत्र और जमा करने के लिए किया जाता है।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "easy",
+    "question_en": "What happens if an Enumerator loses internet connectivity in the field?",
+    "question_hi": "यदि क्षेत्र में गणनाकार की इंटरनेट कनेक्टिविटी खो जाए तो क्या होता है?",
+    "options_en": ["All data collected is lost", "Work stops until connectivity returns", "The app works offline and syncs when connectivity is restored", "The Enumerator must use paper forms only"],
+    "options_hi": ["एकत्र सभी डेटा खो जाता है", "कनेक्टिविटी वापस आने तक काम रुक जाता है", "ऐप ऑफलाइन काम करती है और कनेक्टिविटी बहाल होने पर सिंक हो जाती है", "गणनाकार को केवल कागज़ी फॉर्म का उपयोग करना होगा"],
+    "correct_option": 2,
+    "explanation_en": "The eCensus app has offline functionality — data is stored locally on the device and automatically synced to servers when connectivity is restored.",
+    "explanation_hi": "eCensus ऐप में ऑफलाइन कार्यक्षमता है — डेटा डिवाइस पर स्थानीय रूप से संग्रहीत होता है और कनेक्टिविटी बहाल होने पर सर्वर से स्वचालित रूप से सिंक होता है।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "medium",
+    "question_en": "What is GPS tagging used for in the eCensus application?",
+    "question_hi": "eCensus एप्लिकेशन में GPS टैगिंग का उपयोग किस लिए किया जाता है?",
+    "options_en": ["To track Enumerator's salary", "To record precise location coordinates of buildings for mapping", "To navigate to the nearest hospital", "To connect to the internet"],
+    "options_hi": ["गणनाकार के वेतन को ट्रैक करना", "मानचित्रण के लिए इमारतों के सटीक स्थान निर्देशांक रिकॉर्ड करना", "निकटतम अस्पताल तक नेविगेट करना", "इंटरनेट से कनेक्ट करना"],
+    "correct_option": 1,
+    "explanation_en": "GPS tagging captures the geographic coordinates of buildings during Houselisting, creating a precise digital map of all census houses.",
+    "explanation_hi": "GPS टैगिंग मकान सूचीकरण के दौरान इमारतों के भौगोलिक निर्देशांक कैप्चर करता है, जिससे सभी जनगणना घरों का एक सटीक डिजिटल मानचित्र बनता है।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "medium",
+    "question_en": "What is the Self-Enumeration portal in Census 2027?",
+    "question_hi": "जनगणना 2027 में स्व-गणना पोर्टल क्या है?",
+    "options_en": ["A portal for Enumerators to submit their daily reports", "An online platform where literate households can fill their own census schedule", "A website for downloading census forms", "A government job portal"],
+    "options_hi": ["गणनाकारों के लिए अपनी दैनिक रिपोर्ट जमा करने का पोर्टल", "एक ऑनलाइन प्लेटफ़ॉर्म जहाँ साक्षर परिवार अपनी जनगणना अनुसूची स्वयं भर सकते हैं", "जनगणना फॉर्म डाउनलोड करने की वेबसाइट", "एक सरकारी नौकरी पोर्टल"],
+    "correct_option": 1,
+    "explanation_en": "The Self-Enumeration portal is an online platform where literate households can fill their census schedule without an Enumerator visiting.",
+    "explanation_hi": "स्व-गणना पोर्टल एक ऑनलाइन प्लेटफ़ॉर्म है जहाँ साक्षर परिवार बिना गणनाकार के दौरे के अपनी जनगणना अनुसूची भर सकते हैं।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "hard",
+    "question_en": "What security feature is used to protect data collected through the eCensus app?",
+    "question_hi": "eCensus ऐप के माध्यम से एकत्र डेटा की सुरक्षा के लिए कौन सी सुरक्षा सुविधा का उपयोग किया जाता है?",
+    "options_en": ["Password protection only", "End-to-end encryption and secure data transmission", "Physical locks on devices", "Biometric authentication for access"],
+    "options_hi": ["केवल पासवर्ड सुरक्षा", "एंड-टू-एंड एन्क्रिप्शन और सुरक्षित डेटा ट्रांसमिशन", "उपकरणों पर भौतिक ताले", "पहुँच के लिए बायोमेट्रिक प्रमाणीकरण"],
+    "correct_option": 1,
+    "explanation_en": "Census data collected via the eCensus app is protected using end-to-end encryption during transmission to ensure data security.",
+    "explanation_hi": "eCensus ऐप के माध्यम से एकत्र जनगणना डेटा को ट्रांसमिशन के दौरान डेटा सुरक्षा सुनिश्चित करने के लिए एंड-टू-एंड एन्क्रिप्शन का उपयोग करके संरक्षित किया जाता है।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "medium",
+    "question_en": "What should an Enumerator do if the eCensus app crashes or fails?",
+    "question_hi": "यदि eCensus ऐप क्रैश हो जाए या विफल हो तो गणनाकार को क्या करना चाहिए?",
+    "options_en": ["Stop work for the day", "Restart the app — data is autosaved; then report the issue to Supervisor", "Use the respondent's phone instead", "Skip that household"],
+    "options_hi": ["उस दिन के लिए काम बंद करें", "ऐप को पुनः चालू करें — डेटा स्वतः सहेजा जाता है; फिर पर्यवेक्षक को समस्या की रिपोर्ट करें", "इसके बजाय उत्तरदाता के फोन का उपयोग करें", "उस परिवार को छोड़ें"],
+    "correct_option": 1,
+    "explanation_en": "The app autosaves data. If it crashes, the Enumerator should restart and recover the data, then report the technical issue to their Supervisor.",
+    "explanation_hi": "ऐप डेटा स्वतः सहेजती है। यदि यह क्रैश हो जाए, तो गणनाकार को इसे पुनः चालू करके डेटा पुनर्प्राप्त करना चाहिए, फिर पर्यवेक्षक को तकनीकी समस्या की रिपोर्ट करनी चाहिए।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "easy",
+    "question_en": "What type of code is used to uniquely identify each Enumeration Block in the digital system?",
+    "question_hi": "डिजिटल प्रणाली में प्रत्येक गणना खंड की विशिष्ट पहचान के लिए किस प्रकार का कोड उपयोग किया जाता है?",
+    "options_en": ["Postal PIN code", "A unique alphanumeric Enumeration Block code", "Mobile phone number", "Aadhaar number"],
+    "options_hi": ["डाक पिन कोड", "एक अनोखा अल्फ़ान्यूमेरिक गणना खंड कोड", "मोबाइल फोन नंबर", "आधार नंबर"],
+    "correct_option": 1,
+    "explanation_en": "Each Enumeration Block has a unique alphanumeric code in the digital census system that links all data collected in that block.",
+    "explanation_hi": "प्रत्येक गणना खंड का डिजिटल जनगणना प्रणाली में एक अनोखा अल्फ़ान्यूमेरिक कोड होता है जो उस खंड में एकत्र सभी डेटा को जोड़ता है।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "hard",
+    "question_en": "How does the eCensus app validate data quality during entry?",
+    "question_hi": "eCensus ऐप प्रविष्टि के दौरान डेटा गुणवत्ता को कैसे सत्यापित करती है?",
+    "options_en": ["It doesn't — validation is done only at the office", "Built-in range checks, mandatory fields, and logical validations that alert the Enumerator", "By sending data to the supervisor for approval", "By printing a verification form"],
+    "options_hi": ["नहीं — सत्यापन केवल कार्यालय में होता है", "अंतर्निहित रेंज जाँच, अनिवार्य फ़ील्ड और तार्किक सत्यापन जो गणनाकार को सचेत करते हैं", "अनुमोदन के लिए पर्यवेक्षक को डेटा भेजकर", "सत्यापन फ़ॉर्म प्रिंट करके"],
+    "correct_option": 1,
+    "explanation_en": "The eCensus app has built-in validations: mandatory fields, range checks (e.g. age), and logical checks (e.g. marital status vs age) to ensure data quality at point of entry.",
+    "explanation_hi": "eCensus ऐप में अंतर्निहित सत्यापन है: प्रविष्टि के बिंदु पर डेटा गुणवत्ता सुनिश्चित करने के लिए अनिवार्य फ़ील्ड, रेंज जाँच (जैसे आयु) और तार्किक जाँच (जैसे वैवाहिक स्थिति बनाम आयु)।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "medium",
+    "question_en": "What should the Enumerator do before starting the day's field work with the eCensus app?",
+    "question_hi": "eCensus ऐप के साथ दिन का क्षेत्र कार्य शुरू करने से पहले गणनाकार को क्या करना चाहिए?",
+    "options_en": ["Post a photo on social media", "Log in with their credentials and download their assigned EB data", "Call the supervisor for instructions", "Print the EB map"],
+    "options_hi": ["सोशल मीडिया पर फोटो पोस्ट करें", "अपनी क्रेडेंशियल से लॉग इन करें और अपना निर्धारित EB डेटा डाउनलोड करें", "निर्देशों के लिए पर्यवेक्षक को कॉल करें", "EB मानचित्र प्रिंट करें"],
+    "correct_option": 1,
+    "explanation_en": "The Enumerator must log in with their assigned credentials and download/sync their Enumeration Block data to the device before starting field work.",
+    "explanation_hi": "गणनाकार को क्षेत्र कार्य शुरू करने से पहले अपनी निर्धारित क्रेडेंशियल से लॉग इन करना होगा और अपना गणना खंड डेटा डिवाइस पर डाउनलोड/सिंक करना होगा।"
+  },
+  {
+    "chapter": 6,
+    "topic": "Digital Tools and eCensus",
+    "difficulty": "easy",
+    "question_en": "Census 2027 is significant because it will be India's first what?",
+    "question_hi": "जनगणना 2027 महत्वपूर्ण है क्योंकि यह भारत की पहली क्या होगी?",
+    "options_en": ["Census conducted at night", "Paperless / Digital Census", "Census by telephone", "Census of only urban areas"],
+    "options_hi": ["रात में आयोजित जनगणना", "कागज़ रहित / डिजिटल जनगणना", "टेलीफोन द्वारा जनगणना", "केवल शहरी क्षेत्रों की जनगणना"],
+    "correct_option": 1,
+    "explanation_en": "Census 2027 will be India's first paperless/digital census, with data collected through mobile apps and the Self-Enumeration portal.",
+    "explanation_hi": "जनगणना 2027 भारत की पहली कागज़ रहित/डिजिटल जनगणना होगी, जिसमें मोबाइल ऐप और स्व-गणना पोर्टल के माध्यम से डेटा एकत्र किया जाएगा।"
+  }
+]

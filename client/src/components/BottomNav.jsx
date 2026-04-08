@@ -34,7 +34,7 @@ export default function BottomNav() {
     }`;
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around max-w-2xl mx-auto z-50">
+    <nav className="sticky bottom-0 bg-white border-t border-gray-200 flex justify-around z-50">
       <NavLink to="/" end className={navClass}><HomeIcon />{t('home')}</NavLink>
       <NavLink to="/leaderboard" className={navClass}><TrophyIcon />{t('leaderboard')}</NavLink>
       <NavLink to="/profile" className={navClass}><UserIcon />{t('profile')}</NavLink>

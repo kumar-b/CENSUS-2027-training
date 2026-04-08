@@ -19,7 +19,7 @@ router.get('/me', authenticate, handle((req) => {
   const userId = req.user.sub;
 
   const user = db.prepare(
-    'SELECT id, name, mobile, functionary_type, state, district, total_points, language, role, created_at FROM users WHERE id=?'
+    'SELECT id, name, mobile, functionary_type, state, district, total_points, language, photo, role, created_at FROM users WHERE id=?'
   ).get(userId);
   if (!user) throw Object.assign(new Error('User not found'), { status: 404 });
 
@@ -39,11 +39,11 @@ router.get('/me', authenticate, handle((req) => {
   return { user, badges, recentSessions: sessions };
 }));
 
-// PATCH /api/user/me — update language or name
+// PATCH /api/user/me — update language, name, or photo
 router.patch('/me', authenticate, handle((req) => {
   const db = getDb();
   const userId = req.user.sub;
-  const { lang, name } = req.body;
+  const { lang, name, photo } = req.body;
 
   if (lang !== undefined) {
     if (!['en', 'hi'].includes(lang)) throw Object.assign(new Error('Invalid lang'), { status: 400 });
@@ -53,9 +53,13 @@ router.patch('/me', authenticate, handle((req) => {
     if (!name.trim()) throw Object.assign(new Error('Name required'), { status: 400 });
     db.prepare('UPDATE users SET name=? WHERE id=?').run(name.trim(), userId);
   }
+  if (photo !== undefined) {
+    // photo is a base64 JPEG data URL string; store directly
+    db.prepare('UPDATE users SET photo=? WHERE id=?').run(photo || null, userId);
+  }
 
   return db.prepare(
-    'SELECT id, name, mobile, functionary_type, state, district, total_points, language, role FROM users WHERE id=?'
+    'SELECT id, name, mobile, functionary_type, state, district, total_points, language, photo, role FROM users WHERE id=?'
   ).get(userId);
 }));
 
