@@ -1,0 +1,14 @@
+[
+  {
+    "chapter": 1,
+    "topic": "Introduction",
+    "difficulty": "easy",
+    "question_en": "In which year is Census 2027 scheduled to begin its field operations?",
+    "question_hi": "जनगणना 2027 की क्षेत्रीय गतिविधियाँ किस वर्ष से शुरू होने वाली हैं?",
+    "options_en": ["2025", "2026", "2027", "2028"],
+    "options_hi": ["2025", "2026", "2027", "2028"],
+    "correct_option": 1,
+    "explanation_en": "Census 2027 field operations (Houselisting) are scheduled to begin in 2026.",
+    "explanation_hi": "जनगणना 2027 की क्षेत्रीय गतिविधियाँ (मकान सूचीकरण) 2026 में शुरू होने वाली हैं।"
+  }
+]
