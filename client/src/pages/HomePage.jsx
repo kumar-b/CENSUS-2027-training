@@ -25,11 +25,10 @@ export default function HomePage() {
       color: 'bg-amber-50 border-amber-200',
       icon: '🌟',
       onClick: () => navigate('/quiz/daily'),
-      disabled: dailyDone,
     },
     {
       label: t('timedQuiz'),
-      desc: '15 questions · 15 min · by chapter',
+      desc: '10 questions · 10 min · by chapter',
       color: 'bg-blue-50 border-blue-200',
       icon: '⏱',
       onClick: () => navigate('/quiz/timed'),

@@ -34,9 +34,9 @@ export default function TimedQuizPage() {
     <div>
       <div className="px-4 pt-4 pb-2 border-b border-gray-100">
         <h2 className="font-bold text-gray-800">⏱ {t('timedQuiz')} — {t('chapter')} {chapter}</h2>
-        <p className="text-xs text-gray-400">15 questions · 15 min total</p>
+        <p className="text-xs text-gray-400">10 questions · 10 min total</p>
       </div>
-      <QuizRunner mode="timed" timerSeconds={900} />
+      <QuizRunner mode="timed" timerSeconds={600} />
     </div>
   );
 }

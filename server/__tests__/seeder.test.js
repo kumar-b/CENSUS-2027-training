@@ -1,9 +1,9 @@
 const path = require('path');
-const os = require('os');
 const fs = require('fs');
 
 // Must be set before requiring DB modules (Node module cache)
-process.env.DB_PATH = path.join(os.tmpdir(), `test-seeder-${Date.now()}.db`);
+fs.mkdirSync(path.join(__dirname, '../tmp'), { recursive: true });
+process.env.DB_PATH = path.join(__dirname, '../tmp', `test-seeder-${Date.now()}.db`);
 process.env.QA_DIR = path.join(__dirname, '../../QA');
 
 const { seedQuestions } = require('../db/seeder');

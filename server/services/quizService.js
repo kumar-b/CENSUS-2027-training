@@ -26,7 +26,7 @@ function getQuestions({ mode, chapter }) {
     return db.prepare('SELECT * FROM questions ORDER BY RANDOM() LIMIT 10').all();
   }
   if (mode === 'timed') {
-    return db.prepare('SELECT * FROM questions WHERE chapter = ? ORDER BY RANDOM() LIMIT 15').all(chapter);
+    return db.prepare('SELECT * FROM questions WHERE chapter = ? ORDER BY RANDOM() LIMIT 10').all(chapter);
   }
   if (mode === 'practice') {
     return db.prepare('SELECT * FROM questions WHERE chapter = ? ORDER BY id').all(chapter);

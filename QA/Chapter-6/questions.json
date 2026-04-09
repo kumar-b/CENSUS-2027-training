@@ -1,122 +1,662 @@
 [
   {
     "chapter": 6,
-    "topic": "Digital Tools and eCensus",
+    "topic": "Self-Enumeration (SE)",
     "difficulty": "easy",
-    "question_en": "What is the eCensus mobile application used for?",
-    "question_hi": "eCensus मोबाइल एप्लिकेशन का उपयोग किस लिए किया जाता है?",
-    "options_en": ["Sending messages to supervisors", "Digital data collection during Houselisting and Population Enumeration", "Paying salary to Enumerators", "Printing census forms"],
-    "options_hi": ["पर्यवेक्षकों को संदेश भेजना", "मकान सूचीकरण और जनसंख्या गणना के दौरान डिजिटल डेटा संग्रह", "गणनाकारों को वेतन का भुगतान", "जनगणना फॉर्म प्रिंट करना"],
+    "question_en": "Q What is the full form of 'SE' in the context of the Census 2027?",
+    "question_hi": "Q जनगणना 2027 के संदर्भ में 'SE' का पूर्ण रूप क्या है?",
+    "options_en": [
+      "Special Entry",
+      "Self-Enumeration",
+      "System Enrollment",
+      "Standard Evaluation"
+    ],
+    "options_hi": [
+      "स्पेशल एंट्री (Special Entry)",
+      "स्व-गणना (Self-Enumeration)",
+      "सिस्टम एनरोलमेंट (System Enrollment)",
+      "स्टैंडर्ड इवैल्यूएशन (Standard Evaluation)"
+    ],
     "correct_option": 1,
-    "explanation_en": "The eCensus mobile app is used by Enumerators to digitally collect and submit houselisting and population enumeration data.",
-    "explanation_hi": "eCensus मोबाइल ऐप का उपयोग गणनाकारों द्वारा मकान सूचीकरण और जनसंख्या गणना डेटा को डिजिटल रूप से एकत्र और जमा करने के लिए किया जाता है।"
+    "explanation_en": "SE stands for Self-Enumeration, an innovative option for households to fill out census information themselves 1,",
+    "explanation_hi": "SE का अर्थ स्व-गणना है, जो परिवारों के लिए जनगणना की जानकारी स्वयं भरने का एक अभिनव विकल्प है"
   },
   {
     "chapter": 6,
-    "topic": "Digital Tools and eCensus",
+    "topic": "Self-Enumeration (SE)",
     "difficulty": "easy",
-    "question_en": "What happens if an Enumerator loses internet connectivity in the field?",
-    "question_hi": "यदि क्षेत्र में गणनाकार की इंटरनेट कनेक्टिविटी खो जाए तो क्या होता है?",
-    "options_en": ["All data collected is lost", "Work stops until connectivity returns", "The app works offline and syncs when connectivity is restored", "The Enumerator must use paper forms only"],
-    "options_hi": ["एकत्र सभी डेटा खो जाता है", "कनेक्टिविटी वापस आने तक काम रुक जाता है", "ऐप ऑफलाइन काम करती है और कनेक्टिविटी बहाल होने पर सिंक हो जाती है", "गणनाकार को केवल कागज़ी फॉर्म का उपयोग करना होगा"],
+    "question_en": "Q Who is eligible to use the Self-Enumeration method?",
+    "question_hi": "Q स्व-गणना पद्धति का उपयोग करने के लिए कौन पात्र है?",
+    "options_en": [
+      "Only government employees",
+      "Only institutional households",
+      "Respondents in normal households",
+      "Only households in urban areas"
+    ],
+    "options_hi": [
+      "केवल सरकारी कर्मचारी",
+      "केवल संस्थागत परिवार",
+      "सामान्य परिवारों के उत्तरदाता",
+      "केवल शहरी क्षेत्रों के परिवार"
+    ],
     "correct_option": 2,
-    "explanation_en": "The eCensus app has offline functionality — data is stored locally on the device and automatically synced to servers when connectivity is restored.",
-    "explanation_hi": "eCensus ऐप में ऑफलाइन कार्यक्षमता है — डेटा डिवाइस पर स्थानीय रूप से संग्रहीत होता है और कनेक्टिविटी बहाल होने पर सर्वर से स्वचालित रूप से सिंक होता है।"
+    "explanation_en": "The manual states that the option for Self-enumeration is available for respondents in normal households",
+    "explanation_hi": "नियमावली के अनुसार, स्व-गणना का विकल्प सामान्य परिवारों के उत्तरदाताओं के लिए उपलब्ध है"
   },
   {
     "chapter": 6,
-    "topic": "Digital Tools and eCensus",
-    "difficulty": "medium",
-    "question_en": "What is GPS tagging used for in the eCensus application?",
-    "question_hi": "eCensus एप्लिकेशन में GPS टैगिंग का उपयोग किस लिए किया जाता है?",
-    "options_en": ["To track Enumerator's salary", "To record precise location coordinates of buildings for mapping", "To navigate to the nearest hospital", "To connect to the internet"],
-    "options_hi": ["गणनाकार के वेतन को ट्रैक करना", "मानचित्रण के लिए इमारतों के सटीक स्थान निर्देशांक रिकॉर्ड करना", "निकटतम अस्पताल तक नेविगेट करना", "इंटरनेट से कनेक्ट करना"],
-    "correct_option": 1,
-    "explanation_en": "GPS tagging captures the geographic coordinates of buildings during Houselisting, creating a precise digital map of all census houses.",
-    "explanation_hi": "GPS टैगिंग मकान सूचीकरण के दौरान इमारतों के भौगोलिक निर्देशांक कैप्चर करता है, जिससे सभी जनगणना घरों का एक सटीक डिजिटल मानचित्र बनता है।"
-  },
-  {
-    "chapter": 6,
-    "topic": "Digital Tools and eCensus",
-    "difficulty": "medium",
-    "question_en": "What is the Self-Enumeration portal in Census 2027?",
-    "question_hi": "जनगणना 2027 में स्व-गणना पोर्टल क्या है?",
-    "options_en": ["A portal for Enumerators to submit their daily reports", "An online platform where literate households can fill their own census schedule", "A website for downloading census forms", "A government job portal"],
-    "options_hi": ["गणनाकारों के लिए अपनी दैनिक रिपोर्ट जमा करने का पोर्टल", "एक ऑनलाइन प्लेटफ़ॉर्म जहाँ साक्षर परिवार अपनी जनगणना अनुसूची स्वयं भर सकते हैं", "जनगणना फॉर्म डाउनलोड करने की वेबसाइट", "एक सरकारी नौकरी पोर्टल"],
-    "correct_option": 1,
-    "explanation_en": "The Self-Enumeration portal is an online platform where literate households can fill their census schedule without an Enumerator visiting.",
-    "explanation_hi": "स्व-गणना पोर्टल एक ऑनलाइन प्लेटफ़ॉर्म है जहाँ साक्षर परिवार बिना गणनाकार के दौरे के अपनी जनगणना अनुसूची भर सकते हैं।"
-  },
-  {
-    "chapter": 6,
-    "topic": "Digital Tools and eCensus",
-    "difficulty": "hard",
-    "question_en": "What security feature is used to protect data collected through the eCensus app?",
-    "question_hi": "eCensus ऐप के माध्यम से एकत्र डेटा की सुरक्षा के लिए कौन सी सुरक्षा सुविधा का उपयोग किया जाता है?",
-    "options_en": ["Password protection only", "End-to-end encryption and secure data transmission", "Physical locks on devices", "Biometric authentication for access"],
-    "options_hi": ["केवल पासवर्ड सुरक्षा", "एंड-टू-एंड एन्क्रिप्शन और सुरक्षित डेटा ट्रांसमिशन", "उपकरणों पर भौतिक ताले", "पहुँच के लिए बायोमेट्रिक प्रमाणीकरण"],
-    "correct_option": 1,
-    "explanation_en": "Census data collected via the eCensus app is protected using end-to-end encryption during transmission to ensure data security.",
-    "explanation_hi": "eCensus ऐप के माध्यम से एकत्र जनगणना डेटा को ट्रांसमिशन के दौरान डेटा सुरक्षा सुनिश्चित करने के लिए एंड-टू-एंड एन्क्रिप्शन का उपयोग करके संरक्षित किया जाता है।"
-  },
-  {
-    "chapter": 6,
-    "topic": "Digital Tools and eCensus",
-    "difficulty": "medium",
-    "question_en": "What should an Enumerator do if the eCensus app crashes or fails?",
-    "question_hi": "यदि eCensus ऐप क्रैश हो जाए या विफल हो तो गणनाकार को क्या करना चाहिए?",
-    "options_en": ["Stop work for the day", "Restart the app — data is autosaved; then report the issue to Supervisor", "Use the respondent's phone instead", "Skip that household"],
-    "options_hi": ["उस दिन के लिए काम बंद करें", "ऐप को पुनः चालू करें — डेटा स्वतः सहेजा जाता है; फिर पर्यवेक्षक को समस्या की रिपोर्ट करें", "इसके बजाय उत्तरदाता के फोन का उपयोग करें", "उस परिवार को छोड़ें"],
-    "correct_option": 1,
-    "explanation_en": "The app autosaves data. If it crashes, the Enumerator should restart and recover the data, then report the technical issue to their Supervisor.",
-    "explanation_hi": "ऐप डेटा स्वतः सहेजती है। यदि यह क्रैश हो जाए, तो गणनाकार को इसे पुनः चालू करके डेटा पुनर्प्राप्त करना चाहिए, फिर पर्यवेक्षक को तकनीकी समस्या की रिपोर्ट करनी चाहिए।"
-  },
-  {
-    "chapter": 6,
-    "topic": "Digital Tools and eCensus",
+    "topic": "Self-Enumeration (SE)",
     "difficulty": "easy",
-    "question_en": "What type of code is used to uniquely identify each Enumeration Block in the digital system?",
-    "question_hi": "डिजिटल प्रणाली में प्रत्येक गणना खंड की विशिष्ट पहचान के लिए किस प्रकार का कोड उपयोग किया जाता है?",
-    "options_en": ["Postal PIN code", "A unique alphanumeric Enumeration Block code", "Mobile phone number", "Aadhaar number"],
-    "options_hi": ["डाक पिन कोड", "एक अनोखा अल्फ़ान्यूमेरिक गणना खंड कोड", "मोबाइल फोन नंबर", "आधार नंबर"],
-    "correct_option": 1,
-    "explanation_en": "Each Enumeration Block has a unique alphanumeric code in the digital census system that links all data collected in that block.",
-    "explanation_hi": "प्रत्येक गणना खंड का डिजिटल जनगणना प्रणाली में एक अनोखा अल्फ़ान्यूमेरिक कोड होता है जो उस खंड में एकत्र सभी डेटा को जोड़ता है।"
+    "question_en": "Q How many days before the start of field work can a household begin Self-Enumeration?",
+    "question_hi": "Q क्षेत्र कार्य (field work) शुरू होने से कितने दिन पहले एक परिवार स्व-गणना शुरू कर सकता है?",
+    "options_en": [
+      "7 days",
+      "10 days",
+      "15 days",
+      "30 days"
+    ],
+    "options_hi": [
+      "7 दिन",
+      "10 दिन",
+      "15 दिन",
+      "30 दिन"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The web portal for SE is made available starting 15 days before the start date of HLO field work in a State/UT 1,",
+    "explanation_hi": "स्व-गणना के लिए वेब पोर्टल किसी राज्य/केंद्र शासित प्रदेश में क्षेत्र कार्य शुरू होने की तारीख से 15 दिन पहले उपलब्ध कराया जाता है"
   },
   {
     "chapter": 6,
-    "topic": "Digital Tools and eCensus",
-    "difficulty": "hard",
-    "question_en": "How does the eCensus app validate data quality during entry?",
-    "question_hi": "eCensus ऐप प्रविष्टि के दौरान डेटा गुणवत्ता को कैसे सत्यापित करती है?",
-    "options_en": ["It doesn't — validation is done only at the office", "Built-in range checks, mandatory fields, and logical validations that alert the Enumerator", "By sending data to the supervisor for approval", "By printing a verification form"],
-    "options_hi": ["नहीं — सत्यापन केवल कार्यालय में होता है", "अंतर्निहित रेंज जाँच, अनिवार्य फ़ील्ड और तार्किक सत्यापन जो गणनाकार को सचेत करते हैं", "अनुमोदन के लिए पर्यवेक्षक को डेटा भेजकर", "सत्यापन फ़ॉर्म प्रिंट करके"],
-    "correct_option": 1,
-    "explanation_en": "The eCensus app has built-in validations: mandatory fields, range checks (e.g. age), and logical checks (e.g. marital status vs age) to ensure data quality at point of entry.",
-    "explanation_hi": "eCensus ऐप में अंतर्निहित सत्यापन है: प्रविष्टि के बिंदु पर डेटा गुणवत्ता सुनिश्चित करने के लिए अनिवार्य फ़ील्ड, रेंज जाँच (जैसे आयु) और तार्किक जाँच (जैसे वैवाहिक स्थिति बनाम आयु)।"
-  },
-  {
-    "chapter": 6,
-    "topic": "Digital Tools and eCensus",
-    "difficulty": "medium",
-    "question_en": "What should the Enumerator do before starting the day's field work with the eCensus app?",
-    "question_hi": "eCensus ऐप के साथ दिन का क्षेत्र कार्य शुरू करने से पहले गणनाकार को क्या करना चाहिए?",
-    "options_en": ["Post a photo on social media", "Log in with their credentials and download their assigned EB data", "Call the supervisor for instructions", "Print the EB map"],
-    "options_hi": ["सोशल मीडिया पर फोटो पोस्ट करें", "अपनी क्रेडेंशियल से लॉग इन करें और अपना निर्धारित EB डेटा डाउनलोड करें", "निर्देशों के लिए पर्यवेक्षक को कॉल करें", "EB मानचित्र प्रिंट करें"],
-    "correct_option": 1,
-    "explanation_en": "The Enumerator must log in with their assigned credentials and download/sync their Enumeration Block data to the device before starting field work.",
-    "explanation_hi": "गणनाकार को क्षेत्र कार्य शुरू करने से पहले अपनी निर्धारित क्रेडेंशियल से लॉग इन करना होगा और अपना गणना खंड डेटा डिवाइस पर डाउनलोड/सिंक करना होगा।"
-  },
-  {
-    "chapter": 6,
-    "topic": "Digital Tools and eCensus",
+    "topic": "Self-Enumeration (SE)",
     "difficulty": "easy",
-    "question_en": "Census 2027 is significant because it will be India's first what?",
-    "question_hi": "जनगणना 2027 महत्वपूर्ण है क्योंकि यह भारत की पहली क्या होगी?",
-    "options_en": ["Census conducted at night", "Paperless / Digital Census", "Census by telephone", "Census of only urban areas"],
-    "options_hi": ["रात में आयोजित जनगणना", "कागज़ रहित / डिजिटल जनगणना", "टेलीफोन द्वारा जनगणना", "केवल शहरी क्षेत्रों की जनगणना"],
+    "question_en": "Q What is the primary platform used by the respondent for Self-Enumeration?",
+    "question_hi": "Q स्व-गणना के लिए उत्तरदाता द्वारा उपयोग किया जाने वाला प्राथमिक प्लेटफॉर्म क्या है?",
+    "options_en": [
+      "A dedicated web portal",
+      "A physical paper form",
+      "The HLO Mobile App",
+      "A telephone interview"
+    ],
+    "options_hi": [
+      "एक समर्पित वेब पोर्टल",
+      "एक भौतिक कागजी फॉर्म",
+      "HLO मोबाइल ऐप",
+      "एक टेलीफोन साक्षात्कार"
+    ],
+    "correct_option": 0,
+    "explanation_en": "Self-Enumeration is done through a dedicated web portal accessible on desktop/laptop or mobile devices 1,",
+    "explanation_hi": "स्व-गणना एक समर्पित वेब पोर्टल के माध्यम से की जाती है जिसे डेस्कटॉप, लैपटॉप या मोबाइल उपकरणों पर एक्सेस किया जा सकता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "easy",
+    "question_en": "Q What is used to log in to the Self-Enumeration web portal?",
+    "question_hi": "Q स्व-गणना वेब पोर्टल पर लॉगिन करने के लिए किसका उपयोग किया जाता है?",
+    "options_en": [
+      "Aadhaar Number",
+      "Mobile number and OTP",
+      "PAN Card Number",
+      "Voter ID"
+    ],
+    "options_hi": [
+      "आधार नंबर",
+      "मोबाइल नंबर और ओटीपी (OTP)",
+      "पैन कार्ड नंबर",
+      "मतदाता पहचान पत्र (Voter ID)"
+    ],
     "correct_option": 1,
-    "explanation_en": "Census 2027 will be India's first paperless/digital census, with data collected through mobile apps and the Self-Enumeration portal.",
-    "explanation_hi": "जनगणना 2027 भारत की पहली कागज़ रहित/डिजिटल जनगणना होगी, जिसमें मोबाइल ऐप और स्व-गणना पोर्टल के माध्यम से डेटा एकत्र किया जाएगा।"
+    "explanation_en": "Households access the secure web portal using their mobile number and a One-time password (OTP)",
+    "explanation_hi": "परिवार अपने मोबाइल नंबर और वन-टाइम पासवर्ड (OTP) का उपयोग करके सुरक्षित वेब पोर्टल तक पहुँचते हैं"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "easy",
+    "question_en": "Q What unique identifier is generated after a household successfully submits their information?",
+    "question_hi": "Q किसी परिवार द्वारा अपनी जानकारी सफलतापूर्वक जमा करने के बाद कौन सा अद्वितीय पहचानकर्ता (unique identifier) उत्पन्न होता है?",
+    "options_en": [
+      "PIN Code",
+      "HLO Number",
+      "SE ID",
+      "Household Serial Number"
+    ],
+    "options_hi": [
+      "पिन कोड (PIN Code)",
+      "HLO नंबर",
+      "स्व-गणना आईडी (SE I",
+      "D) परिवार क्रमांक (Household Serial Number)"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Once a household successfully submits their information, a unique SE ID is generated 1,",
+    "explanation_hi": "जानकारी सफलतापूर्वक जमा होने के बाद, एक अद्वितीय स्व-गणना आईडी (SE ID) उत्पन्न होती है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "easy",
+    "question_en": "Q Is a door-to-door visit by an Enumerator still mandatory for households that have completed SE?",
+    "question_hi": "Q क्या उन परिवारों के लिए प्रगणक (Enumerator) द्वारा घर-घर जाकर दौरा करना अभी भी अनिवार्य है जिन्होंने स्व-गणना पूरी कर ली है?",
+    "options_en": [
+      "No, SE replaces the visit",
+      "Yes, the visit is mandatory for verification",
+      "Only if the household requests it",
+      "Only in rural areas"
+    ],
+    "options_hi": [
+      "नहीं, स्व-गणना दौरे की जगह लेती है",
+      "हाँ, सत्यापन के लिए दौरा अनिवार्य है",
+      "केवल तभी जब परिवार इसका अनुरोध करे",
+      "केवल ग्रामीण क्षेत्रों में"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Enumerator’s role remains essential, and a door-to-door visit is mandatory to identify, verify, and validate data for households that completed SE",
+    "explanation_hi": "प्रगणक की भूमिका अनिवार्य बनी हुई है, और स्व-गणना पूरी करने वाले परिवारों के डेटा की पहचान और सत्यापन के लिए घर-घर जाना आवश्यक है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "easy",
+    "question_en": "Q How is the generated SE ID sent to the household?",
+    "question_hi": "Q उत्पन्न स्व-गणना आईडी परिवार को कैसे भेजी जाती है?",
+    "options_en": [
+      "By Post",
+      "Through the local police",
+      "Via SMS and/or email",
+      "Hand-delivered by the Supervisor"
+    ],
+    "options_hi": [
+      "डाक द्वारा",
+      "स्थानीय पुलिस के माध्यम से",
+      "एसएमएस (SMS) और/या ईमेल के माध्यम से",
+      "पर्यवेक्षक (Supervisor) द्वारा व्यक्तिगत रूप से"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The unique SE ID is sent to the household via SMS and email (if provided) 1,",
+    "explanation_hi": "अद्वितीय स्व-गणना आईडी परिवार को एसएमएस और ईमेल (यदि प्रदान किया गया हो) के माध्यम से भेजी जाती है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "easy",
+    "question_en": "Q What tool does the Enumerator use to review and accept SE data?",
+    "question_hi": "Q प्रगणक स्व-गणना डेटा की समीक्षा करने और उसे स्वीकार करने के लिए किस उपकरण का उपयोग करता है?",
+    "options_en": [
+      "A physical register",
+      "The HLO Mobile App",
+      "A separate SE Desktop App",
+      "The Supervisor’s personal phone"
+    ],
+    "options_hi": [
+      "एक भौतिक रजिस्टर",
+      "HLO मोबाइल ऐप",
+      "एक अलग SE डेस्कटॉप ऐप",
+      "पर्यवेक्षक का व्यक्तिगत फोन"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Enumerators review, accept, or edit the data of SE households through the HLO Mobile App 1,",
+    "explanation_hi": "प्रगणक HLO मोबाइल ऐप के माध्यम से स्व-गणना परिवारों के डेटा की समीक्षा करते हैं और उसे स्वीकार या संपादित करते हैं"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "easy",
+    "question_en": "Q What is the primary goal of introducing Self-Enumeration?",
+    "question_hi": "Q स्व-गणना शुरू करने का प्राथमिक लक्ष्य क्या है?",
+    "options_en": [
+      "To eliminate the need for Enumerators",
+      "To make data collection modern, efficient, and inclusive",
+      "To reduce the cost of mobile phones",
+      "To replace the Population Enumeration phase"
+    ],
+    "options_hi": [
+      "प्रगणकों की आवश्यकता को समाप्त करना",
+      "डेटा संग्रह को आधुनिक, कुशल और समावेशी बनाना",
+      "मोबाइल फोन की लागत कम करना",
+      "जनसंख्या गणना चरण को बदलना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "SE is described as a monumental step towards a more modern, efficient, and inclusive data collection process",
+    "explanation_hi": "स्व-गणना को अधिक आधुनिक, कुशल और समावेशी डेटा संग्रह प्रक्रिया की ओर एक महत्वपूर्ण कदम बताया गया है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q Which of the following location details is mandatory to enter in the SE portal?",
+    "question_hi": "Q स्व-गणना पोर्टल में निम्नलिखित में से कौन सा स्थान विवरण दर्ज करना अनिवार्य है?",
+    "options_en": [
+      "GPS coordinates only",
+      "State, District, Village/Town/Ward, and Hamlet/Landmark",
+      "Only the PIN code",
+      "The nearest police station name"
+    ],
+    "options_hi": [
+      "केवल जीपीएस (GPS) निर्देशांक",
+      "राज्य, जिला, गाँव/शहर/वार्ड और बस्ती/लैंडमार्क",
+      "केवल पिन कोड",
+      "निकटतम पुलिस स्टेशन का नाम"
+    ],
+    "correct_option": 1,
+    "explanation_en": "To ensure data is accurately placed, households must provide location details including State, District, and specific local identifiers 1,",
+    "explanation_hi": "डेटा का सटीक स्थान सुनिश्चित करने के लिए परिवारों को राज्य, जिले और विशिष्ट स्थानीय पहचानकर्ताओं सहित स्थान विवरण प्रदान करना आवश्यक है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q How does the SE portal ensure the \"precise mapping\" of the house?",
+    "question_hi": "Q स्व-गणना पोर्टल घर की \"सटीक मैपिंग\" कैसे सुनिश्चित करता है?",
+    "options_en": [
+      "By asking for a photo of the house",
+      "By pinpointing the house on a digital map interface",
+      "By scanning a QR code on the door",
+      "By manually entering the latitude and longitude"
+    ],
+    "options_hi": [
+      "घर की फोटो मांगकर",
+      "डिजिटल मानचित्र इंटरफेस पर घर को चिन्हित करके",
+      "दरवाजे पर लगे क्यूआर कोड को स्कैन करके",
+      "मैन्युअल रूप से अक्षांश और देशांतर दर्ज करके"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The portal prompts respondents to pinpoint the exact location of the house on a digital map interface for precise mapping 1,",
+    "explanation_hi": "पोर्टल उत्तरदाताओं को सटीक मैपिंग के लिए डिजिटल मानचित्र पर घर के सटीक स्थान को चिन्हित करने के लिए प्रेरित करता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q Why does the HLO App pre-load SE household data for an \"extended\" Houselisting Block (HLB) area?",
+    "question_hi": "Q HLO ऐप \"विस्तारित\" मकान सूचीकरण ब्लॉक (HLB) क्षेत्र के लिए स्व-गणना परिवार डेटा को प्री-लोड क्यों करता है?",
+    "options_en": [
+      "To allow Enumerators to visit other blocks",
+      "To avoid omissions of households located on the boundaries of the HLB",
+      "Because the map is often wrong",
+      "To give Enumerators more work"
+    ],
+    "options_hi": [
+      "प्रगणकों को अन्य ब्लॉकों में जाने की अनुमति देने के लिए",
+      "HLB की सीमाओं पर स्थित परिवारों के छूटने से बचने के लिए",
+      "क्योंकि मानचित्र अक्सर गलत होता है",
+      "प्रगणकों को अधिक काम देने के लिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "SE household data for an extended HLB area (larger than the assigned HLB) is imported to avoid omissions of households located on the boundaries",
+    "explanation_hi": "सीमाओं पर स्थित परिवारों के डेटा के छूटने से बचने के लिए विस्तारित HLB क्षेत्र का डेटा आयात किया जाता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q In what language will the \"Name of the Head of Household\" appear in the Enumerator’s HLO App for an SE record?",
+    "question_hi": "Q स्व-गणना रिकॉर्ड के लिए प्रगणक के HLO ऐप में \"परिवार के मुखिया का नाम\" किस भाषा में दिखाई देगा?",
+    "options_en": [
+      "Only in English",
+      "Only in Hindi",
+      "In the language chosen by the respondent",
+      "In the language chosen by the Enumerator"
+    ],
+    "options_hi": [
+      "केवल अंग्रेजी में",
+      "केवल हिंदी में",
+      "उत्तरदाता द्वारा चुनी गई भाषा में",
+      "प्रगणक द्वारा चुनी गई भाषा में"
+    ],
+    "correct_option": 2,
+    "explanation_en": "While questions and responses appear in the Enumerator's chosen language, the Name of the Head of Household appears in the language chosen by the respondent",
+    "explanation_hi": "हालांकि प्रश्न प्रगणक की चुनी हुई भाषा में दिखाई देते हैं, लेकिन मुखिया का नाम उत्तरदाता द्वारा चुनी गई भाषा में ही दिखता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q What happens to an SE record in the HLO App if the Enumerator edits it?",
+    "question_hi": "Q यदि प्रगणक किसी स्व-गणना रिकॉर्ड को संपादित (edit) करता है, तो HLO ऐप में उस रिकॉर्ड का क्या होता है?",
+    "options_en": [
+      "It is automatically deleted",
+      "It is tagged for special review by the Supervisor",
+      "It cannot be edited",
+      "It overwrites the original data without a trace"
+    ],
+    "options_hi": [
+      "वह स्वचालित रूप से हटा दिया जाता है",
+      "इसे पर्यवेक्षक द्वारा विशेष समीक्षा के लिए टैग किया जाता है",
+      "इसे संपादित नहीं किया जा सकता",
+      "यह बिना किसी निशान के मूल डेटा को ओवरराइट कर देता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If an Enumerator edits an SE record, it is tagged so that the Supervisor may specifically review it 2,",
+    "explanation_hi": "प्रगणक द्वारा संपादित स्व-गणना रिकॉर्ड को टैग किया जाता है ताकि पर्यवेक्षक उसकी विशेष रूप से समीक्षा कर सके"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q Who holds the \"final responsibility\" for the accuracy of data in a household that used SE?",
+    "question_hi": "Q स्व-गणना का उपयोग करने वाले परिवार में डेटा की सटीकता के लिए \"अंतिम जिम्मेदारी\" किसकी होती है?",
+    "options_en": [
+      "The Respondent",
+      "The IT department",
+      "The Enumerator",
+      "The Mobile App developer"
+    ],
+    "options_hi": [
+      "उत्तरदाता की",
+      "आईटी विभाग की",
+      "प्रगणक की",
+      "मोबाइल ऐप डेवलपर की"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Although SE improves efficiency, the final responsibility for data accuracy lies with the Enumerator",
+    "explanation_hi": "यद्यपि स्व-गणना दक्षता में सुधार करती है, लेकिन डेटा की सटीकता की अंतिम जिम्मेदारी प्रगणक की होती है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q Which fields in the SE portal are described as \"pre-filled/inactive\"?",
+    "question_hi": "Q स्व-गणना पोर्टल में किन क्षेत्रों को \"पूर्व-भरे/निष्क्रिय\" (pre-filled/inactive) के रूप में वर्णित किया गया है?",
+    "options_en": [
+      "All 34 census questions",
+      "Fields that will be filled by the Enumerator (Role of Enumerator details)",
+      "The household members' names",
+      "The cooking fuel options"
+    ],
+    "options_hi": [
+      "सभी 34 जनगणना प्रश्न",
+      "वे क्षेत्र जिन्हें प्रगणक द्वारा भरा जाएगा (प्रगणक की भूमिका का विवरण)",
+      "परिवार के सदस्यों के नाम",
+      "खाना पकाने के ईंधन के विकल्प"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Some fields in the SE portal are pre-filled or inactive and will be filled later by the Enumerator during their visit",
+    "explanation_hi": "स्व-गणना पोर्टल में कुछ क्षेत्र पूर्व-भरे या निष्क्रिय होते हैं, जिन्हें बाद में प्रगणक द्वारा अपने दौरे के दौरान भरा जाता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q When can an Enumerator first see the list of relevant SE IDs for their jurisdiction?",
+    "question_hi": "Q एक प्रगणक अपने अधिकार क्षेत्र के लिए प्रासंगिक स्व-गणना आईडी की सूची पहली बार कब देख सकता है?",
+    "options_en": [
+      "Only after the field work is finished",
+      "When they download and register in the HLO App after layout mapping",
+      "When they are appointed",
+      "They never see the list; they must ask the household"
+    ],
+    "options_hi": [
+      "क्षेत्र कार्य समाप्त होने के बाद ही",
+      "लेआउट मैपिंग के बाद HLO ऐप में पंजीकरण और डाउनलोड करने पर",
+      "नियुक्ति के समय",
+      "वे कभी सूची नहीं देखते; उन्हें परिवार से पूछना पड़ता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "After completing layout mapping, the Enumerator will have the list of relevant SE IDs available via the HLO Mobile App for verification 1,",
+    "explanation_hi": "लेआउट मैपिंग पूरी करने के बाद, प्रगणक सत्यापन के लिए HLO मोबाइल ऐप के माध्यम से प्रासंगिक स्व-गणना आईडी देख सकते हैं"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q What is the benefit of SE for individuals frequently away from home for work or business?",
+    "question_hi": "Q काम या व्यवसाय के कारण अक्सर घर से दूर रहने वाले व्यक्तियों के लिए स्व-गणना का क्या लाभ है?",
+    "options_en": [
+      "They can skip the census entirely",
+      "They can submit their information online at their convenience",
+      "They receive a tax break",
+      "They don't have to provide a mobile number"
+    ],
+    "options_hi": [
+      "वे जनगणना को पूरी तरह से छोड़ सकते हैं",
+      "वे अपनी सुविधानुसार ऑनलाइन जानकारी जमा कर सकते हैं",
+      "उन्हें टैक्स में छूट मिलती है",
+      "उन्हें मोबाइल नंबर देने की आवश्यकता नहीं है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "SE facilitates individuals/households who are generally away from their residence due to work, business, or other engagements 1,",
+    "explanation_hi": "स्व-गणना उन व्यक्तियों या परिवारों की मदद करती है जो काम या व्यवसाय के कारण अपने निवास स्थान से दूर रहते हैं"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "medium",
+    "question_en": "Q What must an Enumerator provide to the HLO App to access an SE household's data?",
+    "question_hi": "Q स्व-गणना परिवार के डेटा तक पहुँचने के लिए प्रगणक को HLO ऐप में क्या दर्ज करना होगा?",
+    "options_en": [
+      "The household's bank account number",
+      "The SE ID provided by the household",
+      "A physical signature from the respondent",
+      "A photo of the building"
+    ],
+    "options_hi": [
+      "परिवार का बैंक खाता नंबर",
+      "परिवार द्वारा प्रदान की गई स्व-गणना आईडी (SE ID)",
+      "उत्तरदाता के भौतिक हस्ताक्षर",
+      "भवन की फोटो"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Enumerator must collect the SE ID from the household and enter it into the app to display and verify the SE Household data 2,",
+    "explanation_hi": "प्रगणक को परिवार से स्व-गणना आईडी एकत्र करनी होती है और उसे ऐप में दर्ज करना होता है ताकि डेटा प्रदर्शित और सत्यापित किया जा सके"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q According to the manual, what ensures the Enumerator does not miss SE houses on the boundary of their HLB?",
+    "question_hi": "Q मैनुअल के अनुसार, यह क्या सुनिश्चित करता है कि प्रगणक अपने HLB की सीमा पर स्थित घरों को न छोड़े?",
+    "options_en": [
+      "Manual boundary checks with the neighbor",
+      "The import of SE data for an \"extended HLB\" area larger than the assigned block",
+      "GPS fencing that prevents the app from working outside the block",
+      "Physical markers left by the Supervisor"
+    ],
+    "options_hi": [
+      "पड़ोसी के साथ मैन्युअल सीमा जाँच",
+      "निर्धारित ब्लॉक से बड़े \"विस्तारित HLB\" क्षेत्र के स्व-गणना डेटा का आयात",
+      "जीपीएस फेंसिंग जो ब्लॉक के बाहर ऐप को काम करने से रोकती है",
+      "पर्यवेक्षक द्वारा छोड़े गए भौतिक निशान"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Data for an extended HLB area is imported specifically to prevent omissions of households located on boundaries",
+    "explanation_hi": "सीमाओं पर स्थित परिवारों के छूटने को रोकने के लिए विस्तारित HLB क्षेत्र का डेटा आयात किया जाता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q In the \"Methodology\" section, which of these is mandatory to pinpoint the precise location of the house?",
+    "question_hi": "Q \"कार्यप्रणाली\" अनुभाग में, घर के सटीक स्थान को इंगित करने के लिए इनमें से क्या अनिवार्य है?",
+    "options_en": [
+      "A digital map interface",
+      "An official land survey number",
+      "The neighbor's building number",
+      "A satellite photograph of the roof"
+    ],
+    "options_hi": [
+      "एक डिजिटल मानचित्र इंटरफेस (Digital Map Interface)",
+      "एक आधिकारिक भूमि सर्वेक्षण संख्या",
+      "पड़ोसी की इमारत का नंबर",
+      "छत की सैटेलाइट तस्वीर"
+    ],
+    "correct_option": 0,
+    "explanation_en": "Respondents must pinpoint the exact location on a digital map interface to ensure precise mapping to the correct Enumerator",
+    "explanation_hi": "सही प्रगणक के साथ सटीक मैपिंग सुनिश्चित करने के लिए उत्तरदाताओं को डिजिटल मानचित्र पर सटीक स्थान चिन्हित करना अनिवार्य है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q If a respondent provides an SE ID but the data displayed in the HLO App is incorrect, what is the Enumerator’s course of action?",
+    "question_hi": "Q यदि कोई उत्तरदाता स्व-गणना आईडी प्रदान करता है लेकिन HLO ऐप में प्रदर्शित डेटा गलत है, तो प्रगणक की कार्यवाही क्या होगी?",
+    "options_en": [
+      "Accept it anyway to save time",
+      "Choose the \"Edit\" option to review and correct the data screen-by-screen",
+      "Delete the record and start a new Household Entry",
+      "Ask the Supervisor to fix it remotely"
+    ],
+    "options_hi": [
+      "समय बचाने के लिए इसे स्वीकार करें",
+      "डेटा की स्क्रीन-दर-स्क्रीन समीक्षा और सुधार के लिए \"संपादित करें\" विकल्प चुनें",
+      "रिकॉर्ड हटा दें और नई प्रविष्टि शुरू करें",
+      "पर्यवेक्षक से इसे दूरस्थ रूप से ठीक करने के लिए कहें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If the data needs correction, the Enumerator chooses \"Edit,\" reviews the pre-filled questions screen-by-screen, and corrects the data",
+    "explanation_hi": "यदि डेटा में सुधार की आवश्यकता है, तो प्रगणक \"संपादित करें\" चुनता है और प्रत्येक प्रश्न की समीक्षा करके उसे सही करता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q What is the protocol if a household claims to have done SE but the SE ID they provide does not match any imported data in the HLB?",
+    "question_hi": "Q यदि कोई परिवार स्व-गणना करने का दावा करता है लेकिन उनके द्वारा प्रदान की गई आईडी HLB में किसी आयातित डेटा से मेल नहीं खाती, तो प्रोटोकॉल क्या है?",
+    "options_en": [
+      "The household is skipped",
+      "The usual process of manual data collection starting from Question 4 takes place",
+      "The Enumerator must call the helpdesk immediately",
+      "The household is reported for falsifying information"
+    ],
+    "options_hi": [
+      "परिवार को छोड़ दिया जाता है",
+      "प्रश्न संख्या 4 से मैन्युअल डेटा संग्रह की सामान्य प्रक्रिया अपनाई जाती है",
+      "प्रगणक को तुरंत हेल्पडेस्क को कॉल करना चाहिए",
+      "गलत जानकारी देने के लिए परिवार की रिपोर्ट की जाती है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If the SE ID does not match, the usual process of data collection by filling up each question manually (from Q.4 onwards) takes place",
+    "explanation_hi": "यदि स्व-गणना आईडी मेल नहीं खाती है, तो प्रगणक द्वारा प्रत्येक प्रश्न को मैन्युअल रूप से भरने की सामान्य प्रक्रिया शुरू की जाती है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q How is the \"PIN Code\" used in the Self-Enumeration methodology?",
+    "question_hi": "Q स्व-गणना पद्धति में \"पिन कोड\" का उपयोग कैसे किया जाता है?",
+    "options_en": [
+      "It is the password for the web portal",
+      "It is entered to facilitate correct identification of the household's location",
+      "It is the code the Enumerator uses to lock the HLB",
+      "It is only used for mailing census results later"
+    ],
+    "options_hi": [
+      "यह वेब पोर्टल का पासवर्ड है",
+      "यह परिवार के स्थान की सही पहचान की सुविधा के लिए दर्ज किया जाता है",
+      "यह वह कोड है जिसका उपयोग प्रगणक HLB को लॉक करने के लिए करता है",
+      "इसका उपयोग केवल बाद में जनगणना परिणाम भेजने के लिए किया जाता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "PIN Code may be entered to facilitate the correct identification of the location within the web portal",
+    "explanation_hi": "वेब पोर्टल के भीतर स्थान की सही पहचान की सुविधा के लिए पिन कोड दर्ज किया जा सकता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q Which specific census phase does the SE method described in Chapter 6 apply to?",
+    "question_hi": "Q अध्याय 6 में वर्णित स्व-गणना पद्धति किस विशिष्ट जनगणना चरण पर लागू होती है?",
+    "options_en": [
+      "Phase II: Population Enumeration",
+      "Both Phase I and Phase II equally",
+      "Phase I: Houselisting and Housing Census",
+      "Only for Institutional Households in Phase II"
+    ],
+    "options_hi": [
+      "चरण II: जनसंख्या गणना",
+      "चरण I और चरण II दोनों पर समान रूप से",
+      "चरण I: मकान सूचीकरण और मकान गणना (HLO)",
+      "केवल चरण II में संस्थागत परिवारों के लिए"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Chapter 6 specifically discusses the methodology of SE in the Houselisting and Housing Census (HLO)",
+    "explanation_hi": "अध्याय 6 विशेष रूप से मकान सूचीकरण और मकान गणना (HLO) में स्व-गणना की कार्यप्रणाली पर चर्चा करता है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q How does the \"Supervisor Module\" assist in the management of SE households?",
+    "question_hi": "Q \"पर्यवेक्षक मॉड्यूल\" स्व-गणना परिवारों के प्रबंधन में कैसे सहायता करता है?",
+    "options_en": [
+      "It allows the Supervisor to do SE for the respondent",
+      "It allows the Supervisor to check and monitor specifically tagged edited SE records",
+      "It automatically accepts all SE records",
+      "it provides a direct chat link to the SE respondents"
+    ],
+    "options_hi": [
+      "यह पर्यवेक्षक को उत्तरदाता की ओर से स्व-गणना करने की अनुमति देता है",
+      "यह पर्यवेक्षक को विशेष रूप से टैग किए गए संपादित रिकॉर्ड की निगरानी करने की अनुमति देता है",
+      "यह स्वचालित रूप से सभी स्व-गणना रिकॉर्ड स्वीकार करता है",
+      "यह उत्तरदाताओं के लिए एक सीधा चैट लिंक प्रदान करता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The module enables supervisors to monitor edited SE records, which are tagged for special review to ensure data quality 2,",
+    "explanation_hi": "पर्यवेक्षक मॉड्यूल संपादित किए गए रिकॉर्ड की निगरानी करने में मदद करता है ताकि डेटा की गुणवत्ता सुनिश्चित की जा सके"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q What is the relationship between the SE portal and the HLO Mobile App regarding question wording?",
+    "question_hi": "Q प्रश्न शब्दावली (Question Wording) के संबंध में स्व-गणना पोर्टल और HLO मोबाइल ऐप के बीच क्या संबंध है?",
+    "options_en": [
+      "They use completely different questions",
+      "Questions in the SE portal are worded identically to those in the HLO Mobile App",
+      "SE portal questions are much shorter",
+      "Only 10 questions are asked in the SE portal"
+    ],
+    "options_hi": [
+      "वे पूरी तरह से अलग प्रश्नों का उपयोग करते हैं",
+      "स्व-गणना पोर्टल के प्रश्न HLO मोबाइल ऐप के समान ही शब्दबद्ध हैं",
+      "स्व-गणना पोर्टल के प्रश्न बहुत छोटे हैं",
+      "स्व-गणना पोर्टल में केवल 10 प्रश्न पूछे जाते हैं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The questions in the SE portal are worded the same way as in the HLO Mobile App to maintain consistency 1,",
+    "explanation_hi": "निरंतरता बनाए रखने के लिए स्व-गणना पोर्टल और HLO मोबाइल ऐप में प्रश्नों की शब्दावली समान रखी गई है"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q What help features are provided in the SE portal to assist respondents?",
+    "question_hi": "Q उत्तरदाताओं की सहायता के लिए स्व-गणना पोर्टल में कौन सी सुविधाएँ दी गई हैं?",
+    "options_en": [
+      "Live video calls with Enumerators",
+      "Frequently Asked Questions (FAQ) and Tool Tips",
+      "A physical handbook mailed to the house",
+      "An AI chatbot that fills the form for them"
+    ],
+    "options_hi": [
+      "प्रगणकों के साथ लाइव वीडियो कॉल",
+      "अक्सर पूछे जाने वाले प्रश्न (FAQ) और टूल टिप्स",
+      "घर पर भेजी गई एक भौतिक पुस्तिका",
+      "एक एआई चैटबॉट जो उनके लिए फॉर्म भरता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "FAQ and Tool Tips are provided in the portal to facilitate the respondent in completing the SE properly 1,",
+    "explanation_hi": "उत्तरदाता को स्व-गणना ठीक से पूरी करने में सहायता के लिए पोर्टल में FAQ और टूल टिप्स दिए गए हैं"
+  },
+  {
+    "chapter": 6,
+    "topic": "Self-Enumeration (SE)",
+    "difficulty": "hard",
+    "question_en": "Q At what point does an Enumerator review the SE summary for a household?",
+    "question_hi": "Q प्रगणक किसी परिवार के लिए स्व-गणना सारांश की समीक्षा किस बिंदु पर करता है?",
+    "options_en": [
+      "Before visiting the house",
+      "After collecting the SE ID and displaying the data in the HLO App",
+      "Only if the household is locked",
+      "After the entire HLB is synced"
+    ],
+    "options_hi": [
+      "घर जाने से पहले",
+      "स्व-गणना आईडी एकत्र करने और HLO ऐप में डेटा प्रदर्शित होने के बाद",
+      "केवल तभी जब घर बंद हो",
+      "पूरे HLB के सिंक होने के बाद"
+    ],
+    "correct_option": 1,
+    "explanation_en": "During the field visit, once the SE ID matches and data is displayed, the Enumerator reviews the data to decide whether to \"Accept and Submit\" or \"Edit\" 2,",
+    "explanation_hi": "क्षेत्र दौरे के दौरान, एक बार जब आईडी मेल खाती है और डेटा प्रदर्शित होता है, तो प्रगणक निर्णय लेता है कि उसे स्वीकार करना है या संपादित करना है"
   }
 ]

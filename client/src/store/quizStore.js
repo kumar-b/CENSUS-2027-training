@@ -25,10 +25,11 @@ export const useQuizStore = create((set, get) => ({
     const { data } = await api.post('/quiz/answer', { sessionId, questionId, chosenOption, timeTaken });
     set((s) => ({
       answers: [...s.answers, { questionId, chosenOption, result: data }],
-      currentIndex: s.currentIndex + 1,
     }));
     return data;
   },
+
+  nextQuestion: () => set((s) => ({ currentIndex: s.currentIndex + 1 })),
 
   completeSession: async () => {
     const { sessionId } = get();

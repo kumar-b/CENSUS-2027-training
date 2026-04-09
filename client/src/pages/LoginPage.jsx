@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
@@ -11,6 +11,9 @@ export default function LoginPage() {
   const [form, setForm] = useState({ mobile: '', password: '' });
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
+
+  const ADMIN_MOBILES = new Set(['9873647919', '9713156166', '9669577888']);
+  const isAdmin = useMemo(() => ADMIN_MOBILES.has(form.mobile), [form.mobile]);
 
   const submit = async (e) => {
     e.preventDefault();
@@ -48,7 +51,9 @@ export default function LoginPage() {
           </div>
 
           <div>
-            <label className="block text-sm text-gray-600 mb-1">{t('password')}</label>
+            <label className="block text-sm text-gray-600 mb-1">
+              {isAdmin ? 'Admin Passphrase' : t('password')}
+            </label>
             <input
               type="password" required
               className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"

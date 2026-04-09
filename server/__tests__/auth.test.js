@@ -1,11 +1,11 @@
 const path = require('path');
-const os = require('os');
 const fs = require('fs');
 
-process.env.DB_PATH = path.join(os.tmpdir(), `auth-test-${Date.now()}.db`);
+fs.mkdirSync(path.join(__dirname, '../tmp'), { recursive: true });
+process.env.DB_PATH = path.join(__dirname, '../tmp', `auth-test-${Date.now()}.db`);
 process.env.JWT_SECRET = 'test-secret-access';
 process.env.JWT_REFRESH_SECRET = 'test-secret-refresh';
-process.env.QA_DIR = '/tmp/no-qa';
+process.env.QA_DIR = path.join(__dirname, '../tmp/no-qa');
 
 const { register, login, refresh } = require('../services/authService');
 const { closeDb } = require('../db/database');

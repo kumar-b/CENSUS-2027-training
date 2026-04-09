@@ -9,6 +9,19 @@ Census 2027 Training Platform — a mobile-first gamified quiz app for training 
 Design spec: `docs/superpowers/specs/2026-04-08-census2027-training-platform-design.md`  
 Implementation plan: `docs/superpowers/plans/2026-04-08-census2027-training-platform.md`
 
+## Superpowers Plugin
+
+This project uses the [Superpowers Claude Code plugin](https://www.youtube.com/watch?v=superpowers). Skills are invoked via the `Skill` tool before any non-trivial action.
+
+**Docs layout:**
+```
+docs/superpowers/
+  specs/    → feature design specs (written before implementation)
+  plans/    → step-by-step implementation plans (one per feature/spec)
+```
+
+Convention: spec files drive plan files. When adding a new feature, write a spec in `docs/superpowers/specs/` first, then a plan in `docs/superpowers/plans/` before touching code.
+
 ## Architecture
 
 **Monorepo:** `/server` (Express.js REST API) + `/client` (React + Vite SPA), deployed via Docker Compose with Nginx as reverse proxy.
@@ -49,7 +62,7 @@ Required env vars for local dev — create `server/.env` or set in shell:
 ```
 JWT_SECRET=any-long-string
 JWT_REFRESH_SECRET=another-long-string
-DB_PATH=/tmp/census-dev.db
+DB_PATH=./census-dev.db
 QA_DIR=../QA
 PORT=3001
 ```

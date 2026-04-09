@@ -1,122 +1,992 @@
 [
   {
     "chapter": 2,
-    "topic": "Roles and Responsibilities",
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
     "difficulty": "easy",
-    "question_en": "Who is an Enumerator in the context of Census?",
-    "question_hi": "जनगणना के संदर्भ में गणनाकार कौन होता है?",
-    "options_en": ["A government officer who supervises the census", "A field worker who visits households and collects data", "A data entry operator at the district office", "A person who prints census forms"],
-    "options_hi": ["एक सरकारी अधिकारी जो जनगणना की निगरानी करता है", "एक क्षेत्र कार्यकर्ता जो घरों में जाकर डेटा एकत्र करता है", "जिला कार्यालय में डेटा प्रविष्टि ऑपरेटर", "जनगणना फॉर्म छापने वाला व्यक्ति"],
+    "question_en": "What is the primary method of data collection for Census 2027?",
+    "question_hi": "जनगणना 2027 के लिए डेटा संग्रह की प्राथमिक विधि क्या है?",
+    "options_en": [
+      "Telephone interviews",
+      "Mobile Application",
+      "Paper schedules only",
+      "Email forms"
+    ],
+    "options_hi": [
+      "टेलीफोन साक्षात्कार",
+      "मोबाइल एप्लिकेशन 1",
+      "केवल पेपर शेड्यूल",
+      "ईमेल फॉर्म"
+    ],
     "correct_option": 1,
-    "explanation_en": "An Enumerator is a field-level worker who visits each household in their assigned area to collect census data.",
-    "explanation_hi": "गणनाकार एक क्षेत्रीय कार्यकर्ता है जो जनगणना डेटा एकत्र करने के लिए अपने निर्धारित क्षेत्र के प्रत्येक घर का दौरा करता है।"
+    "explanation_en": "The manual states that for the first time, data collection will be done through digital means using dedicated mobile applications 5-",
+    "explanation_hi": "जनगणना 2027 में पहली बार डेटा संग्रह मोबाइल एप्लिकेशन के माध्यम से डिजिटल रूप से किया जाएगा 1,"
   },
   {
     "chapter": 2,
-    "topic": "Roles and Responsibilities",
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
     "difficulty": "easy",
-    "question_en": "What is the role of a Supervisor in the Census?",
-    "question_hi": "जनगणना में पर्यवेक्षक की क्या भूमिका होती है?",
-    "options_en": ["To fill in household forms directly", "To supervise and guide a group of enumerators", "To print census reports", "To manage the census budget"],
-    "options_hi": ["घरेलू फॉर्म सीधे भरना", "गणनाकारों के एक समूह का पर्यवेक्षण और मार्गदर्शन करना", "जनगणना रिपोर्ट प्रिंट करना", "जनगणना बजट का प्रबंधन करना"],
+    "question_en": "What document must an Enumerator display at all times during fieldwork?",
+    "question_hi": "फील्डवर्क के दौरान एक प्रगणक को हर समय कौन सा दस्तावेज प्रदर्शित करना चाहिए?",
+    "options_en": [
+      "A copy of the Census Act",
+      "Their Identity Card",
+      "Their high school diploma",
+      "A letter from the village head"
+    ],
+    "options_hi": [
+      "जनगणना अधिनियम की एक प्रति",
+      "अपना पहचान पत्र (Identity Card) 3, 4",
+      "अपना हाई स्कूल डिप्लोमा",
+      "ग्राम प्रधान का पत्र"
+    ],
     "correct_option": 1,
-    "explanation_en": "A Supervisor oversees and guides a group of 4–5 Enumerators, checks their work, and ensures data quality.",
-    "explanation_hi": "पर्यवेक्षक 4-5 गणनाकारों के समूह की निगरानी और मार्गदर्शन करता है, उनके काम की जांच करता है और डेटा की गुणवत्ता सुनिश्चित करता है।"
+    "explanation_en": "It is mandatory for Enumerators and Supervisors to always carry and display their original Identity Card while doing fieldwork 1,",
+    "explanation_hi": "फील्डवर्क के दौरान प्रगणकों और पर्यवेक्षकों के लिए अपना मूल पहचान पत्र साथ रखना और उसे प्रदर्शित करना अनिवार्य है 3-"
   },
   {
     "chapter": 2,
-    "topic": "Roles and Responsibilities",
-    "difficulty": "medium",
-    "question_en": "How many households is an Enumerator typically assigned in a Census block?",
-    "question_hi": "एक जनगणना खंड में एक गणनाकार को आमतौर पर कितने घर सौंपे जाते हैं?",
-    "options_en": ["50–100", "100–150", "150–200", "200–300"],
-    "options_hi": ["50–100", "100–150", "150–200", "200–300"],
-    "correct_option": 1,
-    "explanation_en": "Each Enumerator is typically assigned 100–150 households in an Enumeration Block (EB).",
-    "explanation_hi": "प्रत्येक गणनाकार को सामान्यतः एक गणना खंड में 100–150 घर सौंपे जाते हैं।"
-  },
-  {
-    "chapter": 2,
-    "topic": "Roles and Responsibilities",
-    "difficulty": "medium",
-    "question_en": "What must an Enumerator do before starting enumeration in an area?",
-    "question_hi": "किसी क्षेत्र में गणना शुरू करने से पहले गणनाकार को क्या करना चाहिए?",
-    "options_en": ["Submit a police report", "Prepare an Enumeration Block map and list of buildings", "Collect fees from residents", "Wait for special government orders"],
-    "options_hi": ["पुलिस रिपोर्ट जमा करें", "गणना खंड का नक्शा और इमारतों की सूची तैयार करें", "निवासियों से शुल्क एकत्र करें", "विशेष सरकारी आदेशों की प्रतीक्षा करें"],
-    "correct_option": 1,
-    "explanation_en": "Before enumeration, the Enumerator must prepare the EB map showing all buildings and their layout to ensure complete coverage.",
-    "explanation_hi": "गणना से पहले, गणनाकार को पूर्ण कवरेज सुनिश्चित करने के लिए सभी इमारतों और उनके लेआउट को दर्शाने वाला EB नक्शा तैयार करना होगा।"
-  },
-  {
-    "chapter": 2,
-    "topic": "Roles and Responsibilities",
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
     "difficulty": "easy",
-    "question_en": "Which document serves as the Enumerator's official identity during field work?",
-    "question_hi": "क्षेत्र कार्य के दौरान गणनाकार की आधिकारिक पहचान के रूप में कौन सा दस्तावेज़ काम आता है?",
-    "options_en": ["Voter ID card", "Identity card issued by the census authority", "Aadhaar card", "Employee ID of their regular job"],
-    "options_hi": ["मतदाता पहचान पत्र", "जनगणना प्राधिकरण द्वारा जारी पहचान पत्र", "आधार कार्ड", "नियमित नौकरी का कर्मचारी ID"],
-    "correct_option": 1,
-    "explanation_en": "The census authority issues an official identity card to each Enumerator which they must carry and show to respondents.",
-    "explanation_hi": "जनगणना प्राधिकरण प्रत्येक गणनाकार को एक आधिकारिक पहचान पत्र जारी करता है जो उन्हें साथ रखना होगा और उत्तरदाताओं को दिखाना होगा।"
-  },
-  {
-    "chapter": 2,
-    "topic": "Roles and Responsibilities",
-    "difficulty": "medium",
-    "question_en": "What is the duty of an Enumerator if a household is absent during the first visit?",
-    "question_hi": "पहली यात्रा के दौरान कोई परिवार अनुपस्थित हो तो गणनाकार का क्या कर्तव्य है?",
-    "options_en": ["Skip that household permanently", "Make a revisit at a convenient time", "Ask neighbours to fill the form", "Leave the form in the mailbox"],
-    "options_hi": ["उस परिवार को स्थायी रूप से छोड़ दें", "सुविधाजनक समय पर दोबारा जाएं", "पड़ोसियों से फॉर्म भरवाएं", "फॉर्म मेलबॉक्स में छोड़ें"],
-    "correct_option": 1,
-    "explanation_en": "The Enumerator must make a revisit at a time convenient to the household — no household should be left out.",
-    "explanation_hi": "गणनाकार को परिवार के लिए सुविधाजनक समय पर दोबारा जाना होगा — कोई भी परिवार छूटना नहीं चाहिए।"
-  },
-  {
-    "chapter": 2,
-    "topic": "Roles and Responsibilities",
-    "difficulty": "hard",
-    "question_en": "In which language should an Enumerator fill the Census schedule?",
-    "question_hi": "गणनाकार को जनगणना अनुसूची किस भाषा में भरनी चाहिए?",
-    "options_en": ["Only in English", "Only in Hindi", "In the language specified by the state government for the district", "In the language preferred by the respondent"],
-    "options_hi": ["केवल अंग्रेजी में", "केवल हिंदी में", "जिले के लिए राज्य सरकार द्वारा निर्दिष्ट भाषा में", "उत्तरदाता की पसंदीदा भाषा में"],
+    "question_en": "To whom should an Enumerator immediately report a mismatch in location particulars?",
+    "question_hi": "स्थान विवरण (location particulars) में विसंगति होने पर प्रगणक को तुरंत किसे रिपोर्ट करनी चाहिए?",
+    "options_en": [
+      "The local Police",
+      "The Media",
+      "Their Supervisor and Charge Officer",
+      "Other Enumerators"
+    ],
+    "options_hi": [
+      "स्थानीय पुलिस को",
+      "मीडिया को",
+      "अपने पर्यवेक्षक और चार्ज अधिकारी को 5",
+      "अन्य प्रगणकों को"
+    ],
     "correct_option": 2,
-    "explanation_en": "The Enumerator fills the schedule in the language prescribed for that state/district. For Chhattisgarh, this is Hindi.",
-    "explanation_hi": "गणनाकार उस राज्य/जिले के लिए निर्धारित भाषा में अनुसूची भरता है। छत्तीसगढ़ के लिए यह हिंदी है।"
+    "explanation_en": "If assigned location particulars do not match the assigned HLB, the Enumerator must promptly contact their Supervisor and Charge Officer",
+    "explanation_hi": "यदि सौंपे गए स्थान का विवरण आपके नियुक्त एचएलबी (HLB) से मेल नहीं खाता है, तो प्रगणक को तुरंत पर्यवेक्षक और चार्ज अधिकारी से संपर्क करना चाहिए"
   },
   {
     "chapter": 2,
-    "topic": "Roles and Responsibilities",
-    "difficulty": "hard",
-    "question_en": "What is the role of a Charge Officer in the Census?",
-    "question_hi": "जनगणना में प्रभारी अधिकारी की क्या भूमिका होती है?",
-    "options_en": ["They directly collect data from households", "They manage and supervise all supervisors in a charge area", "They are responsible only for data entry", "They prepare census publications"],
-    "options_hi": ["वे सीधे घरों से डेटा एकत्र करते हैं", "वे एक प्रभार क्षेत्र में सभी पर्यवेक्षकों का प्रबंधन और निगरानी करते हैं", "वे केवल डेटा प्रविष्टि के लिए उत्तरदायी हैं", "वे जनगणना प्रकाशन तैयार करते हैं"],
-    "correct_option": 1,
-    "explanation_en": "A Charge Officer manages all Supervisors in their charge area, coordinates logistics, and is accountable for the quality and completeness of enumeration.",
-    "explanation_hi": "प्रभारी अधिकारी अपने प्रभार क्षेत्र में सभी पर्यवेक्षकों का प्रबंधन करता है, लॉजिस्टिक्स का समन्वय करता है और गणना की गुणवत्ता और पूर्णता के लिए जिम्मेदार होता है।"
-  },
-  {
-    "chapter": 2,
-    "topic": "Roles and Responsibilities",
-    "difficulty": "medium",
-    "question_en": "An Enumerator must maintain which important record listing all buildings in their assigned area?",
-    "question_hi": "गणनाकार को अपने निर्धारित क्षेत्र की सभी इमारतों को सूचीबद्ध करने वाला कौन सा महत्वपूर्ण रिकॉर्ड रखना होगा?",
-    "options_en": ["Voter list", "Abridged Houselists (AHL)", "Property tax register", "Municipal records"],
-    "options_hi": ["मतदाता सूची", "संक्षिप्त गृह सूची (AHL)", "संपत्ति कर रजिस्टर", "नगरपालिका रिकॉर्ड"],
-    "correct_option": 1,
-    "explanation_en": "The Enumerator must maintain Abridged Houselists (AHL) listing all buildings and census houses in their Enumeration Block.",
-    "explanation_hi": "गणनाकार को संक्षिप्त गृह सूची (AHL) बनाए रखनी होगी जिसमें उनके गणना खंड की सभी इमारतें और जनगणना गृह सूचीबद्ध होंगे।"
-  },
-  {
-    "chapter": 2,
-    "topic": "Roles and Responsibilities",
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
     "difficulty": "easy",
-    "question_en": "Can an Enumerator share respondent's personal data with others?",
-    "question_hi": "क्या गणनाकार उत्तरदाता का व्यक्तिगत डेटा दूसरों के साथ साझा कर सकता है?",
-    "options_en": ["Yes, with local officials", "Yes, with family members", "No, census data is strictly confidential", "Yes, for research purposes"],
-    "options_hi": ["हाँ, स्थानीय अधिकारियों के साथ", "हाँ, परिवार के सदस्यों के साथ", "नहीं, जनगणना डेटा पूर्णतः गोपनीय है", "हाँ, शोध उद्देश्यों के लिए"],
+    "question_en": "Is the information collected during the Census open to the public?",
+    "question_hi": "क्या जनगणना के दौरान एकत्र की गई जानकारी जनता के लिए खुली है?",
+    "options_en": [
+      "Yes, under the RTI Act",
+      "No, it is strictly confidential",
+      "Yes, for research purposes only",
+      "Only names and addresses are public"
+    ],
+    "options_hi": [
+      "हाँ, आरटीआई अधिनियम के तहत",
+      "नहीं, यह पूरी तरह से गोपनीय है 3, 4",
+      "हाँ, केवल शोध उद्देश्यों के लिए",
+      "केवल नाम और पते सार्वजनिक हैं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Information collected is strictly confidential under the Census Act, 1948, and cannot be shared or disclosed under the RTI Act, 2005 1,",
+    "explanation_hi": "जनगणना अधिनियम, 1948 के तहत एकत्र की गई जानकारी अत्यंत गोपनीय है और इसे आरटीआई अधिनियम, 2005 के तहत भी साझा नहीं किया जा सकता 3,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Which official is responsible for assigning Houselisting Blocks (HLBs)?",
+    "question_hi": "मकान सूचीकरण ब्लॉक (HLB) आवंटित करने के लिए कौन सा अधिकारी जिम्मेदार है?",
+    "options_en": [
+      "The Supervisor",
+      "The Charge Officer",
+      "The Field Trainer",
+      "The village head"
+    ],
+    "options_hi": [
+      "पर्यवेक्षक",
+      "चार्ज अधिकारी 6, 7",
+      "फील्ड ट्रेनर",
+      "ग्राम प्रधान"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Charge Officer is responsible for the allotment of HLBs in the CMMS Portal",
+    "explanation_hi": "सीएमएमएस (CMMS) पोर्टल पर एचएलबी का आवंटन और नियुक्ति पत्र तैयार करना चार्ज अधिकारी की जिम्मेदारी है"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "What is the first step of the \"Golden Rule\" for Enumerators?",
+    "question_hi": "प्रगणकों के लिए \"गोल्डन रूल\" (सुनहरा नियम) का पहला चरण क्या है?",
+    "options_en": [
+      "Sync",
+      "Verify",
+      "Ask",
+      "Review"
+    ],
+    "options_hi": [
+      "सिंक (Sync)",
+      "सत्यापित करें (Verify)",
+      "पूछें (Ask) 8",
+      "समीक्षा करें (Review)"
+    ],
     "correct_option": 2,
-    "explanation_en": "Census data is strictly confidential under the Census Act, 1948. An Enumerator cannot share individual data with anyone.",
-    "explanation_hi": "जनगणना अधिनियम, 1948 के तहत जनगणना डेटा पूर्णतः गोपनीय है। गणनाकार व्यक्तिगत डेटा किसी के साथ साझा नहीं कर सकता।"
+    "explanation_en": "The Golden Rule for the census is: Ask → Verify → Record → Review → Sync → Mark Complete",
+    "explanation_hi": "जनगणना का सुनहरा नियम है: पूछें → सत्यापित करें → रिकॉर्ड करें → समीक्षा करें → सिंक करें → पूर्ण चिह्नित करें"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "When should an Enumerator obtain their training materials and lists (like the SC/ST list)?",
+    "question_hi": "प्रगणक को अपनी प्रशिक्षण सामग्री और सूचियां (जैसे एससी/एसटी सूची) कब प्राप्त करनी चाहिए?",
+    "options_en": [
+      "After finishing all field work",
+      "At the end of the last training session",
+      "Only when they reach the first house",
+      "Materials are not required"
+    ],
+    "options_hi": [
+      "सारा फील्ड कार्य समाप्त करने के बाद",
+      "प्रशिक्षण सत्र के अंतिम दिन प्रशिक्षण केंद्र छोड़ने से पहले 5, 9",
+      "केवल पहली घर पहुंचने पर",
+      "सामग्री की आवश्यकता नहीं है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Enumerators must obtain all materials, including manuals and SC/ST lists, at the end of the last training session before beginning field work",
+    "explanation_hi": "प्रगणकों को फील्ड कार्य शुरू करने से पहले प्रशिक्षण के अंत में मैनुअल और एससी/एसटी सूचियों सहित सभी सामग्री प्राप्त कर लेनी चाहिए 5,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Whom should the Enumerator meet and explain the Census objective to before starting work?",
+    "question_hi": "कार्य शुरू करने से पहले प्रगणक को किससे मिलना चाहिए और जनगणना के उद्देश्य को समझाना चाहिए?",
+    "options_en": [
+      "Only children in the area",
+      "Prominent persons of the area",
+      "Foreign tourists",
+      "Only shopkeepers"
+    ],
+    "options_hi": [
+      "केवल क्षेत्र के बच्चों से",
+      "क्षेत्र के प्रमुख और बुजुर्ग व्यक्तियों से 3, 5",
+      "विदेशी पर्यटकों से",
+      "केवल दुकानदारों से"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Establishing rapport by meeting and explaining objectives to prominent persons and the elderly helps build trust",
+    "explanation_hi": "प्रमुख व्यक्तियों से मिलकर जनगणना के उद्देश्य समझाना विश्वास बनाने और सहयोग प्राप्त करने में मदद करता है 3,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Which of these is a duty of the Enumerator BEFORE starting the HLO?",
+    "question_hi": "इनमें से कौन सा कर्तव्य प्रगणक का मकान सूचीकरण (HLO) शुरू करने से पहले है?",
+    "options_en": [
+      "Syncing final data",
+      "Marking the HLB complete",
+      "Downloading and Installing the HLO Mobile App",
+      "Delivering final reports to the Charge Officer"
+    ],
+    "options_hi": [
+      "अंतिम डेटा सिंक करना",
+      "एचएलबी को पूर्ण चिह्नित करना",
+      "HLO मोबाइल ऐप डाउनलोड और इंस्टॉल करना 6, 9",
+      "चार्ज अधिकारी को अंतिम रिपोर्ट देना"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Installing the app and familiarizing oneself with it is a key duty before the start of field operations 2,",
+    "explanation_hi": "फील्ड संचालन शुरू करने से पहले ऐप इंस्टॉल करना और उससे परिचित होना एक प्रमुख कर्तव्य है 6,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "How often should an Enumerator sync entered data to the central server?",
+    "question_hi": "प्रगणक को दर्ज किए गए डेटा को कितनी बार केंद्रीय सर्वर पर सिंक करना चाहिए?",
+    "options_en": [
+      "Once every month",
+      "Only at the end of the entire block",
+      "After enumeration of every 5-6 Houses/Households",
+      "Only if the app crashes"
+    ],
+    "options_hi": [
+      "हर महीने एक बार",
+      "केवल पूरे ब्लॉक के अंत में",
+      "प्रत्येक 5-6 घरों/परिवारों की गणना के बाद 7, 10",
+      "केवल ऐप क्रैश होने पर"
+    ],
+    "correct_option": 2,
+    "explanation_en": "To prevent data loss, Enumerators must upload/sync data frequently, specifically after every 5-6 households 2,",
+    "explanation_hi": "डेटा हानि को रोकने के लिए, प्रगणकों को बार-बार, विशेष रूप से हर 5-6 परिवारों के बाद डेटा सिंक करना चाहिए 7,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Census work is considered a:",
+    "question_hi": "जनगणना के कार्य को माना जाता है:",
+    "options_en": [
+      "Voluntary hobby",
+      "Legal obligation",
+      "Optional part-time job",
+      "Non-essential activity"
+    ],
+    "options_hi": [
+      "एक स्वैच्छिक शौक",
+      "एक कानूनी बाध्यता (Legal obligation) 3, 4, 11",
+      "एक वैकल्पिक अंशकालिक नौकरी",
+      "एक गैर-जरूरी गतिविधि"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The manual explicitly states that the work done by Enumerators and Supervisors is a legal obligation 4,",
+    "explanation_hi": "नियमावली स्पष्ट रूप से बताती है कि प्रगणकों और पर्यवेक्षकों द्वारा किया गया कार्य एक कानूनी बाध्यता है 3, 4,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Who verifies the HLB boundaries on the ground to ensure no areas are left out?",
+    "question_hi": "यह सुनिश्चित करने के लिए कि कोई क्षेत्र छूटा नहीं है, जमीन पर एचएलबी (HLB) सीमाओं का सत्यापन कौन करता है?",
+    "options_en": [
+      "The neighbors",
+      "The Supervisor",
+      "The Household Head",
+      "The IT department"
+    ],
+    "options_hi": [
+      "पड़ोसी",
+      "पर्यवेक्षक 6, 10",
+      "परिवार का मुखिया",
+      "आईटी विभाग"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is the Supervisor's duty to go around assigned HLBs to identify boundaries and landmarks and ensure complete coverage 3,",
+    "explanation_hi": "पर्यवेक्षक का कर्तव्य है कि वह सीमाओं और लैंडमार्क की पहचान करने के लिए आवंटित एचएलबी का दौरा करे 6,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "What must an Enumerator do if a house is found to be incorrectly recorded during a Supervisor's check?",
+    "question_hi": "यदि पर्यवेक्षक की जांच के दौरान कोई घर गलत रिकॉर्ड किया गया पाया जाता है, तो प्रगणक को क्या करना चाहिए?",
+    "options_en": [
+      "The record must be deleted",
+      "The record must be entered again correctly",
+      "The record can be left as is",
+      "The Supervisor must fix it themselves"
+    ],
+    "options_hi": [
+      "रिकॉर्ड को हटा देना चाहिए",
+      "पूरा रिकॉर्ड प्रगणक द्वारा फिर से सही ढंग से दर्ज किया जाना चाहिए 12",
+      "रिकॉर्ड को वैसा ही रहने दिया जा सकता है",
+      "पर्यवेक्षक को इसे स्वयं ठीक करना चाहिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If data is found to be incorrect after a Supervisor's check, the whole record needs to be entered again by the Enumerator",
+    "explanation_hi": "यदि पर्यवेक्षक द्वारा डेटा गलत पाया जाता है, तो प्रगणक को पूरा रिकॉर्ड फिर से दर्ज करना होगा"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "What is the prefix used for building numbers when numbering is absent or incomplete?",
+    "question_hi": "नंबरिंग अनुपस्थित या अपूर्ण होने पर भवन नंबरों के लिए किस उपसर्ग (prefix) का उपयोग किया जाता है?",
+    "options_en": [
+      "HLB",
+      "RES",
+      "CN",
+      "BLD"
+    ],
+    "options_hi": [
+      "HLB",
+      "RES",
+      "CN 12, 13",
+      "BLD"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Building numbers where numbering is absent or incomplete should be prefixed by \"CN\"",
+    "explanation_hi": "जिन भवनों में नंबरिंग नहीं है या अपूर्ण है, उनके नंबर के आगे \"CN\" लगाया जाना चाहिए 12,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "What is the final step in the HLO app once all houses are sync'd and coverage is complete?",
+    "question_hi": "सभी घरों के सिंक होने और कवरेज पूरा होने के बाद HLO ऐप में अंतिम चरण क्या है?",
+    "options_en": [
+      "Log out",
+      "Uninstall the app",
+      "Mark HLB as Complete",
+      "Call the Media"
+    ],
+    "options_hi": [
+      "लॉग आउट करना",
+      "ऐप को अनइंस्टॉल करना",
+      "एचएलबी को \"Mark HLB as Complete\" चिह्नित करना 6, 14",
+      "मीडिया को बुलाना"
+    ],
+    "correct_option": 2,
+    "explanation_en": "After full coverage and syncing, the Enumerator must mark the HLB as complete in the App and inform the Supervisor 3,",
+    "explanation_hi": "पूर्ण कवरेज और सिंकिंग के बाद, प्रगणक को ऐप में एचएलबी को पूर्ण चिह्नित करना चाहिए 6,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "How should \"Self-Enumeration IDs\" (SE IDs) be handled by the Enumerator in the HLO App?",
+    "question_hi": "HLO ऐप में प्रगणक द्वारा \"स्व-गणना आईडी\" (SE IDs) को कैसे हैंडल किया जाना चाहिए?",
+    "options_en": [
+      "They must be manually typed in from a master list",
+      "They are automatically downloaded when the user signs into the app",
+      "The Enumerator must create them for the household",
+      "They are not used in the mobile app"
+    ],
+    "options_hi": [
+      "उन्हें मास्टर सूची से मैन्युअल रूप से टाइप करना होगा",
+      "जब प्रगणक ऐप में साइन इन करता है तो वे स्वचालित रूप से डाउनलोड हो जाते हैं 9",
+      "प्रगणक को परिवार के लिए उन्हें बनाना होगा",
+      "मोबाइल ऐप में उनका उपयोग नहीं किया जाता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "SE IDs are automatically downloaded when the Enumerator/Supervisor signs into the HLO App",
+    "explanation_hi": "जब प्रगणक/पर्यवेक्षक HLO ऐप में साइन इन करते हैं, तो SE ID स्वचालित रूप से डाउनलोड हो जाते हैं"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "Under what specific conditions can an Enumerator use \"Paper Mode\" for data collection?",
+    "question_hi": "किन विशिष्ट परिस्थितियों में एक प्रगणक डेटा संग्रह के लिए \"पेपर मोड\" का उपयोग कर सकता है?",
+    "options_en": [
+      "Whenever the Enumerator prefers it",
+      "Only in extremely unavoidable circumstances",
+      "For households that don't have smartphones",
+      "It is the primary mode of collection"
+    ],
+    "options_hi": [
+      "जब भी प्रगणक इसे पसंद करे",
+      "केवल अत्यंत अपरिहार्य परिस्थितियों में 10, 15",
+      "उन परिवारों के लिए जिनके पास स्मार्टफोन नहीं है",
+      "यह संग्रह का प्राथमिक मोड है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Digital mode is the primary method; paper mode is used only as a last resort in unavoidable circumstances 3,",
+    "explanation_hi": "डिजिटल मोड प्राथमिक तरीका है; पेपर मोड का उपयोग केवल अपरिहार्य परिस्थितियों में अंतिम विकल्प के रूप में किया जाता है 10,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What is the Supervisor's responsibility regarding \"Self-Enumeration\" data?",
+    "question_hi": "\"स्व-गणना\" (Self-Enumeration) डेटा के संबंध में पर्यवेक्षक की क्या जिम्मेदारी है?",
+    "options_en": [
+      "They must delete it to save space",
+      "They must specially check the tagged SE data edited by the Enumerator",
+      "They must ignore it as it is already verified by the portal",
+      "They must fill it out for the household"
+    ],
+    "options_hi": [
+      "स्थान बचाने के लिए उन्हें हटा देना चाहिए",
+      "उन्हें प्रगणक द्वारा संपादित टैग किए गए SE डेटा की विशेष रूप से जांच करनी चाहिए 15, 16",
+      "उन्हें इसे अनदेखा करना चाहिए क्योंकि यह पोर्टल द्वारा पहले से ही सत्यापित है",
+      "उन्हें परिवार के लिए इसे भरना चाहिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Supervisors are required to specially check any SE data that has been edited by an Enumerator",
+    "explanation_hi": "पर्यवेक्षकों को विशेष रूप से उस SE डेटा की जांच करनी होती है जिसे प्रगणक द्वारा संपादित किया गया है 15,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "If the HLO mobile app is uninstalled before data is synced, what should the Enumerator do?",
+    "question_hi": "यदि डेटा सिंक होने से पहले HLO मोबाइल ऐप अनइंस्टॉल हो जाता है, तो प्रगणक को क्या करना चाहिए?",
+    "options_en": [
+      "Guess the data from memory",
+      "Use written data from the writing pad provided",
+      "Visit all the houses again from scratch",
+      "Report the HLB as unfinishable"
+    ],
+    "options_hi": [
+      "याददाश्त से डेटा का अनुमान लगाएं",
+      "प्रदान किए गए राइटिंग पैड से लिखित डेटा का उपयोग करें 12, 17",
+      "शुरू से ही सभी घरों का फिर से दौरा करें",
+      "एचएलबी को अधूरा रिपोर्ट करें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Enumerators are provided a writing pad to record data; this written data can be re-inserted into the app if uninstallation occurs before syncing",
+    "explanation_hi": "डेटा हानि से बचने के लिए प्रगणकों को एक राइटिंग पैड दिया जाता है; ऐप अनइंस्टॉल होने पर इस डेटा को फिर से ऐप में डाला जा सकता है 12,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What is the \"Supervisory Circle\"?",
+    "question_hi": "\"पर्यवेक्षी सर्कल\" (Supervisory Circle) क्या है?",
+    "options_en": [
+      "A group of Supervisors working together",
+      "The total area assigned to one Supervisor, covering several HLBs",
+      "The office of the Charge Officer",
+      "A specialized census training method"
+    ],
+    "options_hi": [
+      "एक साथ काम करने वाले पर्यवेक्षकों का समूह",
+      "एक पर्यवेक्षक को सौंपा गया कुल क्षेत्र, जिसमें कई एचएलबी शामिल हैं 10, 15",
+      "चार्ज अधिकारी का कार्यालय",
+      "एक विशेष जनगणना प्रशिक्षण पद्धति"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A Supervisor prepares a layout map covering all HLBs within their assigned \"Supervisory Circle\" 3,",
+    "explanation_hi": "एक पर्यवेक्षक अपने आवंटित \"पर्यवेक्षी सर्कल\" के भीतर सभी एचएलबी को कवर करते हुए एक लेआउट मैप तैयार करता है 10,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What must a Supervisor do if there are changes in HLB boundaries after ground verification?",
+    "question_hi": "यदि जमीनी सत्यापन के बाद एचएलबी सीमाओं में बदलाव होता है, तो पर्यवेक्षक को क्या करना चाहिए?",
+    "options_en": [
+      "Redraw the map themselves manually",
+      "Inform the Charge Officer for necessary changes and download a revised map",
+      "Ignore the changes to maintain original records",
+      "Instruct the Enumerator to skip the changed areas"
+    ],
+    "options_hi": [
+      "मैन्युअल रूप से खुद नक्शा फिर से बनाएं",
+      "आवश्यक बदलावों के लिए चार्ज अधिकारी को सूचित करें और संशोधित नक्शा डाउनलोड करें 10",
+      "मूल रिकॉर्ड बनाए रखने के लिए बदलावों की अनदेखी करें",
+      "प्रगणक को बदले हुए क्षेत्रों को छोड़ने का निर्देश दें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Any boundary changes must be reported to the Charge Officer so that a revised PDF copy of the map can be downloaded and used",
+    "explanation_hi": "किसी भी सीमा परिवर्तन की रिपोर्ट चार्ज अधिकारी को दी जानी चाहिए ताकि संशोधित नक्शा डाउनलोड किया जा सके"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What should the Enumerator do after collecting the SE ID from a household that has self-enumerated?",
+    "question_hi": "स्व-गणना करने वाले परिवार से SE ID एकत्र करने के बाद प्रगणक को क्या करना चाहिए?",
+    "options_en": [
+      "Mark the house as finished immediately",
+      "Verify and accept or edit the pre-loaded data",
+      "Tell the household to submit it again online",
+      "Collect a paper schedule from them"
+    ],
+    "options_hi": [
+      "घर को तुरंत समाप्त चिह्नित करें",
+      "प्री-लोडेड डेटा को सत्यापित करें और स्वीकार या संपादित करें 9, 18",
+      "परिवार से कहें कि वे इसे फिर से ऑनलाइन जमा करें",
+      "उनसे पेपर शेड्यूल लें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Even for SE households, Enumerators must visit, obtain the SE ID, and verify/accept/edit the data to ensure accuracy 2, 9,",
+    "explanation_hi": "स्व-गणना करने वाले परिवारों के लिए भी प्रगणक को दौरा करना, SE ID प्राप्त करना और डेटा की शुद्धता सुनिश्चित करने के लिए उसे सत्यापित/संपादित करना अनिवार्य है 9,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "Why is it essential for an Enumerator to establish rapport and use \"well-chosen words\"?",
+    "question_hi": "प्रगणक के लिए तालमेल बनाना और \"सोचे-समझे शब्दों\" का उपयोग करना क्यों आवश्यक है?",
+    "options_en": [
+      "To entertain the residents",
+      "To help build trust and encourage respondents to answer accurately",
+      "To convince them to buy census materials",
+      "To avoid having to show their Identity Card"
+    ],
+    "options_hi": [
+      "निवासियों का मनोरंजन करने के लिए",
+      "विश्वास बनाने और उत्तरदाताओं को सटीक उत्तर देने के लिए प्रोत्साहित करने के लिए 3",
+      "उन्हें जनगणना सामग्री खरीदने के लिए मनाने के लिए",
+      "अपना पहचान पत्र दिखाने से बचने के लिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A friendly appearance and courtesy help build trust, which is necessary for respondents to answer all questions willingly",
+    "explanation_hi": "विनम्र व्यवहार और अच्छी तरह से चुने गए शब्द विश्वास बनाने में मदद करते हैं, जो सटीक जानकारी प्राप्त करने के लिए आवश्यक है"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "How does the Supervisor monitor the \"data quality\" of an Enumerator's entries?",
+    "question_hi": "पर्यवेक्षक प्रगणक की प्रविष्टियों की \"डेटा गुणवत्ता\" की निगरानी कैसे करता है?",
+    "options_en": [
+      "By calling the households on the phone",
+      "By logging into the HLO Supervisor App to preview and check synced data",
+      "By asking the Enumerator to read the data aloud",
+      "By waiting until the end of the year to review the final database"
+    ],
+    "options_hi": [
+      "परिवारों को फोन करके",
+      "सिंक किए गए डेटा की जांच करने के लिए HLO पर्यवेक्षक ऐप में लॉग इन करके 10, 19",
+      "प्रगणक से डेटा को जोर से पढ़ने के लिए कहकर",
+      "वर्ष के अंत तक प्रतीक्षा करके"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Supervisors monitor progress, completeness, and data quality by checking synced data through their specific module in the app 3, 4,",
+    "explanation_hi": "पर्यवेक्षक अपने विशिष्ट ऐप मॉड्यूल के माध्यम से सिंक किए गए डेटा की जांच करके प्रगति और गुणवत्ता की निगरानी करते हैं 10,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What happens to census data if a new mobile device is registered by an Enumerator?",
+    "question_hi": "यदि प्रगणक द्वारा एक नया मोबाइल डिवाइस पंजीकृत किया जाता है, तो जनगणना डेटा का क्या होता है?",
+    "options_en": [
+      "Data is automatically transferred to the new device",
+      "Data cannot be synced from the old device afterwards",
+      "Both devices can be used simultaneously for the same HLB",
+      "All previously synced data is deleted from the server"
+    ],
+    "options_hi": [
+      "डेटा स्वचालित रूप से नए डिवाइस में स्थानांतरित हो जाता है",
+      "पुराने डिवाइस से डेटा को बाद में सिंक नहीं किया जा सकता 7, 12",
+      "एक ही एचएलबी के लिए दोनों डिवाइस एक साथ उपयोग किए जा सकते हैं",
+      "सर्वर से पहले से सिंक किया गया सारा डेटा डिलीट हो जाता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If a new device is registered, the old device is deregistered, and data cannot be synced from it afterwards",
+    "explanation_hi": "यदि नया डिवाइस पंजीकृत किया जाता है, तो पुराने डिवाइस का पंजीकरण रद्द हो जाता है और उससे डेटा सिंक नहीं किया जा सकता 7,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What is the legal consequence of disclosing individual-level information under the Census Act?",
+    "question_hi": "जनगणना अधिनियम के तहत व्यक्तिगत स्तर की जानकारी का खुलासा करने का कानूनी परिणाम क्या है?",
+    "options_en": [
+      "It is encouraged for transparency",
+      "It is an offense punishable by law",
+      "It is allowed if the respondent gives permission",
+      "It is permitted under the Right to Information Act"
+    ],
+    "options_hi": [
+      "पारदर्शिता के लिए इसे प्रोत्साहित किया जाता है",
+      "यह कानून के तहत दंडनीय अपराध है 3, 11",
+      "यदि उत्तरदाता अनुमति देता है तो इसकी अनुमति है",
+      "सूचना का अधिकार अधिनियम के तहत इसकी अनुमति है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Disclosing particulars of an identified individual is an offense, and confidentiality is maintained even against the RTI Act",
+    "explanation_hi": "किसी पहचाने गए व्यक्ति के विवरण का खुलासा करना एक अपराध है, और गोपनीयता आरटीआई अधिनियम के खिलाफ भी बनाए रखी जाती है 3,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What is the purpose of the \"Summary\" view button in the HLO app?",
+    "question_hi": "HLO ऐप में \"View Summary\" बटन का उद्देश्य क्या है?",
+    "options_en": [
+      "To see the total number of people in India",
+      "To review accuracy and completeness of filled Census Houses before syncing",
+      "To change the password of the app",
+      "To view weather updates for the fieldwork"
+    ],
+    "options_hi": [
+      "भारत में लोगों की कुल संख्या देखने के लिए",
+      "सिंक करने से पहले भरे गए जनगणना मकानों की सटीकता और पूर्णता की समीक्षा करने के लिए 9, 14",
+      "ऐप का पासवर्ड बदलने के लिए",
+      "फील्डवर्क के लिए मौसम अपडेट देखने के लिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The \"View Summary\" button allows Enumerators to review their work for accuracy and completeness 2,",
+    "explanation_hi": "यह बटन प्रगणकों को सिंक करने से पहले अपने कार्य की सटीकता की जांच करने की अनुमति देता है 9,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "If an Enumerator is assigned more than one HLB, how should they handle Layout Maps?",
+    "question_hi": "यदि एक प्रगणक को एक से अधिक एचएलबी (HLB) सौंपे गए हैं, तो उसे लेआउट मैप कैसे संभालना चाहिए?",
+    "options_en": [
+      "Prepare one single map for both areas",
+      "Prepare separate Layout Maps for each HLB",
+      "No map is needed if they know the area well",
+      "Maps are only required for urban HLBs"
+    ],
+    "options_hi": [
+      "दोनों क्षेत्रों के लिए एक ही नक्शा तैयार करें",
+      "प्रत्येक एचएलबी के लिए अलग-अलग लेआउट मैप तैयार करें 20, 21",
+      "यदि वह क्षेत्र को अच्छी तरह जानता है तो नक्शे की आवश्यकता नहीं है",
+      "नक्शे केवल शहरी एचएलबी के लिए आवश्यक हैं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Separate Layout Maps and records must be prepared for each assigned HLB to avoid overlaps or omissions 13,",
+    "explanation_hi": "ओवरलैप या चूक से बचने के लिए प्रत्येक आवंटित एचएलबी के लिए अलग लेआउट मैप और रिकॉर्ड तैयार किए जाने चाहिए 20,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What specific instruction is given regarding the use of \"cloning apps\"?",
+    "question_hi": "\"क्लोनिंग ऐप्स\" (cloning apps) के उपयोग के संबंध में क्या निर्देश दिया गया है?",
+    "options_en": [
+      "They should be used to speed up data entry",
+      "They are strictly forbidden and considered unsafe",
+      "They are recommended for backup purposes",
+      "They can be used with permission from a Supervisor"
+    ],
+    "options_hi": [
+      "डेटा प्रविष्टि तेज करने के लिए उनका उपयोग किया जाना चाहिए",
+      "वे सख्त वर्जित हैं और असुरक्षित माने जाते हैं 7",
+      "बैकअप उद्देश्यों के लिए उनकी सिफारिश की जाती है",
+      "पर्यवेक्षक की अनुमति से उनका उपयोग किया जा सकता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The manual explicitly warns against using cloning apps (like Parallel Spaces), as it is illegal and unsafe",
+    "explanation_hi": "नियमावली स्पष्ट रूप से क्लोनिंग ऐप्स (जैसे पैरेलल स्पेस) के उपयोग के खिलाफ चेतावनी देती है, क्योंकि यह अवैध और असुरक्षित है"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What role do \"Field Trainers\" play in the census hierarchy?",
+    "question_hi": "जनगणना पदानुक्रम में \"फील्ड ट्रेनर्स\" क्या भूमिका निभाते हैं?",
+    "options_en": [
+      "They collect data from houses",
+      "They help resolve technical glitches and clarify doubts",
+      "They issue appointment letters",
+      "They provide food for the Enumerators"
+    ],
+    "options_hi": [
+      "वे घरों से डेटा एकत्र करते हैं",
+      "वे तकनीकी गड़बड़ियों को दूर करने और शंकाओं को स्पष्ट करने में मदद करते हैं 12",
+      "वे नियुक्ति पत्र जारी करते हैं",
+      "वे प्रगणकों के लिए भोजन उपलब्ध कराते हैं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Field Trainers are mentioned as points of contact for technical glitches or clarifications",
+    "explanation_hi": "नियमावली में फील्ड ट्रेनर्स को तकनीकी सहायता या स्पष्टीकरण के लिए संपर्क बिंदु के रूप में बताया गया है"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Explain the legal relationship between the \"Lending Employer\" and the Census staff.",
+    "question_hi": "\"मूल नियोक्ता\" (Lending Employer) और जनगणना कर्मचारियों के बीच कानूनी संबंध क्या है?",
+    "options_en": [
+      "The census staff are permanently transferred to the Census Organization",
+      "The period spent on census duty is deemed to be duty under the lending employer",
+      "The lending employer stops paying salaries during census duty",
+      "Staff are not allowed to return to their lending employer after duty"
+    ],
+    "options_hi": [
+      "जनगणना कर्मचारियों को स्थायी रूप से जनगणना संगठन में स्थानांतरित कर दिया जाता है",
+      "जनगणना ड्यूटी पर बिताई गई अवधि को मूल नियोक्ता के अधीन ड्यूटी माना जाता है 22, 23",
+      "मूल नियोक्ता जनगणना ड्यूटी के दौरान वेतन देना बंद कर देता है",
+      "ड्यूटी के बाद कर्मचारियों को अपने मूल नियोक्ता के पास लौटने की अनुमति नहीं है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Under Section 15A, service interests are protected, and census duty is considered duty for the parent employer 16-",
+    "explanation_hi": "धारा 15ए के तहत, सेवा हितों की रक्षा की जाती है और जनगणना ड्यूटी को मूल नियोक्ता के लिए ड्यूटी माना जाता है 22,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What is the significance of Section 15B of the Census Act regarding census officers?",
+    "question_hi": "जनगणना अधिकारियों के संबंध में जनगणना अधिनियम की धारा 15B का क्या महत्व है?",
+    "options_en": [
+      "It lists the salaries for Enumerators",
+      "It protects officers against suits or legal proceedings for actions taken in \"good faith\"",
+      "It allows officers to share data with the Police",
+      "It mandates the use of digital devices"
+    ],
+    "options_hi": [
+      "यह प्रगणकों के वेतन की सूची देता है",
+      "यह अधिकारियों को \"सद्भाव\" (good faith) में किए गए कार्यों के लिए कानूनी कार्रवाई से बचाता है 22, 24",
+      "यह अधिकारियों को पुलिस के साथ डेटा साझा करने की अनुमति देता है",
+      "यह डिजिटल उपकरणों के उपयोग को अनिवार्य बनाता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 15B provides legal protection for actions done or intended to be done in good faith under the Act 16, 17,",
+    "explanation_hi": "धारा 15बी अधिनियम के तहत सद्भाव में किए गए कार्यों के लिए कानूनी सुरक्षा प्रदान करती है 22,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "In the context of census records, how does the manual define \"evidence\" in civil proceedings?",
+    "question_hi": "जनगणना रिकॉर्ड के संदर्भ में, नियमावली दीवानी कार्यवाही (civil proceedings) में \"साक्ष्य\" (evidence) को कैसे परिभाषित करती है?",
+    "options_en": [
+      "Census records are the primary evidence for citizenship",
+      "Census records are not admissible as evidence in any civil proceeding",
+      "Only digital records are admissible in court",
+      "Records can be used as evidence only with a court order"
+    ],
+    "options_hi": [
+      "जनगणना रिकॉर्ड नागरिकता के लिए प्राथमिक साक्ष्य हैं",
+      "जनगणना रिकॉर्ड किसी भी दीवानी कार्यवाही में साक्ष्य के रूप में स्वीकार्य नहीं हैं 22, 23",
+      "अदालत में केवल डिजिटल रिकॉर्ड स्वीकार्य हैं",
+      "रिकॉर्ड का उपयोग केवल अदालती आदेश के साथ साक्ष्य के रूप में किया जा सकता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 15 ensures that no person has the right to inspect census books and they are not admissible as evidence in civil proceedings 16-",
+    "explanation_hi": "धारा 15 सुनिश्चित करती है कि जनगणना पुस्तकों का निरीक्षण करने का अधिकार किसी को नहीं है और वे दीवानी कार्यवाही में साक्ष्य के रूप में स्वीकार्य नहीं हैं 22,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "If \"unavoidable circumstances\" force an Enumerator to use a paper-mode schedule, where must the data eventually be submitted?",
+    "question_hi": "यदि \"अपरिहार्य परिस्थितियां\" प्रगणक को पेपर-मोड का उपयोग करने के लिए मजबूर करती हैं, तो डेटा अंततः कहां जमा किया जाना चाहिए?",
+    "options_en": [
+      "Sent via post to the Registrar General",
+      "Hand-entered into the web portal at the Charge Officer's office",
+      "Photographed and emailed to the Supervisor",
+      "Kept as a paper record only"
+    ],
+    "options_hi": [
+      "रजिस्ट्रार जनरल को डाक द्वारा भेजा जाना चाहिए",
+      "चार्ज ऑफिसर के कार्यालय में वेब पोर्टल पर मैन्युअल रूप से दर्ज किया जाना चाहिए 10, 15",
+      "फोटो खींचकर पर्यवेक्षक को ईमेल किया जाना चाहिए",
+      "केवल पेपर रिकॉर्ड के रूप में रखा जाना चाहिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If paper mode is used, data entry must be completed on the web portal at the Charge Officer's office within the prescribed date 3,",
+    "explanation_hi": "यदि पेपर मोड का उपयोग किया जाता है, तो निर्धारित तिथि के भीतर चार्ज ऑफिसर के कार्यालय में पोर्टल पर डेटा प्रविष्टि पूरी की जानी चाहिए 10,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What is the specific requirement for marking building numbers if the local authority has NOT already provided them?",
+    "question_hi": "यदि स्थानीय प्राधिकरण ने पहले से भवन नंबर प्रदान नहीं किए हैं, तो भवन नंबर चिह्नित करने के लिए क्या विशिष्ट आवश्यकता है?",
+    "options_en": [
+      "Use a permanent ink tattoo",
+      "Use a marker pen to write numbers within a bracket",
+      "Use chalk that can be easily washed off",
+      "No numbering is allowed if not done by local authorities"
+    ],
+    "options_hi": [
+      "स्थायी स्याही वाले टैटू का उपयोग करें",
+      "ब्रैकेट के भीतर नंबर लिखने के लिए मार्कर पेन का उपयोग करें 5, 9",
+      "चाक का उपयोग करें जिसे आसानी से धोया जा सके",
+      "यदि स्थानीय अधिकारियों द्वारा नहीं किया गया है, तो नंबरिंग की अनुमति नहीं है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Enumerators must assign numbers to buildings using a marker pen, writing the building number and the number of census houses within brackets 2,",
+    "explanation_hi": "प्रगणकों को मार्कर पेन का उपयोग करके भवनों को नंबर देने चाहिए, भवन नंबर और जनगणना मकानों की संख्या ब्रैकेट में लिखनी चाहिए 5,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "How does a Supervisor verify \"logical accuracy\" in the enumeration process?",
+    "question_hi": "पर्यवेक्षक गणना प्रक्रिया में \"तार्किक सटीकता\" (logical accuracy) को कैसे सत्यापित करता है?",
+    "options_en": [
+      "By conducting a math test for the Enumerator",
+      "By cross-checking coverage, numbering consistency, and data logic through the Supervisor module",
+      "By checking the GPS coordinates of the Enumerator's phone",
+      "By reviewing the Enumerator's personal bank statements"
+    ],
+    "options_hi": [
+      "प्रगणक के लिए गणित परीक्षा आयोजित करके",
+      "पर्यवेक्षक मॉड्यूल के माध्यम से कवरेज, नंबरिंग निरंतरता और डेटा लॉजिक की क्रॉस-चेकिंग करके 16, 25",
+      "प्रगणक के फोन के जीपीएस निर्देशांक की जांच करके",
+      "प्रगणक के व्यक्तिगत बैंक विवरण की समीक्षा करके"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Supervisors ensure accuracy by cross-checking coverage, consistent numbering, and logical data entries",
+    "explanation_hi": "पर्यवेक्षक कवरेज और तार्किक डेटा प्रविष्टियों की क्रॉस-चेकिंग करके सटीकता सुनिश्चित करते हैं 16,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What happens to the PIN created for the HLO app?",
+    "question_hi": "HLO ऐप के लिए बनाए गए पिन (PIN) का क्या महत्व है?",
+    "options_en": [
+      "It is used to log in for the first time only",
+      "It must be shared with the household head for verification",
+      "It is asked every time the user comes back to the app and must not be shared",
+      "It is generated by the household for the Enumerator"
+    ],
+    "options_hi": [
+      "इसका उपयोग केवल पहली बार लॉग इन करने के लिए किया जाता है",
+      "सत्यापन के लिए इसे परिवार के मुखिया के साथ साझा किया जाना चाहिए",
+      "जब भी उपयोगकर्ता ऐप पर वापस आता है तो यह मांगा जाता है और इसे साझा नहीं किया जाना चाहिए 7, 26",
+      "यह प्रगणक के लिए परिवार द्वारा तैयार किया जाता है"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The phone PIN is a security measure required every time the app is reopened 15,",
+    "explanation_hi": "फोन पिन एक सुरक्षा उपाय है जो हर बार ऐप खोलने पर आवश्यक होता है 7,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Describe the duty of a Supervisor when an Enumerator is unable to complete their tasks.",
+    "question_hi": "जब एक प्रगणक अपना कार्य पूरा करने में असमर्थ होता है, तो पर्यवेक्षक का क्या कर्तव्य है?",
+    "options_en": [
+      "Do nothing and let the data remain incomplete",
+      "Report coverage issues to the Enumerator for completion",
+      "Complete the tasks themselves without informing anyone",
+      "Delete the HLB from the system"
+    ],
+    "options_hi": [
+      "कुछ न करें और डेटा को अधूरा रहने दें",
+      "कार्य पूरा करने के लिए संबंधित प्रगणक को कवरेज मुद्दों की रिपोर्ट करें 10, 16",
+      "किसी को बताए बिना कार्य स्वयं पूरा करें",
+      "सिस्टम से एचएलबी को डिलीट कर दें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Supervisor must monitor progress and report any coverage issues back to the Enumerator to ensure the task is completed",
+    "explanation_hi": "पर्यवेक्षक को प्रगति की निगरानी करनी चाहिए और प्रगणक को किसी भी कवरेज समस्या की रिपोर्ट करनी चाहिए ताकि कार्य पूरा हो सके 10,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What specific categories of households are NOT covered during the Houselisting phase (Phase I)?",
+    "question_hi": "परिवारों की कौन सी विशिष्ट श्रेणियां मकान सूचीकरण चरण (चरण I) के दौरान कवर नहीं की जाती हैं?",
+    "options_en": [
+      "Institutional Households",
+      "Normal Households",
+      "Houseless Households",
+      "Residential Households"
+    ],
+    "options_hi": [
+      "संस्थागत परिवार (Institutional Households)",
+      "सामान्य परिवार (Normal Households)",
+      "बेघर परिवार (Houseless Households) 27-29",
+      "आवासीय परिवार (Residential Households)"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Houseless households live in the open and are covered only in Phase II (Population Enumeration) 8,",
+    "explanation_hi": "बेघर परिवार खुले में रहते हैं और उन्हें केवल चरण II (जनसंख्या गणना) में कवर किया जाता है 27-"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "According to Section 11 of the Census Act, what is the consequence for a census officer who \"neglects to use reasonable diligence\"?",
+    "question_hi": "जनगणना अधिनियम की धारा 11 के अनुसार, उस जनगणना अधिकारी के लिए क्या परिणाम है जो \"उचित सावधानी बरतने में उपेक्षा\" (neglects reasonable diligence) करता है?",
+    "options_en": [
+      "They are given a bonus",
+      "They may be subject to penalties as per the Act",
+      "They are automatically promoted",
+      "They are exempt from legal action"
+    ],
+    "options_hi": [
+      "उन्हें बोनस दिया जाता है",
+      "वे अधिनियम के अनुसार दंड के भागी हो सकते हैं 30, 31",
+      "उन्हें स्वचालित रूप से पदोन्नत किया जाता है",
+      "उन्हें कानूनी कार्रवाई से छूट दी गई है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Neglecting duty or hindering others in their performance of duty attracts penalties under Section 11 16,",
+    "explanation_hi": "ड्यूटी में लापरवाही बरतने या दूसरों को उनके काम में बाधा डालने पर धारा 11 के तहत दंड मिलता है 30,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What is the requirement for \"Location Particulars\" before starting field work?",
+    "question_hi": "फील्ड कार्य शुरू करने से पहले \"स्थान विवरण\" (Location Particulars) के लिए क्या आवश्यकता है?",
+    "options_en": [
+      "They should be guessed based on local knowledge",
+      "They must match exactly with the particulars in the Appointment Letter",
+      "They are not relevant for digital collection",
+      "They are updated by the Supervisor after the work is finished"
+    ],
+    "options_hi": [
+      "स्थानीय ज्ञान के आधार पर उनका अनुमान लगाया जाना चाहिए",
+      "उन्हें नियुक्ति पत्र में दिए गए विवरण से बिल्कुल मेल खाना चाहिए 5, 14",
+      "डिजिटल संग्रह के लिए वे प्रासंगिक नहीं हैं",
+      "कार्य समाप्त होने के बाद पर्यवेक्षक द्वारा उन्हें अपडेट किया जाता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Enumerators must ensure location particulars on the app match their assigned Appointment Letter before proceeding 20,",
+    "explanation_hi": "प्रगणकों को यह सुनिश्चित करना होगा कि ऐप पर स्थान विवरण उनके सौंपे गए नियुक्ति पत्र से मेल खाते हैं 5,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Why is it mandatory for a Supervisor to provide a \"Digital Signature\" at the end of the HLB work?",
+    "question_hi": "एचएलबी कार्य के अंत में पर्यवेक्षक के लिए \"डिजिटल हस्ताक्षर\" प्रदान करना क्यों अनिवार्य है?",
+    "options_en": [
+      "To prove they own the mobile device",
+      "To certify that all records have been thoroughly reviewed and verified",
+      "To activate the payment system for households",
+      "It is an optional step for Supervisors"
+    ],
+    "options_hi": [
+      "यह साबित करने के लिए कि वे मोबाइल डिवाइस के मालिक हैं",
+      "यह प्रमाणित करने के लिए कि सभी रिकॉर्ड की पूरी तरह से समीक्षा और सत्यापन किया गया है 10, 32",
+      "परिवारों के लिए भुगतान प्रणाली को सक्रिय करने के लिए",
+      "यह पर्यवेक्षकों के लिए एक वैकल्पिक कदम है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Only after full verification and review of all records by the Supervisor is an HLB marked complete with their signature",
+    "explanation_hi": "पर्यवेक्षक द्वारा सभी रिकॉर्ड के पूर्ण सत्यापन और समीक्षा के बाद ही उनके हस्ताक्षर के साथ एचएलबी को पूर्ण चिह्नित किया जाता है 10,"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What is the restriction regarding the use of teachers for Census work under the RTE Act, 2009?",
+    "question_hi": "आरटीई अधिनियम, 2009 के तहत जनगणना कार्य के लिए शिक्षकों के उपयोग के संबंध में क्या प्रतिबंध है?",
+    "options_en": [
+      "Teachers cannot be used for any census work",
+      "Teachers can only be used for the decennial population census, not other non-educational duties",
+      "Teachers must work on the census during school hours",
+      "Only retired teachers are eligible"
+    ],
+    "options_hi": [
+      "शिक्षकों का उपयोग किसी भी जनगणना कार्य के लिए नहीं किया जा सकता",
+      "शिक्षकों को केवल दशकीय जनसंख्या गणना के लिए तैनात किया जा सकता है, अन्य गैर-शैक्षिक कार्यों के लिए नहीं 11",
+      "शिक्षकों को स्कूल के घंटों के दौरान जनगणना पर काम करना चाहिए",
+      "केवल सेवानिवृत्त शिक्षक ही पात्र हैं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 27 of the RTE Act allows teachers to be deployed for the decennial census, overriding other judgments",
+    "explanation_hi": "आरटीई अधिनियम की धारा 27 शिक्षकों को दशकीय जनगणना के लिए तैनात करने की अनुमति देती है"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What is the \"Golden Rule\" step that involves checking for inconsistencies and errors?",
+    "question_hi": "\"गोल्डन रूल\" का वह चरण कौन सा है जिसमें विसंगतियों और त्रुटियों की जाँच शामिल है?",
+    "options_en": [
+      "Record",
+      "Sync",
+      "Review",
+      "Ask"
+    ],
+    "options_hi": [
+      "रिकॉर्ड करें",
+      "सिंक करें",
+      "समीक्षा करें (Review) 8",
+      "पूछें"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Review step (Ask → Verify → Record → Review → Sync → Mark Complete) is critical for identifying and correcting errors before syncing 5,",
+    "explanation_hi": "समीक्षा चरण (पूछें → सत्यापित करें → रिकॉर्ड करें → समीक्षा करें → सिंक करें) सिंक करने से पहले त्रुटियों की पहचान करने के लिए महत्वपूर्ण है"
+  },
+  {
+    "chapter": 2,
+    "topic": "Roles and Responsibilities of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What constitutes an \"Institutional Household\" in a building that also has a warden and peon families?",
+    "question_hi": "एक ऐसी इमारत में \"संस्थागत परिवार\" (Institutional Household) क्या होता है जिसमें वार्डन और चपरासी के परिवार भी रहते हैं?",
+    "options_en": [
+      "The entire building is one single institutional household",
+      "Each family (warden, peon, etc.) is a separate Normal Household, while inmates are the Institutional Household",
+      "All persons in the building are treated as unrelated inmates",
+      "Families are not counted if they live on institutional premises"
+    ],
+    "options_hi": [
+      "पूरी इमारत एक ही संस्थागत परिवार है",
+      "प्रत्येक परिवार (वार्डन, चपरासी आदि) एक अलग सामान्य परिवार है, जबकि निवासी/कैदी संस्थागत परिवार हैं 28",
+      "इमारत में रहने वाले सभी लोगों को असंबंधित कैदी माना जाता है",
+      "यदि परिवार संस्थागत परिसर में रहते हैं तो उनकी गिनती नहीं की जाती है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "In a building with institutional and related family residents, each family is a separate household, resulting in one Institutional and several Normal Households",
+    "explanation_hi": "ऐसी इमारत में जहाँ संस्थागत और संबंधित परिवार के सदस्य रहते हैं, प्रत्येक परिवार एक अलग परिवार है, जिसके परिणामस्वरूप एक संस्थागत और कई सामान्य परिवार होते हैं"
   }
 ]

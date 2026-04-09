@@ -1,122 +1,2312 @@
 [
   {
     "chapter": 4,
-    "topic": "Houselisting and Housing Census",
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
     "difficulty": "easy",
-    "question_en": "What is the first phase of Census 2027 field operations called?",
-    "question_hi": "जनगणना 2027 के क्षेत्रीय कार्यों के पहले चरण को क्या कहा जाता है?",
-    "options_en": ["Population Enumeration", "Houselisting and Housing Census", "NPR Update", "Data Verification"],
-    "options_hi": ["जनसंख्या गणना", "मकान सूचीकरण और आवास जनगणना", "NPR अपडेट", "डेटा सत्यापन"],
+    "question_en": "What is the basic unit assigned to an Enumerator for Census Operations?",
+    "question_hi": "जनगणना कार्यों के लिए प्रगणक (Enumerator) को आवंटित बुनियादी इकाई क्या है?",
+    "options_en": [
+      "Ward",
+      "Houselisting Block (HLB)",
+      "Tehsil",
+      "Village"
+    ],
+    "options_hi": [
+      "वार्ड",
+      "मकान सूचीकरण ब्लॉक (HLB)",
+      "तहसील",
+      "गाँव"
+    ],
     "correct_option": 1,
-    "explanation_en": "The first phase is the Houselisting and Housing Census, during which buildings and census houses are listed and data on housing conditions is collected.",
-    "explanation_hi": "पहला चरण मकान सूचीकरण और आवास जनगणना है, जिसके दौरान इमारतों और जनगणना घरों की सूची बनाई जाती है।"
+    "explanation_en": "An HLB is the specific area allotted to an Enumerator for carrying out house numbering and listing.",
+    "explanation_hi": "HLB वह विशिष्ट क्षेत्र है जो प्रगणक को मकान नंबर देने और सूचीकरण कार्य के लिए आवंटित किया जाता है"
   },
   {
     "chapter": 4,
-    "topic": "Houselisting and Housing Census",
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
     "difficulty": "easy",
-    "question_en": "What is a 'Census House' as defined in the Census?",
-    "question_hi": "जनगणना में 'जनगणना गृह' की परिभाषा क्या है?",
-    "options_en": ["Any government building", "Any building with a separate main entrance used for any purpose", "Only residential buildings", "Only buildings with more than 2 rooms"],
-    "options_hi": ["कोई भी सरकारी इमारत", "किसी भी उद्देश्य के लिए उपयोग किए जाने वाले अलग मुख्य प्रवेश द्वार वाली कोई भी इमारत", "केवल आवासीय इमारतें", "केवल 2 से अधिक कमरों वाली इमारतें"],
+    "question_en": "What is the primary duty of an Enumerator upon reaching the field?",
+    "question_hi": "फील्ड में पहुँचने पर प्रगणक का प्राथमिक कर्तव्य क्या है?",
+    "options_en": [
+      "Start filling the digital schedule",
+      "Identify the HLB and familiarize with its boundaries",
+      "Collect mobile numbers",
+      "Interview the Village Head"
+    ],
+    "options_hi": [
+      "डिजिटल शेड्यूल भरना शुरू करना",
+      "HLB की पहचान करना और उसकी सीमाओं से परिचित होना",
+      "मोबाइल नंबर एकत्र करना",
+      "ग्राम प्रधान का साक्षात्कार करना"
+    ],
     "correct_option": 1,
-    "explanation_en": "A Census House is any structure with a separate main entrance used or intended to be used for residential, commercial, or any other purpose.",
-    "explanation_hi": "जनगणना गृह एक अलग मुख्य प्रवेश द्वार वाली कोई भी संरचना है जो आवासीय, व्यावसायिक या किसी अन्य उद्देश्य के लिए उपयोग की जाती है।"
+    "explanation_en": "The first duty is to identify the allotted HLB area and ensure no structure is omitted.",
+    "explanation_hi": "पहला कर्तव्य आवंटित HLB क्षेत्र की पहचान करना और यह सुनिश्चित करना है कि कोई भी संरचना छूट न जाए"
   },
   {
     "chapter": 4,
-    "topic": "Houselisting and Housing Census",
-    "difficulty": "medium",
-    "question_en": "What unique number is given to each building during the Houselisting operation?",
-    "question_hi": "मकान सूचीकरण अभियान के दौरान प्रत्येक इमारत को क्या अनोखी संख्या दी जाती है?",
-    "options_en": ["House number already on the door", "Survey number from land records", "A unique Building/Census House Number painted on the wall", "Ward number from municipality"],
-    "options_hi": ["दरवाजे पर पहले से लिखा घर नंबर", "भूमि रिकॉर्ड से सर्वेक्षण संख्या", "दीवार पर लिखी एक अनोखी इमारत/जनगणना गृह संख्या", "नगरपालिका से वार्ड संख्या"],
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Which of these is generally defined as a single structure on the ground with four walls and a roof?",
+    "question_hi": "इनमें से किसे आम तौर पर जमीन पर चार दीवारों और एक छत वाली एकल संरचना के रूप में परिभाषित किया गया है?",
+    "options_en": [
+      "Household",
+      "Premises",
+      "Building",
+      "Census House"
+    ],
+    "options_hi": [
+      "परिवार",
+      "परिसर",
+      "भवन (Building)",
+      "जनगणना मकान"
+    ],
     "correct_option": 2,
-    "explanation_en": "During Houselisting, each building is assigned a unique census number that is painted on the wall for identification purposes.",
-    "explanation_hi": "मकान सूचीकरण के दौरान, पहचान के लिए प्रत्येक इमारत को एक अनोखी जनगणना संख्या दी जाती है जो दीवार पर लिखी जाती है।"
+    "explanation_en": "A building is generally a single structure with four walls and a roof, used as a dwelling or establishment.",
+    "explanation_hi": "भवन आम तौर पर चार दीवारों और एक छत वाली एकल संरचना है, जिसका उपयोग निवास या प्रतिष्ठान के रूप में किया जाता है"
   },
   {
     "chapter": 4,
-    "topic": "Houselisting and Housing Census",
-    "difficulty": "medium",
-    "question_en": "During Houselisting, what information is collected about each Census House?",
-    "question_hi": "मकान सूचीकरण के दौरान प्रत्येक जनगणना गृह के बारे में क्या जानकारी एकत्र की जाती है?",
-    "options_en": ["Only the owner's name", "Use of building, condition, type of construction material, amenities available", "Only the number of rooms", "Only the market value"],
-    "options_hi": ["केवल मालिक का नाम", "इमारत का उपयोग, स्थिति, निर्माण सामग्री का प्रकार, उपलब्ध सुविधाएं", "केवल कमरों की संख्या", "केवल बाजार मूल्य"],
-    "correct_option": 1,
-    "explanation_en": "During Houselisting, data is collected on use of the building, structural condition, construction materials for walls/roof/floor, and household amenities.",
-    "explanation_hi": "मकान सूचीकरण के दौरान, इमारत के उपयोग, संरचनात्मक स्थिति, दीवारों/छत/फर्श के निर्माण सामग्री और घरेलू सुविधाओं पर डेटा एकत्र किया जाता है।"
-  },
-  {
-    "chapter": 4,
-    "topic": "Houselisting and Housing Census",
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
     "difficulty": "easy",
-    "question_en": "What is a 'Household' in Census terminology?",
-    "question_hi": "जनगणना शब्दावली में 'परिवार' क्या है?",
-    "options_en": ["Only a married couple with children", "A group of persons who normally live together and take meals from a common kitchen", "Only blood relatives living together", "Any group of people in the same building"],
-    "options_hi": ["केवल बच्चों वाला विवाहित जोड़ा", "व्यक्तियों का एक समूह जो सामान्यतः एक साथ रहते हैं और एक साझा रसोई से भोजन करते हैं", "केवल एक साथ रहने वाले रक्त संबंधी", "एक ही इमारत में लोगों का कोई समूह"],
-    "correct_option": 1,
-    "explanation_en": "A household in Census is a group of persons normally living together and sharing a common kitchen — they need not be related.",
-    "explanation_hi": "जनगणना में परिवार व्यक्तियों का एक समूह है जो सामान्यतः एक साथ रहते हैं और साझा रसोई से भोजन करते हैं — उनका रक्त संबंध आवश्यक नहीं।"
+    "question_en": "A group of persons who normally live together and take their meals from a common kitchen is called a:",
+    "question_hi": "व्यक्तियों का वह समूह जो सामान्यतः एक साथ रहता है और एक ही रसोई से भोजन करता है, क्या कहलाता है?",
+    "options_en": [
+      "Family",
+      "Institutional Household",
+      "Household",
+      "Building"
+    ],
+    "options_hi": [
+      "परिवार (Family)",
+      "संस्थागत परिवार",
+      "परिवार (Househol",
+      "d) भवन"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The defining characteristic of a household in the Census is living together and sharing a common kitchen.",
+    "explanation_hi": "जनगणना में एक परिवार की परिभाषित विशेषता एक साथ रहना और साझा रसोई का उपयोग करना है"
   },
   {
     "chapter": 4,
-    "topic": "Houselisting and Housing Census",
-    "difficulty": "hard",
-    "question_en": "What does the Enumerator mark on the building after completing its Houselisting entry?",
-    "question_hi": "मकान सूचीकरण प्रविष्टि पूरी करने के बाद गणनाकार इमारत पर क्या चिह्नित करता है?",
-    "options_en": ["A red cross sign", "The census house number along with the Enumerator's initials", "Nothing — recording is only digital", "A government sticker"],
-    "options_hi": ["लाल क्रॉस का चिह्न", "जनगणना गृह संख्या के साथ गणनाकार के आद्याक्षर", "कुछ नहीं — रिकॉर्डिंग केवल डिजिटल है", "एक सरकारी स्टिकर"],
-    "correct_option": 1,
-    "explanation_en": "After listing, the Enumerator marks the census house number and their initials on the wall of the building as a permanent record.",
-    "explanation_hi": "सूचीकरण के बाद, गणनाकार स्थायी रिकॉर्ड के रूप में इमारत की दीवार पर जनगणना गृह संख्या और अपने आद्याक्षर लिखता है।"
-  },
-  {
-    "chapter": 4,
-    "topic": "Houselisting and Housing Census",
-    "difficulty": "medium",
-    "question_en": "Which of the following is NOT collected during the Houselisting phase?",
-    "question_hi": "निम्नलिखित में से कौन सी जानकारी मकान सूचीकरण चरण में एकत्र नहीं की जाती?",
-    "options_en": ["Type of fuel used for cooking", "Religion of household members", "Source of drinking water", "Availability of latrine"],
-    "options_hi": ["खाना पकाने के लिए उपयोग किया जाने वाला ईंधन का प्रकार", "परिवार के सदस्यों का धर्म", "पीने के पानी का स्रोत", "शौचालय की उपलब्धता"],
-    "correct_option": 1,
-    "explanation_en": "Religion of household members is collected during Population Enumeration (Phase 2), not during Houselisting (Phase 1).",
-    "explanation_hi": "परिवार के सदस्यों का धर्म जनसंख्या गणना (चरण 2) के दौरान एकत्र किया जाता है, मकान सूचीकरण (चरण 1) के दौरान नहीं।"
-  },
-  {
-    "chapter": 4,
-    "topic": "Houselisting and Housing Census",
-    "difficulty": "hard",
-    "question_en": "What is an Enumeration Block (EB)?",
-    "question_hi": "गणना खंड (EB) क्या होता है?",
-    "options_en": ["A government office block", "A compact area with 100–150 households assigned to one Enumerator", "A city ward", "A district subdivision"],
-    "options_hi": ["एक सरकारी कार्यालय खंड", "100–150 घरों वाला एक सघन क्षेत्र जो एक गणनाकार को सौंपा जाता है", "एक शहर वार्ड", "एक जिला उपखंड"],
-    "correct_option": 1,
-    "explanation_en": "An Enumeration Block (EB) is a compact area containing 100–150 households (approximately) assigned to a single Enumerator for the census operation.",
-    "explanation_hi": "गणना खंड (EB) एक सघन क्षेत्र है जिसमें लगभग 100–150 घर होते हैं और जो एक एकल गणनाकार को जनगणना अभियान के लिए सौंपा जाता है।"
-  },
-  {
-    "chapter": 4,
-    "topic": "Houselisting and Housing Census",
-    "difficulty": "medium",
-    "question_en": "During Houselisting, how does the Enumerator handle a locked/vacant house?",
-    "question_hi": "मकान सूचीकरण के दौरान गणनाकार बंद/खाली घर को कैसे संभालता है?",
-    "options_en": ["Skip it entirely", "Record it as 'Vacant' or 'Locked' with basic visible details", "Break in to fill the form", "Ask neighbours for all details"],
-    "options_hi": ["इसे पूरी तरह छोड़ दें", "बुनियादी दृश्यमान विवरण के साथ 'रिक्त' या 'बंद' के रूप में दर्ज करें", "फॉर्म भरने के लिए अंदर प्रवेश करें", "सभी विवरण पड़ोसियों से पूछें"],
-    "correct_option": 1,
-    "explanation_en": "A locked or vacant house is recorded with visible information (building type, use) and marked as 'Locked' or 'Vacant' — it is not skipped.",
-    "explanation_hi": "बंद या खाली घर को दृश्यमान जानकारी (भवन प्रकार, उपयोग) के साथ दर्ज किया जाता है और 'बंद' या 'रिक्त' के रूप में चिह्नित किया जाता है।"
-  },
-  {
-    "chapter": 4,
-    "topic": "Houselisting and Housing Census",
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
     "difficulty": "easy",
-    "question_en": "What is the purpose of preparing a layout map during Houselisting?",
-    "question_hi": "मकान सूचीकरण के दौरान लेआउट मानचित्र तैयार करने का उद्देश्य क्या है?",
-    "options_en": ["To plan road construction", "To show the location of all buildings and ensure no area is missed", "To mark government property", "To assess property tax"],
-    "options_hi": ["सड़क निर्माण की योजना बनाना", "सभी इमारतों का स्थान दिखाना और यह सुनिश्चित करना कि कोई क्षेत्र छूटे नहीं", "सरकारी संपत्ति चिह्नित करना", "संपत्ति कर का आकलन करना"],
+    "question_en": "Which type of household will NOT be covered during the Houselisting phase?",
+    "question_hi": "मकान सूचीकरण चरण के दौरान किस प्रकार के परिवार को कवर नहीं किया जाएगा?",
+    "options_en": [
+      "Normal Household",
+      "Institutional Household",
+      "Houseless Household",
+      "Single-member Household"
+    ],
+    "options_hi": [
+      "सामान्य परिवार",
+      "संस्थागत परिवार",
+      "बेघर परिवार",
+      "एकल-सदस्यीय परिवार"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Houseless households (living on roadsides, pavements, etc.) are covered during the second phase, Population Enumeration.",
+    "explanation_hi": "बेघर परिवारों को दूसरे चरण, यानी जनसंख्या गणना के दौरान कवर किया जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What is the standard symbol for a Pucca Building used for residential purposes?",
+    "question_hi": "आवासीय उद्देश्यों के लिए उपयोग किए जाने वाले पक्के भवन का मानक प्रतीक क्या है?",
+    "options_en": [
+      "An unfilled square",
+      "A filled square",
+      "An unfilled triangle",
+      "A shaded square"
+    ],
+    "options_hi": [
+      "एक खाली वर्ग (Unfilled square)",
+      "एक भरा हुआ वर्ग",
+      "एक खाली त्रिभुज",
+      "एक छायांकित वर्ग"
+    ],
+    "correct_option": 0,
+    "explanation_en": "A Pucca building used wholly or partly for residential purposes is denoted by an unfilled square.",
+    "explanation_hi": "पूरी तरह या आंशिक रूप से आवासीय उपयोग वाले पक्के भवन को खाली वर्ग द्वारा दर्शाया जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "In which direction should buildings in an HLB generally be numbered?",
+    "question_hi": "HLB में भवनों को सामान्यतः किस दिशा में नंबर दिया जाना चाहिए?",
+    "options_en": [
+      "South-East to North-West",
+      "North-West to South-East",
+      "North-East to South-West",
+      "Clockwise from the center"
+    ],
+    "options_hi": [
+      "दक्षिण-पूर्व से उत्तर-पश्चिम",
+      "उत्तर-पश्चिम से दक्षिण-पूर्व",
+      "उत्तर-पूर्व से दक्षिण-पश्चिम",
+      "केंद्र से दक्षिणावर्त"
+    ],
     "correct_option": 1,
-    "explanation_en": "The layout map shows the location of all buildings in the Enumeration Block to ensure complete coverage — no building should be missed.",
-    "explanation_hi": "लेआउट मानचित्र गणना खंड में सभी इमारतों का स्थान दर्शाता है ताकि पूर्ण कवरेज सुनिश्चित हो — कोई भी इमारत छूटनी नहीं चाहिए।"
+    "explanation_en": "To ensure systematic coverage, buildings should be numbered continuously from North-West to South-East.",
+    "explanation_hi": "व्यवस्थित कवरेज के लिए, भवनों को उत्तर-पश्चिम से दक्षिण-पूर्व की ओर क्रमवार नंबर दिया जाना चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What does the abbreviation 'CN' stand for when marking building numbers?",
+    "question_hi": "भवन संख्या अंकित करते समय 'CN' का क्या अर्थ है?",
+    "options_en": [
+      "Common Number",
+      "Census Number",
+      "Charge Number",
+      "Colony Number"
+    ],
+    "options_hi": [
+      "कॉमन नंबर",
+      "जनगणना नंबर (Census Number)",
+      "चार्ज नंबर",
+      "कॉलोनी नंबर"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If no numbering exists or is incomplete, building numbers assigned by the Census are prefixed with 'CN'.",
+    "explanation_hi": "यदि नंबरिंग मौजूद नहीं है, तो जनगणना द्वारा आवंटित नंबरों के आगे 'CN' लगाया जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Where should the Census House number be written on a building?",
+    "question_hi": "भवन पर जनगणना मकान नंबर कहाँ लिखा जाना चाहिए?",
+    "options_en": [
+      "Above the building number",
+      "Inside a bracket after the building number",
+      "On the back door",
+      "Only in the mobile app"
+    ],
+    "options_hi": [
+      "भवन नंबर के ऊपर",
+      "भवन नंबर के बाद ब्रैकेट के अंदर",
+      "पिछले दरवाजे पर",
+      "केवल मोबाइल ऐप में"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Census House number is written within brackets next to the building number (e.g., 102(3)).",
+    "explanation_hi": "जनगणना मकान नंबर भवन नंबर के बगल में ब्रैकेट में लिखा जाता है (जैसे, 102(3))"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Is the Layout Map prepared by the Enumerator a technical architectural drawing?",
+    "question_hi": "क्या प्रगणक द्वारा तैयार लेआउट मैप एक तकनीकी वास्तुकला चित्र है?",
+    "options_en": [
+      "Yes, it requires exact scales",
+      "No, it is a free-hand drawing",
+      "Yes, it must be done via GPS only",
+      "No, it is provided by the local municipality"
+    ],
+    "options_hi": [
+      "हाँ, इसमें सटीक पैमाने की आवश्यकता है",
+      "नहीं, यह एक मुक्तहस्त रेखाचित्र (Free-hand drawing) है",
+      "हाँ, इसे केवल GPS से करना चाहिए",
+      "नहीं, यह नगरपालिका प्रदान करती है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Layout Map is a free-hand drawing showing buildings, roads, and landmarks.",
+    "explanation_hi": "लेआउट मैप एक मुक्तहस्त चित्र है जो भवनों, सड़कों और स्थलों को दर्शाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Which of the following constitutes a 'Normal Household'?",
+    "question_hi": "निम्नलिखित में से कौन 'सामान्य परिवार' का हिस्सा है?",
+    "options_en": [
+      "A group of unrelated persons in a hostel",
+      "A group of related persons sharing a common kitchen",
+      "A person living alone on a pavement",
+      "A prisoner in a jail"
+    ],
+    "options_hi": [
+      "हॉस्टल में असंबंधित व्यक्तियों का समूह",
+      "साझा रसोई का उपयोग करने वाले संबंधित व्यक्तियों का समूह",
+      "फुटपाथ पर अकेला रहने वाला व्यक्ति",
+      "जेल का कैदी"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Normal households consist of related or unrelated persons living together and sharing a kitchen.",
+    "explanation_hi": "सामान्य परिवारों में संबंधित या असंबंधित व्यक्ति शामिल होते हैं जो साथ रहते हैं और रसोई साझा करते"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What is an 'Institutional Household'?",
+    "question_hi": "'संस्थागत परिवार' (Institutional Household) क्या है?",
+    "options_en": [
+      "A family living in a government building",
+      "Unrelated persons living and eating in an institution like a hostel or hospital",
+      "A household with more than 10 members",
+      "A business office"
+    ],
+    "options_hi": [
+      "सरकारी भवन में रहने वाला परिवार",
+      "छात्रावास या अस्पताल जैसी संस्था में रहने और भोजन करने वाले असंबंधित व्यक्ति",
+      "10 से अधिक सदस्यों वाला परिवार",
+      "व्यावसायिक कार्यालय"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Examples include boarding houses, messes, hotels, and orphanages where unrelated people eat from a common kitchen.",
+    "explanation_hi": "इसमें बोर्डिंग हाउस, मेस, होटल और अनाथालय शामिल हैं जहाँ असंबंधित लोग सामान्य रसोई से भोजन करते हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Which direction is always oriented at the top of a Census map?",
+    "question_hi": "जनगणना मानचित्र के शीर्ष पर हमेशा कौन सी दिशा होती है?",
+    "options_en": [
+      "South",
+      "East",
+      "North",
+      "West"
+    ],
+    "options_hi": [
+      "दक्षिण",
+      "पूर्व",
+      "उत्तर",
+      "पश्चिम"
+    ],
+    "correct_option": 2,
+    "explanation_en": "For standardization, North is always oriented at the top of the Layout Map.",
+    "explanation_hi": "मानकीकरण के लिए उत्तर दिशा हमेशा लेआउट मैप के शीर्ष पर होती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What should be used to write numbers on the buildings?",
+    "question_hi": "भवनों पर नंबर लिखने के लिए किसका उपयोग किया जाना चाहिए?",
+    "options_en": [
+      "Chalk",
+      "Pencil",
+      "Marker pen with long-lasting material",
+      "Charcoal"
+    ],
+    "options_hi": [
+      "चाक",
+      "पेंसिल",
+      "लंबे समय तक चलने वाली सामग्री वाला मार्कर पेन",
+      "कोयला"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Numbers must be written at prominent places using the long-lasting material supplied (marker pen). 8,",
+    "explanation_hi": "नंबर प्रमुख स्थानों पर आपूर्ति किए गए मार्कर पेन का उपयोग करके लिखे जाने चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "A building under construction should be numbered only if:",
+    "question_hi": "निर्माणाधीन भवन को केवल तभी नंबर दिया जाना चाहिए यदि:",
+    "options_en": [
+      "The walls are painted",
+      "The roof has been completed",
+      "The owner is present",
+      "It has a door"
+    ],
+    "options_hi": [
+      "दीवारें पेंट हो गई हों",
+      "छत पूरी हो गई हो",
+      "मालिक मौजूद हो",
+      "उसमें दरवाजा हो"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Only structures with a completed roof where people can live are listed as buildings. 7,",
+    "explanation_hi": "केवल उन्हीं संरचनाओं को सूचीबद्ध किया जाता है जिनकी छत पूरी हो चुकी है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What is the primary objective of a Layout Map?",
+    "question_hi": "लेआउट मैप का प्राथमिक उद्देश्य क्या है?",
+    "options_en": [
+      "To show property boundaries",
+      "To ensure complete coverage of the HLB without omission or duplication",
+      "To assist the police",
+      "To calculate land tax"
+    ],
+    "options_hi": [
+      "संपत्ति की सीमाएं दिखाना",
+      "बिना किसी चूक या दोहराव के HLB का पूर्ण कवरेज सुनिश्चित करना",
+      "पुलिस की सहायता",
+      "भूमि कर की गणना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The map ensures every building/structure is identified and assigned to the correct block.",
+    "explanation_hi": "यह सुनिश्चित करता है कि प्रत्येक संरचना की पहचान की गई है और उसे सही ब्लॉक में आवंटित किया गया है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "If a building has two Census Houses, how many numbers are shown in brackets on the building?",
+    "question_hi": "यदि एक भवन में दो जनगणना मकान हैं, तो ब्रैकेट में कितनी संख्या दिखाई जाएगी?",
+    "options_en": [
+      "1",
+      "2",
+      "No numbers are shown in brackets",
+      "Only the last digits"
+    ],
+    "options_hi": [
+      "1",
+      "2",
+      "कोई संख्या नहीं",
+      "केवल अंतिम अंक"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The total number of Census Houses in that building is indicated in the brackets.",
+    "explanation_hi": "उस भवन में जनगणना मकानों की कुल संख्या ब्रैकेट में दर्शाई जाती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Which symbol represents a Kutcha building used for non-residential purposes?",
+    "question_hi": "गैर-आवासीय उद्देश्यों के लिए उपयोग किए जाने वाले कच्चे भवन का प्रतीक क्या है?",
+    "options_en": [
+      "Shaded square",
+      "Shaded triangle",
+      "Unshaded triangle",
+      "Shaded circle"
+    ],
+    "options_hi": [
+      "छायांकित वर्ग",
+      "छायांकित त्रिभुज (Shaded triangle)",
+      "बिना छायांकित त्रिभुज",
+      "छायांकित वृत्त"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A shaded triangle denotes a wholly non-residential Kutcha building.",
+    "explanation_hi": "एक छायांकित त्रिभुज पूरी तरह से गैर-आवासीय कच्चे भवन को दर्शाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Who should the Enumerator meet before starting fieldwork?",
+    "question_hi": "फील्ड कार्य शुरू करने से पहले प्रगणक को किससे मिलना चाहिए?",
+    "options_en": [
+      "Only the Supervisor",
+      "Prominent persons of the area",
+      "Only family members",
+      "The local police station"
+    ],
+    "options_hi": [
+      "केवल पर्यवेक्षक",
+      "क्षेत्र के प्रमुख व्यक्तियों से",
+      "केवल परिवार के सदस्यों से",
+      "स्थानीय पुलिस से"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Meeting prominent persons helps explain the Census's objective and seeks community cooperation. 11,",
+    "explanation_hi": "प्रमुख व्यक्तियों से मिलने से जनगणना के उद्देश्य को समझाने और सहयोग प्राप्त करने में मदद मिलती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What is 'Premises'?",
+    "question_hi": "'परिसर' (Premises) का क्या अर्थ है?",
+    "options_en": [
+      "Only the building",
+      "A building along with the land and common places attached to it",
+      "Only the common garden",
+      "The road in front of a house"
+    ],
+    "options_hi": [
+      "केवल भवन",
+      "भवन और उसके साथ जुड़ी भूमि तथा सामान्य स्थान",
+      "केवल सामान्य उद्यान",
+      "घर के सामने की सड़क"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Premises refers to the building and its associated land or common areas.",
+    "explanation_hi": "परिसर का तात्पर्य भवन और उससे जुड़ी भूमि या सामान्य क्षेत्रों से है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Are vacant structures included as Census Houses?",
+    "question_hi": "क्या खाली संरचनाओं को जनगणना मकानों में शामिल किया जाता है?",
+    "options_en": [
+      "No, only occupied ones",
+      "Yes, if they are used or recognized as a separate unit",
+      "Only if they are for sale",
+      "Only in urban areas"
+    ],
+    "options_hi": [
+      "नहीं, केवल कब्जे वाले",
+      "हाँ, यदि वे एक अलग इकाई के रूप में पहचाने जाते हैं",
+      "केवल यदि वे बिक्री के लिए हों",
+      "केवल शहरी क्षेत्रों में"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A Census House can be occupied or vacant and used for residential or non-residential purposes.",
+    "explanation_hi": "जनगणना मकान कब्जे वाला या खाली हो सकता है और इसका उपयोग किसी भी उद्देश्य के लिए हो सकता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT a landmark to be marked on a Layout Map?",
+    "question_hi": "इनमें से कौन सा मील का पत्थर (Landmark) लेआउट मैप पर अंकित नहीं किया जाना चाहिए?",
+    "options_en": [
+      "Temple",
+      "Post Office",
+      "Moving vehicle",
+      "School"
+    ],
+    "options_hi": [
+      "मंदिर",
+      "डाकघर",
+      "चलती गाड़ी",
+      "स्कूल"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Maps should show permanent landmarks like schools, places of worship, and offices. 9,",
+    "explanation_hi": "मानचित्रों पर केवल स्थायी मील के पत्थर ही दिखाने चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "If unrelated persons live in a Census House but do NOT share a common kitchen, how are they treated?",
+    "question_hi": "यदि असंबंधित व्यक्ति एक जनगणना मकान में रहते हैं पर रसोई साझा नहीं करते, तो उन्हें क्या माना जाता है?",
+    "options_en": [
+      "One Institutional Household",
+      "Each person is a separate Household",
+      "One Normal Household",
+      "They are not enumerated"
+    ],
+    "options_hi": [
+      "एक संस्थागत परिवार",
+      "प्रत्येक व्यक्ति एक अलग परिवार है",
+      "एक सामान्य परिवार",
+      "उनकी गणना नहीं होती"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Sharing a common kitchen is the \"important link\" in finding out whether it is a single household.",
+    "explanation_hi": "रसोई साझा करना यह तय करने वाली \"महत्वपूर्ण कड़ी\" है कि वह एक एकल परिवार है या नहीं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "In a Layout Map, what symbol represents a Pucca Road?",
+    "question_hi": "लेआउट मैप में पक्की सड़क का प्रतीक क्या है?",
+    "options_en": [
+      "Two dashed lines",
+      "Two parallel solid lines",
+      "A single thick line",
+      "A line with crosses"
+    ],
+    "options_hi": [
+      "दो टूटी हुई रेखाएं",
+      "दो समांतर ठोस रेखाएं",
+      "एक मोटी रेखा",
+      "क्रॉस वाली रेखा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Standard legend shows a Pucca road as two parallel solid lines.",
+    "explanation_hi": "पक्की सड़क को दो समांतर ठोस रेखाओं (parallel solid lines) द्वारा दिखाया जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "How many copies of the finalized Layout Map must be submitted?",
+    "question_hi": "फाइनल लेआउट मैप की कितनी प्रतियां जमा करनी होती हैं?",
+    "options_en": [
+      "One",
+      "Two",
+      "Three",
+      "None (digital only)"
+    ],
+    "options_hi": [
+      "एक",
+      "दो",
+      "तीन",
+      "कोई नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Enumerator must finalize the map in duplicate and submit it to the Charge Officer. 15,",
+    "explanation_hi": "प्रगणक को मानचित्र दो प्रतियों (duplicate) में तैयार कर चार्ज अधिकारी को देना होता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What is the first step in preparing the Layout Map?",
+    "question_hi": "लेआउट मैप तैयार करने का पहला कदम क्या है?",
+    "options_en": [
+      "Numbering buildings",
+      "Field familiarization (walking through the HLB)",
+      "Drawing symbols",
+      "Collecting mobile numbers"
+    ],
+    "options_hi": [
+      "भवन नंबर देना",
+      "फील्ड परिचय (HLB में पैदल भ्रमण)",
+      "प्रतीक बनाना",
+      "मोबाइल नंबर एकत्र करना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Field familiarization is necessary to understand the layout, access routes, and landmarks. 6,",
+    "explanation_hi": "पहुंच मार्गों और मील के पत्थरों को समझने के लिए फील्ड परिचय आवश्यक है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What is the symbol for a Kutcha Road?",
+    "question_hi": "कच्ची सड़क का प्रतीक क्या है?",
+    "options_en": [
+      "Two solid lines",
+      "Two parallel dashed lines",
+      "A wavy line",
+      "A dotted line"
+    ],
+    "options_hi": [
+      "दो ठोस रेखाएं",
+      "दो समांतर टूटी हुई रेखाएं (Dashed lines)",
+      "लहरदार रेखा",
+      "बिंदीदार रेखा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Legend shows Kutcha road as two parallel dashed lines.",
+    "explanation_hi": "कच्ची सड़क को दो समांतर टूटी हुई रेखाओं द्वारा दिखाया जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Can a building have more than one Census House?",
+    "question_hi": "क्या एक भवन में एक से अधिक जनगणना मकान हो सकते हैं?",
+    "options_en": [
+      "No, never",
+      "Yes, if it has separate parts with independent entrances",
+      "Only in multi-storey apartments",
+      "Only if the owner agrees"
+    ],
+    "options_hi": [
+      "नहीं",
+      "हाँ, यदि उसमें स्वतंत्र प्रवेश द्वारों वाले अलग हिस्से हों",
+      "केवल फ्लैटों में",
+      "केवल मालिक की सहमति पर"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If parts of a building have separate entrances from the road or a common courtyard, they are separate Census Houses.",
+    "explanation_hi": "यदि भवन के हिस्सों के सड़क या साझा आंगन से अलग प्रवेश द्वार हैं, तो वे अलग जनगणना मकान हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What is a 'Houselisting Block' map?",
+    "question_hi": "'मकान सूचीकरण ब्लॉक' (HLB) मानचित्र क्या है?",
+    "options_en": [
+      "A map of the entire city",
+      "A map of the specific area allotted to the Enumerator",
+      "A political map of the State",
+      "A map of agricultural land"
+    ],
+    "options_hi": [
+      "पूरे शहर का मानचित्र",
+      "प्रगणक को आवंटित विशिष्ट क्षेत्र का मानचित्र",
+      "राज्य का राजनीतिक मानचित्र",
+      "कृषि भूमि का मानचित्र"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is a specific area map provided via the mobile app or Charge Officer for Census operations.",
+    "explanation_hi": "यह प्रगणक को जनगणना कार्यों के लिए आवंटित विशिष्ट क्षेत्र का मानचित्र है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What color is used to roughly mark building numbers initially on the Layout Map?",
+    "question_hi": "प्रारंभ में लेआउट मैप पर भवन नंबर अंकित करने के लिए किसका उपयोग किया जाता है?",
+    "options_en": [
+      "Red pen",
+      "Pencil",
+      "Green marker",
+      "Blue ink"
+    ],
+    "options_hi": [
+      "लाल पेन",
+      "पेंसिल",
+      "हरा मार्कर",
+      "नीली स्याही"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is advantageous to roughly mark numbers in pencil before verifying and finalizing. 10,",
+    "explanation_hi": "अंतिम रूप देने से पहले पेंसिल से रफ़ तौर पर नंबर अंकित करना फायदेमंद होता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "Which of these is a Pucca material for walls?",
+    "question_hi": "इनमें से कौन सा दीवारों के लिए पक्का सामग्री है?",
+    "options_en": [
+      "Grass",
+      "Burnt bricks",
+      "Unburnt bricks",
+      "Mud"
+    ],
+    "options_hi": [
+      "घास",
+      "पकी हुई ईंटें",
+      "बिना पकी ईंटें",
+      "मिट्टी"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Burnt bricks, cement, concrete, and timber are listed as materials for Pucca structures.",
+    "explanation_hi": "पकी ईंटें, सीमेंट, कंक्रीट और लकड़ी पक्की सामग्री के रूप में सूचीबद्ध हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "A \"Census House\" must have a separate entrance from:",
+    "question_hi": "एक \"जनगणना मकान\" का अलग प्रवेश द्वार कहाँ से होना चाहिए?",
+    "options_en": [
+      "Only the main road",
+      "The road, common staircase, or common courtyard",
+      "The kitchen",
+      "The neighbor's house"
+    ],
+    "options_hi": [
+      "केवल मुख्य सड़क से",
+      "सड़क, सामान्य सीढ़ी, या सामान्य आंगन से",
+      "रसोई से",
+      "पड़ोसी के घर से"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The separate unit must have an entrance from a road or common space leading to a main gate.",
+    "explanation_hi": "इकाई का प्रवेश द्वार सड़क या किसी साझा स्थान से होना चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "What is the symbol for a Railway Line?",
+    "question_hi": "रेलवे लाइन का प्रतीक क्या है?",
+    "options_en": [
+      "A thick black line",
+      "A line with small perpendicular bars (ladder-like)",
+      "A blue wavy line",
+      "A dashed line"
+    ],
+    "options_hi": [
+      "मोटी काली रेखा",
+      "छोटी लंबवत पट्टियों वाली रेखा (सीढ़ी जैसी)",
+      "नीली लहरदार रेखा",
+      "टूटी हुई रेखा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The legend defines a railway line with a specific hashed symbol.",
+    "explanation_hi": "रेलवे लाइन को एक विशिष्ट हैशेड (hashed) प्रतीक द्वारा दर्शाया जाता"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "If a building has three Census Houses, what will be written at the main gate?",
+    "question_hi": "यदि भवन में तीन जनगणना मकान हैं, तो मुख्य द्वार पर क्या लिखा जाएगा?",
+    "options_en": [
+      "Building Number + (3)",
+      "Only",
+      "Building Number only",
+      "Building Number + (1, 2, 3)"
+    ],
+    "options_hi": [
+      "भवन नंबर + (3)",
+      "केवल",
+      "केवल भवन नंबर",
+      "भवन नंबर + (1, 2, 3)"
+    ],
+    "correct_option": 0,
+    "explanation_en": "The building number followed by the number of census houses in brackets is the required format.",
+    "explanation_hi": "भवन संख्या के बाद ब्रैकेट में जनगणना मकानों की कुल संख्या लिखना आवश्यक प्रारूप है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "easy",
+    "question_en": "The Enumerator should identify HLB boundaries to ensure:",
+    "question_hi": "प्रगणक को HLB सीमाओं की पहचान क्यों करनी चाहिए?",
+    "options_en": [
+      "Omission of vacant houses",
+      "Complete coverage without duplication",
+      "Only residential houses are counted",
+      "Only Pucca houses are counted"
+    ],
+    "options_hi": [
+      "खाली घरों को छोड़ने के लिए",
+      "बिना दोहराव के पूर्ण कवरेज सुनिश्चित करने के लिए",
+      "केवल आवासीय घरों के लिए",
+      "केवल पक्के घरों के लिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Boundary identification is critical to ensure every structure in the allotted area is covered exactly once. 1,",
+    "explanation_hi": "सीमा पहचान यह सुनिश्चित करने के लिए महत्वपूर्ण है कि प्रत्येक संरचना की गणना ठीक एक बार हो"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "If a new building is found between existing buildings numbered 10 and 11, how should it be numbered?",
+    "question_hi": "यदि नंबर 10 और 11 के बीच एक नया भवन मिलता है, तो उसे क्या नंबर दिया जाएगा?",
+    "options_en": [
+      "12",
+      "10/1",
+      "11A",
+      "CN"
+    ],
+    "options_hi": [
+      "12",
+      "10/1",
+      "11A",
+      "CN"
+    ],
+    "correct_option": 1,
+    "explanation_en": "New buildings found between systematically numbered buildings should be given a sub-number like 10/",
+    "explanation_hi": "व्यवस्थित नंबरों के बीच पाए गए नए भवनों को 10/1 जैसा उप-नंबर दिया जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "How is a 'Household' different from an 'Institutional Household'?",
+    "question_hi": "'परिवार' और 'संस्थागत परिवार' में क्या अंतर है?",
+    "options_en": [
+      "Households have more than 5 members",
+      "Institutional households consist of unrelated persons living in institutions like hostels",
+      "Normal households don't have kitchens",
+      "There is no difference"
+    ],
+    "options_hi": [
+      "सदस्यों की संख्या",
+      "संस्थागत परिवार छात्रावासों जैसी संस्थाओं में रहने वाले असंबंधित व्यक्तियों के लिए है",
+      "रसोई का अभाव",
+      "कोई अंतर नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Institutional households are for unrelated persons (like students in a mess) who eat from a common kitchen.",
+    "explanation_hi": "संस्थागत परिवार उन असंबंधित लोगों के लिए है जो साझा रसोई से भोजन करते हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "In a multi-storey apartment where each flat is owned/occupied by different persons, how is the structure treated?",
+    "question_hi": "बहुमंजिला अपार्टमेंट में जहाँ प्रत्येक फ्लैट अलग-अलग व्यक्तियों का है, उसे कैसे माना जाता है?",
+    "options_en": [
+      "As multiple buildings",
+      "As one building, and each flat as a separate Census House",
+      "As one Census House",
+      "It is not numbered"
+    ],
+    "options_hi": [
+      "कई भवनों के रूप में",
+      "एक भवन और प्रत्येक फ्लैट एक अलग जनगणना मकान के रूप में",
+      "एक जनगणना मकान के रूप में",
+      "उसे नंबर नहीं दिया जाता"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Generally, the entire multi-storey structure is one building, while independent flats are separate Census Houses.",
+    "explanation_hi": "आम तौर पर पूरी संरचना एक भवन है, जबकि स्वतंत्र फ्लैट अलग जनगणना मकान होते हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "A warden lives with their family in a separate part of a Students' Hostel and cooks separately. How is this recorded?",
+    "question_hi": "एक वार्डन हॉस्टल के अलग हिस्से में अपने परिवार के साथ रहता है और अलग खाना पकाता है। इसे कैसे दर्ज किया जाएगा?",
+    "options_en": [
+      "One Institutional Household",
+      "Two Institutional Households",
+      "One Institutional Household (hostel) and one Normal Household (family)",
+      "The family is not counted"
+    ],
+    "options_hi": [
+      "एक संस्थागत परिवार",
+      "दो संस्थागत परिवार",
+      "एक संस्थागत (हॉस्टल) और एक सामान्य परिवार (वार्डन का परिवार)",
+      "परिवार की गणना नहीं होगी"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The hostel inmates are one institutional household, but the warden’s family cooking separately is a normal household.",
+    "explanation_hi": "हॉस्टल निवासी संस्थागत परिवार हैं, लेकिन वार्डन का परिवार अलग खाना पकाता है, इसलिए वह सामान्य परिवार है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What criteria must a building meet to be classified as 'Pucca'?",
+    "question_hi": "'पक्का' भवन कहलाने के लिए क्या मानदंड हैं?",
+    "options_en": [
+      "It must have at least 5 rooms",
+      "Both walls and roof must be made of specific durable materials like burnt bricks, stone, or concrete",
+      "It must be owned by the government",
+      "It must have electricity"
+    ],
+    "options_hi": [
+      "5 कमरे",
+      "दीवारें और छत दोनों टिकाऊ सामग्री (पकी ईंट, कंक्रीट आदि) से बनी हों",
+      "सरकारी स्वामित्व",
+      "बिजली"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Pucca status depends on materials like burnt bricks, stone, G.I. sheets for walls and tiles, concrete, or asbestos for roofs.",
+    "explanation_hi": "पक्का दर्जा विशिष्ट टिकाऊ सामग्री के उपयोग पर निर्भर करता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "How should an Enumerator number buildings on a street?",
+    "question_hi": "सड़क पर भवनों को नंबर देने का सही तरीका क्या है?",
+    "options_en": [
+      "Number all buildings on the left, then all on the right",
+      "Number continuously on one side, then cross over and continue back on the other side",
+      "Use even numbers for one side and odd for the other",
+      "Number randomly as people are available"
+    ],
+    "options_hi": [
+      "पहले बाईं ओर, फिर दाईं ओर",
+      "एक तरफ लगातार, फिर दूसरी तरफ से वापस आते हुए",
+      "सम और विषम संख्याएँ",
+      "यादृच्छिक क्रम"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Numbering should follow a serial order on one side and finish opposite to where it started on the other side.",
+    "explanation_hi": "नंबरिंग को सड़क की एक तरफ शुरू कर दूसरी तरफ समाप्त करना चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What should an Enumerator do if an assigned HLB contains a hamlet occupied predominantly by a Scheduled Tribe?",
+    "question_hi": "यदि HLB में अनुसूचित जनजाति द्वारा बसा हुआ कोई टोला (Hamlet) है, तो क्या करें?",
+    "options_en": [
+      "Exclude it from the HLB",
+      "Include it and show it clearly in the Layout Map",
+      "Assign it a different block number",
+      "Report it as a separate village"
+    ],
+    "options_hi": [
+      "बाहर कर दें",
+      "शामिल करें और लेआउट मैप में स्पष्ट दिखाएं",
+      "अलग ब्लॉक नंबर दें",
+      "अलग गाँव के रूप में रिपोर्ट करें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "All clusters, including hamlets like tribal thandas, must be included in the Layout Map of the allotted HLB.",
+    "explanation_hi": "सभी बस्तियों और समूहों को आवंटित HLB के मानचित्र में शामिल करना अनिवार्य है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "In metropolitan cities, if local authorities have numbered each flat as a separate building, what should the Enumerator do?",
+    "question_hi": "महानगरों में यदि स्थानीय अधिकारी प्रत्येक फ्लैट को अलग भवन मानते हैं, तो प्रगणक को क्या करना चाहिए?",
+    "options_en": [
+      "Renumber them according to Census rules",
+      "Adopt the local authority numbers to avoid renumbering",
+      "Only number the ground floor",
+      "Skip those buildings"
+    ],
+    "options_hi": [
+      "नए नंबर दें",
+      "भ्रम से बचने के लिए उन्हीं नंबरों को अपनाएं",
+      "केवल भूतल को नंबर दें",
+      "उन भवनों को छोड़ दें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If local authorities treat flats as separate buildings, the Enumerator can adopt those numbers to avoid confusion.",
+    "explanation_hi": "यदि स्थानीय नंबरिंग पहले से व्यवस्थित है, तो उसे अपनाया जा सकता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "Which structure is considered a 'Kutcha' building?",
+    "question_hi": "'कच्चा' भवन किसे माना जाता है?",
+    "options_en": [
+      "Walls made of mud and roof made of thatch/grass",
+      "Walls made of concrete and roof made of timber",
+      "Walls made of burnt bricks and roof made of stone",
+      "Walls made of G.I. sheets and roof made of tiles"
+    ],
+    "options_hi": [
+      "मिट्टी की दीवारें और घास की छत",
+      "कंक्रीट की दीवारें",
+      "पकी ईंटों की दीवारें",
+      "G.I. चादरों की दीवारें"
+    ],
+    "correct_option": 0,
+    "explanation_en": "Kutcha buildings are predominantly made of non-durable materials like mud, grass, unburnt bricks, or reeds.",
+    "explanation_hi": "कच्चे भवन गैर-टिकाऊ सामग्री जैसे मिट्टी या घास से बने होते हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "A building contains five rooms, all used by a single household. How many Census Houses are recorded?",
+    "question_hi": "एक भवन में पांच कमरे हैं और सभी एक ही परिवार द्वारा उपयोग किए जाते हैं। कितने जनगणना मकान होंगे?",
+    "options_en": [
+      "5",
+      "1",
+      "0",
+      "Depends on the number of members"
+    ],
+    "options_hi": [
+      "5",
+      "1",
+      "0",
+      "सदस्यों पर निर्भर"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If all rooms are occupied by a single household, singleness of use makes it one Census House.",
+    "explanation_hi": "उपयोग की एकता (singleness of use) इसे एक ही जनगणना मकान बनाती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What is 'Field Familiarisation' in the context of preparing a Layout Map?",
+    "question_hi": "लेआउट मैप तैयार करने में 'फील्ड परिचय' का क्या अर्थ है?",
+    "options_en": [
+      "Introducing oneself to the neighbors",
+      "Walking through the entire HLB to identify access routes, buildings, and landmarks",
+      "Taking photographs of all residents",
+      "Marking boundaries with white paint"
+    ],
+    "options_hi": [
+      "पड़ोसियों से परिचय",
+      "पहुंच मार्ग, भवन और स्थलों की पहचान के लिए HLB का भ्रमण",
+      "फोटो लेना",
+      "चूने से सीमा बनाना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "This step involves a physical walk-through to gain a clear understanding of the HLB's layout and features. 6,",
+    "explanation_hi": "यह चरण HLB की भौगोलिक स्थिति को समझने के लिए आवश्यक है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "In a village premise, there is a main house and a separate servant's quarter. The servant takes meals with the main family. How many Census Houses are there?",
+    "question_hi": "गाँव के परिसर में एक मुख्य घर और एक अलग नौकर क्वार्टर है। नौकर परिवार के साथ ही खाना खाता है। कितने जनगणना मकान होंगे?",
+    "options_en": [
+      "Two Census Houses",
+      "One Census House",
+      "One Building, zero Census Houses",
+      "They are not counted"
+    ],
+    "options_hi": [
+      "दो",
+      "एक",
+      "शून्य",
+      "गणना नहीं होगी"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If the servant eats from the main family’s kitchen, they are one household, and the structures can be treated as one census house.",
+    "explanation_hi": "यदि नौकर एक ही रसोई साझा करता है, तो वे एक ही परिवार और एक ही जनगणना मकान हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "How should 'Physical Features' like rivers or railway lines be shown on the Layout Map?",
+    "question_hi": "नदी या रेलवे लाइन जैसी 'भौतिक विशेषताओं' को मैप पर कैसे दिखाया जाना चाहिए?",
+    "options_en": [
+      "As simple descriptive text",
+      "Using prescribed symbols in the legend",
+      "Only if they are larger than 10 meters",
+      "They should not be shown"
+    ],
+    "options_hi": [
+      "केवल लिखकर",
+      "निर्धारित प्रतीकों (Legend) का उपयोग करके",
+      "10 मीटर से बड़े होने पर ही",
+      "नहीं दिखाना चाहिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Physical features like rivers, canals, and railway lines must be drawn using standard symbols. 6,",
+    "explanation_hi": "भौतिक विशेषताओं के लिए मानक प्रतीकों का उपयोग अनिवार्य है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "When numbering buildings in a scattered village cluster, what must be used on the Layout Map to show the sequence?",
+    "question_hi": "बिखरे हुए ग्रामीण क्लस्टर में नंबरिंग का क्रम दिखाने के लिए किसका उपयोग किया जाता है?",
+    "options_en": [
+      "Different colors for each house",
+      "Arrow marks to indicate the direction of the numbering run",
+      "Names of the owners",
+      "Date of construction"
+    ],
+    "options_hi": [
+      "अलग रंग",
+      "तीर के निशान (Arrow marks)",
+      "मालिकों के नाम",
+      "निर्माण की तारीख"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Arrow marks show where the number sequence jumps or changes direction in scattered clusters. 7,",
+    "explanation_hi": "तीर के निशान यह दिखाते हैं कि नंबरिंग किस दिशा में आगे बढ़ रही है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "If an Enumerator is assigned more than one HLB, how many Layout Maps are required?",
+    "question_hi": "यदि एक से अधिक HLB आवंटित हैं, तो कितने लेआउट मैप चाहिए?",
+    "options_en": [
+      "One combined map",
+      "One map for each HLB separately",
+      "Only one map for the largest HLB",
+      "Maps are not required for extra HLBs"
+    ],
+    "options_hi": [
+      "एक संयुक्त मैप",
+      "प्रत्येक HLB के लिए अलग-अलग",
+      "केवल सबसे बड़े के लिए",
+      "अतिरिक्त के लिए आवश्यक नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A separate Layout Map must be prepared for each Houselisting Block assigned. 15,",
+    "explanation_hi": "प्रत्येक आवंटित ब्लॉक के लिए स्वतंत्र मानचित्र तैयार करना आवश्यक है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "Why is it important to mark \"Important Landmarks\" on the Layout Map?",
+    "question_hi": "लेआउट मैप पर \"महत्वपूर्ण स्थल\" (Landmarks) अंकित करना क्यों महत्वपूर्ण है?",
+    "options_en": [
+      "To help calculate property taxes",
+      "To help identify and locate the HLB area during current and future operations",
+      "To advertise local businesses",
+      "Only for aesthetic purposes"
+    ],
+    "options_hi": [
+      "कर गणना के लिए",
+      "भविष्य के कार्यों के लिए HLB क्षेत्र की पहचान और स्थान निर्धारण हेतु",
+      "विज्ञापन के लिए",
+      "सजावट के लिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Landmarks like schools and places of worship serve as vital reference points for identifying the block area.",
+    "explanation_hi": "स्कूल या मंदिर जैसे स्थल ब्लॉक की पहचान के लिए संदर्भ बिंदु का कार्य करते हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What happens if a building has no number provided by the local authority?",
+    "question_hi": "यदि स्थानीय निकाय ने भवन को कोई नंबर नहीं दिया है, तो क्या होगा?",
+    "options_en": [
+      "It is skipped",
+      "The Enumerator assigns a serial number prefixed with 'CN'",
+      "The owner chooses a number",
+      "It is given the number '0'"
+    ],
+    "options_hi": [
+      "छोड़ दिया जाएगा",
+      "प्रगणक 'CN' उपसर्ग के साथ नंबर देगा",
+      "मालिक नंबर चुनेगा",
+      "'0' नंबर दिया जाएगा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Where no numbering exists, the Enumerator must assign systematic Census numbers. 6,",
+    "explanation_hi": "नंबरिंग न होने पर प्रगणक को व्यवस्थित जनगणना नंबर देने होते हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "A 'baithak' is separated from the main residence by a road but is in the same HLB. How is it treated?",
+    "question_hi": "एक 'बैठक' सड़क द्वारा मुख्य घर से अलग है पर उसी HLB में है। इसे कैसे माना जाएगा?",
+    "options_en": [
+      "Part of the main building",
+      "A separate Building/Census House",
+      "It is ignored",
+      "As an Institutional Household"
+    ],
+    "options_hi": [
+      "मुख्य घर का हिस्सा",
+      "एक अलग भवन/जनगणना मकान",
+      "इसे छोड़ दिया जाएगा",
+      "संस्थागत परिवार"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If a structure like a baithak is separated by distance or a road, it must be treated as a separate building/census house. 12,",
+    "explanation_hi": "यदि कोई संरचना दूरी या सड़क से अलग है, तो उसे अलग भवन माना जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "If a group of unrelated persons share a common kitchen but are NOT in an institution, how are they listed?",
+    "question_hi": "यदि असंबंधित व्यक्ति साझा रसोई का उपयोग करते हैं पर वे किसी संस्था में नहीं हैं, तो वे क्या हैं?",
+    "options_en": [
+      "As an Institutional Household",
+      "Like other Normal Households",
+      "They cannot be listed",
+      "As a Houseless Household"
+    ],
+    "options_hi": [
+      "संस्थागत परिवार",
+      "सामान्य परिवार",
+      "गणना योग्य नहीं",
+      "बेघर परिवार"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If they are not an institution (like a hostel), a group of unrelated persons sharing a kitchen is a normal household.",
+    "explanation_hi": "साझा रसोई का उपयोग करने वाला कोई भी समूह सामान्य परिवार है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "In forest villages, what must be written on the map if there are clusters of habitation?",
+    "question_hi": "वन ग्रामों (Forest villages) में यदि बस्तियों के समूह हैं, तो मैप पर क्या लिखना चाहिए?",
+    "options_en": [
+      "The names of all residents",
+      "The name of the habitation cluster, if any",
+      "The height of the trees",
+      "Nothing, forest areas are excluded"
+    ],
+    "options_hi": [
+      "निवासियों के नाम",
+      "बस्ती समूह का नाम (यदि कोई हो)",
+      "पेड़ों की ऊँचाई",
+      "कुछ नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "In forest areas, cluster names and nearby permanent features (streams, hills) should be noted.",
+    "explanation_hi": "वन क्षेत्रों में समूहों के नाम और स्थायी प्राकृतिक विशेषताएं नोट करनी चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What is the standard procedure if a building has been demolished since the last survey?",
+    "question_hi": "पिछले सर्वेक्षण के बाद यदि कोई भवन ढहा दिया गया है, तो क्या प्रक्रिया है?",
+    "options_en": [
+      "Leave the old number blank",
+      "Reuse the number for the next new house",
+      "Note the change and ensure the Layout Map reflects the current ground situation",
+      "It is not the Enumerator's concern"
+    ],
+    "options_hi": [
+      "पुराना नंबर खाली छोड़ें",
+      "नए घर के लिए वही नंबर उपयोग करें",
+      "परिवर्तन को नोट करें और मैप को वर्तमान स्थिति के अनुसार अपडेट करें",
+      "प्रगणक की चिंता नहीं है"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Layout Map must be updated after fieldwork to reflect the actual status on the ground. 9,",
+    "explanation_hi": "लेआउट मैप को फील्ड कार्य के बाद वास्तविक ज़मीनी स्थिति के अनुसार अपडेट करना चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "Structures like pump houses or temples must be treated as buildings if:",
+    "question_hi": "पंप हाउस या मंदिर को भवन कब माना जाता है?",
+    "options_en": [
+      "They are made of brick",
+      "Human beings can reside in them",
+      "They have a locked door",
+      "They are more than 5 years old"
+    ],
+    "options_hi": [
+      "यदि वे ईंट के बने हों",
+      "यदि मानव उनमें निवास कर सकते हों",
+      "यदि उनमें ताला हो",
+      "यदि वे 5 साल पुराने हों"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Any structure where human beings can live, even if currently used for other purposes, must be listed.",
+    "explanation_hi": "ऐसी कोई भी संरचना जहाँ मनुष्य रह सकते हैं, उसे सूचीबद्ध किया जाना चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "Which document specifies the Location Particulars (State, District, etc.) for the HLB?",
+    "question_hi": "HLB की स्थान विवरण (Location Particulars) किस दस्तावेज़ में होती हैं?",
+    "options_en": [
+      "Birth Certificate",
+      "Appointment Letter",
+      "Voter ID",
+      "Ration Card"
+    ],
+    "options_hi": [
+      "जन्म प्रमाण पत्र",
+      "नियुक्ति पत्र (Appointment Letter)",
+      "वोटर आईडी",
+      "राशन कार्ड"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Appointment Letter contains the full Location Particulars that must be verified against the mobile app. 9,",
+    "explanation_hi": "नियुक्ति पत्र में पूर्ण स्थान विवरण होते हैं जिन्हें ऐप के साथ सत्यापित करना होता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "If a building has its walls made of G.I. sheets and its roof made of concrete, is it Pucca or Kutcha?",
+    "question_hi": "यदि भवन की दीवारें G.I. शीट की और छत कंक्रीट की है, तो वह क्या है?",
+    "options_en": [
+      "Kutcha",
+      "Pucca",
+      "Semi-Pucca",
+      "Mixed"
+    ],
+    "options_hi": [
+      "कच्चा",
+      "पक्का",
+      "अर्ध-पक्का",
+      "मिश्रित"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Both G.I. sheets (for walls) and concrete (for roofs) are listed as Pucca materials.",
+    "explanation_hi": "कंक्रीट और G.I. शीट (दीवार के लिए) दोनों पक्की सामग्री हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "Why should an Enumerator avoid changing their registered mobile device unnecessarily?",
+    "question_hi": "प्रगणक को अपना पंजीकृत मोबाइल डिवाइस बार-बार क्यों नहीं बदलना चाहिए?",
+    "options_en": [
+      "To save battery",
+      "Data cannot be synced from the old device after a new one is registered",
+      "It is against the law",
+      "The app only works on one specific model"
+    ],
+    "options_hi": [
+      "बैटरी बचाने के लिए",
+      "नए डिवाइस के पंजीकरण के बाद पुराने से डेटा सिंक नहीं हो सकता",
+      "यह अवैध है",
+      "ऐप केवल एक मॉडल पर चलता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Registration is tied to the device; switching can lead to data loss and syncing issues. 21,",
+    "explanation_hi": "पंजीकरण डिवाइस से जुड़ा होता है; बदलने पर डेटा हानि हो सकती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What is 'singleness of use' in determining a Census House?",
+    "question_hi": "जनगणना मकान निर्धारित करने में 'उपयोग की एकता' (singleness of use) का क्या अर्थ है?",
+    "options_en": [
+      "Using a house for only one purpose",
+      "Whether the unit is used by a single household or independent households",
+      "Only using one room",
+      "Living alone"
+    ],
+    "options_hi": [
+      "केवल एक उद्देश्य के लिए उपयोग",
+      "क्या इकाई का उपयोग एक परिवार द्वारा हो रहा है या स्वतंत्र परिवारों द्वारा",
+      "केवल एक कमरे का उपयोग",
+      "अकेले रहना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "This refers to whether the occupancy of rooms should be treated as one unit or multiple units based on who uses them.",
+    "explanation_hi": "यह तय करता है कि कमरों को एक इकाई मानना है या कई, उनके उपयोग के आधार पर"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What symbol represents a 'Pond' on the Layout Map legend?",
+    "question_hi": "लेआउट मैप में 'तालाब' का प्रतीक क्या है?",
+    "options_en": [
+      "A solid black square",
+      "An irregular blue-outlined shape (often with horizontal lines)",
+      "A circle with a cross",
+      "A green triangle"
+    ],
+    "options_hi": [
+      "ठोस काला वर्ग",
+      "अनियमित नीली-बाहरी रेखा वाली आकृति",
+      "क्रॉस वाला वृत्त",
+      "हरा त्रिभुज"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The legend shows ponds as irregular shapes with internal markings representing water.",
+    "explanation_hi": "तालाबों को अनियमित जल आकृतियों के रूप में दिखाया जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "How should sub-urban growth adjoining town limits be handled?",
+    "question_hi": "शहर की सीमाओं से सटे उप-शहरी विकास (sub-urban growth) के साथ क्या करना चाहिए?",
+    "options_en": [
+      "It should be ignored by the town Enumerator",
+      "It should be reported to superior officers to ensure proper administrative accounting",
+      "It is automatically included in the village map",
+      "Residents are not enumerated"
+    ],
+    "options_hi": [
+      "अनदेखा करें",
+      "वरिष्ठ अधिकारियों को रिपोर्ट करें ताकि सही प्रशासनिक इकाई में गणना हो सके",
+      "गाँव के मैप में जोड़ें",
+      "गणना न करें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Adjoining growth must be brought to the notice of supervisors to ensure it's accounted for in the correct unit.",
+    "explanation_hi": "सटे हुए विकास की सूचना देना आवश्यक है ताकि वे सही क्षेत्र में गिने जाएं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "When is a conical roof structure (like a hut) considered a building?",
+    "question_hi": "शंक्वाकार छत (जैसे झोपड़ी) वाली संरचना को भवन कब माना जाता है?",
+    "options_en": [
+      "Only if it has four walls",
+      "If it touches the ground and has an entrance, even if it has no walls",
+      "Only if it is made of stone",
+      "Never"
+    ],
+    "options_hi": [
+      "केवल 4 दीवारें होने पर",
+      "यदि वह ज़मीन को छूती है और प्रवेश द्वार है, भले ही दीवारें न हों",
+      "पत्थर की होने पर",
+      "कभी नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Some structures lack walls but serve as dwellings (conical roofs touching the ground) and must be numbered.",
+    "explanation_hi": "कुछ बिना दीवारों वाली संरचनाएं भी निवास स्थल का कार्य करती हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "If the local authority numbering is adopted but a building is found un-numbered, what number is given?",
+    "question_hi": "यदि स्थानीय नंबरिंग अपनाई गई है पर कोई भवन बिना नंबर के है, तो उसे क्या नंबर देंगे?",
+    "options_en": [
+      "0",
+      "A new serial number (e.g., 10/1 if between 10 and 11)",
+      "Any number the Enumerator likes",
+      "The building is skipped"
+    ],
+    "options_hi": [
+      "0",
+      "एक नया उप-नंबर (जैसे 10/1)",
+      "कोई भी नंबर",
+      "छोड़ देंगे"
+    ],
+    "correct_option": 1,
+    "explanation_en": "New or un-numbered buildings in a systematic area receive a sub-number relative to their position.",
+    "explanation_hi": "नए भवनों को उनके स्थान के अनुसार उप-नंबर दिया जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What is the significance of \"Article 246\" mentioned in the manual?",
+    "question_hi": "मैनुअल में उल्लेखित \"अनुच्छेद 246\" का क्या महत्व है?",
+    "options_en": [
+      "It defines property rights",
+      "It provides the Constitutional basis for conducting the Census",
+      "It describes building materials",
+      "It relates to environmental protection"
+    ],
+    "options_hi": [
+      "संपत्ति अधिकार",
+      "जनगणना कराने का संवैधानिक आधार (संघ सूची)",
+      "भवन सामग्री",
+      "पर्यावरण संरक्षण"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Census is a Constitutional activity conducted under the Union List (Article 246). 23,",
+    "explanation_hi": "जनगणना एक संवैधानिक गतिविधि है जो संघ सूची (अनुच्छेद 246) के तहत आती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "A building has five rooms and is occupied by 5 independent households. How many Census Houses are recorded?",
+    "question_hi": "एक भवन में पांच कमरे हैं और 5 स्वतंत्र परिवार रहते हैं। कितने जनगणना मकान होंगे?",
+    "options_en": [
+      "One",
+      "Five",
+      "Zero",
+      "One building, one Census House"
+    ],
+    "options_hi": [
+      "एक",
+      "पाँच",
+      "शून्य",
+      "एक भवन, एक मकान"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If each room is occupied by an independent household, each room is treated as a separate Census House.",
+    "explanation_hi": "प्रत्येक स्वतंत्र परिवार द्वारा उपयोग किया जाने वाला कमरा एक अलग जनगणना मकान है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "What must be done if boundaries of towns are loosely defined?",
+    "question_hi": "यदि शहर की सीमाएं स्पष्ट नहीं हैं, तो क्या करें?",
+    "options_en": [
+      "Stop the work",
+      "Clearly indicate boundaries using definite survey numbers or permanent features on the map",
+      "Use the previous Census map without changes",
+      "Guess the boundary"
+    ],
+    "options_hi": [
+      "काम रोक दें",
+      "सर्वेक्षण नंबरों या स्थायी विशेषताओं द्वारा मैप पर सीमाओं को स्पष्ट करें",
+      "पुराना मैप उपयोग करें",
+      "अंदाज़ा लगाएं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Experience shows town boundaries can be vague; maps must use survey numbers or features to certify accuracy.",
+    "explanation_hi": "सीमाओं की स्पष्टता के लिए सर्वेक्षण नंबरों का उपयोग करना अनिवार्य है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "If a household has a residence, a separate garage, and a servant's quarter in one premise, how many Census Houses are there if the servant eats with the family?",
+    "question_hi": "यदि एक परिसर में निवास, गैराज और नौकर क्वार्टर है और नौकर परिवार के साथ खाता है, तो शहरी क्षेत्र में कितने मकान होंगे?",
+    "options_en": [
+      "Three",
+      "One",
+      "Two",
+      "None"
+    ],
+    "options_hi": [
+      "तीन",
+      "एक",
+      "दो",
+      "कोई नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "In urban areas, if these constituent units belong to one person and one household, they are one census house.",
+    "explanation_hi": "शहरी क्षेत्रों में, यदि ये इकाइयाँ एक ही परिवार की हैं, तो वे एक ही जनगणना मकान हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "medium",
+    "question_en": "The \"Golden Rule\" for Enumerators is:",
+    "question_hi": "प्रगणकों के लिए \"स्वर्ण नियम\" (Golden Rule) क्या है?",
+    "options_en": [
+      "Walk -> Talk -> Write",
+      "Ask -> Verify -> Record -> Review -> Sync -> Mark Complete",
+      "Sync every 10 houses",
+      "Always use paper first"
+    ],
+    "options_hi": [
+      "चलना -> बात करना -> लिखना",
+      "पूछना -> सत्यापित करना -> रिकॉर्ड करना -> समीक्षा -> सिंक -> पूर्ण चिह्नित करना",
+      "हर 10 घर बाद सिंक",
+      "हमेशा कागज का उपयोग"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The manual defines this sequence as the golden rule for accurate data collection.",
+    "explanation_hi": "यह सटीक डेटा संग्रह के लिए मैनुअल द्वारा निर्धारित क्रम है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "A building has five rooms. If Households A and B share the rooms (A uses 2 rooms, B uses 3), how many Census Houses are recorded?",
+    "question_hi": "एक भवन में पांच कमरे हैं। परिवार A (2 कमरे) और B (3 कमरे) उन्हें उपयोग करते हैं। कितने जनगणना मकान होंगे?",
+    "options_en": [
+      "Five (one for each room)",
+      "Two (one for each household)",
+      "One (the entire building)",
+      "Not specified in the manual"
+    ],
+    "options_hi": [
+      "पांच",
+      "दो",
+      "एक",
+      "निर्दिष्ट नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Rooms used together by a single household are one census house; here, the two households create two census houses.",
+    "explanation_hi": "स्वतंत्र परिवारों द्वारा उपयोग किए जाने वाले कमरों के समूह अलग जनगणना मकान माने जाते हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "How should vegetable markets (mandis) with shops under a common roof but no walls be numbered?",
+    "question_hi": "बिना दीवारों वाली और एक ही छत के नीचे दुकानों वाली मंडियों को नंबर कैसे दें?",
+    "options_en": [
+      "As one single building",
+      "Each shop is identified as a building and numbered accordingly",
+      "They are not numbered as buildings",
+      "They are treated as open plots"
+    ],
+    "options_hi": [
+      "एक ही भवन",
+      "प्रत्येक दुकान को एक भवन के रूप में पहचानें और नंबर दें",
+      "भवन न मानें",
+      "खुला भूखंड"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Even without walls, shops in a mandi under a common roof are identified and numbered as separate buildings.",
+    "explanation_hi": "बिना दीवारों के भी, एक ही छत के नीचे की दुकानों को अलग-अलग भवनों के रूप में गिना जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "Why might a household be enumerated at a location other than their main habitation within the same HLB?",
+    "question_hi": "एक परिवार की गणना मुख्य बस्ती के बजाय उसी HLB में किसी और स्थान पर क्यों हो सकती है?",
+    "options_en": [
+      "If they have a residence in the main habitation but stay in an isolated building for most of the year",
+      "Only if they are homeless",
+      "If the Enumerator finds it more convenient",
+      "This is never allowed"
+    ],
+    "options_hi": [
+      "यदि वे वर्ष के अधिकांश समय किसी अलग-थलग भवन में रहते हों",
+      "यदि वे बेघर हों",
+      "प्रगणक की सुविधा हेतु",
+      "अनुमति नहीं है"
+    ],
+    "correct_option": 0,
+    "explanation_en": "A household is enumerated only at one place—where they normally reside for most of the year.",
+    "explanation_hi": "गणना केवल वहीं होती है जहाँ परिवार सामान्यतः वर्ष के अधिकांश समय निवास करता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "In a metropolitan apartment, a structure has eight flats. The local authority numbers each flat as a separate building (B-N1 to B-N8). How many buildings are shown on the Layout Map?",
+    "question_hi": "महानगरीय अपार्टमेंट में 8 फ्लैट हैं और स्थानीय प्रशासन हर फ्लैट को अलग भवन (B-N1 से B-N8) मानता है। मैप पर क्या दिखेगा?",
+    "options_en": [
+      "One building with eight squares inside",
+      "Eight separate buildings",
+      "One building with the number '1'",
+      "No buildings, only Census Houses"
+    ],
+    "options_hi": [
+      "एक भवन",
+      "आठ अलग-अलग भवन",
+      "नंबर '1' वाला भवन",
+      "कोई भवन नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If local authorities number flats as separate buildings, the Enumerator treats each flat as a separate building.",
+    "explanation_hi": "यदि स्थानीय प्रशासन उन्हें अलग भवन मानता है, तो प्रगणक भी उन्हें अलग भवन दिखाएगा"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What is the legal implication of Section 9 of the Census Act, 1948?",
+    "question_hi": "जनगणना अधिनियम, 1948 की धारा 9 का कानूनी निहितार्थ क्या है?",
+    "options_en": [
+      "It mandates the use of digital apps",
+      "It requires owners/occupiers to allow access and the affixing of Census numbers on their property",
+      "It defines the salary of Enumerators",
+      "It allows people to refuse to answer questions"
+    ],
+    "options_hi": [
+      "डिजिटल ऐप का उपयोग",
+      "मालिकों को संपत्ति पर नंबर लगाने और प्रगणक को प्रवेश देने की अनुमति देना अनिवार्य है",
+      "वेतन परिभाषा",
+      "जवाब न देने की छूट"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Occupiers are legally bound to allow Census officers to enter and paint or affix necessary numbers/letters. 26,",
+    "explanation_hi": "निवासी कानूनी रूप से जनगणना अधिकारियों को नंबर पेंट करने या लगाने की अनुमति देने के लिए बाध्य हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "A \"Premises\" contains four structures used as a main residence, kitchen, toilet, and baithak by one household in a rural area. How many buildings are recorded?",
+    "question_hi": "एक \"परिसर\" में निवास, रसोई, शौचालय और बैठक की चार संरचनाएं हैं (ग्रामीण क्षेत्र)। कितने भवन गिने जाएंगे?",
+    "options_en": [
+      "Four Buildings",
+      "One Building",
+      "One Building and four Census Houses",
+      "Two Buildings"
+    ],
+    "options_hi": [
+      "चार",
+      "एक",
+      "एक भवन और चार मकान",
+      "दो"
+    ],
+    "correct_option": 1,
+    "explanation_en": "In rural patterns, multiple structures in one premise used by one household are treated collectively as one building.",
+    "explanation_hi": "ग्रामीण क्षेत्रों में एक ही परिवार द्वारा उपयोग की जाने वाली ऐसी संरचनाओं को सामूहिक रूप से एक भवन माना जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What is the distinction between 'Institutional Household' and 'Institution'?",
+    "question_hi": "'संस्थागत परिवार' और 'संस्था' में क्या अंतर है?",
+    "options_en": [
+      "There is no distinction",
+      "An Institutional Household refers to the residents (like inmates of a jail), while an Institution refers to the organization (like the Jail itself)",
+      "Institutions are only schools",
+      "Institutional households are for families"
+    ],
+    "options_hi": [
+      "कोई नहीं",
+      "संस्थागत परिवार निवासियों (जैसे कैदी) को कहते हैं, जबकि संस्था संगठन (जैसे जेल) को",
+      "संस्था केवल स्कूल हैं",
+      "कोई नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The manual emphasizes that an Institutional Household (the group of people) is different from the Institution (the entity/building).",
+    "explanation_hi": "संस्थागत परिवार व्यक्तियों का समूह है, जबकि संस्था वह भौतिक इकाई या संगठन है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "If five independent households occupy five rooms in a building with a common courtyard, how does 'singleness of use' apply?",
+    "question_hi": "यदि पांच स्वतंत्र परिवार एक साझा आंगन वाले भवन के कमरों में रहते हैं, तो 'उपयोग की एकता' कैसे लागू होगी?",
+    "options_en": [
+      "It is one census house because they share a courtyard",
+      "Each room is a separate census house because they are used by independent households",
+      "It is one institutional household",
+      "It is five buildings"
+    ],
+    "options_hi": [
+      "एक मकान",
+      "प्रत्येक कमरा एक अलग जनगणना मकान (स्वतंत्र परिवार के कारण)",
+      "संस्थागत परिवार",
+      "पांच भवन"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Singleness of use by an independent household defines the unit as a separate census house.",
+    "explanation_hi": "स्वतंत्र परिवारों द्वारा उपयोग की जाने वाली हर इकाई एक अलग जनगणना मकान है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "Under what circumstance can \"structures need not be numbered\"?",
+    "question_hi": "किन परिस्थितियों में \"संरचनाओं को नंबर देने की आवश्यकता नहीं है\"?",
+    "options_en": [
+      "If they are used for business",
+      "If they are so small that no person can live in them (e.g., a tiny dog house or small tool shed)",
+      "If the owner is not at home",
+      "If the building is more than 50 years old"
+    ],
+    "options_hi": [
+      "व्यावसायिक उपयोग पर",
+      "यदि वे इतनी छोटी हों कि मनुष्य उनमें न रह सकें (जैसे छोटा कुत्ता घर)",
+      "मालिक के न होने पर",
+      "50 साल पुराने होने पर"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Only structures capable of human habitation are listed as buildings/census houses.",
+    "explanation_hi": "केवल मानव निवास के योग्य संरचनाओं को ही भवन माना जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "In estates or plantations, what is the best strategy for the Enumerator to identify boundaries?",
+    "question_hi": "बागानों (Estates) में सीमाओं की पहचान के लिए सबसे अच्छी रणनीति क्या है?",
+    "options_en": [
+      "Use a compass",
+      "Consult estate authorities to find out boundaries and draw the Layout Map accordingly",
+      "Guess based on the fence",
+      "Only number the main office"
+    ],
+    "options_hi": [
+      "कम्पास",
+      "बागान अधिकारियों से परामर्श कर सीमाओं के अनुसार मैप तैयार करना",
+      "बाड़ से अंदाज़ा",
+      "केवल मुख्य कार्यालय"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Cooperation with estate authorities is necessary to ensure the entire allotted area is correctly mapped.",
+    "explanation_hi": "पूर्ण क्षेत्र के सटीक मानचित्रण के लिए अधिकारियों का सहयोग आवश्यक है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "In an Urban HLB, how does the numbering generally run?",
+    "question_hi": "शहरी HLB में नंबरिंग आम तौर पर कैसे चलती है?",
+    "options_en": [
+      "North to South only",
+      "Along the axis of the street and not in an arbitrary geographical direction",
+      "In a circle starting from the town hall",
+      "Alphabetically by street name"
+    ],
+    "options_hi": [
+      "केवल उत्तर से दक्षिण",
+      "सड़क की धुरी (axis) के साथ, न कि मनमाने ढंग से",
+      "टाउन हॉल से वृत्ताकार",
+      "वर्णमाला अनुसार"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Urban numbering is typically street-based, following the axis of the road.",
+    "explanation_hi": "शहरी क्षेत्रों में नंबरिंग सामान्यतः सड़कों के आधार पर की जाती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "Why is the Layout Map described as \"extremely useful in Disaster Management\"?",
+    "question_hi": "लेआउट मैप को \"आपदा प्रबंधन\" में उपयोगी क्यों माना जाता है?",
+    "options_en": [
+      "It shows where people keep their money",
+      "It identifies the location of every building/structure for planning relief and rescue operations",
+      "It contains the names of doctors",
+      "It is required for fire insurance"
+    ],
+    "options_hi": [
+      "धन का स्थान पता चलता है",
+      "राहत कार्यों के लिए हर भवन और स्थल की सटीक स्थिति की पहचान होती है",
+      "डॉक्टरों के नाम होते हैं",
+      "अग्नि बीमा के लिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The detailed plotting of all buildings and landmarks is vital data for government agencies during disasters.",
+    "explanation_hi": "भवनों और मील के पत्थरों की सटीक स्थिति आपदा के समय बचाव कार्यों में सहायक होती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What is the significance of the notation 'M1(8)' seen in some apartment illustrations?",
+    "question_hi": "अपार्टमेंट चित्रों में 'M1(8)' का क्या अर्थ है?",
+    "options_en": [
+      "Building number 1 with 8 households",
+      "Multi-storey building 1 with 8 census houses",
+      "Male member 1 with 8 children",
+      "Month 1 with 8 surveys"
+    ],
+    "options_hi": [
+      "1 भवन 8 परिवार",
+      "बहुमंजिला भवन 1 जिसमें 8 जनगणना मकान हैं",
+      "8 बच्चों वाला सदस्य",
+      "8 सर्वेक्षण"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Illustrations show 'M' denotes multi-storey, with the bracketed number indicating the count of census houses.",
+    "explanation_hi": "'M' बहुमंजिला दर्शाता है और ब्रैकेट की संख्या जनगणना मकानों की गिनती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "If a Pucca building is used wholly for non-residential purposes, what is its symbol?",
+    "question_hi": "यदि पक्का भवन पूरी तरह गैर-आवासीय है, तो उसका प्रतीक क्या है?",
+    "options_en": [
+      "Shaded square",
+      "Shaded triangle",
+      "Shaded circle",
+      "Unfilled square"
+    ],
+    "options_hi": [
+      "छायांकित/रेखांकित वर्ग (Hatched square)",
+      "छायांकित त्रिभुज",
+      "छायांकित वृत्त",
+      "खाली वर्ग"
+    ],
+    "correct_option": 0,
+    "explanation_en": "A shaded/hatched square denotes a wholly non-residential Pucca building.",
+    "explanation_hi": "पूर्णतः गैर-आवासीय पक्के भवनों के लिए रेखांकित वर्ग का उपयोग होता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "A building contains two rooms. One is used as a shop, and the owner resides in the other. How many Census Houses are recorded?",
+    "question_hi": "भवन में दो कमरे हैं: एक दुकान है और दूसरे में मालिक रहता है। कितने जनगणना मकान होंगे?",
+    "options_en": [
+      "One Census House (Residence-cum-shop)",
+      "Two Census Houses (one residence, one shop)",
+      "One building, zero houses",
+      "Depends on whether there are separate entrances"
+    ],
+    "options_hi": [
+      "एक (निवास-सह-अन्य उपयोग)",
+      "दो (एक निवास, एक दुकान)",
+      "शून्य",
+      "प्रवेश द्वार पर निर्भर"
+    ],
+    "correct_option": 0,
+    "explanation_en": "If it is one unit with one access used for both, it is recorded as one Residence-cum-other use. 29,",
+    "explanation_hi": "यदि एक ही इकाई का उपयोग दोनों उद्देश्यों के लिए हो रहा है, तो उसे एक मकान माना जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "How should 'isolated' buildings in a Houselisting Block be handled if the household has another residence in the main habitation of the same block?",
+    "question_hi": "यदि परिवार का उसी ब्लॉक की मुख्य बस्ती में भी घर है, तो अलग-थलग (isolated) भवन की गणना कैसे होगी?",
+    "options_en": [
+      "Enumerate them at both places",
+      "Enumerate them at the place where they normally reside for the most part of the year",
+      "Skip the isolated building",
+      "Count them as two separate households"
+    ],
+    "options_hi": [
+      "दोनों जगह",
+      "जहाँ वे वर्ष के अधिकांश समय रहते हों",
+      "अलग-थलग को छोड़ दें",
+      "दो अलग परिवार"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Census rules prevent double counting by enumerating a household only at their primary residence.",
+    "explanation_hi": "दोहराव रोकने के लिए केवल प्राथमिक निवास पर ही गणना की जाती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What must the Supervisor do if a village is too large and has more than one HLB?",
+    "question_hi": "यदि गाँव बहुत बड़ा है और कई HLB हैं, तो पर्यवेक्षक को क्या करना चाहिए?",
+    "options_en": [
+      "Combine them into one map",
+      "Ensure boundaries of each HLB are clearly demarcated on the ground and maps",
+      "Only map the first HLB",
+      "Hire more enumerators"
+    ],
+    "options_hi": [
+      "एक मैप में मिला दें",
+      "सुनिश्चित करें कि हर HLB की सीमाएं ज़मीन और मैप पर स्पष्ट रूप से सीमांकित हों",
+      "केवल पहले का मैप बनाएं",
+      "अधिक प्रगणक रखें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "For large villages, supervisors must ensure no area is left out or overlapped between multiple HLBs.",
+    "explanation_hi": "बड़े गाँवों में ओवरलैप या चूक रोकने के लिए स्पष्ट सीमांकन ज़रूरी है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "If the municipal numbering for a street ends at 120, and a new building is built at the very end, what number is it given?",
+    "question_hi": "यदि सड़क की नंबरिंग 120 पर खत्म होती है और अंत में एक नया घर बनता है, तो उसे क्या नंबर मिलेगा?",
+    "options_en": [
+      "120/1",
+      "121",
+      "CN",
+      "1"
+    ],
+    "options_hi": [
+      "120/1",
+      "121",
+      "CN",
+      "1"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If numbering is systematic and a new house appears at the end, it continues the existing series.",
+    "explanation_hi": "यदि नंबरिंग व्यवस्थित है, तो नया घर उसी श्रृंखला को आगे बढ़ाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What is the penalty under Section 11 of the Census Act for intentionally giving a false answer?",
+    "question_hi": "जनगणना अधिनियम की धारा 11 के तहत गलत उत्तर देने पर क्या दंड है?",
+    "options_en": [
+      "There is no penalty",
+      "A fine which may extend to one thousand rupees",
+      "Imprisonment for 10 years",
+      "Confiscation of property"
+    ],
+    "options_hi": [
+      "कोई दंड नहीं",
+      "एक हज़ार रुपये तक का जुर्माना",
+      "10 साल जेल",
+      "संपत्ति ज़ब्त"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 11 provides for fines for individuals who intentionally provide false information.",
+    "explanation_hi": "जानबूझकर गलत जानकारी देने पर जुर्माने का प्रावधान है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "In Figure 11 of the manual, one building with five rooms is treated as two Census Houses. Why?",
+    "question_hi": "मैनुअल के चित्र 11 में एक भवन (5 कमरे) को दो जनगणना मकान माना गया है, क्यों?",
+    "options_en": [
+      "Because it has two kitchens",
+      "Because the rooms are occupied by two independent households",
+      "Because it has two owners",
+      "Because it has two roofs"
+    ],
+    "options_hi": [
+      "दो रसोई के कारण",
+      "क्योंकि कमरे दो स्वतंत्र परिवारों के कब्जे में हैं",
+      "दो मालिकों के कारण",
+      "दो छतों के कारण"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Occupancy by two independent households divides the five rooms into two distinct census houses.",
+    "explanation_hi": "स्वतंत्र परिवारों का कब्ज़ा संरचना को अलग जनगणना मकानों में विभाजित करता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "If a Pucca building is \"wholly non-residential,\" which symbol is used?",
+    "question_hi": "यदि पक्का भवन \"पूरी तरह गैर-आवासीय\" है, तो कौन सा प्रतीक उपयोग होगा?",
+    "options_en": [
+      "Unshaded Square",
+      "Shaded Square",
+      "Unshaded Triangle",
+      "Shaded Triangle"
+    ],
+    "options_hi": [
+      "खाली वर्ग",
+      "छायांकित वर्ग",
+      "खाली त्रिभुज",
+      "छायांकित त्रिभुज"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Legend specifically designates shaded squares for wholly non-residential Pucca structures.",
+    "explanation_hi": "गैर-आवासीय पक्की संरचनाओं के लिए छायांकित वर्ग निर्धारित है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What technical glitch might require an Enumerator to use a \"writing pad\" provided in the kit?",
+    "question_hi": "किस तकनीकी खराबी के कारण प्रगणक को किट में दी गई \"राइटिंग पैड\" उपयोग करनी पड़ सकती है?",
+    "options_en": [
+      "The marker pen runs out",
+      "The mobile app is uninstalled before data is synced",
+      "The tablet screen breaks",
+      "The respondent refuses to talk"
+    ],
+    "options_hi": [
+      "मार्कर खत्म होने पर",
+      "डेटा सिंक होने से पहले ऐप अनइंस्टॉल होने पर",
+      "स्क्रीन टूटने पर",
+      "जवाब न मिलने पर"
+    ],
+    "correct_option": 1,
+    "explanation_en": "To avoid data loss if the app is uninstalled, data should be copied to the writing pad for later re-entry.",
+    "explanation_hi": "ऐप हटने पर डेटा हानि से बचने के लिए उसे पैड पर लिखकर रखना चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "Why is 'singleness of use' considered simultaneously with 'ownership/possession' for Census Houses?",
+    "question_hi": "जनगणना मकानों के लिए 'उपयोग की एकता' को 'स्वामित्व' के साथ क्यों देखा जाता है?",
+    "options_en": [
+      "To determine property tax",
+      "To correctly identify if a unit is an independent residential or non-residential entity",
+      "To find out who the head of the house is",
+      "To help the local police"
+    ],
+    "options_hi": [
+      "टैक्स के लिए",
+      "स्वतंत्र आवासीय या गैर-आवासीय इकाई की सटीक पहचान के लिए",
+      "मुखिया खोजने के लिए",
+      "पुलिस की मदद हेतु"
+    ],
+    "correct_option": 1,
+    "explanation_en": "This simultaneous consideration is necessary in complex cases where rooms have separate entrances but common occupancy.",
+    "explanation_hi": "जटिल मामलों में स्वतंत्र उपयोगिता तय करने के लिए यह आवश्यक है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "When drawing the HLB boundary, what should the Enumerator do if a road falls between two towns?",
+    "question_hi": "HLB सीमा बनाते समय यदि सड़क दो शहरों के बीच आती है, तो क्या करें?",
+    "options_en": [
+      "Number only one side",
+      "Verify if one side falls outside the defined town limit and report it to superiors",
+      "Include both sides anyway",
+      "Skip the road"
+    ],
+    "options_hi": [
+      "एक तरफ नंबर दें",
+      "सत्यापित करें कि क्या एक हिस्सा सीमा से बाहर है और वरिष्ठों को सूचित करें",
+      "दोनों तरफ जोड़ें",
+      "सड़क छोड़ दें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Boundaries must be carefully verified to ensure no build-up area is excluded or incorrectly accounted for.",
+    "explanation_hi": "सीमाओं का सत्यापन यह सुनिश्चित करता है कि कोई क्षेत्र गलत ब्लॉक में न जुड़े"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "If five households live in a building but share one common kitchen, how many households are recorded?",
+    "question_hi": "यदि भवन में 5 परिवार रहते हैं पर रसोई एक ही है, तो कितने परिवार दर्ज होंगे?",
+    "options_en": [
+      "Five",
+      "One",
+      "Two",
+      "It is an institutional household"
+    ],
+    "options_hi": [
+      "पांच",
+      "एक",
+      "दो",
+      "संस्थागत परिवार"
+    ],
+    "correct_option": 1,
+    "explanation_en": "By definition, sharing a common kitchen makes the group a single household for Census purposes.",
+    "explanation_hi": "साझा रसोई की परिभाषा के अनुसार वे एक ही परिवार हैं"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What defines a structure as \"wholly non-residential\"?",
+    "question_hi": "\"पूरी तरह गैर-आवासीय\" संरचना को क्या परिभाषित करता है?",
+    "options_en": [
+      "It is vacant",
+      "It is used only for business, worship, or storage with no person sleeping there",
+      "It has no kitchen",
+      "It is owned by a company"
+    ],
+    "options_hi": [
+      "खाली होना",
+      "जहाँ कोई नहीं सोता और केवल व्यापार या पूजा के लिए उपयोग हो",
+      "रसोई न होना",
+      "कंपनी के स्वामित्व में"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If no part is used for dwelling, it is non-residential; symbols like shaded squares/triangles apply. 2,",
+    "explanation_hi": "यदि निवास के लिए कोई हिस्सा उपयोग नहीं होता, तो वह गैर-आवासीय है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "A building contains two rooms: one for residence and one used as a silver smithy workshop. How is it coded?",
+    "question_hi": "एक भवन में दो कमरे हैं: एक निवास और दूसरा चाँदी का काम (silver smithy) करने के लिए। कोड क्या होगा?",
+    "options_en": [
+      "Code 1 (Residence)",
+      "Code 2 (Residence-cum-other use)",
+      "Code 7 (Factory/Workshop)",
+      "It is not listed"
+    ],
+    "options_hi": [
+      "कोड 1 (निवास)",
+      "कोड 2 (निवास-सह-अन्य उपयोग)",
+      "कोड 7 (कारखाना)",
+      "सूचीबद्ध नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Occupational use within a residence is recorded under Residence-cum-other use.",
+    "explanation_hi": "निवास के भीतर व्यावसायिक उपयोग को कोड 2 में रखा जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What is the rule for numbering buildings along a railway track?",
+    "question_hi": "रेलवे ट्रैक के किनारे भवनों को नंबर देने का नियम क्या है?",
+    "options_en": [
+      "They are not numbered",
+      "They should be assigned numbers following the North-West to South-East direction to the extent possible",
+      "They get even numbers only",
+      "They are numbered from the center of the track"
+    ],
+    "options_hi": [
+      "नंबर नहीं देते",
+      "यथासंभव उत्तर-पश्चिम से दक्षिण-पूर्व दिशा का पालन करें",
+      "केवल सम संख्याएं",
+      "ट्रैक के केंद्र से"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Even in isolated or scattered areas (tracks, canals), the NW to SE systematic method is preferred.",
+    "explanation_hi": "अलग-थलग क्षेत्रों में भी व्यवस्थित NW से SE पद्धति अपनाई जाती है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "Section 15 of the Census Act states that Census records are:",
+    "question_hi": "जनगणना अधिनियम की धारा 15 क्या कहती है?",
+    "options_en": [
+      "Public documents available for everyone",
+      "Not open to inspection nor admissible in evidence in civil proceedings",
+      "Only available to the police",
+      "Used for income tax assessment"
+    ],
+    "options_hi": [
+      "रिकॉर्ड सार्वजनिक हैं",
+      "रिकॉर्ड का निरीक्षण नहीं किया जा सकता और न ही वे कानूनी साक्ष्य के रूप में स्वीकार्य हैं",
+      "पुलिस को उपलब्ध हैं",
+      "टैक्स के लिए उपयोग"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Census data is strictly confidential and protected from being used as evidence in court or inspected by unauthorized persons. 26,",
+    "explanation_hi": "जनगणना डेटा पूरी तरह गोपनीय है और इसे साक्ष्य के रूप में उपयोग नहीं किया जा सकता"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "If an Institutional Household has a peon's family living in a separate Census House but the peon's family cooks in the institutional kitchen, are they a separate household?",
+    "question_hi": "यदि चपरासी का परिवार संस्थागत रसोई में ही खाना खाता है पर रहता अलग मकान में है, तो क्या वे अलग परिवार हैं?",
+    "options_en": [
+      "Yes",
+      "No",
+      "Only if they have separate rooms",
+      "Only if they have a separate entrance"
+    ],
+    "options_hi": [
+      "हाँ",
+      "नहीं",
+      "यदि कमरे अलग हों",
+      "यदि प्रवेश द्वार अलग हो"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Sharing the common kitchen makes them part of the Institutional Household; if they cook separately, they are a Normal Household.",
+    "explanation_hi": "साझा रसोई के कारण वे संस्थागत परिवार का ही हिस्सा माने जाएंगे"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What symbol denotes a 'Well' on the Layout Map?",
+    "question_hi": "लेआउट मैप पर 'कुआँ' का प्रतीक क्या है?",
+    "options_en": [
+      "A solid blue circle",
+      "A circle with a dot and a cross-like handle symbol",
+      "A square with a wavy line",
+      "A star"
+    ],
+    "options_hi": [
+      "नीला वृत्त",
+      "बिंदु और हैंडल वाले हैंडल जैसा वृत्त (Legend अनुसार)",
+      "लहरदार वर्ग",
+      "सितारा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The legend for landmarks uses a specific icon for wells/handpumps/taps.",
+    "explanation_hi": "मील के पत्थरों के लिए निर्धारित लीजेंड में विशिष्ट कुआँ आइकन है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "In Figure 13, why are four structures (Main residence, kitchen, toilet, baithak) treated as one Census House?",
+    "question_hi": "चित्र 13 में चार संरचनाओं को एक जनगणना मकान क्यों माना गया है?",
+    "options_en": [
+      "Because they are in the same HLB",
+      "Because they form a single housing unit for one household in a rural pattern of habitation",
+      "Because they have no roofs",
+      "Because they are Pucca structures"
+    ],
+    "options_hi": [
+      "एक ही HLB के कारण",
+      "क्योंकि वे ग्रामीण पैटर्न में एक परिवार के लिए एक ही आवास इकाई बनाते हैं",
+      "छत न होने के कारण",
+      "पक्की होने के कारण"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Habitational patterns in many areas treat the group of structures in a premise collectively as one building/house.",
+    "explanation_hi": "ग्रामीण क्षेत्रों में कई संरचनाओं के समूह को सामूहिक रूप से एक ही घर माना जाता है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "What is the \"Legend\" on a Layout Map?",
+    "question_hi": "लेआउट मैप पर \"Legend\" का क्या अर्थ है?",
+    "options_en": [
+      "A story about the village",
+      "A key explaining the symbols used for roads, buildings, and landmarks",
+      "The name of the Enumerator",
+      "The total population of the block"
+    ],
+    "options_hi": [
+      "गाँव की कहानी",
+      "सड़कों, भवनों और स्थलों के लिए प्रयुक्त प्रतीकों की व्याख्या (Key)",
+      "प्रगणक का नाम",
+      "कुल जनसंख्या"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The legend on the left side of the map depicts the features and symbols used. 9,",
+    "explanation_hi": "यह मानचित्र के प्रतीकों को समझने की कुंजी है"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "If an Enumerator is confused about the \"singleness of use\" of a structure, who should they consult?",
+    "question_hi": "यदि \"उपयोग की एकता\" को लेकर भ्रम हो, तो किससे परामर्श लें?",
+    "options_en": [
+      "The owner",
+      "Their Supervisor or Charge Officer",
+      "The police",
+      "The manual only"
+    ],
+    "options_hi": [
+      "मालिक",
+      "पर्यवेक्षक या चार्ज अधिकारी",
+      "पुलिस",
+      "केवल मैनुअल"
+    ],
+    "correct_option": 1,
+    "explanation_en": "For any doubts regarding boundaries or classification, the Supervisor or Charge Officer (Tehsildar, SDM) should be consulted.",
+    "explanation_hi": "किसी भी संदेह की स्थिति में तहसीलदार या SDM (चार्ज अधिकारी) से सलाह लेनी चाहिए"
+  },
+  {
+    "chapter": 4,
+    "topic": "Numbering of Buildings, Census Houses and Preparation of Layout Map",
+    "difficulty": "hard",
+    "question_en": "Under the RTE Act 2009, teachers can be deployed for Census work because:",
+    "question_hi": "RTE अधिनियम 2009 के तहत शिक्षकों को जनगणना में क्यों लगाया जा सकता है?",
+    "options_en": [
+      "They are the only ones available",
+      "It is classified as a 'non-educational purpose' exception like disaster relief and elections",
+      "They are paid extra",
+      "Teachers are not allowed for Census work"
+    ],
+    "options_hi": [
+      "केवल वे उपलब्ध हैं",
+      "यह आपदा राहत और चुनावों की तरह 'गैर-शैक्षणिक उद्देश्य' का अपवाद है",
+      "अधिक वेतन के लिए",
+      "अनुमति नहीं है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Act explicitly allows deployment of teachers for decennial Census work as a national priority.",
+    "explanation_hi": "अधिनियम राष्ट्रीय प्राथमिकता वाले जनगणना कार्यों के लिए शिक्षकों की तैनाती की अनुमति देता है"
   }
 ]

@@ -1,14 +1,662 @@
 [
   {
-    "chapter": 1,
-    "topic": "Introduction",
+    "chapter": 0,
+    "topic": "General",
     "difficulty": "easy",
-    "question_en": "In which year is Census 2027 scheduled to begin its field operations?",
-    "question_hi": "जनगणना 2027 की क्षेत्रीय गतिविधियाँ किस वर्ष से शुरू होने वाली हैं?",
-    "options_en": ["2025", "2026", "2027", "2028"],
-    "options_hi": ["2025", "2026", "2027", "2028"],
+    "question_en": "Which phase of the Census of India 2027 involves Houselisting and Housing Census?",
+    "question_hi": "भारत की जनगणना 2027 के किस चरण में मकान सूचीकरण और मकान गणना (Houselisting and Housing Census) शामिल है? 1,",
+    "options_en": [
+      "Phase II",
+      "Phase I",
+      "Phase III",
+      "Preliminary Phase"
+    ],
+    "options_hi": [
+      "चरण II",
+      "चरण I",
+      "चरण III",
+      "प्रारंभिक चरण"
+    ],
     "correct_option": 1,
-    "explanation_en": "Census 2027 field operations (Houselisting) are scheduled to begin in 2026.",
-    "explanation_hi": "जनगणना 2027 की क्षेत्रीय गतिविधियाँ (मकान सूचीकरण) 2026 में शुरू होने वाली हैं।"
+    "explanation_en": "The Census of India 2027 is conducted in two phases: Phase I is the Houselisting and Housing Census (2026), and Phase II is the Population Enumeration (2027)",
+    "explanation_hi": "भारत की जनगणना 2027 दो चरणों में आयोजित की जाएगी: चरण I मकान सूचीकरण और मकान गणना (2026) है, और चरण II जनसंख्या गणना (2027) है 1,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "What is the name of the mobile application used for digital data collection in Census 2027?",
+    "question_hi": "जनगणना 2027 में डिजिटल डेटा संग्रह के लिए उपयोग किए जाने वाले मोबाइल एप्लिकेशन का नाम क्या है? 1,",
+    "options_en": [
+      "India Census App",
+      "Digital Census",
+      "Census 2027-HLO",
+      "Houselisting Mobile App"
+    ],
+    "options_hi": [
+      "इंडिया सेंसस ऐप",
+      "डिजिटल जनगणना",
+      "Census 2027-HLO",
+      "मकान सूचीकरण मोबाइल ऐप"
+    ],
+    "correct_option": 2,
+    "explanation_en": "For the first time, census data will be collected using the \"Census 2027-HLO\" mobile application",
+    "explanation_hi": "पहली बार, जनगणना का डेटा \"Census 2027-HLO\" मोबाइल एप्लिकेशन का उपयोग करके एकत्र किया जाएगा 1,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "When was the first Census conducted in India?",
+    "question_hi": "भारत में पहली जनगणना कब आयोजित की गई थी?",
+    "options_en": [
+      "1881",
+      "1947",
+      "1872",
+      "1951"
+    ],
+    "options_hi": [
+      "1881",
+      "1947",
+      "1872",
+      "1951"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The first Census in India was conducted in the year 1872, though it was taken at different points of time in different parts of the country",
+    "explanation_hi": "भारत में पहली जनगणना वर्ष 1872 में आयोजित की गई थी, हालांकि यह देश के विभिन्न हिस्सों में अलग-अलग समय पर की गई थी"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "What is the basic unit of Census operations assigned to an Enumerator?",
+    "question_hi": "एक प्रगणक (Enumerator) को सौंपे गए जनगणना कार्यों की बुनियादी इकाई क्या है? 5,",
+    "options_en": [
+      "Ward",
+      "Tehsil",
+      "Houselisting Block (HLB)",
+      "Development Block"
+    ],
+    "options_hi": [
+      "वार्ड",
+      "तहसील",
+      "मकान सूचीकरण ब्लॉक (HLB) 5,",
+      "विकास खंड"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Houselisting Block (HLB) is the basic unit of operations, and every Enumerator is assigned a specific HLB for their fieldwork 6,",
+    "explanation_hi": "मकान सूचीकरण ब्लॉक (HLB) संचालन की मूल इकाई है, और प्रत्येक प्रगणक को उनके फील्ड कार्य के लिए एक विशिष्ट HLB सौंपा जाता है 5, 6,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "How is a 'Household' primarily identified in the Census?",
+    "question_hi": "जनगणना में 'परिवार' (Household) की पहचान मुख्य रूप से कैसे की जाती है?",
+    "options_en": [
+      "By the number of rooms",
+      "By a common kitchen",
+      "By blood relation",
+      "By the size of the building"
+    ],
+    "options_hi": [
+      "कमरों की संख्या से",
+      "एक साझा रसोईघर से 8,",
+      "रक्त संबंध से",
+      "इमारत के आकार से"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A 'Household' is usually a group of persons who normally live together and take their meals from a common kitchen",
+    "explanation_hi": "एक 'परिवार' आमतौर पर उन व्यक्तियों का समूह होता है जो सामान्य रूप से एक साथ रहते हैं और एक साझा रसोईघर से अपना भोजन लेते हैं 8,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "Which of the following is considered a 'Pucca' building?",
+    "question_hi": "निम्नलिखित में से किसे 'पक्का' भवन माना जाता है? 9,",
+    "options_en": [
+      "A house with mud walls and a thatch roof",
+      "A house with burnt brick walls and a concrete roof",
+      "A tent used for residence",
+      "A hut made of bamboo and polythene"
+    ],
+    "options_hi": [
+      "मिट्टी की दीवारों और घास-फूस की छत वाला घर 9,",
+      "पकी हुई ईंट की दीवारों और कंक्रीट की छत वाला घर 9,",
+      "निवास के लिए उपयोग किया जाने वाला तंबू 9,",
+      "बांस और पॉलिथीन से बनी झोपड़ी 9,"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A 'Pucca' building is defined as one having walls and a roof made of materials like burnt bricks, stones packed with lime or cement, or concrete",
+    "explanation_hi": "'पक्का' भवन वह है जिसकी दीवारें और छत पकी हुई ईंटों, चूने या सीमेंट के साथ पत्थर, या कंक्रीट जैसी सामग्रियों से बनी होती हैं 9,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "Who is responsible for identifying the boundaries of the Houselisting Block on the ground?",
+    "question_hi": "जमीन पर मकान सूचीकरण ब्लॉक (HLB) की सीमाओं की पहचान करने के लिए कौन जिम्मेदार है? 5,",
+    "options_en": [
+      "The Charge Officer",
+      "The Enumerator",
+      "The Registrar General",
+      "The local residents"
+    ],
+    "options_hi": [
+      "चार्ज अधिकारी",
+      "प्रगणक 5,",
+      "महापंजीयक",
+      "स्थानीय निवासी"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The first duty of an Enumerator in the field is to identify the Houselisting Block (HLB) area and familiarize themselves with its boundaries",
+    "explanation_hi": "क्षेत्र में एक प्रगणक का पहला कर्तव्य मकान सूचीकरण ब्लॉक (HLB) क्षेत्र की पहचान करना और उसकी सीमाओं से परिचित होना है 5,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "What must an Enumerator display at all times while doing fieldwork?",
+    "question_hi": "फील्ड कार्य करते समय एक प्रगणक को हर समय क्या प्रदर्शित करना चाहिए? 11,",
+    "options_en": [
+      "Appointment Letter",
+      "Identity Card",
+      "Census Act copy",
+      "Mobile phone"
+    ],
+    "options_hi": [
+      "नियुक्ति पत्र",
+      "पहचान पत्र (Identity Card) 11,",
+      "जनगणना अधिनियम की प्रति",
+      "मोबाइल फोन"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Enumerators must always carry and display their original Identity Card while doing field work for authentication 11,",
+    "explanation_hi": "प्रगणकों को प्रमाणीकरण के लिए फील्ड कार्य के दौरान हमेशा अपना मूल पहचान पत्र साथ रखना और प्रदर्शित करना चाहिए 11,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "In which direction should building numbering generally proceed within a street?",
+    "question_hi": "एक गली के भीतर इमारतों की नंबरिंग आमतौर पर किस दिशा में होनी चाहिए? 5,",
+    "options_en": [
+      "East to West",
+      "South to North",
+      "North-West to South-East",
+      "South-East to North-West"
+    ],
+    "options_hi": [
+      "पूर्व से पश्चिम",
+      "दक्षिण से उत्तर",
+      "उत्तर-पश्चिम से दक्षिण-पूर्व 5, 13,",
+      "दक्षिण-पूर्व से उत्तर-पश्चिम"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Building numbering should be done systematically, preferably starting from North-West and moving towards South-East 7,",
+    "explanation_hi": "इमारतों की नंबरिंग व्यवस्थित रूप से की जानी चाहिए, अधिमानतः उत्तर-पश्चिम से शुरू होकर दक्षिण-पूर्व की ओर बढ़ते हुए 5, 13,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "easy",
+    "question_en": "What is 'Self-Enumeration' in the context of Census 2027?",
+    "question_hi": "जनगणना 2027 के संदर्भ में 'स्व-गणना' (Self-Enumeration) क्या है? 1,",
+    "options_en": [
+      "Enumerators filling their own data",
+      "Households filling their own census schedule via a web portal",
+      "Supervisors checking the data of Enumerators",
+      "Using paper schedules instead of the mobile app"
+    ],
+    "options_hi": [
+      "प्रगणकों द्वारा अपना डेटा स्वयं भरना",
+      "परिवारों द्वारा वेब पोर्टल के माध्यम से अपनी जनगणना अनुसूची स्वयं भरना 1,",
+      "पर्यवेक्षकों द्वारा प्रगणकों के डेटा की जांच करना",
+      "मोबाइल ऐप के बजाय पेपर शेड्यूल का उपयोग करना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Self-Enumeration allows households to fill their own information through a designated web portal for the first time in Census 2027 2,",
+    "explanation_hi": "स्व-गणना परिवारों को जनगणना 2027 में पहली बार एक निर्दिष्ट वेब पोर्टल के माध्यम से अपनी जानकारी स्वयं भरने की अनुमति देती है 1,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "What is the minimum RAM requirement for a smartphone to run the HLO Mobile App?",
+    "question_hi": "HLO मोबाइल ऐप चलाने के लिए स्मार्टफोन के लिए न्यूनतम रैम (RAM) की क्या आवश्यकता है? 1,",
+    "options_en": [
+      "2 GB",
+      "4 GB",
+      "8 GB",
+      "6 GB"
+    ],
+    "options_hi": [
+      "2 GB",
+      "4 GB 1,",
+      "8 GB",
+      "6 GB"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The HLO Mobile App requires a minimum of 4 GB RAM and 8 GB storage to function effectively 2,",
+    "explanation_hi": "HLO मोबाइल ऐप को प्रभावी ढंग से कार्य करने के लिए न्यूनतम 4 GB रैम और 8 GB स्टोरेज की आवश्यकता होती है 1,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "For 'Availability of drinking water source' in Urban areas, what distance defines 'Near the premises'?",
+    "question_hi": "शहरी क्षेत्रों में 'पेयजल स्रोत की उपलब्धता' के लिए, कौन सी दूरी 'परिसर के पास' (Near the premises) को परिभाषित करती है? 15,",
+    "options_en": [
+      "Within 500 metres",
+      "Within 100 metres",
+      "Within 200 metres",
+      "Within 50 metres"
+    ],
+    "options_hi": [
+      "500 मीटर के भीतर",
+      "100 मीटर के भीतर 15,",
+      "200 मीटर के भीतर",
+      "50 मीटर के भीतर"
+    ],
+    "correct_option": 1,
+    "explanation_en": "In Urban areas, a source is considered 'Near the premises' if it is within 100 metres, whereas in Rural areas, the distance is 500 metres",
+    "explanation_hi": "शहरी क्षेत्रों में, एक स्रोत को 'परिसर के पास' माना जाता है यदि वह 100 मीटर के भीतर है, जबकि ग्रामीण क्षेत्रों में यह दूरी 500 मीटर है 15,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "If a house is found locked because the occupants are on a journey, how should it be recorded?",
+    "question_hi": "यदि कोई घर इसलिए बंद पाया जाता है क्योंकि निवासी यात्रा पर गए हैं, तो उसे कैसे रिकॉर्ड किया जाना चाहिए? 17,",
+    "options_en": [
+      "As 'Vacant' (Code 0)",
+      "As 'Residence' (Code 1) and marked as 'Is Locked'",
+      "As 'Non-residential'",
+      "It should be skipped entirely"
+    ],
+    "options_hi": [
+      "'खाली' (कोड 0) के रूप में",
+      "'निवास' (कोड 1) के रूप में और 'बंद है' (Is Locked) के रूप में चिह्नित 17,",
+      "गैर-आवासीय के रूप में",
+      "इसे पूरी तरह से छोड़ दिया जाना चाहिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Locked houses with occupants away on a journey should not be treated as 'Vacant'; their actual use should be recorded and the 'Is Locked' checkbox ticked 19,",
+    "explanation_hi": "यात्रा पर गए निवासियों वाले बंद घरों को 'खाली' नहीं माना जाना चाहिए; उनका वास्तविक उपयोग रिकॉर्ड किया जाना चाहिए और 'बंद है' चेकबॉक्स पर टिक किया जाना चाहिए 17, 18,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "Under which Section of the Census Act, 1948, is an Enumerator legally authorized to enter a house to ask questions?",
+    "question_hi": "जनगणना अधिनियम, 1948 की किस धारा के तहत, एक प्रगणक कानूनी रूप से प्रश्न पूछने के लिए घर में प्रवेश करने के लिए अधिकृत है? 20,",
+    "options_en": [
+      "Section",
+      "Section",
+      "Sections 8 and",
+      "Section"
+    ],
+    "options_hi": [
+      "धारा",
+      "धारा",
+      "धारा 8 और 9 20,",
+      "धारा"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Sections 8 and 9 of the Census Act, 1948, grant Census officers the right to enter houses and the authority to ask all necessary questions 21,",
+    "explanation_hi": "जनगणना अधिनियम, 1948 की धारा 8 और 9 जनगणना अधिकारियों को घरों में प्रवेश करने का अधिकार और सभी आवश्यक प्रश्न पूछने का अधिकार देती हैं 20,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "What is the code for a Census House used as 'Residence-cum-other use'?",
+    "question_hi": "'निवास-सह-अन्य उपयोग' (Residence-cum-other use) के रूप में उपयोग किए जाने वाले जनगणना मकान का कोड क्या है? 17,",
+    "options_en": [
+      "Code",
+      "Code",
+      "Code",
+      "Code"
+    ],
+    "options_hi": [
+      "कोड",
+      "कोड",
+      "कोड 2 17,",
+      "कोड"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Code '2' is assigned to Census Houses used for residential purposes along with one or more non-residential purposes, such as a clinic or shop 18,",
+    "explanation_hi": "कोड '2' उन जनगणना मकानों को दिया जाता है जिनका उपयोग आवासीय उद्देश्यों के साथ-साथ एक या अधिक गैर-आवासीय उद्देश्यों, जैसे कि क्लिनिक या दुकान के लिए किया जाता है 17,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "How many days before the start of HLO fieldwork does the Self-Enumeration portal open?",
+    "question_hi": "HLO फील्ड कार्य शुरू होने से कितने दिन पहले स्व-गणना (Self-Enumeration) पोर्टल खुलता है?",
+    "options_en": [
+      "30 days",
+      "7 days",
+      "15 days",
+      "10 days"
+    ],
+    "options_hi": [
+      "30 दिन",
+      "7 दिन",
+      "15 दिन 14,",
+      "10 दिन"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The dedicated web portal for Self-Enumeration will be accessible to the public 15 days before the start date of HLO fieldwork in a State/UT 14,",
+    "explanation_hi": "स्व-गणना के लिए समर्पित वेब पोर्टल किसी राज्य/केंद्र शासित प्रदेश में HLO फील्ड कार्य शुरू होने की तारीख से 15 दिन पहले जनता के लिए सुलभ होगा 14,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "What is a 'Houseless Household'?",
+    "question_hi": "'बेघर परिवार' (Houseless Household) क्या है? 25,",
+    "options_en": [
+      "A household living in a rented apartment",
+      "A household living in an institutional building",
+      "A household living in the open, on roadsides, or under flyovers",
+      "A household living in a building without a roof"
+    ],
+    "options_hi": [
+      "किराए के अपार्टमेंट में रहने वाला परिवार",
+      "संस्थागत भवन में रहने वाला परिवार",
+      "खुले में, सड़क के किनारे, या फ्लाईओवरों के नीचे रहने वाला परिवार 25,",
+      "बिना छत वाली इमारत में रहने वाला परिवार"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Houseless Households live in the open, on pavements, in hume pipes, or under flyovers and will be covered during Phase II (Population Enumeration)",
+    "explanation_hi": "बेघर परिवार खुले में, फुटपाथों पर, पाइपों में, या फ्लाईओवरों के नीचे रहते हैं और उन्हें चरण II (जनसंख्या गणना) के दौरान कवर किया जाएगा 25,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "In the layout map, what symbol is used for a 'Pucca Building (wholly or partly residential)'?",
+    "question_hi": "लेआउट मैप (Layout map) में, 'पक्का भवन (पूर्णतः या आंशिक रूप से आवासीय)' के लिए किस प्रतीक का उपयोग किया जाता है? 9,",
+    "options_en": [
+      "A solid triangle",
+      "A hollow triangle",
+      "A hollow square",
+      "A shaded square"
+    ],
+    "options_hi": [
+      "एक ठोस त्रिभुज",
+      "एक खोखला त्रिभुज",
+      "एक खोखला वर्ग 9,",
+      "एक छायांकित वर्ग"
+    ],
+    "correct_option": 2,
+    "explanation_en": "A hollow square symbol is used to denote a Pucca building that is either wholly or partly residential 9,",
+    "explanation_hi": "एक खोखले वर्ग के प्रतीक का उपयोग पक्का भवन दर्शाने के लिए किया जाता है जो या तो पूरी तरह से या आंशिक रूप से आवासीय है 9,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "What should an Enumerator do if the mobile app is uninstalled before data is synced?",
+    "question_hi": "यदि डेटा सिंक (sync) होने से पहले मोबाइल ऐप अनइंस्टॉल हो जाता है, तो प्रगणक को क्या करना चाहिए? 27,",
+    "options_en": [
+      "Reinstall and the data will reappear automatically",
+      "Nothing, as data is saved on the device's SIM",
+      "Use written data from the writing pad to re-enter the information",
+      "Inform the supervisor that the HLB is complete"
+    ],
+    "options_hi": [
+      "पुन: इंस्टॉल करें और डेटा अपने आप वापस आ जाएगा",
+      "कुछ नहीं, क्योंकि डेटा डिवाइस के सिम पर सहेजा गया है",
+      "जानकारी को फिर से दर्ज करने के लिए राइटिंग पैड (writing pad) से लिखित डेटा का उपयोग करें 27,",
+      "पर्यवेक्षक को सूचित करें कि HLB पूरा हो गया है"
+    ],
+    "correct_option": 2,
+    "explanation_en": "If the app is uninstalled before syncing, data not yet on the server may be lost. Enumerators are advised to keep written records in a provided pad to re-enter data if this occurs",
+    "explanation_hi": "यदि सिंक करने से पहले ऐप अनइंस्टॉल हो जाता है, तो सर्वर पर नहीं भेजा गया डेटा खो सकता है प्रगणकों को सलाह दी जाती है कि वे ऐसी स्थिति में डेटा फिर से दर्ज करने के लिए एक पैड में लिखित रिकॉर्ड रखें 27,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "medium",
+    "question_en": "Which material code is assigned to a 'Concrete' roof?",
+    "question_hi": "'कंक्रीट' की छत के लिए कौन सा सामग्री कोड (material code) निर्धारित है? 29,",
+    "options_en": [
+      "Code",
+      "Code",
+      "Code",
+      "Code"
+    ],
+    "options_hi": [
+      "कोड",
+      "कोड",
+      "कोड 9 29,",
+      "कोड"
+    ],
+    "correct_option": 2,
+    "explanation_en": "According to the code list for Question 6 (Predominant material of roof), 'Concrete' is assigned Code",
+    "explanation_hi": "प्रश्न 6 (छत की प्रमुख सामग्री) की कोड सूची के अनुसार, 'कंक्रीट' को कोड 9 दिया गया है 29,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "What are the minimum internal dimensions for a room to be considered a 'Dwelling Room'?",
+    "question_hi": "एक कमरे को 'निवास हेतु कमरा' (Dwelling Room) माने जाने के लिए न्यूनतम आंतरिक आयाम क्या हैं? 30,",
+    "options_en": [
+      "3m length, 2m breadth, 3m height",
+      "2m length, 5m breadth, 2m height",
+      "5m length, 2m breadth, 5m height",
+      "5m length, 1m breadth, 2m height"
+    ],
+    "options_hi": [
+      "3 मीटर लंबाई, 2 मीटर चौड़ाई, 3 मीटर ऊंचाई",
+      "2 मीटर लंबाई, 5 मीटर चौड़ाई, 2 मीटर ऊंचाई 30,",
+      "5 मीटर लंबाई, 2 मीटर चौड़ाई, 5 मीटर ऊंचाई",
+      "5 मीटर लंबाई, 1 मीटर चौड़ाई, 2 मीटर ऊंचाई"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A room used for dwelling should have walls, a doorway, a roof, and be at least 2 meters long, 5 meters wide, and 2 meters high 28,",
+    "explanation_hi": "रहने के लिए उपयोग किए जाने वाले कमरे में दीवारें, एक दरवाजा, एक छत होनी चाहिए और वह कम से कम 2 मीटर लंबा, 5 मीटर चौड़ा और 2 मीटर ऊंचा होना चाहिए 30,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "How is a 'Residence-cum-Factory' distinguished from a 'Residence-cum-Workshop'?",
+    "question_hi": "'निवास-सह-फैक्ट्री' (Residence-cum-Factory) को 'निवास-सह-कार्यशाला' (Residence-cum-Workshop) से कैसे अलग किया जाता है?",
+    "options_en": [
+      "By the total area of the building",
+      "By the number of workers (10+ with power or 20+ without power for a Factory)",
+      "By the value of the goods produced",
+      "By the age of the building"
+    ],
+    "options_hi": [
+      "इमारत के कुल क्षेत्रफल से",
+      "श्रमिकों की संख्या से (बिजली के साथ 10+ या बिना बिजली के 20+ फैक्ट्री के लिए)",
+      "उत्पादित वस्तुओं के मूल्य से",
+      "इमारत की उम्र से"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A 'Residence-cum-Factory' is a registered establishment employing 10 or more persons with power or 20 or more without power, whereas a 'Workshop' involves production on a smaller scale",
+    "explanation_hi": "एक 'निवास-सह-फैक्ट्री' एक पंजीकृत प्रतिष्ठान है जिसमें बिजली के साथ 10 या अधिक व्यक्ति या बिना बिजली के 20 या अधिक व्यक्ति कार्यरत होते हैं, जबकि 'कार्यशाला' में छोटे पैमाने पर उत्पादन शामिल होता है"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "If a new building is found between building numbers 10 and 11 after systematic numbering, how should it be numbered?",
+    "question_hi": "यदि व्यवस्थित नंबरिंग के बाद भवन संख्या 10 और 11 के बीच एक नया भवन पाया जाता है, तो उसे कैसे नंबर दिया जाना चाहिए? 13,",
+    "options_en": [
+      "12",
+      "10A",
+      "10/1",
+      "11/1"
+    ],
+    "options_hi": [
+      "12",
+      "10A",
+      "10/1 13, 32,",
+      "11/1"
+    ],
+    "correct_option": 2,
+    "explanation_en": "If a new building is found between two already numbered buildings, it should be given a sub-number, such as 10/1 13,",
+    "explanation_hi": "यदि पहले से नंबर किए गए दो भवनों के बीच एक नया भवन पाया जाता है, तो उसे एक उप-नंबर दिया जाना चाहिए, जैसे 10/1 13, 32,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "In a situation where two independent households share a single dwelling room and there is no other room, what is the 'Number of dwelling rooms' recorded for each?",
+    "question_hi": "ऐसी स्थिति में जहाँ दो स्वतंत्र परिवार एक ही निवास कमरे को साझा करते हैं और कोई अन्य कमरा नहीं है, प्रत्येक के लिए 'निवास हेतु कमरों की संख्या' कितनी दर्ज की जाएगी?",
+    "options_en": [
+      "1 room for each",
+      "5 rooms for each",
+      "0 rooms for each",
+      "1 room for the first household and 0 for the second"
+    ],
+    "options_hi": [
+      "प्रत्येक के लिए 1 कमरा",
+      "प्रत्येक के लिए 5 कमरा",
+      "प्रत्येक के लिए 0 कमरे",
+      "पहले परिवार के लिए 1 कमरा और दूसरे के लिए"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Only a dwelling room exclusively in the possession of a household is counted. If a room is shared by more than one household, it is not counted for either, and '0' should be entered",
+    "explanation_hi": "केवल परिवार के अनन्य कब्जे वाले निवास कमरे की गणना की जाती है यदि एक कमरा एक से अधिक परिवारों द्वारा साझा किया जाता है, तो इसे किसी के लिए भी नहीं गिना जाता है और '0' दर्ज किया जाना चाहिए"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "Which of the following defines an 'Institutional Household'?",
+    "question_hi": "निम्नलिखित में से कौन 'संस्थागत परिवार' (Institutional Household) को परिभाषित करता है? 8,",
+    "options_en": [
+      "A group of related persons living in a government building",
+      "A group of unrelated persons living together and taking meals from a common kitchen in an institution",
+      "Any household living in a non-residential census house",
+      "A household with more than 10 members"
+    ],
+    "options_hi": [
+      "सरकारी भवन में रहने वाले संबंधित व्यक्तियों का समूह",
+      "एक संस्थान में एक साथ रहने वाले और एक साझा रसोईघर से भोजन लेने वाले असंबंधित व्यक्तियों का समूह 8,",
+      "गैर-आवासीय जनगणना मकान में रहने वाला कोई भी परिवार",
+      "10 से अधिक सदस्यों वाला परिवार"
+    ],
+    "correct_option": 1,
+    "explanation_en": "An Institutional Household consists of unrelated persons living in institutions like hostels, boarding houses, or mess and sharing a common kitchen",
+    "explanation_hi": "संस्थागत परिवार में छात्रावास, बोर्डिंग हाउस या मेस जैसे संस्थानों में रहने वाले और साझा रसोईघर साझा करने वाले असंबंधित व्यक्ति शामिल होते हैं 8, 7,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "If a household reports accessing the internet on multiple devices, which device should the Enumerator record?",
+    "question_hi": "यदि कोई परिवार कई उपकरणों पर इंटरनेट का उपयोग करने की रिपोर्ट करता है, तो प्रगणक को कौन सा उपकरण रिकॉर्ड करना चाहिए? 34,",
+    "options_en": [
+      "All devices used",
+      "The most expensive device",
+      "The device primarily or predominantly used by the household",
+      "Only the laptop or computer"
+    ],
+    "options_hi": [
+      "उपयोग किए गए सभी उपकरण",
+      "सबसे महंगा उपकरण",
+      "परिवार द्वारा मुख्य रूप से या प्रमुख रूप से उपयोग किया जाने वाला उपकरण 34,",
+      "केवल लैपटॉप या कंप्यूटर"
+    ],
+    "correct_option": 2,
+    "explanation_en": "If more than one device is used for internet access, the Enumerator should indicate the device which is primarily or predominantly used by the household",
+    "explanation_hi": "यदि इंटरनेट एक्सेस के लिए एक से अधिक उपकरणों का उपयोग किया जाता है, तो प्रगणक को उस उपकरण को इंगित करना चाहिए जो परिवार द्वारा मुख्य रूप से या प्रमुख रूप से उपयोग किया जाता है 34,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "To be classified as 'Tap water from treated source' (Code 1), what must occur?",
+    "question_hi": "'उपचारित स्रोत से नल का पानी' (कोड 1) के रूप में वर्गीकृत करने के लिए क्या होना चाहिए? 36,",
+    "options_en": [
+      "The water must simply come from a tap",
+      "The water must be safely filtered by the household using a small purifier",
+      "Impurities must be removed through chemical treatment and disinfection",
+      "The water must be drawn from a well via a pipe"
+    ],
+    "options_hi": [
+      "पानी बस एक नल से आना चाहिए",
+      "परिवार द्वारा एक छोटे प्यूरीफायर का उपयोग करके पानी को सुरक्षित रूप से फिल्टर किया जाना चाहिए",
+      "रासायनिक उपचार और कीटाणुशोधन के माध्यम से अशुद्धियों को दूर किया जाना चाहिए",
+      "पाइप के माध्यम से कुएं से पानी निकाला जाना चाहिए"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Water is only considered from a 'treated source' after proper treatment involving the removal of impurities and disinfection by chemical treatment",
+    "explanation_hi": "पानी को केवल रासायनिक उपचार द्वारा अशुद्धियों को हटाने और कीटाणुशोधन को शामिल करने वाले उचित उपचार के बाद ही 'उपचारित स्रोत' से माना जाता है"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "What happens to 'Self-Enumeration' data once it is submitted by a household?",
+    "question_hi": "एक बार जब परिवार द्वारा 'स्व-गणना' (Self-Enumeration) डेटा जमा कर दिया जाता है, तो उसका क्या होता है? 10,",
+    "options_en": [
+      "It is automatically finalized and cannot be changed",
+      "It is pre-loaded into the Enumerator's app for verification and validation",
+      "It replaces the need for an Enumerator's visit",
+      "It is sent directly to the Registrar General and bypassed by the Supervisor"
+    ],
+    "options_hi": [
+      "यह स्वचालित रूप से अंतिम हो जाता है और इसे बदला नहीं जा सकता",
+      "यह सत्यापन और वैधीकरण के लिए प्रगणक के ऐप में प्री-लोड हो जाता है 10,",
+      "यह प्रगणक के दौरे की आवश्यकता को प्रतिस्थापित करता है",
+      "इसे सीधे महापंजीयक को भेजा जाता है और पर्यवेक्षक द्वारा बायपास किया जाता है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "After a household submits SE data, it is imported into the mobile app of the relevant Enumerator, who must still visit to verify and validate the information 14,",
+    "explanation_hi": "परिवार द्वारा SE डेटा जमा करने के बाद, इसे संबंधित प्रगणक के मोबाइल ऐप में आयात किया जाता है, जिसे अभी भी जानकारी को सत्यापित और मान्य करने के लिए दौरा करना होगा 10, 14,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "If a Building has no walls (e.g., a conical roof touching the ground), how is it treated for Census purposes?",
+    "question_hi": "यदि किसी भवन में कोई दीवार नहीं है (जैसे, जमीन को छूने वाली शंक्वाकार छत), तो जनगणना के उद्देश्यों के लिए उसे कैसे माना जाता है? 37,",
+    "options_en": [
+      "It is not considered a building",
+      "It is treated as a building and a census house if someone lives in it",
+      "It is skipped and recorded as an open site",
+      "It is only recorded if it is a pucca structure"
+    ],
+    "options_hi": [
+      "इसे भवन नहीं माना जाता",
+      "यदि कोई इसमें रहता है, तो इसे एक भवन और जनगणना मकान माना जाता है 37,",
+      "इसे छोड़ दिया जाता है और एक खुली साइट के रूप में रिकॉर्ड किया जाता",
+      "यह केवल तभी रिकॉर्ड किया जाता है जब वह एक पक्की संरचना हो"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Even if a structure apparently has no walls (like a conical roof touching the ground), it is still treated as a building and a census house",
+    "explanation_hi": "भले ही किसी संरचना में स्पष्ट रूप से कोई दीवार न हो (जैसे जमीन को छूने वाली शंक्वाकार छत), फिर भी इसे एक भवन और जनगणना मकान के रूप में माना जाता है 37,"
+  },
+  {
+    "chapter": 0,
+    "topic": "General",
+    "difficulty": "hard",
+    "question_en": "When recording the mobile number for a locked or vacant house, what should the Enumerator do?",
+    "question_hi": "बंद या खाली घर के लिए मोबाइल नंबर रिकॉर्ड करते समय प्रगणक को क्या करना चाहिए? 18,",
+    "options_en": [
+      "Leave the field blank",
+      "Enter the Enumerator's own number",
+      "Obtain the mobile number of any member of the household from the neighbours",
+      "Enter"
+    ],
+    "options_hi": [
+      "फ़ील्ड को खाली छोड़ दें",
+      "प्रगणक का अपना नंबर दर्ज करें",
+      "पड़ोसियों से परिवार के किसी भी सदस्य का मोबाइल नंबर प्राप्त करें 18,",
+      "0000000000 दर्ज करें"
+    ],
+    "correct_option": 2,
+    "explanation_en": "For locked or vacant houses, if a mobile number for any member of the household is available from the neighbours, it needs to be entered for communication purposes 19,",
+    "explanation_hi": "बंद या खाली घरों के लिए, यदि पड़ोसियों से परिवार के किसी सदस्य का मोबाइल नंबर उपलब्ध है, तो उसे संचार उद्देश्यों के लिए दर्ज करने की आवश्यकता है 18,"
   }
 ]

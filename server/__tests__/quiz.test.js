@@ -1,8 +1,8 @@
 const path = require('path');
-const os = require('os');
 const fs = require('fs');
 
-process.env.DB_PATH = path.join(os.tmpdir(), `quiz-test-${Date.now()}.db`);
+fs.mkdirSync(path.join(__dirname, '../tmp'), { recursive: true });
+process.env.DB_PATH = path.join(__dirname, '../tmp', `quiz-test-${Date.now()}.db`);
 process.env.JWT_SECRET = 'test';
 process.env.JWT_REFRESH_SECRET = 'test2';
 process.env.QA_DIR = path.join(__dirname, '../../QA');

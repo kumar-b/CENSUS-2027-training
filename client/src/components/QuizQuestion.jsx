@@ -49,7 +49,7 @@ function FlagModal({ question, onClose, onSuccess }) {
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/40" onClick={onClose}>
       <div
-        className="w-full max-w-2xl bg-white rounded-t-2xl p-5 space-y-4"
+        className="w-full max-w-2xl bg-white rounded-t-2xl p-5 pb-20 space-y-4"
         onClick={(e) => e.stopPropagation()}
       >
         <h3 className="font-semibold text-gray-800">{t('flagQuestion')}</h3>

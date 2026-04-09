@@ -1,122 +1,970 @@
 [
   {
     "chapter": 3,
-    "topic": "Legal Provisions",
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
     "difficulty": "easy",
-    "question_en": "Under which Act is participation in the Census compulsory?",
-    "question_hi": "किस अधिनियम के अंतर्गत जनगणना में भागीदारी अनिवार्य है?",
-    "options_en": ["The Indian Penal Code", "The Census Act, 1948", "The Right to Information Act", "The Statistics Act, 2008"],
-    "options_hi": ["भारतीय दंड संहिता", "जनगणना अधिनियम, 1948", "सूचना का अधिकार अधिनियम", "सांख्यिकी अधिनियम, 2008"],
+    "question_en": "Which Act provides the legal authority for issuing Appointment Letters to Census functionaries?",
+    "question_hi": "जनगणना पदाधिकारियों को नियुक्ति पत्र (Appointment Letters) जारी करने के लिए कौन सा अधिनियम कानूनी अधिकार प्रदान करता है?",
+    "options_en": [
+      "The Constitution of India",
+      "The Census Act, 1948",
+      "The RTI Act, 2005",
+      "The Statistics Act"
+    ],
+    "options_hi": [
+      "भारत का संविधान",
+      "जनगणना अधिनियम, 1948",
+      "आरटीआई अधिनियम, 2005",
+      "सांख्यिकी अधिनियम"
+    ],
     "correct_option": 1,
-    "explanation_en": "The Census Act, 1948 makes it compulsory for all residents to provide correct information to Enumerators.",
-    "explanation_hi": "जनगणना अधिनियम, 1948 सभी निवासियों के लिए गणनाकारों को सही जानकारी देना अनिवार्य बनाता है।"
+    "explanation_en": "Appointment Letters are issued under the Census Act, 1948, which governs the duties and rights of the staff",
+    "explanation_hi": "नियुक्ति पत्र जनगणना अधिनियम, 1948 के तहत जारी किए जाते हैं, जो कर्मचारियों के कर्तव्यों और अधिकारों को नियंत्रित करता है 1,"
   },
   {
     "chapter": 3,
-    "topic": "Legal Provisions",
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Under which section of the Census Act does an Enumerator have the right to enter a house or vessel?",
+    "question_hi": "जनगणना अधिनियम की किस धारा के तहत एक प्रगणक को किसी घर या पोत (vessel) में प्रवेश करने का अधिकार है?",
+    "options_en": [
+      "Section 15",
+      "Section 11",
+      "Section 9",
+      "Section 15A"
+    ],
+    "options_hi": [
+      "धारा 15",
+      "धारा 11",
+      "धारा 9",
+      "धारा 15A"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Section 9 mandates that every person occupying a house or vessel must allow Census officers access for Census purposes",
+    "explanation_hi": "धारा 9 यह आदेश देती है कि किसी घर या पोत पर कब्जा करने वाले प्रत्येक व्यक्ति को जनगणना अधिकारियों को जनगणना के उद्देश्यों के लिए प्रवेश की अनुमति देनी होगी"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Are Census records admissible as evidence in a civil proceeding?",
+    "question_hi": "क्या जनगणना रिकॉर्ड किसी दीवानी कार्यवाही (civil proceeding) में साक्ष्य के रूप में स्वीकार्य हैं?",
+    "options_en": [
+      "Yes, always",
+      "Only with the permission of the head of the household",
+      "No, they are not admissible",
+      "Only if the record is electronic"
+    ],
+    "options_hi": [
+      "हाँ, हमेशा",
+      "केवल परिवार के मुखिया की अनुमति से",
+      "नहीं, वे स्वीकार्य नहीं हैं",
+      "केवल तभी जब रिकॉर्ड इलेक्ट्रॉनिक हो"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Section 15 of the Act states that Census records are not admissible as evidence in any civil proceeding 1,",
+    "explanation_hi": "अधिनियम की धारा 15 स्पष्ट करती है कि जनगणना रिकॉर्ड किसी भी दीवानी कार्यवाही में साक्ष्य के रूप में स्वीकार्य नहीं हैं 1,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Which section gives a Census officer the right to ask all required questions to the respondents?",
+    "question_hi": "कौन सी धारा जनगणना अधिकारी को उत्तरदाताओं से सभी आवश्यक प्रश्न पूछने का अधिकार देती है?",
+    "options_en": [
+      "Section 8",
+      "Section 15B",
+      "Section 11",
+      "Section 27"
+    ],
+    "options_hi": [
+      "धारा 8",
+      "धारा 15B",
+      "धारा 11",
+      "धारा 27"
+    ],
+    "correct_option": 0,
+    "explanation_en": "Section 8 empowers Census officers to ask all questions prescribed by the Central Government",
+    "explanation_hi": "धारा 8 जनगणना अधिकारियों को केंद्र सरकार द्वारा निर्धारित सभी प्रश्न पूछने का अधिकार प्रदान करती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Can the services of teachers be used for Census work?",
+    "question_hi": "क्या जनगणना कार्य के लिए शिक्षकों की सेवाओं का उपयोग किया जा सकता है?",
+    "options_en": [
+      "No, it is forbidden by the RTE Act",
+      "Yes, for the decennial population census",
+      "Only during summer vacations",
+      "Only for private schools"
+    ],
+    "options_hi": [
+      "नहीं, आरटीई अधिनियम द्वारा वर्जित है",
+      "हाँ, दशकीय जनसंख्या जनगणना के लिए",
+      "केवल गर्मियों की छुट्टियों के दौरान",
+      "केवल निजी स्कूलों के लिए"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 27 of the RTE Act, 2009, specifically allows teachers to be deployed for decennial census work",
+    "explanation_hi": "आरटीई अधिनियम, 2009 की धारा 27 विशेष रूप से शिक्षकों को दशकीय जनगणना कार्य के लिए तैनात करने की अनुमति देती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Which section protects Census officers against legal proceedings for actions taken in \"good faith\"?",
+    "question_hi": "कौन सी धारा जनगणना अधिकारियों को \"सद्भाव\" (good faith) में की गई कार्रवाइयों के लिए कानूनी कार्यवाही से सुरक्षा प्रदान करती है?",
+    "options_en": [
+      "Section 11",
+      "Section 15",
+      "Section 15B",
+      "Section 8"
+    ],
+    "options_hi": [
+      "धारा 11",
+      "धारा 15",
+      "धारा 15B",
+      "धारा 8"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Section 15B provides protection against suits or prosecutions for anything done in good faith under the Act",
+    "explanation_hi": "धारा 15B अधिनियम के तहत सद्भाव में किए गए किसी भी कार्य के लिए मुकदमों या अभियोजन के खिलाफ सुरक्षा प्रदान करती है 2,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "What is the penalty for \"negligence\" in performing Census duties?",
+    "question_hi": "जनगणना कर्तव्यों के पालन में \"लापरवाही\" (negligence) के लिए क्या दंड है?",
+    "options_en": [
+      "Promotion is delayed",
+      "It may attract legal penalties under the Act",
+      "Only a verbal warning",
+      "No penalty if the officer is a teacher"
+    ],
+    "options_hi": [
+      "पदोन्नति में देरी",
+      "यह अधिनियम के तहत कानूनी दंड को आकर्षित कर सकता है",
+      "केवल मौखिक चेतावनी",
+      "यदि अधिकारी शिक्षक है तो कोई दंड नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 11(1)(aa) specifies penalties for any Census officer who neglects to use reasonable diligence",
+    "explanation_hi": "धारा 11(1)(aa) किसी भी जनगणना अधिकारी के लिए दंड निर्दिष्ट करती है जो उचित परिश्रम (reasonable diligence) करने में उपेक्षा करता है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Who is responsible for paying the honorarium to Census functionaries?",
+    "question_hi": "जनगणना पदाधिकारियों को मानदेय (honorarium) देने के लिए कौन जिम्मेदार है?",
+    "options_en": [
+      "The lending employer",
+      "The Government of India",
+      "The State Gazette",
+      "The household respondents"
+    ],
+    "options_hi": [
+      "मूल नियोक्ता",
+      "भारत सरकार",
+      "राज्य राजपत्र",
+      "परिवार के उत्तरदाता"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Honorarium and awards are decided and recognized by the Government of India",
+    "explanation_hi": "मानदेय और पुरस्कार भारत सरकार द्वारा तय किए जाते हैं 2,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Does a person have the right to inspect Census books or registers?",
+    "question_hi": "क्या किसी व्यक्ति को जनगणना पुस्तकों या रजिस्टरों का निरीक्षण करने का अधिकार है?",
+    "options_en": [
+      "Yes, under RTI",
+      "No person has the right to inspect them",
+      "Only the head of the household",
+      "Only the Supervisor"
+    ],
+    "options_hi": [
+      "हाँ, आरटीआई के तहत",
+      "किसी भी व्यक्ति को उनके निरीक्षण का अधिकार नहीं है",
+      "केवल परिवार के मुखिया को",
+      "केवल पर्यवेक्षक को"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 15 states that no person has the right to inspect any book, register, or record made by a Census officer",
+    "explanation_hi": "धारा 15 कहती है कि किसी भी व्यक्ति को जनगणना अधिकारी द्वारा बनाई गई किसी भी पुस्तक, रजिस्टर या रिकॉर्ड का निरीक्षण करने का अधिकार नहीं है 1,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Self-Enumeration is legally permitted under which Rules?",
+    "question_hi": "स्व-गणना (Self-Enumeration) कानूनी रूप से किस नियम के तहत अनुमत है?",
+    "options_en": [
+      "Census Act, 1948",
+      "Census (Amendment) Rules, 2022",
+      "RTI Rules, 2005",
+      "IT Act, 2000"
+    ],
+    "options_hi": [
+      "जनगणना अधिनियम, 1948",
+      "जनगणना (संशोधन) नियम, 2022",
+      "आरटीआई नियम, 2005",
+      "आईटी अधिनियम, 2000"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 6D of the Census (Amendment) Rules, 2022, provides the legal basis for Self-Enumeration 1,",
+    "explanation_hi": "जनगणना (संशोधन) नियम, 2022 की धारा 6D स्व-गणना के लिए कानूनी आधार प्रदान करती है 1,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "What can an Enumerator do if a building has no number provided by local authorities?",
+    "question_hi": "यदि स्थानीय अधिकारियों द्वारा किसी भवन को कोई नंबर नहीं दिया गया है, तो प्रगणक क्या कर सकता है?",
+    "options_en": [
+      "Skip the building",
+      "Paint or affix numbers as necessary",
+      "Wait for the local authority to act",
+      "Ask the neighbor to provide a number"
+    ],
+    "options_hi": [
+      "भवन को छोड़ दें",
+      "आवश्यकतानुसार नंबर पेंट करें या चिपकाएँ",
+      "स्थानीय प्राधिकरण की कार्रवाई का इंतज़ार करें",
+      "पड़ोसी से नंबर देने को कहें"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 9 allows Census officers to paint or affix marks or numbers for Census purposes",
+    "explanation_hi": "धारा 9 जनगणना अधिकारियों को जनगणना के उद्देश्यों के लिए निशान या नंबर पेंट करने या चिपकाने की अनुमति देती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Is a respondent legally bound to answer Census questions?",
+    "question_hi": "क्या कोई उत्तरदाता जनगणना के सवालों के जवाब देने के लिए कानूनी रूप से बाध्य है?",
+    "options_en": [
+      "No, it is voluntary",
+      "Yes, to the best of their knowledge or belief",
+      "Only if they are government employees",
+      "Only in urban areas"
+    ],
+    "options_hi": [
+      "नहीं, यह स्वैच्छिक है",
+      "हाँ, अपनी सर्वोत्तम जानकारी या विश्वास के अनुसार",
+      "केवल यदि वे सरकारी कर्मचारी हैं",
+      "केवल शहरी क्षेत्रों में"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 8(2) states every person is legally bound to answer questions to the best of their knowledge",
+    "explanation_hi": "धारा 8(2) में कहा गया है कि प्रत्येक व्यक्ति अपनी सर्वोत्तम जानकारी के अनुसार सवालों के जवाब देने के लिए कानूनी रूप से बाध्य है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "Which section protects the service interests of members of the Census staff?",
+    "question_hi": "कौन सी धारा जनगणना कर्मचारियों के सेवा हितों (service interests) की रक्षा करती है?",
+    "options_en": [
+      "Section 15",
+      "Section 15A",
+      "Section 11",
+      "Section 9"
+    ],
+    "options_hi": [
+      "धारा 15",
+      "धारा 15A",
+      "धारा 11",
+      "धारा 9"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 15A ensures that Census duty is deemed duty under the lending employer and protects promotion rights",
+    "explanation_hi": "धारा 15A सुनिश्चित करती है कि जनगणना ड्यूटी को मूल नियोक्ता के अधीन ड्यूटी माना जाए और पदोन्नति के अधिकारों की रक्षा हो 1,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "easy",
+    "question_en": "What is the status of individual-level information under the RTI Act?",
+    "question_hi": "आरटीआई अधिनियम के तहत व्यक्तिगत स्तर की जानकारी की स्थिति क्या है?",
+    "options_en": [
+      "It cannot be disclosed",
+      "It is open to everyone",
+      "It is available after 10 years",
+      "Only the name can be shared"
+    ],
+    "options_hi": [
+      "इसका खुलासा नहीं किया जा सकता",
+      "यह सभी के लिए खुला है",
+      "यह 10 वर्षों के बाद उपलब्ध है",
+      "केवल नाम साझा किया जा सकता है"
+    ],
+    "correct_option": 0,
+    "explanation_en": "Under Section 8(1)(j) of the RTI Act, 2005, individual-level Census information is protected from disclosure",
+    "explanation_hi": "आरटीआई अधिनियम, 2005 की धारा 8(1)(j) के तहत, व्यक्तिगत स्तर की जनगणना जानकारी प्रकटीकरण से सुरक्षित है 2, 7,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
     "difficulty": "medium",
-    "question_en": "What is the penalty for giving false information to a Census Enumerator?",
-    "question_hi": "जनगणना गणनाकार को गलत जानकारी देने पर क्या दंड है?",
-    "options_en": ["No penalty", "Fine up to ₹1,000", "Imprisonment up to 1 year", "Fine and/or imprisonment"],
-    "options_hi": ["कोई दंड नहीं", "₹1,000 तक जुर्माना", "1 वर्ष तक कारावास", "जुर्माना और/या कारावास"],
+    "question_en": "According to the proviso in Section 8, what information is a person NOT bound to state?",
+    "question_hi": "धारा 8 के प्रावधान के अनुसार, एक व्यक्ति क्या जानकारी देने के लिए बाध्य नहीं है?",
+    "options_en": [
+      "Their income",
+      "Their religion",
+      "The name of a female member if forbidden by custom",
+      "Their date of birth"
+    ],
+    "options_hi": [
+      "उनकी आय",
+      "उनका धर्म",
+      "किसी महिला सदस्य का नाम यदि प्रथा द्वारा वर्जित हो",
+      "उनकी जन्मतिथि"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The law respects local customs where stating a female member's name (like a wife or deceased husband) may be forbidden",
+    "explanation_hi": "कानून उन स्थानीय रीति-रिवाजों का सम्मान करता है जहाँ किसी महिला सदस्य (जैसे पत्नी या मृत पति) का नाम बताना वर्जित हो सकता है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "Section 11(1)(b) prohibits a Census officer from doing what?",
+    "question_hi": "धारा 11(1)(b) जनगणना अधिकारी को क्या करने से रोकती है?",
+    "options_en": [
+      "Asking questions about assets",
+      "Intentionally putting offensive/improper questions or making false returns",
+      "Syncing data too frequently",
+      "Using a smartphone for data collection"
+    ],
+    "options_hi": [
+      "संपत्ति के बारे में सवाल पूछना",
+      "जानबूझकर अपमानजनक/अनुचित प्रश्न पूछना या झूठे रिटर्न बनाना",
+      "डेटा को बहुत बार सिंक करना",
+      "डेटा संग्रह के लिए स्मार्टफोन का उपयोग करना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Putting offensive questions or making false returns is a punishable offense under Section 11",
+    "explanation_hi": "अपमानजनक प्रश्न पूछना या झूठे रिटर्न बनाना धारा 11 के तहत एक दंडनीय अपराध है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "If a Census officer \"discloses any information\" received for a Census return without sanction, what is the consequence?",
+    "question_hi": "यदि कोई जनगणना अधिकारी मंजूरी के बिना जनगणना रिटर्न के लिए प्राप्त \"किसी भी जानकारी का खुलासा\" करता है, तो उसका परिणाम क्या होगा?",
+    "options_en": [
+      "They receive a promotion",
+      "They are subject to penalties under Section 11",
+      "They must retrain",
+      "No action is taken if the information was true"
+    ],
+    "options_hi": [
+      "उन्हें पदोन्नति मिलती है",
+      "वे धारा 11 के तहत दंड के भागी हैं",
+      "उन्हें फिर से प्रशिक्षण लेना होगा",
+      "यदि जानकारी सही थी तो कोई कार्रवाई नहीं की जाती"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Unauthorized disclosure of Census information is a criminal offense under the Act",
+    "explanation_hi": "जनगणना की जानकारी का अनधिकृत प्रकटीकरण अधिनियम के तहत एक आपराधिक अपराध है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What does Section 15A specifically protect regarding a Census officer's regular job?",
+    "question_hi": "धारा 15A विशेष रूप से जनगणना अधिकारी की नियमित नौकरी के संबंध में क्या सुरक्षित करती है?",
+    "options_en": [
+      "Their right to take a vacation",
+      "Their right of promotion or other advancement in their original service",
+      "Their office desk location",
+      "Their health insurance"
+    ],
+    "options_hi": [
+      "छुट्टी लेने का उनका अधिकार",
+      "उनकी मूल सेवा में पदोन्नति या अन्य उन्नति का उनका अधिकार",
+      "उनके ऑफिस डेस्क का स्थान",
+      "उनका स्वास्थ्य बीमा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The period spent on Census duty is deemed duty under the lending employer, protecting their career progression",
+    "explanation_hi": "जनगणना ड्यूटी पर बिताई गई अवधि को मूल नियोक्ता के अधीन ड्यूटी माना जाता है, जिससे उनके करियर की प्रगति सुरक्षित रहती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "Under Section 11(h), trespassing into a Census office is punishable by imprisonment for up to:",
+    "question_hi": "धारा 11(h) के तहत, जनगणना कार्यालय में अनाधिकृत प्रवेश (trespassing) के लिए कितने समय तक के कारावास का दंड दिया जा सकता है?",
+    "options_en": [
+      "6 months",
+      "1 year",
+      "3 years",
+      "5 years"
+    ],
+    "options_hi": [
+      "6 महीने",
+      "1 साल",
+      "3 साल",
+      "5 साल"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Trespassing in a Census office can result in a fine of up to 1,000 rupees and/or imprisonment up to 3 years",
+    "explanation_hi": "जनगणना कार्यालय में अनाधिकृत प्रवेश के परिणामस्वरूप 1,000 रुपये तक का जुर्माना और/या 3 साल तक की कैद हो सकती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "Section 15 records are protected against the Indian Evidence Act of which year?",
+    "question_hi": "धारा 15 के तहत रिकॉर्ड किस वर्ष के भारतीय साक्ष्य अधिनियम (Indian Evidence Act) के विरुद्ध सुरक्षित हैं?",
+    "options_en": [
+      "1948",
+      "1872",
+      "1950",
+      "2022"
+    ],
+    "options_hi": [
+      "1948",
+      "1872",
+      "1950",
+      "2022"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Act specifies protection despite anything to the contrary in the Indian Evidence Act, 1872",
+    "explanation_hi": "अधिनियम भारतीय साक्ष्य अधिनियम, 1872 में किसी भी विपरीत बात के बावजूद सुरक्षा निर्दिष्ट करता है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "Which official does Section 15B specifically protect from suits?",
+    "question_hi": "धारा 15B विशेष रूप से किस अधिकारी को मुकदमों से बचाती है?",
+    "options_en": [
+      "Only the Enumerator",
+      "Only the Census Commissioner",
+      "The Census Commissioner, Directors of Census Operations, and any Census officer",
+      "Only the Charge Officer"
+    ],
+    "options_hi": [
+      "केवल प्रगणक को",
+      "केवल जनगणना आयुक्त को",
+      "जनगणना आयुक्त, जनगणना संचालन निदेशक और कोई भी जनगणना अधिकारी",
+      "केवल चार्ज ऑफिसर को"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Protection of action taken in good faith applies to the entire hierarchy of Census officials",
+    "explanation_hi": "सद्भाव में की गई कार्रवाई की सुरक्षा जनगणना अधिकारियों के पूरे पदानुक्रम पर लागू होती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What is the penalty for a person who \"removes, obliterates, or alters\" a Census number?",
+    "question_hi": "उस व्यक्ति के लिए क्या दंड है जो जनगणना नंबर को \"हटाता है, मिटाता है या बदलता है\"?",
+    "options_en": [
+      "A small fine only",
+      "Penalties as per Section 11",
+      "They must repaint it themselves",
+      "They are banned from the next Census"
+    ],
+    "options_hi": [
+      "केवल एक छोटा जुर्माना",
+      "धारा 11 के अनुसार दंड",
+      "उन्हें इसे स्वयं फिर से पेंट करना होगा",
+      "उन्हें अगली जनगणना से प्रतिबंधित कर दिया जाएगा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Damaging or altering Census marks is an offense under Section 11(f)",
+    "explanation_hi": "जनगणना के निशानों को नुकसान पहुँचाना या बदलना धारा 11(f) के तहत एक अपराध है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "How does the manual describe the duty of an Enumerator regarding \"local customs\"?",
+    "question_hi": "मैनुअल \"स्थानीय रीति-रिवाजों\" (local customs) के संबंध में प्रगणक के कर्तव्य का वर्णन कैसे करता है?",
+    "options_en": [
+      "Ignore them to ensure data speed",
+      "Have regard to local customs when entering houses",
+      "Ask the local police to handle customs",
+      "Customs are only relevant in Phase II"
+    ],
+    "options_hi": [
+      "डेटा की गति सुनिश्चित करने के लिए उन्हें अनदेखा करें",
+      "घरों में प्रवेश करते समय स्थानीय रीति-रिवाजों का ध्यान रखें",
+      "स्थानीय पुलिस से रीति-रिवाजों को संभालने के लिए कहें",
+      "रीति-रिवाज केवल चरण II में प्रासंगिक हैं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 9 mandates that officers have regard to local customs when requesting access to premises",
+    "explanation_hi": "धारा 9 यह आदेश देती है कि परिसर में प्रवेश का अनुरोध करते समय अधिकारियों को स्थानीय रीति-रिवाजों का ध्यान रखना चाहिए"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "If an Enumerator hinders another person from performing their Census duty, they are liable under:",
+    "question_hi": "यदि कोई प्रगणक किसी अन्य व्यक्ति को उसके जनगणना कर्तव्य निभाने में बाधा डालता है, तो वह किसके तहत उत्तरदायी है?",
+    "options_en": [
+      "Section 15",
+      "Section 11(1)(a)",
+      "Section 8",
+      "Section 15A"
+    ],
+    "options_hi": [
+      "धारा 15",
+      "धारा 11(1)(a)",
+      "धारा 8",
+      "धारा 15A"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Hindering or obstructing any person in their duty is a punishable offense",
+    "explanation_hi": "अपने कर्तव्य में किसी भी व्यक्ति को रोकना या बाधा डालना एक दंडनीय अपराध है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT a protected category for teachers' deployment under the RTE Act?",
+    "question_hi": "आरटीई अधिनियम के तहत शिक्षकों की तैनाती के लिए निम्नलिखित में से कौन सी श्रेणी सुरक्षित नहीं है?",
+    "options_en": [
+      "Disaster relief",
+      "Elections",
+      "Decennial Census",
+      "Annual school sports day"
+    ],
+    "options_hi": [
+      "आपदा राहत",
+      "चुनाव",
+      "दशकीय जनगणना",
+      "वार्षिक स्कूल खेल दिवस"
+    ],
     "correct_option": 3,
-    "explanation_en": "Under the Census Act, 1948, giving false information can result in a fine and/or imprisonment. Respondents must give accurate information.",
-    "explanation_hi": "जनगणना अधिनियम, 1948 के तहत, गलत जानकारी देने पर जुर्माना और/या कारावास हो सकता है। उत्तरदाताओं को सटीक जानकारी देनी होगी।"
+    "explanation_en": "Teachers can only be deployed for the decennial census, disaster relief, and elections to local/state/parliamentary bodies",
+    "explanation_hi": "शिक्षकों को केवल दशकीय जनगणना, आपदा राहत और स्थानीय/राज्य/संसदीय निकायों के चुनावों के लिए तैनात किया जा सकता है"
   },
   {
     "chapter": 3,
-    "topic": "Legal Provisions",
-    "difficulty": "easy",
-    "question_en": "Can Census data collected from individuals be used for taxation purposes?",
-    "question_hi": "क्या व्यक्तियों से एकत्र जनगणना डेटा का उपयोग कर उद्देश्यों के लिए किया जा सकता है?",
-    "options_en": ["Yes, by the Income Tax Department", "Yes, by local municipalities", "No, census data is confidential and cannot be used for such purposes", "Yes, by the state government"],
-    "options_hi": ["हाँ, आयकर विभाग द्वारा", "हाँ, स्थानीय नगरपालिकाओं द्वारा", "नहीं, जनगणना डेटा गोपनीय है और ऐसे उद्देश्यों के लिए उपयोग नहीं किया जा सकता", "हाँ, राज्य सरकार द्वारा"],
-    "correct_option": 2,
-    "explanation_en": "Census data is strictly confidential. It cannot be used for taxation, legal proceedings, or any purpose other than statistical analysis.",
-    "explanation_hi": "जनगणना डेटा पूर्णतः गोपनीय है। इसका उपयोग कराधान, कानूनी कार्यवाही, या सांख्यिकीय विश्लेषण के अलावा किसी अन्य उद्देश्य के लिए नहीं किया जा सकता।"
-  },
-  {
-    "chapter": 3,
-    "topic": "Legal Provisions",
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
     "difficulty": "medium",
-    "question_en": "An Enumerator's appointment, duties, and powers are notified through which document?",
-    "question_hi": "गणनाकार की नियुक्ति, कर्तव्य और अधिकार किस दस्तावेज़ के माध्यम से अधिसूचित किए जाते हैं?",
-    "options_en": ["Employment letter", "Official Gazette notification", "Aadhaar card", "Police verification report"],
-    "options_hi": ["रोजगार पत्र", "आधिकारिक राजपत्र अधिसूचना", "आधार कार्ड", "पुलिस सत्यापन रिपोर्ट"],
+    "question_en": "What is the maximum fine for a person who abets a Census offense?",
+    "question_hi": "जनगणना अपराध के लिए उकसाने वाले (abets) व्यक्ति के लिए अधिकतम जुर्माना क्या है?",
+    "options_en": [
+      "500 rupees",
+      "1,000 rupees",
+      "5,000 rupees",
+      "10,000 rupees"
+    ],
+    "options_hi": [
+      "500 रुपये",
+      "1,000 रुपये",
+      "5,000 रुपये",
+      "10,000 रुपये"
+    ],
     "correct_option": 1,
-    "explanation_en": "Enumerators are appointed and their powers are notified through the Official Gazette under the Census Act, giving them legal authority.",
-    "explanation_hi": "गणनाकारों की नियुक्ति की जाती है और उनके अधिकार जनगणना अधिनियम के तहत आधिकारिक राजपत्र के माध्यम से अधिसूचित किए जाते हैं।"
+    "explanation_en": "Whoever abets an offense is punishable with a fine which may extend to 1,000 rupees",
+    "explanation_hi": "जो कोई भी अपराध के लिए उकसाता है, वह जुर्माने से दंडनीय है जो 1,000 रुपये तक हो सकता है"
   },
   {
     "chapter": 3,
-    "topic": "Legal Provisions",
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "Is an electronic record made by a Census officer open to inspection?",
+    "question_hi": "क्या जनगणना अधिकारी द्वारा बनाया गया इलेक्ट्रॉनिक रिकॉर्ड निरीक्षण के लिए खुला है?",
+    "options_en": [
+      "Yes, if it is not paper-based",
+      "No, it is treated the same as physical books/registers",
+      "Only by the Supervisor",
+      "Only by the Charge Officer"
+    ],
+    "options_hi": [
+      "हाँ, यदि यह कागज-आधारित नहीं है",
+      "नहीं, इसे भौतिक पुस्तकों/रजिस्टरों के समान ही माना जाता है",
+      "केवल पर्यवेक्षक द्वारा",
+      "केवल चार्ज ऑफिसर द्वारा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 15 explicitly covers magnetic or electronic records, keeping them closed to inspection",
+    "explanation_hi": "धारा 15 स्पष्ट रूप से चुंबकीय या इलेक्ट्रॉनिक रिकॉर्ड को शामिल करती है, उन्हें निरीक्षण के लिए बंद रखती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What happens if an Enumerator \"knowingly makes any false return\"?",
+    "question_hi": "यदि कोई प्रगणक \"जानबूझकर कोई गलत रिटर्न बनाता है\" तो क्या होता है?",
+    "options_en": [
+      "They are asked to redo the work",
+      "They are subject to penalties under Section 11(b)",
+      "The supervisor fixes it",
+      "No action is taken if it was a mistake"
+    ],
+    "options_hi": [
+      "उन्हें काम दोबारा करने के लिए कहा जाता है",
+      "वे धारा 11(b) के तहत दंड के भागी हैं",
+      "पर्यवेक्षक इसे ठीक करता है",
+      "यदि यह गलती थी तो कोई कार्रवाई नहीं की जाती"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Making a false return \"knowingly\" is a serious offense for a Census officer",
+    "explanation_hi": "\"जानबूझकर\" गलत रिटर्न बनाना एक जनगणना अधिकारी के लिए गंभीर अपराध है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "medium",
+    "question_en": "What is the obligation of a Census officer regarding \"Instructions issued in this behalf\"?",
+    "question_hi": "\"इस संबंध में जारी निर्देश\" (Instructions issued in this behalf) के संबंध में जनगणना अधिकारी का क्या दायित्व है?",
+    "options_en": [
+      "They can choose which instructions to follow",
+      "They are legally bound to ask questions as per instructions published in the Official Gazette",
+      "Instructions are only suggestions",
+      "Only the manual is important, not the Gazette"
+    ],
+    "options_hi": [
+      "वे चुन सकते हैं कि किन निर्देशों का पालन करना है",
+      "वे आधिकारिक राजपत्र में प्रकाशित निर्देशों के अनुसार प्रश्न पूछने के लिए कानूनी रूप से बाध्य हैं",
+      "निर्देश केवल सुझाव हैं",
+      "केवल मैनुअल महत्वपूर्ण है, राजपत्र नहीं"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 8(1) states officers ask questions as per instructions published in the Official Gazette",
+    "explanation_hi": "धारा 8(1) में कहा गया है कि अधिकारी आधिकारिक राजपत्र में प्रकाशित निर्देशों के अनुसार प्रश्न पूछते हैं"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
     "difficulty": "hard",
-    "question_en": "What protection does the Census Act, 1948 provide to Enumerators?",
-    "question_hi": "जनगणना अधिनियम, 1948 गणनाकारों को क्या सुरक्षा प्रदान करता है?",
-    "options_en": ["Salary protection", "Legal immunity for acts done in good faith during census duty", "Housing benefits", "Pension after census work"],
-    "options_hi": ["वेतन सुरक्षा", "जनगणना कार्य के दौरान सद्भावना से किए गए कार्यों के लिए कानूनी प्रतिरक्षा", "आवास लाभ", "जनगणना कार्य के बाद पेंशन"],
-    "correct_option": 1,
-    "explanation_en": "The Census Act provides legal protection to Enumerators for acts performed in good faith during their census duties — they cannot be sued for such acts.",
-    "explanation_hi": "जनगणना अधिनियम गणनाकारों को उनके जनगणना कार्य के दौरान सद्भावना से किए गए कार्यों के लिए कानूनी सुरक्षा प्रदान करता है।"
-  },
-  {
-    "chapter": 3,
-    "topic": "Legal Provisions",
-    "difficulty": "medium",
-    "question_en": "What right does an Enumerator have when a respondent refuses to give information?",
-    "question_hi": "जब कोई उत्तरदाता जानकारी देने से इनकार करे तो गणनाकार को क्या अधिकार है?",
-    "options_en": ["Force entry into the house", "Report the refusal to their supervisor who can take legal action", "Leave without recording anything", "Contact police immediately"],
-    "options_hi": ["घर में जबरन प्रवेश करना", "अपने पर्यवेक्षक को इनकार की रिपोर्ट करना जो कानूनी कार्रवाई कर सकते हैं", "कुछ भी दर्ज किए बिना चले जाना", "तुरंत पुलिस से संपर्क करना"],
-    "correct_option": 1,
-    "explanation_en": "If a respondent refuses, the Enumerator should report to the Supervisor. Refusal to give information is an offence under the Census Act.",
-    "explanation_hi": "यदि कोई उत्तरदाता इनकार करता है, तो गणनाकार को पर्यवेक्षक को रिपोर्ट करना चाहिए। जनगणना अधिनियम के तहत जानकारी देने से इनकार करना अपराध है।"
-  },
-  {
-    "chapter": 3,
-    "topic": "Legal Provisions",
-    "difficulty": "easy",
-    "question_en": "Can an individual inspect their own census schedule after submission?",
-    "question_hi": "क्या कोई व्यक्ति जमा करने के बाद अपनी जनगणना अनुसूची की जांच कर सकता है?",
-    "options_en": ["Yes, anytime on request", "Yes, but only within 30 days", "No, census schedules are kept confidential", "Yes, through RTI"],
-    "options_hi": ["हाँ, अनुरोध पर कभी भी", "हाँ, लेकिन केवल 30 दिनों के भीतर", "नहीं, जनगणना अनुसूचियां गोपनीय रखी जाती हैं", "हाँ, RTI के माध्यम से"],
+    "question_en": "In the context of Section 15, under what specific circumstance COULD a Census record potentially be used in a proceeding?",
+    "question_hi": "धारा 15 के संदर्भ में, किस विशिष्ट परिस्थिति में जनगणना रिकॉर्ड का उपयोग किसी कार्यवाही में किया जा सकता है?",
+    "options_en": [
+      "In a divorce case",
+      "In a land dispute",
+      "Only in a prosecution for an offense under the Census Act itself",
+      "Never, under any circumstances"
+    ],
+    "options_hi": [
+      "तलाक के मामले में",
+      "भूमि विवाद में",
+      "केवल स्वयं जनगणना अधिनियम के तहत किसी अपराध के लिए अभियोजन में",
+      "कभी नहीं, किसी भी परिस्थिति में नहीं"
+    ],
     "correct_option": 2,
-    "explanation_en": "Census schedules are kept strictly confidential. Even the individual respondent cannot access their own schedule after submission.",
-    "explanation_hi": "जनगणना अनुसूचियां पूर्णतः गोपनीय रखी जाती हैं। जमा करने के बाद व्यक्तिगत उत्तरदाता भी अपनी अनुसूची तक नहीं पहुंच सकता।"
+    "explanation_en": "While inadmissible in civil proceedings, records can be used in a prosecution for an offense committed under the Act",
+    "explanation_hi": "हालांकि दीवानी कार्यवाही में अस्वीकार्य है, रिकॉर्ड का उपयोग अधिनियम के तहत किए गए अपराध के लिए अभियोजन में किया जा सकता है"
   },
   {
     "chapter": 3,
-    "topic": "Legal Provisions",
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
     "difficulty": "hard",
-    "question_en": "Under Census Act 1948, who can requisition any public record or document needed for census purposes?",
-    "question_hi": "जनगणना अधिनियम 1948 के अंतर्गत जनगणना उद्देश्यों के लिए आवश्यक किसी भी सार्वजनिक रिकॉर्ड या दस्तावेज़ की माँग कौन कर सकता है?",
-    "options_en": ["Any Enumerator", "Only the Registrar General of India", "Census Commissioner or authorized officer", "District Collector"],
-    "options_hi": ["कोई भी गणनाकार", "केवल भारत के महापंजीयक", "जनगणना आयुक्त या अधिकृत अधिकारी", "जिला कलेक्टर"],
-    "correct_option": 2,
-    "explanation_en": "The Census Commissioner or any officer authorized by the Registrar General can requisition public records for census purposes.",
-    "explanation_hi": "जनगणना आयुक्त या महापंजीयक द्वारा अधिकृत कोई भी अधिकारी जनगणना उद्देश्यों के लिए सार्वजनिक रिकॉर्ड की माँग कर सकता है।"
-  },
-  {
-    "chapter": 3,
-    "topic": "Legal Provisions",
-    "difficulty": "medium",
-    "question_en": "What happens to Census data collected from individuals after the Census is complete?",
-    "question_hi": "जनगणना पूरी होने के बाद व्यक्तियों से एकत्र जनगणना डेटा का क्या होता है?",
-    "options_en": ["It is published online for public access", "It is aggregated into statistics — individual data is never published", "It is shared with state governments", "It is sold to research institutions"],
-    "options_hi": ["इसे सार्वजनिक पहुंच के लिए ऑनलाइन प्रकाशित किया जाता है", "इसे आंकड़ों में समेकित किया जाता है — व्यक्तिगत डेटा कभी प्रकाशित नहीं होता", "इसे राज्य सरकारों के साथ साझा किया जाता है", "इसे शोध संस्थानों को बेचा जाता है"],
+    "question_en": "Section 11(ca) specifies penalties for which entity that fails to comply with an order under Section 4A?",
+    "question_hi": "धारा 11(ca) किस इकाई के लिए दंड निर्दिष्ट करती है जो धारा 4A के तहत आदेश का पालन करने में विफल रहती है?",
+    "options_en": [
+      "Any citizen",
+      "Any local authority",
+      "Any NGO",
+      "Any school"
+    ],
+    "options_hi": [
+      "कोई भी नागरिक",
+      "कोई भी स्थानीय प्राधिकरण (local authority)",
+      "कोई भी एनजीओ",
+      "कोई भी स्कूल"
+    ],
     "correct_option": 1,
-    "explanation_en": "Individual census data is aggregated into statistical tables. No individual-level data is ever published or shared.",
-    "explanation_hi": "व्यक्तिगत जनगणना डेटा को सांख्यिकीय तालिकाओं में समेकित किया जाता है। कोई भी व्यक्तिगत-स्तर का डेटा कभी प्रकाशित या साझा नहीं किया जाता।"
+    "explanation_en": "Local authorities have a specific legal obligation to comply with Census orders",
+    "explanation_hi": "स्थानीय अधिकारियों का यह विशिष्ट कानूनी दायित्व है कि वे जनगणना आदेशों का पालन करें"
   },
   {
     "chapter": 3,
-    "topic": "Legal Provisions",
-    "difficulty": "easy",
-    "question_en": "Who appoints Enumerators for the Census?",
-    "question_hi": "जनगणना के लिए गणनाकारों की नियुक्ति कौन करता है?",
-    "options_en": ["The Prime Minister", "Local elected representatives", "The Census Commissioner / State government officials", "The Supreme Court"],
-    "options_hi": ["प्रधानमंत्री", "स्थानीय निर्वाचित प्रतिनिधि", "जनगणना आयुक्त / राज्य सरकार के अधिकारी", "सर्वोच्च न्यायालय"],
-    "correct_option": 2,
-    "explanation_en": "Enumerators are appointed by Census Commissioners or authorized State government officials, often from among existing government employees.",
-    "explanation_hi": "गणनाकारों की नियुक्ति जनगणना आयुक्तों या अधिकृत राज्य सरकार के अधिकारियों द्वारा की जाती है, अक्सर मौजूदा सरकारी कर्मचारियों में से।"
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What is the legal difference between Section 11(1)(a) and Section 11(1)(aa)?",
+    "question_hi": "धारा 11(1)(a) और धारा 11(1)(aa) के बीच कानूनी अंतर क्या है?",
+    "options_en": [
+      "(a) is for citizens, (aa) is for officers",
+      "(a) deals with refusal/obstruction; (aa) deals specifically with negligence/lack of diligence",
+      "There is no difference",
+      "(a) is a civil offense, (aa) is criminal"
+    ],
+    "options_hi": [
+      "(a) नागरिकों के लिए है, (aa) अधिकारियों के लिए है",
+      "(a) इनकार/बाधा से संबंधित है; (aa) विशेष रूप से लापरवाही/परिश्रम की कमी से संबंधित है",
+      "कोई अंतर नहीं है",
+      "(a) दीवानी अपराध है, (aa) आपराधिक है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Clause (a) covers refusal to perform duty, while (aa) targets those who perform duty but do so negligently",
+    "explanation_hi": "खंड (a) कर्तव्य निभाने से इनकार करने को कवर करता है, जबकि (aa) उन लोगों को लक्षित करता है जो कर्तव्य निभाते हैं लेकिन लापरवाही से करते हैं"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Does the \"Protection of action taken in good faith\" (Section 15B) apply if a Census officer is sued for a private matter unrelated to the Census?",
+    "question_hi": "क्या \"सद्भाव में की गई कार्रवाई की सुरक्षा\" (धारा 15B) तब लागू होती है जब जनगणना से असंबंधित किसी निजी मामले के लिए जनगणना अधिकारी पर मुकदमा चलाया जाता है?",
+    "options_en": [
+      "Yes, they have total immunity during the Census period",
+      "No, it only applies to actions done or intended to be done under this Act",
+      "Only if the Census Commissioner approves",
+      "Yes, if they were wearing their ID card at the time"
+    ],
+    "options_hi": [
+      "हाँ, जनगणना अवधि के दौरान उन्हें पूर्ण उन्मुक्ति प्राप्त है",
+      "नहीं, यह केवल इस अधिनियम के तहत किए गए या किए जाने के इरादे वाले कार्यों पर लागू होता है",
+      "केवल यदि जनगणना आयुक्त अनुमति देते हैं",
+      "हाँ, यदि उन्होंने उस समय अपना आईडी कार्ड पहना हुआ था"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The protection is strictly limited to Census-related duties performed in good faith",
+    "explanation_hi": "सुरक्षा कड़ाई से सद्भाव में किए गए जनगणना-संबंधित कर्तव्यों तक सीमित है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Under Section 11(b), what is the specific requirement BEFORE a Census officer can be penalized for disclosing Census information?",
+    "question_hi": "धारा 11(b) के तहत, जनगणना की जानकारी का खुलासा करने के लिए जनगणना अधिकारी को दंडित किए जाने से पहले कौन सी विशिष्ट आवश्यकता है?",
+    "options_en": [
+      "A public trial",
+      "The previous sanction of the Central Government or the State Government",
+      "A written complaint from a respondent",
+      "A review by a Field Trainer"
+    ],
+    "options_hi": [
+      "एक सार्वजनिक सुनवाई",
+      "केंद्र सरकार या राज्य सरकार की पूर्व मंजूरी (sanction)",
+      "उत्तरदाता से लिखित शिकायत",
+      "फील्ड ट्रेनर द्वारा समीक्षा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Penalizing an officer for disclosure requires the formal sanction of the government",
+    "explanation_hi": "प्रकटीकरण के लिए एक अधिकारी को दंडित करने के लिए सरकार की औपचारिक मंजूरी की आवश्यकता होती"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Which specific phrase in Section 8(2) defines the limit of a respondent's liability for a wrong answer?",
+    "question_hi": "धारा 8(2) में कौन सा विशिष्ट वाक्यांश गलत उत्तर के लिए उत्तरदाता के दायित्व की सीमा को परिभाषित करता है?",
+    "options_en": [
+      "\"Absolutely and perfectly\"",
+      "\"To the best of his knowledge or belief\"",
+      "\"Without any doubt\"",
+      "\"As directed by the head of the house\""
+    ],
+    "options_hi": [
+      "\"पूर्ण और पूर्ण रूप से\"",
+      "\"अपनी सर्वोत्तम जानकारी या विश्वास के अनुसार\" (best of his knowledge or belief)",
+      "\"बिना किसी संदेह के\"",
+      "\"जैसा कि घर के मुखिया द्वारा निर्देशित किया गया है\""
+    ],
+    "correct_option": 1,
+    "explanation_en": "This phrase provides a legal safeguard for respondents who might provide an incorrect answer unintentionally",
+    "explanation_hi": "यह वाक्यांश उन उत्तरदाताओं के लिए कानूनी सुरक्षा प्रदान करता है जो अनजाने में गलत उत्तर दे सकते हैं"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Section 11(c) specifically lists which types of functionaries (besides general officers) who can be penalized for damaging documents?",
+    "question_hi": "धारा 11(c) विशेष रूप से किन प्रकार के पदाधिकारियों (सामान्य अधिकारियों के अलावा) को सूचीबद्ध करती है जिन्हें दस्तावेजों को नुकसान पहुँचाने के लिए दंडित किया जा सकता है?",
+    "options_en": [
+      "Teachers and students",
+      "Sorters and compilers",
+      "Technicians and drivers",
+      "Police and security"
+    ],
+    "options_hi": [
+      "शिक्षक और छात्र",
+      "सॉर्टर (sorters) और कंपाइलर (compilers)",
+      "तकनीशियन और ड्राइवर",
+      "पुलिस और सुरक्षा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Sorters, compilers, and other members of the Census staff are explicitly named regarding document security",
+    "explanation_hi": "दस्तावेज़ सुरक्षा के संबंध में सॉर्टर, कंपाइलर और जनगणना कर्मचारियों के अन्य सदस्यों का स्पष्ट रूप से नाम लिया गया है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What is the legal effect of Section 27 of the RTE Act on existing court judgments regarding the use of teachers?",
+    "question_hi": "शिक्षकों के उपयोग के संबंध में मौजूदा अदालती फैसलों पर आरटीई अधिनियम की धारा 27 का क्या कानूनी प्रभाव है?",
+    "options_en": [
+      "It follows previous judgments",
+      "It overrides all existing judgments whatsoever",
+      "It only applies if the judgment was from a lower court",
+      "It has no effect"
+    ],
+    "options_hi": [
+      "यह पिछले फैसलों का पालन करता है",
+      "यह किसी भी मौजूदा अदालती फैसलों पर हावी (overrides) होता है",
+      "यह केवल तभी लागू होता है जब फैसला निचली अदालत का हो",
+      "इसका कोई प्रभाव नहीं पड़ता"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The manual states the RTE Act provision overrides any previous judicial decisions on the matter",
+    "explanation_hi": "मैनुअल में कहा गया है कि आरटीई अधिनियम का प्रावधान इस मामले में किसी भी पिछले न्यायिक निर्णयों पर हावी होता है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What does \"sanction of Law\" in Section  1 imply for the Census functionaries?",
+    "question_hi": "धारा  1 में \"कानून की मंजूरी\" (sanction of Law) का जनगणना पदाधिकारियों के लिए क्या तात्पर्य है?",
+    "options_en": [
+      "They are above the law",
+      "Their role is legally mandated and protected, but also carries legal accountability",
+      "They can write their own laws",
+      "They do not need to follow instructions"
+    ],
+    "options_hi": [
+      "वे कानून से ऊपर हैं",
+      "उनकी भूमिका कानूनी रूप से अनिवार्य और संरक्षित है, लेकिन कानूनी जवाबदेही भी वहन करती है",
+      "वे अपने स्वयं के कानून लिख सकते हैं",
+      "उन्हें निर्देशों का पालन करने की आवश्यकता नहीं है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The \"sanction of Law\" means the role is formal, legal, and subject to the provisions of the Census Act",
+    "explanation_hi": "\"कानून की मंजूरी\" का अर्थ है कि भूमिका औपचारिक, कानूनी है और जनगणना अधिनियम के प्रावधानों के अधीन है 1,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Under Section 11(d), what is the difference between a person who \"refuses to answer\" and one who \"intentionally gives a false answer\"?",
+    "question_hi": "धारा 11(d) के तहत, \"उत्तर देने से इनकार करने\" वाले और \"जानबूझकर गलत उत्तर देने वाले\" व्यक्ति के बीच क्या अंतर है?",
+    "options_en": [
+      "Only the false answer is punishable",
+      "Both are punishable offenses",
+      "Refusal is only a civil fine",
+      "Intention cannot be proven"
+    ],
+    "options_hi": [
+      "केवल गलत उत्तर दंडनीय है",
+      "दोनों दंडनीय अपराध हैं",
+      "इनकार करना केवल एक दीवानी जुर्माना है",
+      "इरादा साबित नहीं किया जा सकता"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 11(d) makes it an offense to both refuse to answer or to intentionally provide a false answer",
+    "explanation_hi": "धारा 11(d) उत्तर देने से इनकार करने या जानबूझकर गलत उत्तर प्रदान करने, दोनों को अपराध बनाती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Section 11(e) targets an \"occupier\" who refuses access. Does this apply to government-owned buildings?",
+    "question_hi": "धारा 11(e) एक \"अधिभोगी\" (occupier) को लक्षित करती है जो प्रवेश से इनकार करता है। क्या यह सरकारी स्वामित्व वाली इमारतों पर लागू होता है?",
+    "options_en": [
+      "No, only private property",
+      "Yes, it applies to \"any house, enclosure, vessel or other place\"",
+      "Only if the building is residential",
+      "Only if the building has a Census number"
+    ],
+    "options_hi": [
+      "नहीं, केवल निजी संपत्ति पर",
+      "हाँ, यह \"किसी भी घर, अहाते, पोत या अन्य स्थान\" पर लागू होता है",
+      "केवल यदि इमारत आवासीय है",
+      "केवल यदि इमारत का जनगणना नंबर है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The law applies to any premises that a Census officer is required to enter under Section 9",
+    "explanation_hi": "कानून उन सभी परिसरों पर लागू होता है जहाँ जनगणना अधिकारी को धारा 9 के तहत प्रवेश करने की आवश्यकता होती है 3,"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Why is the phrase \"without prejudice to any other provisions\" used in Section  3 regarding Self-Enumeration?",
+    "question_hi": "स्व-गणना के संबंध में धारा  3 में \"किसी अन्य प्रावधान के प्रतिकूल प्रभाव के बिना\" (without prejudice to any other provisions) वाक्यांश का उपयोग क्यों किया गया है?",
+    "options_en": [
+      "It means other laws don't apply",
+      "It means the existing legal framework and obligations remain intact despite the new method",
+      "It means the method is experimental",
+      "It means no penalties apply to Self-Enumeration"
+    ],
+    "options_hi": [
+      "इसका मतलब है कि अन्य कानून लागू नहीं होते",
+      "इसका मतलब है कि नई पद्धति के बावजूद मौजूदा कानूनी ढांचा और दायित्व बरकरार हैं",
+      "इसका मतलब है कि विधि प्रयोगात्मक है",
+      "इसका मतलब है कि स्व-गणना पर कोई दंड लागू नहीं होता"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Self-Enumeration is an additional method that doesn't bypass the core legal requirements of the Census",
+    "explanation_hi": "स्व-गणना एक अतिरिक्त विधि है जो जनगणना की मुख्य कानूनी आवश्यकताओं को बायपास नहीं करती है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Section 11(g) mentions a \"Section 10\". What is the offense related to this section?",
+    "question_hi": "धारा 11(g) में एक \"धारा 10\" का उल्लेख है। इस धारा से संबंधित अपराध क्या है?",
+    "options_en": [
+      "Trespassing",
+      "Failure of a person required to fill a schedule to do so or making a false return",
+      "Negligence of a supervisor",
+      "Damaging a mobile phone"
+    ],
+    "options_hi": [
+      "अनाधिकृत प्रवेश",
+      "जिस व्यक्ति को शेड्यूल भरने की आवश्यकता है, उसकी विफलता या गलत रिटर्न बनाना",
+      "पर्यवेक्षक की लापरवाही",
+      "मोबाइल फोन को नुकसान पहुँचाना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Section 11(g) penalizes those who, having been required to fill a schedule, fail to comply or lie",
+    "explanation_hi": "धारा 11(g) उन लोगों को दंडित करती है, जिन्हें शेड्यूल भरने की आवश्यकता होने पर, अनुपालन करने में विफल रहते हैं या झूठ बोलते हैं"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "What is the significance of the \"Official Gazette\" in the context of legal rights?",
+    "question_hi": "कानूनी अधिकारों के संदर्भ में \"आधिकारिक राजपत्र\" (Official Gazette) का क्या महत्व है?",
+    "options_en": [
+      "It is where the Enumerator's name is published",
+      "It provides the formal legal notification of instructions and questions that people are bound to answer",
+      "it is used to publish Census results only",
+      "It is an internal government memo"
+    ],
+    "options_hi": [
+      "यहाँ प्रगणक का नाम प्रकाशित होता है",
+      "यह उन निर्देशों और प्रश्नों की औपचारिक कानूनी अधिसूचना प्रदान करता है जिनका उत्तर देने के लिए लोग बाध्य हैं",
+      "इसका उपयोग केवल जनगणना परिणाम प्रकाशित करने के लिए किया जाता है",
+      "यह एक आंतरिक सरकारी ज्ञापन है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Legal obligation to answer (Section 8) is tied specifically to questions published in the Gazette",
+    "explanation_hi": "उत्तर देने की कानूनी बाध्यता (धारा 8) विशेष रूप से राजपत्र में प्रकाशित प्रश्नों से जुड़ी है"
+  },
+  {
+    "chapter": 3,
+    "topic": "Legal Provisions and the Rights of Enumerators and Supervisors",
+    "difficulty": "hard",
+    "question_en": "Section 15B states no legal proceeding shall lie for things \"intended to be done\". What does this legal nuance provide?",
+    "question_hi": "धारा 15B में कहा गया है कि \"किए जाने के इरादे\" (intended to be done) वाली चीजों के लिए कोई कानूनी कार्यवाही नहीं होगी। यह कानूनी बारीकी क्या प्रदान करती है?",
+    "options_en": [
+      "Protection for preparations made in good faith, even if the action wasn't finalized",
+      "A way for officers to avoid doing their work",
+      "Protection for illegal intentions",
+      "It only applies to the Census Commissioner"
+    ],
+    "options_hi": [
+      "सद्भाव में की गई तैयारियों के लिए सुरक्षा, भले ही कार्रवाई पूरी न हुई हो",
+      "अधिकारियों के लिए अपना काम न करने का एक तरीका",
+      "अवैध इरादों के लिए सुरक्षा",
+      "यह केवल जनगणना आयुक्त पर लागू होता है"
+    ],
+    "correct_option": 0,
+    "explanation_en": "This covers the planning and preparatory phases of Census work, ensuring staff are protected while attempting to fulfill the Act",
+    "explanation_hi": "यह जनगणना कार्य के नियोजन और तैयारी चरणों को कवर करता है, यह सुनिश्चित करता है कि अधिनियम को पूरा करने का प्रयास करते समय कर्मचारियों को सुरक्षा मिले"
   }
 ]

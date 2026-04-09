@@ -3,120 +3,2310 @@
     "chapter": 1,
     "topic": "Introduction to Census",
     "difficulty": "easy",
-    "question_en": "What is the primary purpose of the Census?",
-    "question_hi": "जनगणना का मुख्य उद्देश्य क्या है?",
-    "options_en": ["To collect tax data", "To count and collect data about the population", "To register voters", "To survey agricultural land"],
-    "options_hi": ["कर डेटा एकत्र करना", "जनसंख्या की गणना और डेटा संग्रह करना", "मतदाताओं का पंजीकरण करना", "कृषि भूमि का सर्वेक्षण करना"],
-    "correct_option": 1,
-    "explanation_en": "The Census is a complete enumeration of the population to collect demographic, social, and economic data.",
-    "explanation_hi": "जनगणना जनसंख्या की पूर्ण गणना है जिसमें जनसांख्यिकीय, सामाजिक और आर्थिक डेटा एकत्र किया जाता है।"
+    "question_en": "In which year was the first Census conducted in India?",
+    "question_hi": "भारत में पहली जनगणना किस वर्ष आयोजित की गई थी?",
+    "options_en": [
+      "1881",
+      "1947",
+      "1872",
+      "1951"
+    ],
+    "options_hi": [
+      "1881",
+      "1947",
+      "1872",
+      "1951"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The first Census was conducted in 1872 at different points of time across the country",
+    "explanation_hi": "भारत में पहली जनगणना 1872 में देश के अलग-अलग हिस्सों में अलग-अलग समय पर आयोजित की गई थी"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
     "difficulty": "easy",
-    "question_en": "How often is the Census conducted in India?",
-    "question_hi": "भारत में जनगणना कितने वर्षों में एक बार होती है?",
-    "options_en": ["Every 5 years", "Every 10 years", "Every 15 years", "Every 20 years"],
-    "options_hi": ["हर 5 वर्ष में", "हर 10 वर्ष में", "हर 15 वर्ष में", "हर 20 वर्ष में"],
+    "question_en": "The Census of India 2027 is which number in the series since 1872?",
+    "question_hi": "भारत की जनगणना 2027, 1872 से इस श्रृंखला की कौन सी जनगणना है?",
+    "options_en": [
+      "10th",
+      "16th",
+      "15th",
+      "12th"
+    ],
+    "options_hi": [
+      "10वीं",
+      "16वीं",
+      "15वीं",
+      "12वीं"
+    ],
     "correct_option": 1,
-    "explanation_en": "India conducts the Census every 10 years. The last Census was in 2011 and Census 2027 will be the next one.",
-    "explanation_hi": "भारत हर 10 वर्ष में जनगणना करता है। पिछली जनगणना 2011 में हुई थी और अगली जनगणना 2027 होगी।"
+    "explanation_en": "The 2027 Census is the 16th in the series since its inception in 1872 1,",
+    "explanation_hi": "2027 की जनगणना 1872 में शुरू हुई श्रृंखला की 16वीं जनगणना होगी"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
     "difficulty": "easy",
-    "question_en": "In which year is Census 2027 scheduled to begin its field operations?",
-    "question_hi": "जनगणना 2027 की क्षेत्रीय गतिविधियाँ किस वर्ष से शुरू होने वाली हैं?",
-    "options_en": ["2025", "2026", "2027", "2028"],
-    "options_hi": ["2025", "2026", "2027", "2028"],
-    "correct_option": 1,
-    "explanation_en": "Census 2027 field operations (Houselisting) are scheduled to begin in 2026.",
-    "explanation_hi": "जनगणना 2027 की क्षेत्रीय गतिविधियाँ (मकान सूचीकरण) 2026 में शुरू होने वाली हैं।"
+    "question_en": "How many Censuses have been conducted after Independence, including the 2027 exercise?",
+    "question_hi": "आजादी के बाद से 2027 की कवायद सहित कितनी जनगणनाएं आयोजित की गई हैं?",
+    "options_en": [
+      "5",
+      "10",
+      "8",
+      "7"
+    ],
+    "options_hi": [
+      "5",
+      "10",
+      "8",
+      "7"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Census of India 2027 is the 8th census to be conducted after Independence 1,",
+    "explanation_hi": "जनगणना 2027 स्वतंत्रता के बाद आयोजित होने वाली 8वीं जनगणना है 1,"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
-    "difficulty": "medium",
-    "question_en": "Which ministry is responsible for conducting the Census in India?",
-    "question_hi": "भारत में जनगणना कराने के लिए कौन सा मंत्रालय उत्तरदायी है?",
-    "options_en": ["Ministry of Finance", "Ministry of Home Affairs", "Ministry of Statistics", "Ministry of Education"],
-    "options_hi": ["वित्त मंत्रालय", "गृह मंत्रालय", "सांख्यिकी मंत्रालय", "शिक्षा मंत्रालय"],
+    "difficulty": "easy",
+    "question_en": "Under which Article of the Constitution of India is the Census categorized?",
+    "question_hi": "भारत के संविधान के किस अनुच्छेद के तहत जनगणना को वर्गीकृत किया गया है?",
+    "options_en": [
+      "Article 370",
+      "Article 246",
+      "Article 51A",
+      "Article 356"
+    ],
+    "options_hi": [
+      "अनुच्छेद 370",
+      "अनुच्छेद 246",
+      "अनुच्छेद 51A",
+      "अनुच्छेद 356"
+    ],
     "correct_option": 1,
-    "explanation_en": "The Census is conducted under the Ministry of Home Affairs through the Office of the Registrar General of India (RGI).",
-    "explanation_hi": "जनगणना गृह मंत्रालय के अंतर्गत भारत के महापंजीयक के कार्यालय द्वारा संचालित की जाती है।"
+    "explanation_en": "The Census is a Constitutional activity conducted under Article 246 1,",
+    "explanation_hi": "जनगणना एक संवैधानिक गतिविधि है जो अनुच्छेद 246 के तहत आयोजित की जाती है 1,"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
-    "difficulty": "medium",
-    "question_en": "The Census data is primarily used for which purpose?",
-    "question_hi": "जनगणना डेटा मुख्य रूप से किस उद्देश्य के लिए उपयोग किया जाता है?",
-    "options_en": ["Election campaigning", "Planning government schemes and resource allocation", "Setting bank interest rates", "Determining export quotas"],
-    "options_hi": ["चुनाव प्रचार", "सरकारी योजनाओं की योजना और संसाधन आवंटन", "बैंक ब्याज दरें निर्धारित करना", "निर्यात कोटा निर्धारण"],
-    "correct_option": 1,
-    "explanation_en": "Census data is used for planning government schemes, allocating resources, delimiting constituencies, and tracking development progress.",
-    "explanation_hi": "जनगणना डेटा सरकारी योजनाओं की योजना, संसाधन आवंटन, निर्वाचन क्षेत्रों के सीमांकन और विकास प्रगति के लिए उपयोग किया जाता है।"
+    "difficulty": "easy",
+    "question_en": "Which specific Schedule of the Constitution of India lists the Census?",
+    "question_hi": "भारत के संविधान की कौन सी विशिष्ट अनुसूची जनगणना को सूचीबद्ध करती है?",
+    "options_en": [
+      "Fifth Schedule",
+      "Eighth Schedule",
+      "Seventh Schedule",
+      "Third Schedule"
+    ],
+    "options_hi": [
+      "पांचवीं अनुसूची",
+      "आठवीं अनुसूची",
+      "सातवीं अनुसूची",
+      "तीसरी अनुसूची"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Census is listed under the Seventh Schedule of the Constitution",
+    "explanation_hi": "जनगणना को संविधान की सातवीं अनुसूची के तहत सूचीबद्ध किया गया है"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
-    "difficulty": "medium",
-    "question_en": "Census 2027 will use which new approach compared to previous censuses?",
-    "question_hi": "जनगणना 2027 में पिछली जनगणनाओं की तुलना में कौन सा नया दृष्टिकोण अपनाया जाएगा?",
-    "options_en": ["Only paper-based forms", "Digital data collection using mobile apps", "Telephone interviews only", "Postal questionnaires"],
-    "options_hi": ["केवल कागज़-आधारित फॉर्म", "मोबाइल ऐप का उपयोग करके डिजिटल डेटा संग्रह", "केवल टेलीफोन साक्षात्कार", "डाक प्रश्नावली"],
+    "difficulty": "easy",
+    "question_en": "The Census is part of which list in the Seventh Schedule?",
+    "question_hi": "जनगणना सातवीं अनुसूची की किस सूची का हिस्सा है?",
+    "options_en": [
+      "State List",
+      "Union List",
+      "Concurrent List",
+      "Local List"
+    ],
+    "options_hi": [
+      "राज्य सूची",
+      "संघ सूची",
+      "समवर्ती सूची",
+      "स्थानीय सूची"
+    ],
     "correct_option": 1,
-    "explanation_en": "Census 2027 will use digital data collection through mobile applications (eCensus), making it India's first digital census.",
-    "explanation_hi": "जनगणना 2027 में मोबाइल एप्लिकेशन (ई-जनगणना) के माध्यम से डिजिटल डेटा संग्रह होगा, जो भारत की पहली डिजिटल जनगणना होगी।"
+    "explanation_en": "The Census falls under the Union List Article 246 1,",
+    "explanation_hi": "जनगणना संघ सूची अनुच्छेद 246 के अंतर्गत आती है 1,"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
-    "difficulty": "hard",
-    "question_en": "The Census of India is governed by which Act?",
-    "question_hi": "भारत की जनगणना किस अधिनियम द्वारा संचालित होती है?",
-    "options_en": ["The Statistics Act, 2008", "The Census Act, 1948", "The Registration of Births and Deaths Act, 1969", "The Population Act, 1955"],
-    "options_hi": ["सांख्यिकी अधिनियम, 2008", "जनगणना अधिनियम, 1948", "जन्म और मृत्यु पंजीकरण अधिनियम, 1969", "जनसंख्या अधिनियम, 1955"],
-    "correct_option": 1,
-    "explanation_en": "The Census of India is conducted under the Census Act, 1948, which makes participation mandatory and the data confidential.",
-    "explanation_hi": "भारत की जनगणना जनगणना अधिनियम, 1948 के तहत संचालित होती है, जो भागीदारी को अनिवार्य और डेटा को गोपनीय बनाता है।"
+    "difficulty": "easy",
+    "question_en": "What is the serial number of the Census in the Union List?",
+    "question_hi": "संघ सूची में जनगणना की क्रम संख्या क्या है?",
+    "options_en": [
+      "1",
+      "100",
+      "69",
+      "42"
+    ],
+    "options_hi": [
+      "1",
+      "100",
+      "69",
+      "42"
+    ],
+    "correct_option": 2,
+    "explanation_en": "It is listed at serial number 69 of the Seventh Schedule",
+    "explanation_hi": "इसे सातवीं अनुसूची की संघ सूची में क्रम संख्या 69 पर सूचीबद्ध किया गया है"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
-    "difficulty": "hard",
-    "question_en": "What does NPR stand for in the context of Census 2027?",
-    "question_hi": "जनगणना 2027 के संदर्भ में NPR का क्या अर्थ है?",
-    "options_en": ["National Population Register", "National Planning Record", "National Poverty Report", "National Property Registry"],
-    "options_hi": ["राष्ट्रीय जनसंख्या रजिस्टर", "राष्ट्रीय योजना रिकॉर्ड", "राष्ट्रीय गरीबी रिपोर्ट", "राष्ट्रीय संपत्ति रजिस्ट्री"],
+    "difficulty": "easy",
+    "question_en": "Which Act provides the legal basis for conducting the Census in India?",
+    "question_hi": "कौन सा अधिनियम भारत में जनगणना आयोजित करने के लिए कानूनी आधार प्रदान करता है?",
+    "options_en": [
+      "The Constitution Act",
+      "The Census Act, 1948",
+      "The Digital India Act",
+      "The Statistics Act, 2000"
+    ],
+    "options_hi": [
+      "संविधान अधिनियम",
+      "जनगणना अधिनियम, 1948",
+      "डिजिटल इंडिया अधिनियम",
+      "सांख्यिकी अधिनियम, 2000"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Census Act, 1948, forms the legal basis for its conduct 1,",
+    "explanation_hi": "जनगणना अधिनियम, 1948 इसके संचालन के लिए कानूनी आधार बनाता है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "How many phases are there in the Census of India 2027?",
+    "question_hi": "भारत की जनगणना 2027 कितने चरणों में आयोजित की जाएगी?",
+    "options_en": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "options_hi": [
+      "एक",
+      "दो",
+      "तीन",
+      "चार"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Census of India 2027 will be conducted in two phases 2,",
+    "explanation_hi": "भारत की जनगणना 2027 दो चरणों में आयोजित की जाएगी"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the name of the first phase of the Census?",
+    "question_hi": "जनगणना के पहले चरण का नाम क्या है?",
+    "options_en": [
+      "Population Enumeration",
+      "Houselisting and Housing Census",
+      "Digital Mapping",
+      "Socio-Economic Survey"
+    ],
+    "options_hi": [
+      "जनसंख्या गणना",
+      "मकान सूचीकरण और मकान गणना",
+      "डिजिटल मानचित्रण",
+      "सामाजिक-आर्थिक सर्वेक्षण"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase I is the Houselisting and Housing Census 1,",
+    "explanation_hi": "चरण I मकान सूचीकरण और मकान गणना (HLO) है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the name of the second phase of the Census?",
+    "question_hi": "जनगणना के दूसरे चरण का नाम क्या है?",
+    "options_en": [
+      "Building Survey",
+      "Asset Mapping",
+      "Population Enumeration",
+      "Migration Study"
+    ],
+    "options_hi": [
+      "भवन सर्वेक्षण",
+      "संपत्ति मानचित्रण",
+      "जनसंख्या गणना",
+      "प्रवासन अध्ययन"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Phase II is the Population Enumeration 2,",
+    "explanation_hi": "चरण II जनसंख्या गणना (PE) है 2,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "In which year will the Houselisting and Housing Census be conducted?",
+    "question_hi": "मकान सूचीकरण और मकान गणना (Phase I) किस वर्ष आयोजित की जाएगी?",
+    "options_en": [
+      "2027",
+      "2025",
+      "2026",
+      "2028"
+    ],
+    "options_hi": [
+      "2027",
+      "2025",
+      "2026",
+      "2028"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Phase I (HLO) is conducted in 2026 2,",
+    "explanation_hi": "चरण I (HLO) 2026 में आयोजित किया जाएगा"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "In which year will the Population Enumeration be conducted in most areas?",
+    "question_hi": "अधिकांश क्षेत्रों में जनसंख्या गणना (Phase II) किस वर्ष आयोजित की जाएगी?",
+    "options_en": [
+      "2026",
+      "2027",
+      "2025",
+      "2030"
+    ],
+    "options_hi": [
+      "2026",
+      "2027",
+      "2025",
+      "2030"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase II (PE) is conducted in 2027 2,",
+    "explanation_hi": "चरण II (PE) 2027 में आयोजित किया जाएगा"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the primary digital tool for data collection in the first phase?",
+    "question_hi": "पहले चरण में डेटा संग्रह के लिए प्राथमिक डिजिटल उपकरण क्या है?",
+    "options_en": [
+      "A web browser",
+      "‘Census 2027-HLO’ Mobile Application",
+      "Email forms",
+      "Paper schedules only"
+    ],
+    "options_hi": [
+      "वेब ब्राउज़र",
+      "‘Census 2027-HLO’ मोबाइल एप्लिकेशन",
+      "ईमेल फॉर्म",
+      "केवल पेपर शेड्यूल"
+    ],
+    "correct_option": 1,
+    "explanation_en": "For the first time, data will be collected using the ‘Census 2027-HLO’ mobile app 2,",
+    "explanation_hi": "पहली बार, डेटा 'Census 2027-HLO' मोबाइल ऐप का उपयोग करके एकत्र किया जाएगा"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "Which operating systems are compatible with the Census HLO Mobile App?",
+    "question_hi": "जनगणना HLO मोबाइल ऐप के साथ कौन से ऑपरेटिंग सिस्टम संगत हैं?",
+    "options_en": [
+      "Windows and Linux",
+      "Android and iOS",
+      "Android only",
+      "iOS only"
+    ],
+    "options_hi": [
+      "विंडोज और लिनक्स",
+      "एंड्रॉइड और आईओएस (iOS)",
+      "केवल एंड्रॉइड",
+      "केवल आईओएस"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The App is compatible with both Android and iOS platforms",
+    "explanation_hi": "यह ऐप एंड्रॉइड और आईओएस दोनों प्लेटफॉर्म के साथ संगत है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the minimum RAM requirement for the mobile device used for the Census?",
+    "question_hi": "जनगणना के लिए उपयोग किए जाने वाले मोबाइल डिवाइस के लिए न्यूनतम रैम (RAM) की क्या आवश्यकता है?",
+    "options_en": [
+      "2 GB",
+      "8 GB",
+      "4 GB",
+      "16 GB"
+    ],
+    "options_hi": [
+      "2 GB",
+      "8 GB",
+      "4 GB",
+      "16 GB"
+    ],
+    "correct_option": 2,
+    "explanation_en": "A minimum of 4 GB RAM is required",
+    "explanation_hi": "न्यूनतम 4 GB रैम की आवश्यकता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the minimum storage requirement for the mobile device used for the Census?",
+    "question_hi": "जनगणना के लिए उपयोग किए जाने वाले मोबाइल डिवाइस के लिए न्यूनतम स्टोरेज की क्या आवश्यकता है?",
+    "options_en": [
+      "4 GB",
+      "8 GB",
+      "32 GB",
+      "64 GB"
+    ],
+    "options_hi": [
+      "4 GB",
+      "8 GB",
+      "32 GB",
+      "64 GB"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A minimum of 8 GB storage is required",
+    "explanation_hi": "न्यूनतम 8 GB स्टोरेज की आवश्यकता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "Which new method of submitting data is introduced for the first time in Census 2027?",
+    "question_hi": "जनगणना 2027 में पहली बार डेटा जमा करने की कौन सी नई विधि पेश की गई है?",
+    "options_en": [
+      "Telephonic interview",
+      "Self-Enumeration",
+      "Post-mail submission",
+      "WhatsApp data entry"
+    ],
+    "options_hi": [
+      "टेलीफोनिक साक्षात्कार",
+      "स्व-गणना (Self-Enumeration)",
+      "पोस्ट-मेल सबमिशन",
+      "व्हाट्सएप डेटा एंट्री"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Self-Enumeration method is introduced for the first time in Census 2027 2,",
+    "explanation_hi": "जनगणना 2027 में पहली बार स्व-गणना पद्धति शुरू की गई है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "How will households submit their own information during Self-Enumeration?",
+    "question_hi": "स्व-गणना के दौरान परिवार अपनी जानकारी कैसे जमा करेंगे?",
+    "options_en": [
+      "Through a mobile app",
+      "Through a web portal",
+      "By visiting the Charge Office",
+      "By calling a toll-free number"
+    ],
+    "options_hi": [
+      "मोबाइल ऐप के माध्यम से",
+      "वेब पोर्टल के माध्यम से",
+      "चार्ज कार्यालय जाकर",
+      "टोल-फ्री नंबर पर कॉल करके"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Self-Enumeration enables individuals to submit information through a web portal",
+    "explanation_hi": "स्व-गणना व्यक्तियों को वेब पोर्टल के माध्यम से जानकारी जमा करने में सक्षम बनाती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "Who are considered the \"backbone\" of the Census of India 2027?",
+    "question_hi": "भारत की जनगणना 2027 की \"रीढ़\" किसे माना जाता है?",
+    "options_en": [
+      "Government Ministers",
+      "Enumerators and Supervisors",
+      "Software developers",
+      "Police officers"
+    ],
+    "options_hi": [
+      "सरकारी मंत्रियों को",
+      "प्रगणकों और पर्यवेक्षकों को",
+      "सॉफ्टवेयर डेवलपर्स को",
+      "पुलिस अधिकारियों को"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Enumerators and Supervisors are described as the backbone of Census 2027",
+    "explanation_hi": "प्रगणक (Enumerators) और पर्यवेक्षक (Supervisors) जनगणना 2027 की रीढ़ हैं"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "The Census provides the foundation for our democracy because of its importance in which document?",
+    "question_hi": "जनगणना हमारे लोकतंत्र के लिए एक आधार प्रदान करती है क्योंकि इसका महत्व किस दस्तावेज में वर्णित है?",
+    "options_en": [
+      "The Bhagavad Gita",
+      "The Census Act",
+      "The Constitution of India",
+      "The manual"
+    ],
+    "options_hi": [
+      "भगवद गीता",
+      "जनगणना अधिनियम",
+      "भारत का संविधान",
+      "नियमावली"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Census provides a foundation for democracy due to its importance in the Constitution",
+    "explanation_hi": "जनगणना संविधान में अपने महत्व के कारण लोकतंत्र के लिए आधार प्रदान करती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the main objective of Phase I?",
+    "question_hi": "चरण I का मुख्य उद्देश्य क्या है?",
+    "options_en": [
+      "Counting every individual",
+      "Listing buildings, houses, and identifying households",
+      "Calculating the GDP",
+      "Distributing IDs"
+    ],
+    "options_hi": [
+      "प्रत्येक व्यक्ति की गिनती करना",
+      "इमारतों, घरों की सूची बनाना और परिवारों की पहचान करना",
+      "जीडीपी की गणना करना",
+      "आईडी वितरित करना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "During HLO, buildings, census houses, and households are identified and systematically listed",
+    "explanation_hi": "HLO के दौरान, इमारतों, जनगणना मकानों और परिवारों की पहचान की जाती है और उन्हें व्यवस्थित रूप से सूचीबद्ध किया जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "Census 2027 data is essential for national planning and building what?",
+    "question_hi": "जनगणना 2027 का डेटा राष्ट्रीय योजना और किसके निर्माण के लिए आवश्यक है?",
+    "options_en": [
+      "A New Delhi",
+      "A Viksit Bharat",
+      "A Smart City",
+      "A Digital Village"
+    ],
+    "options_hi": [
+      "एक नई दिल्ली",
+      "एक विकसित भारत",
+      "एक स्मार्ट सिटी",
+      "एक डिजिटल गांव"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Census data is essential for national planning and building a \"Viksit Bharat\" (Developed India)",
+    "explanation_hi": "जनगणना डेटा राष्ट्रीय योजना और \"विकसित भारत\" के निर्माण के लिए आवश्यक है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "In which months is Phase I typically conducted?",
+    "question_hi": "चरण I आम तौर पर किन महीनों में आयोजित किया जाता है?",
+    "options_en": [
+      "January to March",
+      "April to September",
+      "October to December",
+      "July to August"
+    ],
+    "options_hi": [
+      "जनवरी से मार्च",
+      "अप्रैल से सितंबर",
+      "अक्टूबर से दिसंबर",
+      "जुलाई से अगस्त"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase I is conducted between April to September 2026 2,",
+    "explanation_hi": "चरण I अप्रैल से सितंबर 2026 के बीच आयोजित किया जाता है 2,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "Census data helps in demarcating seats for which bodies?",
+    "question_hi": "जनगणना डेटा किन निकायों के लिए सीटों के सीमांकन में मदद करता है?",
+    "options_en": [
+      "Only Parliament",
+      "Only Panchayats",
+      "Parliamentary/Assembly Constituencies, Panchayats, and Local Bodies",
+      "Private companies"
+    ],
+    "options_hi": [
+      "केवल संसद",
+      "केवल पंचायतें",
+      "संसदीय/विधानसभा निर्वाचन क्षेत्र, पंचायतें और स्थानीय निकाय",
+      "निजी कंपनियां"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Census information is used to demarcate seats in various legislative and local bodies",
+    "explanation_hi": "जनगणना की जानकारी का उपयोग विभिन्न विधायी और स्थानीय निकायों में सीटों के सीमांकन के लिए किया जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "Which of the following is NOT a parameter collected during the Census?",
+    "question_hi": "निम्नलिखित में से कौन सा पैरामीटर जनगणना के दौरान एकत्र नहीं किया जाता है?",
+    "options_en": [
+      "Demography",
+      "Stock market prices",
+      "Economic Activity",
+      "Literacy & Education"
+    ],
+    "options_hi": [
+      "जनसांख्यिकी (Demography)",
+      "शेयर बाजार की कीमतें",
+      "आर्थिक गतिविधि",
+      "साक्षरता और शिक्षा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Parameters include demography, economic activity, literacy, migration, etc. 1,",
+    "explanation_hi": "मापदंडों में जनसांख्यिकी, आर्थिक गतिविधि, साक्षरता, प्रवासन आदि शामिल हैं"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "The Census of India 2021 could not be conducted as per schedule due to:",
+    "question_hi": "भारत की जनगणना 2021 नियमित कार्यक्रम के अनुसार किस कारण से आयोजित नहीं की जा सकी?",
+    "options_en": [
+      "Lack of funds",
+      "Election delays",
+      "Covid-19 pandemic",
+      "Technical failure"
+    ],
+    "options_hi": [
+      "धन की कमी",
+      "चुनाव में देरी",
+      "कोविड-19 महामारी",
+      "तकनीकी विफलता"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The 2021 Census was delayed due to the Covid-19 pandemic",
+    "explanation_hi": "कोविड-19 महामारी के कारण 2021 की जनगणना में देरी हुई"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the frequency of the Census in India?",
+    "question_hi": "भारत में जनगणना की आवृत्ति क्या है?",
+    "options_en": [
+      "Every 5 years",
+      "Every 10 years",
+      "Every 15 years",
+      "Every year"
+    ],
+    "options_hi": [
+      "हर 5 साल में",
+      "हर 10 साल में (दशकीय)",
+      "हर 15 साल में",
+      "हर साल"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Indian Census is a decennial (every ten years) exercise",
+    "explanation_hi": "भारतीय जनगणना एक दशकीय अभ्यास है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "Which phase creates the \"frame\" for Population Enumeration?",
+    "question_hi": "कौन सा चरण जनसंख्या गणना के लिए \"फ्रेम\" (आधार) बनाता है?",
+    "options_en": [
+      "Phase II",
+      "Phase I (Houselisting)",
+      "Preliminary Phase",
+      "Post-enumeration phase"
+    ],
+    "options_hi": [
+      "चरण II",
+      "चरण I (मकान सूचीकरण)",
+      "प्रारंभिक चरण",
+      "गणना के बाद का चरण"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase I provides the frame for Population Enumeration (Phase II) 3,",
+    "explanation_hi": "चरण I जनसंख्या गणना (चरण II) के लिए आधार प्रदान करता है 3,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "Self-enumeration data must still be checked by whom before submission?",
+    "question_hi": "स्व-गणना डेटा को जमा करने से पहले किसके द्वारा जांचा जाना चाहिए?",
+    "options_en": [
+      "The Household head",
+      "The Enumerator",
+      "The Prime Minister",
+      "No check is required"
+    ],
+    "options_hi": [
+      "परिवार के मुखिया द्वारा",
+      "प्रगणक द्वारा",
+      "प्रधानमंत्री द्वारा",
+      "किसी जांच की आवश्यकता नहीं है"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Enumerator needs to check self-enumerated data before submitting 2,",
+    "explanation_hi": "प्रगणक को जमा करने से पहले स्व-गणित डेटा की जांच करनी होगी"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the minimum Android version required for the Census App?",
+    "question_hi": "जनगणना ऐप के लिए आवश्यक न्यूनतम एंड्रॉइड संस्करण क्या है?",
+    "options_en": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "options_hi": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Android version 0 and above is required",
+    "explanation_hi": "एंड्रॉइड संस्करण 0 और उससे ऊपर की आवश्यकता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "What is the minimum iOS version required for the Census App?",
+    "question_hi": "जनगणना ऐप के लिए आवश्यक न्यूनतम आईओएस (iOS) संस्करण क्या है?",
+    "options_en": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "options_hi": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "correct_option": 2,
+    "explanation_en": "iOS version 0 and above is required",
+    "explanation_hi": "iOS संस्करण 0 और उससे ऊपर की आवश्यकता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "During HLO, data is also collected on which of the following?",
+    "question_hi": "HLO के दौरान, निम्नलिखित में से किस पर डेटा भी एकत्र किया जाता है?",
+    "options_en": [
+      "Household amenities and assets",
+      "Ancestral history",
+      "Criminal records",
+      "Daily spending habits"
+    ],
+    "options_hi": [
+      "घरेलू सुख-सुविधाएं और संपत्तियां",
+      "पैतृक इतिहास",
+      "आपराधिक रिकॉर्ड",
+      "दैनिक खर्च की आदतें"
+    ],
     "correct_option": 0,
-    "explanation_en": "NPR stands for National Population Register — a database of usual residents of India, updated alongside the Census.",
-    "explanation_hi": "NPR का अर्थ है राष्ट्रीय जनसंख्या रजिस्टर — भारत के सामान्य निवासियों का एक डेटाबेस जो जनगणना के साथ अपडेट किया जाता है।"
+    "explanation_en": "HLO collects data on housing condition, household amenities, and assets 1,",
+    "explanation_hi": "HLO आवास की स्थिति, घरेलू सुविधाओं और संपत्तियों पर डेटा एकत्र करता है"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
     "difficulty": "easy",
-    "question_en": "The Census covers which of the following populations?",
-    "question_hi": "जनगणना में निम्नलिखित में से किस जनसंख्या को शामिल किया जाता है?",
-    "options_en": ["Only citizens of India", "All usual residents including foreigners", "Only people above 18 years", "Only people below 60 years"],
-    "options_hi": ["केवल भारत के नागरिक", "विदेशियों सहित सभी सामान्य निवासी", "केवल 18 वर्ष से अधिक लोग", "केवल 60 वर्ष से कम लोग"],
+    "question_en": "The Census is described as one of the world's largest what?",
+    "question_hi": "जनगणना को दुनिया के सबसे बड़े किस रूप में वर्णित किया गया है?",
+    "options_en": [
+      "Sporting events",
+      "Administrative and statistical exercises",
+      "Military parades",
+      "Festivals"
+    ],
+    "options_hi": [
+      "खेल आयोजन",
+      "प्रशासनिक और सांख्यिकीय अभ्यास",
+      "सैन्य परेड",
+      "त्योहार"
+    ],
     "correct_option": 1,
-    "explanation_en": "The Census covers all usual residents of India, including foreign nationals living in India, regardless of citizenship or age.",
-    "explanation_hi": "जनगणना में भारत के सभी सामान्य निवासी शामिल होते हैं, जिनमें नागरिकता या आयु की परवाह किए बिना भारत में रहने वाले विदेशी नागरिक भी शामिल हैं।"
+    "explanation_en": "It is one of the most reputed, largest administrative and statistical exercises in the world",
+    "explanation_hi": "यह दुनिया के सबसे प्रतिष्ठित, सबसे बड़े प्रशासनिक और सांख्यिकीय अभ्यासों में से एक है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "easy",
+    "question_en": "The Census is a \"true reflection of the national spirit\" of what?",
+    "question_hi": "जनगणना में भागीदारी किसकी राष्ट्रीय भावना का सच्चा प्रतिबिंब है?",
+    "options_en": [
+      "Unity in diversity",
+      "Economic competition",
+      "Digital revolution",
+      "Political rivalry"
+    ],
+    "options_hi": [
+      "विविधता में एकता",
+      "आर्थिक प्रतिस्पर्धा",
+      "डिजिटल क्रांति",
+      "राजनीतिक प्रतिद्वंद्विता"
+    ],
+    "correct_option": 0,
+    "explanation_en": "Participation in the Census is a reflection of the national spirit of unity in diversity",
+    "explanation_hi": "जनगणना में भागीदारी विविधता में एकता की राष्ट्रीय भावना का प्रतिबिंब है"
   },
   {
     "chapter": 1,
     "topic": "Introduction to Census",
     "difficulty": "medium",
-    "question_en": "How many phases does the Census operation typically have?",
-    "question_hi": "जनगणना अभियान में सामान्यतः कितने चरण होते हैं?",
-    "options_en": ["One phase", "Two phases", "Three phases", "Four phases"],
-    "options_hi": ["एक चरण", "दो चरण", "तीन चरण", "चार चरण"],
+    "question_en": "What is the significance of the year 1881 in Indian Census history?",
+    "question_hi": "भारतीय जनगणना के इतिहास में 1881 के वर्ष का क्या महत्व है?",
+    "options_en": [
+      "It was the year the Census Act was passed.",
+      "It was the first time a synchronous census was taken for the entire country simultaneously.",
+      "It was the first Census after Independence.",
+      "It was the year digital tools were first discussed."
+    ],
+    "options_hi": [
+      "इस वर्ष जनगणना अधिनियम पारित किया गया था।",
+      "यह पहली बार था जब पूरे देश के लिए एक साथ समकालिक जनगणना की गई थी।",
+      "यह स्वतंत्रता के बाद पहली जनगणना थी।",
+      "यह वह वर्ष था जब डिजिटल उपकरणों पर पहली बार चर्चा की गई थी।"
+    ],
     "correct_option": 1,
-    "explanation_en": "The Census has two main phases: Phase 1 is Houselisting & Housing Census, and Phase 2 is Population Enumeration.",
-    "explanation_hi": "जनगणना के दो मुख्य चरण हैं: चरण 1 मकान सूचीकरण और आवास जनगणना, और चरण 2 जनसंख्या गणना।"
+    "explanation_en": "In 1881, a Census was taken for the entire country simultaneously; prior to this, it was done at different times",
+    "explanation_hi": "1881 में, पूरे देश के लिए एक साथ जनगणना की गई थी; इससे पहले, यह अलग-अलग समय पर की जाती थी"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "What does the term \"synchronous census\" mean?",
+    "question_hi": "\"समकालिक जनगणना\" (Synchronous Census) शब्द का क्या अर्थ है?",
+    "options_en": [
+      "Census done using mobile phones.",
+      "Census taken for the entire country at the same time.",
+      "Census done every year.",
+      "Census that only counts specific groups."
+    ],
+    "options_hi": [
+      "मोबाइल फोन का उपयोग करके की गई जनगणना।",
+      "पूरे देश के लिए एक ही समय में की गई जनगणना।",
+      "हर साल की जाने वाली जनगणना।",
+      "जनगणना जो केवल विशिष्ट समूहों की गणना करती है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Synchronous refers to the 1881 exercise where the whole country was covered simultaneously",
+    "explanation_hi": "समकालिक 1881 के अभ्यास को संदर्भित करता है जहां पूरे देश को एक साथ कवर किया गया था"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT listed as a parameter collected regarding Population Characteristics?",
+    "question_hi": "जनसंख्या विशेषताओं के संबंध में निम्नलिखित में से कौन सा पैरामीटर एकत्र नहीं किया जाता है?",
+    "options_en": [
+      "SC & ST",
+      "Migration",
+      "Fertility",
+      "Monthly electricity bill amount"
+    ],
+    "options_hi": [
+      "अनुसूचित जाति (SC) और अनुसूचित जनजाति (ST)",
+      "प्रवासन (Migration)",
+      "प्रजनन क्षमता (Fertility)",
+      "मासिक बिजली बिल की राशि"
+    ],
+    "correct_option": 3,
+    "explanation_en": "Parameters include SC & ST, migration, fertility, religion, etc.",
+    "explanation_hi": "मापदंडों में SC और ST, प्रवासन, प्रजनन क्षमता, धर्म आदि शामिल हैं"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Why is the Houselisting and Housing Census (Phase I) considered to have \"immense utility\"?",
+    "question_hi": "मकान सूचीकरण और मकान गणना (चरण I) को \"अत्यधिक उपयोगी\" क्यों माना जाता है?",
+    "options_en": [
+      "It identifies the number of people who own cars.",
+      "It provides data on housing conditions and identifies housing deficits.",
+      "It registers every person for a new ID card.",
+      "It counts the number of domestic animals."
+    ],
+    "options_hi": [
+      "यह कार रखने वाले लोगों की संख्या की पहचान करता है।",
+      "यह आवास की स्थिति पर डेटा प्रदान करता है और आवास की कमी की पहचान करता है।",
+      "यह नए आईडी कार्ड के लिए प्रत्येक व्यक्ति को पंजीकृत करता है।",
+      "यह घरेलू पशुओं की संख्या गिनता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase I provides comprehensive data on human settlements, housing deficit, and requirements for housing policies 1,",
+    "explanation_hi": "चरण I मानव बस्तियों, आवास की कमी और आवास नीतियों की आवश्यकताओं पर व्यापक डेटा प्रदान करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "According to Section  4, what is a key feature of Population Enumeration (Phase II)?",
+    "question_hi": "धारा  4 के अनुसार, जनसंख्या गणना (चरण II) की एक प्रमुख विशेषता क्या है?",
+    "options_en": [
+      "Only counting the number of houses.",
+      "Enumerating each person at a well-defined point of time (reference date).",
+      "Asking only about economic activity.",
+      "Collecting data only from urban areas."
+    ],
+    "options_hi": [
+      "केवल घरों की संख्या गिनना।",
+      "समय के एक अच्छी तरह से परिभाषित बिंदु (संदर्भ तिथि) पर प्रत्येक व्यक्ति की गणना करना।",
+      "केवल आर्थिक गतिविधि के बारे में पूछना।",
+      "केवल शहरी क्षेत्रों से डेटा एकत्र करना।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "PE collects individual particulars at a well-defined point of time termed as a reference date and moment",
+    "explanation_hi": "PE एक अच्छी तरह से परिभाषित बिंदु पर प्रत्येक व्यक्ति का व्यक्तिगत विवरण एकत्र करता है जिसे संदर्भ तिथि और क्षण कहा जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "How does Census data assist policymakers in building a 'Viksit Bharat'?",
+    "question_hi": "जनगणना डेटा 'विकसित भारत' के निर्माण में नीति निर्माताओं की कैसे सहायता करता है?",
+    "options_en": [
+      "By providing evidence-based data for targeted schemes and better resource allocation.",
+      "By predicting the future stock market.",
+      "By providing the names of people who don't pay taxes.",
+      "By limiting the number of people in cities."
+    ],
+    "options_hi": [
+      "भविष्य के शेयर बाजार की भविष्यवाणी करके।",
+      "लक्षित योजनाओं और बेहतर संसाधन आवंटन के लिए साक्ष्य-आधारित डेटा प्रदान करके।",
+      "उन लोगों के नाम प्रदान करके जो करों का भुगतान नहीं करते हैं।",
+      "शहरों में लोगों की संख्या को सीमित करके।"
+    ],
+    "correct_option": 0,
+    "explanation_en": "Census data helps policymakers design/budget targeted schemes and monitor progress",
+    "explanation_hi": "जनगणना डेटा नीति निर्माताओं को लक्षित योजनाओं को डिजाइन/बजट करने और प्रगति की निगरानी करने में मदद करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "In snow-bound areas, when is the Population Enumeration (Phase II) carried out?",
+    "question_hi": "बर्फ से ढके क्षेत्रों (Snow-bound areas) में, जनसंख्या गणना (Phase II) कब की जाती है?",
+    "options_en": [
+      "February-March 2027",
+      "September-October 2026",
+      "April-September 2026",
+      "December 2027"
+    ],
+    "options_hi": [
+      "फरवरी-मार्च 2027",
+      "सितंबर-अक्टूबर 2026",
+      "अप्रैल-सितंबर 2026",
+      "दिसंबर 2027"
+    ],
+    "correct_option": 1,
+    "explanation_en": "In snow-bound areas, PE is conducted earlier, in September-October 2026 2,",
+    "explanation_hi": "बर्फ से ढके क्षेत्रों में, PE पहले सितंबर-अक्टूबर 2026 में आयोजित किया जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Why is the ‘Census 2027-HLO’ Mobile App designed to be \"simple, convenient and user friendly\"?",
+    "question_hi": "‘Census 2027-HLO’ मोबाइल ऐप को \"सरल, सुविधाजनक और उपयोगकर्ता के अनुकूल\" क्यों बनाया गया है?",
+    "options_en": [
+      "To encourage people to play games on it.",
+      "To ensure maximum use by all Enumerators and Supervisors and higher mobility in the field.",
+      "To allow people to watch movies.",
+      "To replace the need for an internet connection."
+    ],
+    "options_hi": [
+      "लोगों को इस पर गेम खेलने के लिए प्रोत्साहित करने के लिए।",
+      "सभी प्रगणकों और पर्यवेक्षकों द्वारा अधिकतम उपयोग और क्षेत्र में उच्च गतिशीलता सुनिश्चित करने के लिए।",
+      "लोगों को फिल्में देखने की अनुमति देने के लिए।",
+      "इंटरनेट कनेक्शन की आवश्यकता को बदलने के लिए।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It aims for maximum use and allows Enumerators higher mobility as they don't have to carry heavy paper schedules",
+    "explanation_hi": "इसका उद्देश्य अधिकतम उपयोग है और प्रगणकों को उच्च गतिशीलता की अनुमति देता है क्योंकि उन्हें भारी पेपर शेड्यूल नहीं ले जाना पड़ता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "What is an added benefit of digital data collection according to the manual?",
+    "question_hi": "मैनुअल के अनुसार डिजिटल डेटा संग्रह का एक अतिरिक्त लाभ क्या है?",
+    "options_en": [
+      "It creates jobs for software engineers.",
+      "It reduces the burden of preparing working sheets, abstracts, and duplication of work.",
+      "It makes the Census more expensive.",
+      "It allows Enumerators to work from home."
+    ],
+    "options_hi": [
+      "यह सॉफ्टवेयर इंजीनियरों के लिए रोजगार पैदा करता है।",
+      "यह वर्किंग शीट, सार (abstracts) तैयार करने और काम के दोहराव के बोझ को कम करता है।",
+      "यह जनगणना को और अधिक महंगा बनाता है।",
+      "यह प्रगणकों को घर से काम करने की अनुमति देता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Digital collection saves time and effort by reducing manual paperwork like abstracts",
+    "explanation_hi": "डिजिटल संग्रह अमूर्त और वर्किंग शीट जैसे मैन्युअल कागजी कार्रवाई को कम करके समय और प्रयास बचाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "For whom is the Self-Enumeration method particularly beneficial?",
+    "question_hi": "स्व-गणना विधि किसके लिए विशेष रूप से फायदेमंद है?",
+    "options_en": [
+      "People who do not have a home.",
+      "Individuals generally away from their residence during the day for work or business.",
+      "People who do not know how to use the internet.",
+      "Only government employees."
+    ],
+    "options_hi": [
+      "जिन लोगों के पास घर नहीं है।",
+      "जो व्यक्ति काम या व्यवसाय के कारण दिन में अपने निवास से दूर रहते हैं।",
+      "जो लोग इंटरनेट का उपयोग करना नहीं जानते हैं।",
+      "केवल सरकारी कर्मचारी।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It facilitates those away during the day owing to work, business, or other engagements",
+    "explanation_hi": "यह काम, व्यवसाय या अन्य व्यस्तताओं के कारण दिन के दौरान दूर रहने वालों को सुविधा प्रदान करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "What specific software tool should be available on the mobile phone for viewing maps?",
+    "question_hi": "मानचित्र देखने के लिए मोबाइल फोन पर कौन सा विशिष्ट सॉफ्टवेयर टूल उपलब्ध होना चाहिए?",
+    "options_en": [
+      "A video player",
+      "A PDF viewer",
+      "A photo editor",
+      "A game engine"
+    ],
+    "options_hi": [
+      "एक वीडियो प्लेयर",
+      "एक पीडीएफ (PDF) व्यूअर",
+      "एक फोटो एडिटर",
+      "एक गेम इंजन"
+    ],
+    "correct_option": 1,
+    "explanation_en": "A PDF viewer should be available for viewing maps",
+    "explanation_hi": "नक्शे देखने के लिए पीडीएफ व्यूअर उपलब्ध होना चाहिए"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Census data helps in monitoring progress toward goals for which specific marginalized groups?",
+    "question_hi": "जनगणना डेटा किन विशिष्ट हाशिए पर रहने वाले समूहों के लिए लक्ष्यों की प्रगति की निगरानी में मदद करता है?",
+    "options_en": [
+      "Only government officials",
+      "Disabled, SC/ST, and gender-related issues",
+      "Only urban residents",
+      "Only business owners"
+    ],
+    "options_hi": [
+      "केवल सरकारी अधिकारी",
+      "विकलांग, SC/ST और लिंग संबंधी मुद्दे",
+      "केवल शहरी निवासी",
+      "केवल व्यवसाय के स्वामी"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It helps craft inclusive policies and monitor progress for disabled, SC/ST, and gender-related issues",
+    "explanation_hi": "यह समावेशी नीतियां तैयार करने और विकलांगों, SC/ST और लिंग संबंधी मुद्दों की प्रगति की निगरानी करने में मदद करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "How is Census data used in disaster management?",
+    "question_hi": "आपदा प्रबंधन में जनगणना डेटा का उपयोग कैसे किया जाता है?",
+    "options_en": [
+      "It predicts earthquakes.",
+      "It helps identify vulnerable populations for plan emergency responses.",
+      "It builds houses for people.",
+      "It stops floods."
+    ],
+    "options_hi": [
+      "यह भूकंप की भविष्यवाणी करता है।",
+      "यह आपातकालीन प्रतिक्रियाओं की योजना बनाने के लिए कमजोर आबादी की पहचान करने में मदद करता है।",
+      "यह लोगों के लिए घर बनाता है।",
+      "यह बाढ़ को रोकता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is used to identify vulnerable populations for planning emergency responses and health infrastructure",
+    "explanation_hi": "इसका उपयोग आपातकालीन प्रतिक्रियाओं और स्वास्थ्य बुनियादी ढांचे की योजना बनाने के लिए कमजोर आबादी की पहचान करने के लिए किया जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "According to the summary, Phase I is conducted in 2026, and Phase II in:",
+    "question_hi": "सारांश के अनुसार, चरण I 2026 में आयोजित किया जाता है, और चरण II आयोजित होता है:",
+    "options_en": [
+      "2026",
+      "2027",
+      "2028",
+      "2025"
+    ],
+    "options_hi": [
+      "2026 में",
+      "2027 में",
+      "2028 में",
+      "2025 में"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase II (Population Enumeration) is scheduled for 2027",
+    "explanation_hi": "चरण II (जनसंख्या गणना) 2027 के लिए निर्धारित है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Who is responsible for publishing the exact timelines of Phase I in the State Gazette?",
+    "question_hi": "राज्य राजपत्र (State Gazette) में चरण I की सटीक समयसीमा प्रकाशित करने के लिए कौन जिम्मेदार है?",
+    "options_en": [
+      "The Central Government",
+      "The respective State/Union Territory administrations",
+      "The Enumerator",
+      "The news media"
+    ],
+    "options_hi": [
+      "केंद्र सरकार",
+      "संबंधित राज्य/केंद्र शासित प्रदेश प्रशासन",
+      "प्रगणक",
+      "समाचार मीडिया"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Timelines are set by respective State/UT administrations and published in the State Gazette",
+    "explanation_hi": "समय सीमा संबंधित राज्य/केंद्र शासित प्रदेश प्रशासन द्वारा निर्धारित की जाती है और राज्य राजपत्र में प्रकाशित की जाती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "What is the \"fundamental\" purpose of listing buildings and census houses in Phase I?",
+    "question_hi": "चरण I में इमारतों और जनगणना मकानों को सूचीबद्ध करने का \"मौलिक\" उद्देश्य क्या है?",
+    "options_en": [
+      "To tax the owners.",
+      "To create the frame for Population Enumeration.",
+      "To sell the data to builders.",
+      "To count the number of windows."
+    ],
+    "options_hi": [
+      "मालिकों पर कर लगाने के लिए।",
+      "जनसंख्या गणना के लिए फ्रेम (आधार) तैयार करना।",
+      "डेटा को बिल्डरों को बेचने के लिए।",
+      "खिड़कियों की संख्या गिनने के लिए।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Identifying buildings and houses is essential to provide the frame for Phase II 3,",
+    "explanation_hi": "भवनों और घरों की पहचान करना चरण II के लिए फ्रेम प्रदान करने के लिए आवश्यक है 3,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "The mobile app allows the Enumerator to do what with self-enumerated records?",
+    "question_hi": "मोबाइल ऐप प्रगणक को स्व-गणित रिकॉर्ड के साथ क्या करने की अनुमति देता है?",
+    "options_en": [
+      "Delete them permanently.",
+      "Fetch and edit them as needed.",
+      "Share them on social media.",
+      "Hide them from the Supervisor."
+    ],
+    "options_hi": [
+      "उन्हें स्थायी रूप से हटाना।",
+      "उन्हें आवश्यकतानुसार लाना (fetch) और संपादित करना (edit)।",
+      "उन्हें सोशल मीडिया पर साझा करना।",
+      "उन्हें पर्यवेक्षक से छिपाना।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The App provides a fetching facility for self-enumerated records and allows editing",
+    "explanation_hi": "ऐप स्व-गणित रिकॉर्ड के लिए लाने (fetching) की सुविधा प्रदान करता है और संपादन की अनुमति देता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "The Indian Census has a history of how many years?",
+    "question_hi": "भारतीय जनगणना का कितने वर्षों का इतिहास है?",
+    "options_en": [
+      "50 years",
+      "100 years",
+      "150 years",
+      "200 years"
+    ],
+    "options_hi": [
+      "50 वर्ष",
+      "100 वर्ष",
+      "150 वर्ष",
+      "200 वर्ष"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Commissioner's letter notes a history of 150 years of providing micro-level data",
+    "explanation_hi": "कमिश्नर का पत्र सूक्ष्म स्तर (micro-level) के डेटा प्रदान करने के 150 वर्षों के इतिहास का उल्लेख करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Census data helps in designing which of the following?",
+    "question_hi": "जनगणना डेटा निम्नलिखित में से किसको डिजाइन करने में मदद करता है?",
+    "options_en": [
+      "New fashion trends",
+      "Job-creation programs and skilling initiatives",
+      "Car engines",
+      "Movie scripts"
+    ],
+    "options_hi": [
+      "नए फैशन रुझान",
+      "रोजगार सृजन कार्यक्रम और कौशल पहल",
+      "कार इंजन",
+      "फिल्म की पटकथा"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It helps in designing job-creation programs and skilling initiatives resulting in economic planning",
+    "explanation_hi": "यह रोजगार सृजन कार्यक्रमों और कौशल पहलों को डिजाइन करने में मदद करता है जिसके परिणामस्वरूप आर्थिक योजना बनती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Which list of the Seventh Schedule governs the Census?",
+    "question_hi": "सातवीं अनुसूची की कौन सी सूची जनगणना को नियंत्रित करती है?",
+    "options_en": [
+      "List II",
+      "List III",
+      "List I",
+      "List IV"
+    ],
+    "options_hi": [
+      "सूची II",
+      "सूची III",
+      "सूची I",
+      "सूची IV"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Union List is List I of the Seventh Schedule 1,",
+    "explanation_hi": "संघ सूची सातवीं अनुसूची की सूची I है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Census data is the \"most important tool\" for what?",
+    "question_hi": "जनगणना डेटा किसके लिए \"सबसे महत्वपूर्ण उपकरण\" है?",
+    "options_en": [
+      "Winning elections",
+      "Overall evaluation and monitoring of progress toward national goals",
+      "Increasing the population",
+      "Advertising"
+    ],
+    "options_hi": [
+      "चुनाव जीतना।",
+      "राष्ट्रीय लक्ष्यों की दिशा में प्रगति का समग्र मूल्यांकन और निगरानी।",
+      "जनसंख्या बढ़ाना।",
+      "विज्ञापन।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is one of the most important tools to evaluate progress toward national goals",
+    "explanation_hi": "यह राष्ट्रीय लक्ष्यों की दिशा में प्रगति का मूल्यांकन करने के लिए सबसे महत्वपूर्ण उपकरणों में से एक है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "The Census Commissioner's letter welcomes functionaries to a part of one of the \"most reputed\" and \"largest\" what?",
+    "question_hi": "जनगणना आयुक्त का पत्र \"सबसे प्रतिष्ठित\" और \"सबसे बड़े\" किसके हिस्से के रूप में कार्य करने वाले व्यक्तियों का स्वागत करता है?",
+    "options_en": [
+      "Schools",
+      "Administrative and statistical exercises in the world",
+      "Political parties",
+      "Sports teams"
+    ],
+    "options_hi": [
+      "स्कूलों के",
+      "दुनिया में प्रशासनिक और सांख्यिकीय अभ्यासों के",
+      "राजनीतिक दलों के",
+      "खेल टीमों के"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is hailed as one of the largest administrative exercises globally",
+    "explanation_hi": "इसे विश्व स्तर पर सबसे बड़े प्रशासनिक अभ्यासों में से एक के रूप में जाना जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "What does \"micro level data\" refer to in the context of the Census?",
+    "question_hi": "जनगणना के संदर्भ में \"सूक्ष्म स्तर के डेटा\" (micro level data) का क्या अर्थ है?",
+    "options_en": [
+      "Data only about microorganisms.",
+      "Data at Village, Town, and Ward level.",
+      "Data about small businesses.",
+      "Data that is unimportant."
+    ],
+    "options_hi": [
+      "केवल सूक्ष्मजीवों के बारे में डेटा।",
+      "गांव, कस्बे और वार्ड स्तर पर डेटा।",
+      "छोटे व्यवसायों के बारे में डेटा।",
+      "डेटा जो महत्वहीन है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Census provides micro-level data at Village, Town, and Ward levels",
+    "explanation_hi": "जनगणना गांव, कस्बे और वार्ड स्तर पर सूक्ष्म स्तर का डेटा प्रदान करती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Which of the following is NOT a parameter for which data is essential according to Section  5?",
+    "question_hi": "धारा  5 के अनुसार निम्नलिखित में से कौन सा वह पैरामीटर नहीं है जिसके लिए डेटा आवश्यक है?",
+    "options_en": [
+      "Migration",
+      "Fertility",
+      "Favorite movie star",
+      "Socio-economic data"
+    ],
+    "options_hi": [
+      "प्रवासन",
+      "प्रजनन क्षमता",
+      "पसंदीदा फिल्म स्टार",
+      "सामाजिक-आर्थिक डेटा"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Essential parameters include migration, fertility, socio-economic data, etc.",
+    "explanation_hi": "आवश्यक मापदंडों में प्रवासन, प्रजनन क्षमता, सामाजिक-आर्थिक डेटा आदि शामिल हैं"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Phase I utility includes providing data on what specific \"deficit\"?",
+    "question_hi": "चरण I की उपयोगिता में किस विशिष्ट \"कमी\" पर डेटा प्रदान करना शामिल है?",
+    "options_en": [
+      "Water deficit",
+      "Housing deficit",
+      "Food deficit",
+      "Budget deficit"
+    ],
+    "options_hi": [
+      "पानी की कमी",
+      "आवास की कमी (Housing deficit)",
+      "भोजन की कमी",
+      "बजट की कमी"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase I provides data on housing deficit 1,",
+    "explanation_hi": "चरण I आवास की कमी पर डेटा प्रदान करता है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "The Census forms the basis for \"social sector development\" by doing what?",
+    "question_hi": "जनगणना क्या करके \"सामाजिक क्षेत्र के विकास\" का आधार बनाती है?",
+    "options_en": [
+      "Building schools.",
+      "Crafting inclusive policies for marginalized groups.",
+      "Taxing the wealthy.",
+      "Decreasing migration."
+    ],
+    "options_hi": [
+      "स्कूल बनाना।",
+      "हाशिए पर रहने वाले समूहों के लिए समावेशी नीतियां तैयार करना।",
+      "अमीरों पर कर लगाना।",
+      "प्रवासन कम करना।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It forms the basis for crafting inclusive policies for marginalized groups",
+    "explanation_hi": "यह हाशिए पर रहने वाले समूहों के लिए समावेशी नीतियां तैयार करने का आधार बनाती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Census data helps health infrastructure by assisting in what?",
+    "question_hi": "जनगणना डेटा किसमें सहायता करके स्वास्थ्य बुनियादी ढांचे की मदद करता है?",
+    "options_en": [
+      "Selling medicines.",
+      "Vaccination drives.",
+      "Training doctors.",
+      "Building gyms."
+    ],
+    "options_hi": [
+      "दवाएं बेचना।",
+      "टीकाकरण अभियान।",
+      "डॉक्टरों को प्रशिक्षित करना।",
+      "जिम बनाना।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is used for vaccination drives and health infrastructure",
+    "explanation_hi": "इसका उपयोग टीकाकरण अभियानों और स्वास्थ्य बुनियादी ढांचे के लिए किया जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "What is a \"Constitutional and statutory activity\"?",
+    "question_hi": "किसे \"संवैधानिक और वैधानिक गतिविधि\" कहा जाता है?",
+    "options_en": [
+      "Voting",
+      "The Census",
+      "Paying taxes",
+      "Going to school"
+    ],
+    "options_hi": [
+      "मतदान",
+      "जनगणना",
+      "करों का भुगतान",
+      "स्कूल जाना"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The summary describes the Census as a Constitutional and statutory activity",
+    "explanation_hi": "सारांश जनगणना को एक संवैधानिक और वैधानिक गतिविधि के रूप में वर्णित करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "The transition to digital tools marks a \"major shift\" to what?",
+    "question_hi": "डिजिटल उपकरणों में परिवर्तन किसके लिए \"बड़े बदलाव\" का प्रतीक है?",
+    "options_en": [
+      "Artificial Intelligence",
+      "Digital data collection",
+      "Robotics",
+      "Virtual Reality"
+    ],
+    "options_hi": [
+      "आर्टिफिशियल इंटेलिजेंस",
+      "डिजिटल डेटा संग्रह",
+      "रोबोटिक्स",
+      "वर्चुअल रियलिटी"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Census 2027 marks a major shift to digital data collection",
+    "explanation_hi": "जनगणना 2027 डिजिटल डेटा संग्रह की ओर एक बड़े बदलाव का प्रतीक है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "The Enumerator must fulfill their obligations with \"utmost\" what?",
+    "question_hi": "प्रगणक को अपने दायित्वों को \"अत्यधिक\" किसके साथ पूरा करना चाहिए?",
+    "options_en": [
+      "Speed",
+      "Sincerity and devotion",
+      "Greed",
+      "Fear"
+    ],
+    "options_hi": [
+      "गति",
+      "ईमानदारी और समर्पण",
+      "लालच",
+      "डर"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Enumerators/Supervisors are expected to fulfill obligations with sincerity and devotion",
+    "explanation_hi": "प्रगणकों/पर्यवेक्षकों से ईमानदारी और समर्पण के साथ दायित्वों को पूरा करने की अपेक्षा की जाती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "What does the \"frame\" for population enumeration specifically include?",
+    "question_hi": "जनसंख्या गणना के लिए \"फ्रेम\" (frame) में विशेष रूप से क्या शामिल है?",
+    "options_en": [
+      "Names of all voters.",
+      "Buildings, Census Houses, and Households.",
+      "List of all companies.",
+      "Maps of the ocean."
+    ],
+    "options_hi": [
+      "सभी मतदाताओं के नाम।",
+      "भवन, जनगणना मकान और परिवार।",
+      "सभी कंपनियों की सूची।",
+      "समुद्र के नक्शे।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase I identifies and lists Buildings, Census Houses, and Households to create the frame 3,",
+    "explanation_hi": "चरण I फ्रेम बनाने के लिए भवनों, जनगणना मकानों और परिवारों की पहचान करता है और उन्हें सूचीबद्ध करता है 3,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "How many days before fieldwork does the Self-Enumeration portal usually open?",
+    "question_hi": "फील्डवर्क शुरू होने से कितने दिन पहले आमतौर पर स्व-गणना पोर्टल खुलता है?",
+    "options_en": [
+      "30 days",
+      "15 days",
+      "7 days",
+      "1 day"
+    ],
+    "options_hi": [
+      "30 दिन",
+      "15 दिन",
+      "7 दिन",
+      "1 दिन"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The portal will be made available starting 15 days before the start date of HLO fieldwork",
+    "explanation_hi": "पोर्टल HLO फील्डवर्क की शुरुआत की तारीख से 15 दिन पहले उपलब्ध कराया जाएगा"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Census data helps determine if government schemes are achieving their what?",
+    "question_hi": "जनगणना डेटा यह निर्धारित करने में मदद करता है कि सरकारी योजनाएं किसके लिए अपने लक्ष्यों को प्राप्त कर रही हैं?",
+    "options_en": [
+      "Funding goals",
+      "Intended objectives for a Viksit Bharat",
+      "Publicity targets",
+      "Political votes"
+    ],
+    "options_hi": [
+      "वित्त पोषण लक्ष्य",
+      "विकसित भारत के लिए अभिप्रेत उद्देश्य",
+      "प्रचार लक्ष्य",
+      "राजनीतिक वोट"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It helps monitor if schemes are achieving their intended objectives for Viksit Bharat",
+    "explanation_hi": "यह निगरानी करने में मदद करता है कि क्या योजनाएं विकसित भारत के लिए अपने इच्छित उद्देश्यों को प्राप्त कर रही हैं"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Micro level data from the Census is a history of how many years?",
+    "question_hi": "जनगणना से सूक्ष्म स्तर का डेटा कितने वर्षों का इतिहास है?",
+    "options_en": [
+      "50",
+      "150",
+      "2027",
+      "1872"
+    ],
+    "options_hi": [
+      "50",
+      "150",
+      "2027",
+      "1872"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Census has a 150-year history of providing micro-level data",
+    "explanation_hi": "जनगणना का सूक्ष्म स्तर का डेटा प्रदान करने का 150 साल का इतिहास है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "medium",
+    "question_en": "Participation in the Census is a true reflection of the national spirit of:",
+    "question_hi": "जनगणना में भागीदारी किसकी राष्ट्रीय भावना का सच्चा प्रतिबिंब है?",
+    "options_en": [
+      "Competition",
+      "Unity in diversity",
+      "Digitalization",
+      "Democracy"
+    ],
+    "options_hi": [
+      "प्रतियोगिता",
+      "विविधता में एकता",
+      "डिजिटलीकरण",
+      "लोकतंत्र"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Participation is a reflection of the spirit of unity in diversity",
+    "explanation_hi": "प्रगणकों और लोगों द्वारा भागीदारी विविधता में एकता की भावना का प्रतिबिंब है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Which statement best describes the legal standing of the Census in India?",
+    "question_hi": "कौन सा कथन भारत में जनगणना की कानूनी स्थिति का सबसे अच्छा वर्णन करता है?",
+    "options_en": [
+      "It is a purely administrative order with no statutory backing.",
+      "It is a statutory activity under the Census Act, 1948, but has no constitutional mention.",
+      "It is both a Constitutional activity under Article 246 and a statutory activity under the Census Act,",
+      "It is a voluntary survey conducted by a non-profit organization."
+    ],
+    "options_hi": [
+      "यह बिना किसी वैधानिक समर्थन के विशुद्ध रूप से एक प्रशासनिक आदेश है।",
+      "यह जनगणना अधिनियम, 1948 के तहत एक वैधानिक गतिविधि है, लेकिन इसका कोई संवैधानिक उल्लेख नहीं है।",
+      "यह अनुच्छेद 246 के तहत एक संवैधानिक गतिविधि और जनगणना अधिनियम, 1948 के तहत एक वैधानिक गतिविधि दोनों है।",
+      "यह एक गैर-लाभकारी संगठन द्वारा आयोजित एक स्वैच्छिक सर्वेक्षण है।"
+    ],
+    "correct_option": 2,
+    "explanation_en": "The Census is both Constitutional (Article 246) and statutory (Act of 1948) 1,",
+    "explanation_hi": "जनगणना संवैधानिक (अनुच्छेद 246) और वैधानिक (1948 का अधिनियम) दोनों है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "How does the timing of Phase II in snow-bound areas differ from non-snow-bound areas?",
+    "question_hi": "बर्फ से ढके क्षेत्रों में चरण II का समय गैर-बर्फ वाले क्षेत्रों से कैसे भिन्न है?",
+    "options_en": [
+      "It happens at the same time as Phase I (HLO).",
+      "It happens in Feb-March 2027, the same as other areas.",
+      "It is conducted much earlier, in Sept-Oct 2026, while other areas are in Feb-March",
+      "It is conducted in April"
+    ],
+    "options_hi": [
+      "यह चरण I (HLO) के साथ ही होता है।",
+      "यह अन्य क्षेत्रों की तरह ही फरवरी-मार्च 2027 में होता है।",
+      "यह बहुत पहले, सितंबर-अक्टूबर 2026 में आयोजित किया जाता है, जबकि अन्य क्षेत्रों में फरवरी-मार्च 2027 में होता है।",
+      "यह अप्रैल 2027 में आयोजित किया जाता है।"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Most of the country has PE in Feb-March 2027, but snow-bound areas have it in Sept-Oct 2026 2,",
+    "explanation_hi": "देश के अधिकांश हिस्सों में PE फरवरी-मार्च 2027 में होता है, लेकिन बर्फ वाले क्षेत्रों में यह सितंबर-अक्टूबर 2026 में होता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "In the context of 'Viksit Bharat', how does Census data specifically facilitate infrastructure and urban planning?",
+    "question_hi": "'विकसित भारत' के संदर्भ में, जनगणना डेटा विशेष रूप से बुनियादी ढांचे और शहरी योजना को कैसे सुगम बनाता है?",
+    "options_en": [
+      "By providing the exact location of every brick used in the country.",
+      "By providing data for evidence-based policymaking and better allocation/distribution of resources.",
+      "By allowing the government to own all land.",
+      "By forcing people to move to cities."
+    ],
+    "options_hi": [
+      "देश में इस्तेमाल होने वाली हर ईंट का सटीक स्थान बताकर।",
+      "साक्ष्य-आधारित नीति निर्माण और संसाधनों के बेहतर आवंटन/वितरण के लिए डेटा प्रदान करके।",
+      "सरकार को सभी भूमि के स्वामित्व की अनुमति देकर।",
+      "लोगों को शहरों में जाने के लिए मजबूर करके।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It facilitates sound policy design and better resource allocation for infrastructure",
+    "explanation_hi": "यह बुनियादी ढांचे के लिए मजबूत नीति डिजाइन और बेहतर संसाधन आवंटन की सुविधा प्रदान करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is the primary reason the 2027 Census is described as \"unique and remarkable\"?",
+    "question_hi": "2027 की जनगणना को \"अद्वितीय और उल्लेखनीय\" (unique and remarkable) कहे जाने का प्राथमिक कारण क्या है?",
+    "options_en": [
+      "It is the first time the Census is being conducted in two phases.",
+      "It is the first Census of India in which data collection will be done through digital tools/means.",
+      "It is the first time it counts women.",
+      "It is the first time it covers the whole of India."
+    ],
+    "options_hi": [
+      "यह पहली बार है कि जनगणना दो चरणों में आयोजित की जा रही है।",
+      "यह भारत की पहली जनगणना है जिसमें डेटा संग्रह डिजिटल टूल/माध्यमों के माध्यम से किया जाएगा।",
+      "यह पहली बार महिलाओं की गिनती करता है।",
+      "यह पहली बार पूरे भारत को कवर करता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Its uniqueness lies in the shift to digital tools for the first time 1,",
+    "explanation_hi": "इसकी विशिष्टता पहली बार डिजिटल उपकरणों की ओर बदलाव में निहित है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What analytical role does Phase I play for Phase II?",
+    "question_hi": "चरण I, चरण II के लिए क्या विश्लेषणात्मक भूमिका निभाता है?",
+    "options_en": [
+      "It serves as the final count of the population.",
+      "It creates the frame (buildings/households) needed to ensure every individual is covered in Phase II.",
+      "It replaces the need for Phase II.",
+      "It only collects names of the heads of households."
+    ],
+    "options_hi": [
+      "यह जनसंख्या की अंतिम गणना के रूप में कार्य करता है।",
+      "यह चरण II में प्रत्येक व्यक्ति को कवर करने के लिए आवश्यक फ्रेम (भवन/परिवार) बनाता है।",
+      "यह चरण II की आवश्यकता को प्रतिस्थापित करता है।",
+      "यह केवल परिवारों के मुखियाओं के नाम एकत्र करता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Identifying settlement patterns in Phase I provides the essential framework for Phase II 3,",
+    "explanation_hi": "चरण I में निपटान पैटर्न की पहचान करना चरण II के लिए आवश्यक ढांचा प्रदान करता है 3,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "How does the Census support democratic processes beyond just counting people?",
+    "question_hi": "जनगणना केवल लोगों की गिनती करने के अलावा लोकतांत्रिक प्रक्रियाओं का किस प्रकार समर्थन करती है?",
+    "options_en": [
+      "It allows people to vote via the Census app.",
+      "It provides the basis for the delimitation of Parliamentary and Assembly constituencies.",
+      "It determines which political party will win.",
+      "It counts the number of voting machines."
+    ],
+    "options_hi": [
+      "यह लोगों को जनगणना ऐप के माध्यम से वोट देने की अनुमति देता है।",
+      "यह संसदीय और विधानसभा निर्वाचन क्षेत्रों के परिसीमन (delimitation) का आधार प्रदान करता है।",
+      "यह निर्धारित करता है कि कौन सा राजनीतिक दल जीतेगा।",
+      "यह वोटिंग मशीनों की संख्या गिनता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Information collected is used to demarcate seats for Parliament, Assemblies, and local bodies 1,",
+    "explanation_hi": "एकत्रित जानकारी का उपयोग संसद, विधानसभाओं और स्थानीय निकायों के लिए सीटों के सीमांकन के लिए किया जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is the hardware implication for the Enumerator carrying a smartphone instead of paper schedules?",
+    "question_hi": "पेपर शेड्यूल के बजाय स्मार्टफोन ले जाने वाले प्रगणक के लिए हार्डवेयर प्रभाव क्या है?",
+    "options_en": [
+      "They need to carry extra batteries.",
+      "It ensures higher mobility in the field as they don't carry heavy schedules.",
+      "It means they must always be in a WiFi zone.",
+      "It requires them to have a laptop as well."
+    ],
+    "options_hi": [
+      "उन्हें अतिरिक्त बैटरी ले जाने की आवश्यकता है।",
+      "यह क्षेत्र में उच्च गतिशीलता सुनिश्चित करता है क्योंकि उन्हें भारी शेड्यूल नहीं ले जाना पड़ता है।",
+      "इसका मतलब है कि उन्हें हमेशा वाईफाई क्षेत्र में होना चाहिए।",
+      "इसके लिए उनके पास लैपटॉप होना भी आवश्यक है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "High mobility is a result of not having to carry heavy paper schedules",
+    "explanation_hi": "भारी पेपर शेड्यूल न ले जाने के परिणामस्वरूप उच्च गतिशीलता होती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "In what way does the Census Act, 1948, form the \"legal basis\" for the Census?",
+    "question_hi": "जनगणना अधिनियम, 1948 किस प्रकार जनगणना के लिए \"कानूनी आधार\" बनाता है?",
+    "options_en": [
+      "It makes the Census optional.",
+      "It provides the statutory framework and authority for its conduct.",
+      "It only applies to urban areas.",
+      "It was written before the Constitution."
+    ],
+    "options_hi": [
+      "यह जनगणना को वैकल्पिक बनाता है।",
+      "यह इसके संचालन के लिए वैधानिक ढांचा और अधिकार प्रदान करता है।",
+      "यह केवल शहरी क्षेत्रों पर लागू होता है।",
+      "यह संविधान से पहले लिखा गया था।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The Act is the statutory source of authority for conducting the Census 1,",
+    "explanation_hi": "अधिनियम जनगणना के संचालन के लिए अधिकार का वैधानिक स्रोत है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "How does Census data contribute to public health purposes?",
+    "question_hi": "जनगणना डेटा सार्वजनिक स्वास्थ्य उद्देश्यों में कैसे योगदान देता है?",
+    "options_en": [
+      "It provides free medicine to everyone.",
+      "It helps in identifying vulnerable populations, plan emergency responses, and vaccination drives.",
+      "It only counts the number of hospitals.",
+      "It cures diseases."
+    ],
+    "options_hi": [
+      "यह सभी को मुफ्त दवा प्रदान करता है।",
+      "यह कमजोर आबादी की पहचान करने, आपातकालीन प्रतिक्रियाओं और टीकाकरण अभियानों की योजना बनाने में मदद करता है।",
+      "यह केवल अस्पतालों की संख्या गिनता है।",
+      "यह रोगों को ठीक करता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is essential for health infrastructure and pandemic response planning",
+    "explanation_hi": "यह सार्वजनिक स्वास्थ्य उद्देश्यों और स्वास्थ्य बुनियादी ढांचे की योजना के लिए आवश्यक है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "The shift to digital data collection (HLO app) is intended to reduce what specific administrative burden?",
+    "question_hi": "डिजिटल डेटा संग्रह (HLO ऐप) में बदलाव का उद्देश्य किस विशिष्ट प्रशासनिक बोझ को कम करना है?",
+    "options_en": [
+      "The cost of electricity.",
+      "Burden of preparing working sheets, abstracts, and duplication of associated work.",
+      "The number of Enumerators needed.",
+      "The time spent talking to respondents."
+    ],
+    "options_hi": [
+      "बिजली की लागत।",
+      "वर्किंग शीट, सार (abstracts) तैयार करने और संबंधित कार्य के दोहराव का बोझ।",
+      "आवश्यक प्रगणकों की संख्या।",
+      "उत्तरदाताओं से बात करने में बिताया गया समय।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Digitalization saves time by eliminating the manual creation of abstracts and worksheets",
+    "explanation_hi": "डिजिटलीकरण सार और वर्किंग शीट के मैन्युअल निर्माण को समाप्त करके समय बचाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Self-Enumeration is described as a method for households generally away \"owing to\" what?",
+    "question_hi": "स्व-गणना को उन परिवारों के लिए एक विधि के रूप में वर्णित किया गया है जो आम तौर पर किसके \"कारण\" (owing to) दूर रहते हैं?",
+    "options_en": [
+      "Poverty.",
+      "Work, business, or other professional engagements.",
+      "Vacations.",
+      "Fear of the Enumerator."
+    ],
+    "options_hi": [
+      "गरीबी।",
+      "काम, व्यवसाय या अन्य पेशेवर व्यस्तताएं।",
+      "छुट्टियाँ।",
+      "प्रगणक का डर।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It accommodates those busy with professional commitments during the day",
+    "explanation_hi": "यह दिन के दौरान पेशेवर प्रतिबद्धताओं में व्यस्त लोगों को समायोजित करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Which of the following is TRUE about the Census of 1872?",
+    "question_hi": "अध्याय 1 के अनुसार 1872 की जनगणना के बारे में कौन सा सत्य है?",
+    "options_en": [
+      "It was the first synchronous census.",
+      "It was conducted at different points of time in different parts of the country.",
+      "It used mobile apps.",
+      "It was done after the Census Act was passed."
+    ],
+    "options_hi": [
+      "यह पहली समकालिक जनगणना थी।",
+      "यह देश के अलग-अलग हिस्सों में अलग-अलग समय पर आयोजित की गई थी।",
+      "इसने मोबाइल ऐप का इस्तेमाल किया।",
+      "यह जनगणना अधिनियम पारित होने के बाद की गई थी।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The 1872 Census was non-synchronous",
+    "explanation_hi": "1872 की जनगणना गैर-समकालिक (non-synchronous) थी"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is the \"immense utility\" of Phase I data for urban planners?",
+    "question_hi": "शहरी नियोजकों के लिए चरण I डेटा की \"अत्यधिक उपयोगिता\" क्या है?",
+    "options_en": [
+      "It counts the number of cars.",
+      "It provides comprehensive data on housing conditions and settlement patterns.",
+      "It lists all the shops in a city.",
+      "It maps the city's sewage lines."
+    ],
+    "options_hi": [
+      "यह कारों की संख्या गिनता है।",
+      "यह आवास की स्थिति और निपटान पैटर्न पर व्यापक डेटा प्रदान करता है।",
+      "यह शहर की सभी दुकानों को सूचीबद्ध करता है।",
+      "यह शहर की सीवेज लाइनों का नक्शा बनाता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It informs housing policies and infrastructure planning 1,",
+    "explanation_hi": "यह आवास नीतियों और बुनियादी ढांचे की योजना की जानकारी देता है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What does the Census Organization describe as a \"task of great national importance\"?",
+    "question_hi": "जनगणना संगठन किसे \"महान राष्ट्रीय महत्व का कार्य\" (task of great national importance) कहता है?",
+    "options_en": [
+      "Watching the news.",
+      "Being chosen as an Enumerator/Supervisor.",
+      "Using the HLO App for personal use.",
+      "Moving to a new city."
+    ],
+    "options_hi": [
+      "समाचार देखना।",
+      "प्रगणक/पर्यवेक्षक के रूप में चुना जाना।",
+      "व्यक्तिगत उपयोग के लिए HLO ऐप का उपयोग करना।",
+      "नए शहर में जाना।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Functionaries are privileged to take part in this task of national importance",
+    "explanation_hi": "पदाधिकारी राष्ट्रीय महत्व के इस कार्य में भाग लेने के लिए विशेषाधिकार प्राप्त हैं"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Why is the Census called the \"most credible source\" of information?",
+    "question_hi": "जनगणना को जानकारी का \"सबसे विश्वसनीय स्रोत\" (most credible source) क्यों कहा जाता है?",
+    "options_en": [
+      "Because it is the most expensive.",
+      "Because it collects exhaustive data on demography, economic activity, and social parameters.",
+      "Because it is done by a private company.",
+      "Because it is only done in cities."
+    ],
+    "options_hi": [
+      "क्योंकि यह सबसे महंगा है।",
+      "क्योंकि यह जनसांख्यिकी, आर्थिक गतिविधि और सामाजिक मापदंडों पर विस्तृत डेटा एकत्र करता है।",
+      "क्योंकि यह एक निजी कंपनी द्वारा किया जाता है।",
+      "क्योंकि यह केवल शहरों में किया जाता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Its wide range of parameters makes it a primary repository of national information 1,",
+    "explanation_hi": "इसके मापदंडों की विस्तृत श्रृंखला इसे राष्ट्रीय सूचना का प्राथमिक भंडार बनाती है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "The data collected is essential for national planning and development, specifically catering to the data needs for:",
+    "question_hi": "एकत्रित डेटा राष्ट्रीय योजना और विकास के लिए आवश्यक है, विशेष रूप से किसकी डेटा आवश्यकताओं को पूरा करता है:",
+    "options_en": [
+      "Other countries.",
+      "Planning and development of the Nation.",
+      "Only political parties.",
+      "Only large corporations."
+    ],
+    "options_hi": [
+      "अन्य देश।",
+      "राष्ट्र की योजना और विकास।",
+      "केवल राजनीतिक दल।",
+      "केवल बड़े निगम।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Census data is vital for national-level planning",
+    "explanation_hi": "जनगणना डेटा राष्ट्रीय स्तर की योजना के लिए महत्वपूर्ण है 1,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is the legal serial number of the Census in the Union List of the Seventh Schedule?",
+    "question_hi": "सातवीं अनुसूची की संघ सूची में जनगणना की कानूनी क्रम संख्या क्या है?",
+    "options_en": [
+      "50",
+      "69",
+      "1",
+      "100"
+    ],
+    "options_hi": [
+      "50",
+      "69",
+      "1",
+      "100"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It is listed at serial number 69",
+    "explanation_hi": "यह क्रम संख्या 69 पर सूचीबद्ध है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "How does Census data specifically assist the \"disabled\" population?",
+    "question_hi": "जनगणना डेटा विशेष रूप से \"विकलांग\" आबादी की कैसे सहायता करता है?",
+    "options_en": [
+      "By providing them with wheelchairs directly.",
+      "By providing data to craft inclusive policies and monitor progress.",
+      "By counting their votes differently.",
+      "It does not collect data on the disabled."
+    ],
+    "options_hi": [
+      "उन्हें सीधे व्हीलचेयर प्रदान करके।",
+      "समावेशी नीतियां तैयार करने और प्रगति की निगरानी के लिए डेटा प्रदान करके।",
+      "उनके वोटों की गिनती अलग तरह से करके।",
+      "यह विकलांगों पर डेटा एकत्र नहीं करता है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Census data helps monitor progress for the disabled",
+    "explanation_hi": "जनगणना डेटा विकलांगों के लिए प्रगति की निगरानी करने में मदद करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is meant by the \"missionary zeal\" of Enumerators and Supervisors?",
+    "question_hi": "प्रगणकों और पर्यवेक्षकों के \"मिशनरी उत्साह\" (missionary zeal) का क्या अर्थ है?",
+    "options_en": [
+      "Their religious affiliation.",
+      "Their dedication to maintaining the tradition of conducting the Census.",
+      "Their interest in social media.",
+      "Their desire to travel."
+    ],
+    "options_hi": [
+      "उनकी धार्मिक संबद्धता।",
+      "जनगणना आयोजित करने की परंपरा को बनाए रखने के प्रति उनका समर्पण।",
+      "सोशल मीडिया में उनकी रुचि।",
+      "उनकी यात्रा करने की इच्छा।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The manual refers to the zeal and dedication in maintaining the 150-year tradition",
+    "explanation_hi": "नियमावली 150 साल पुरानी परंपरा को बनाए रखने में उत्साह और समर्पण का उल्लेख करती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is the role of the State Gazette in the Census?",
+    "question_hi": "जनगणना में राज्य राजपत्र (State Gazette) की क्या भूमिका है?",
+    "options_en": [
+      "It is where the results are published first.",
+      "It is used to publish the timelines for Phase I as set by State/UT administrations.",
+      "It is a newspaper for Enumerators.",
+      "It is where the Census Act is written."
+    ],
+    "options_hi": [
+      "यह वह जगह है जहां परिणाम पहले प्रकाशित किए जाते हैं।",
+      "इसका उपयोग राज्य/केंद्र शासित प्रदेश प्रशासनों द्वारा निर्धारित चरण I की समयसीमा प्रकाशित करने के लिए किया जाता है।",
+      "यह प्रगणकों के लिए एक अखबार है।",
+      "यह वह जगह है जहां जनगणना अधिनियम लिखा गया है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Timelines set by States/UTs are published in the State Gazette",
+    "explanation_hi": "राज्यों/केंद्र शासित प्रदेशों द्वारा निर्धारित समय सीमा राज्य राजपत्र में प्रकाशित की जाती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is the \"essential feature\" of Population Enumeration (Phase II)?",
+    "question_hi": "जनसंख्या गणना (चरण II) की \"अनिवार्य विशेषता\" (essential feature) क्या है?",
+    "options_en": [
+      "Only counting heads of households.",
+      "Enumerating every person and collecting individual particulars at a reference date/moment.",
+      "Using paper only.",
+      "Collecting housing details again."
+    ],
+    "options_hi": [
+      "केवल परिवारों के मुखियाओं की गिनती करना।",
+      "प्रत्येक व्यक्ति की गणना करना और संदर्भ तिथि/क्षण पर व्यक्तिगत विवरण एकत्र करना।",
+      "केवल कागज का उपयोग करना।",
+      "आवास विवरण फिर से एकत्र करना।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Phase II captures the particulars of each person at a specific moment",
+    "explanation_hi": "चरण II एक विशिष्ट क्षण में प्रत्येक व्यक्ति के विवरण को कैप्चर करता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Why must Enumerators check self-enumerated data before submitting?",
+    "question_hi": "प्रगणकों को जमा करने से पहले स्व-गणित डेटा की जांच क्यों करनी चाहिए?",
+    "options_en": [
+      "To ensure they get paid.",
+      "To ensure accuracy and completeness.",
+      "To change the answers.",
+      "To see if they know the household."
+    ],
+    "options_hi": [
+      "यह सुनिश्चित करने के लिए कि उन्हें भुगतान मिले।",
+      "सटीकता और पूर्णता सुनिश्चित करने के लिए।",
+      "उत्तर बदलने के लिए।",
+      "यह देखने के लिए कि क्या वे परिवार को जानते हैं।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Verification is mandatory to ensure completeness",
+    "explanation_hi": "पूर्णता सुनिश्चित करने के लिए सत्यापन अनिवार्य है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Which statement is FALSE according to Chapter 1?",
+    "question_hi": "अध्याय 1 के अनुसार कौन सा कथन गलत है?",
+    "options_en": [
+      "Census 2027 is the 16th census.",
+      "Census 2021 was conducted on time.",
+      "Phase I is the Houselisting phase.",
+      "Self-Enumeration is a new method."
+    ],
+    "options_hi": [
+      "जनगणना 2027, 16वीं जनगणना है।",
+      "जनगणना 2021 समय पर आयोजित की गई थी।",
+      "चरण I मकान सूचीकरण चरण है।",
+      "स्व-गणना एक नई विधि है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Census 2021 could not be conducted as per regular schedule",
+    "explanation_hi": "जनगणना 2021 नियमित कार्यक्रम के अनुसार आयोजित नहीं की जा सकी"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "The Census 2027-HLO app is compatible with which Android version?",
+    "question_hi": "Census 2027-HLO ऐप किस एंड्रॉइड संस्करण के साथ संगत है?",
+    "options_en": [
+      "0 and above",
+      "0 and above",
+      "0 and above",
+      "Any version"
+    ],
+    "options_hi": [
+      "0 और उससे ऊपर",
+      "0 और उससे ऊपर",
+      "0 और उससे ऊपर",
+      "कोई भी संस्करण"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Minimum requirement is Android 0",
+    "explanation_hi": "न्यूनतम आवश्यकता एंड्रॉइड 0 है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is a \"synchronous census\" first taken in 1881?",
+    "question_hi": "1881 में पहली बार ली गई \"समकालिक जनगणना\" (synchronous census) क्या है?",
+    "options_en": [
+      "A Census taken via the internet.",
+      "A Census taken for the entire country simultaneously.",
+      "A Census done in two phases.",
+      "A Census that only counts citizens."
+    ],
+    "options_hi": [
+      "इंटरनेट के माध्यम से ली गई जनगणना।",
+      "पूरे देश के लिए एक साथ ली गई जनगणना।",
+      "दो चरणों में की गई जनगणना।",
+      "जनगणना जो केवल नागरिकों की गिनती करती है।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "1881 marked the first synchronous census in India",
+    "explanation_hi": "1881 में भारत में पहली समकालिक जनगणना हुई"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Micro-level data is essential for planning various welfare schemes for whose benefit?",
+    "question_hi": "किसके लाभ के लिए विभिन्न कल्याणकारी योजनाओं की योजना बनाने के लिए सूक्ष्म स्तर का डेटा आवश्यक है?",
+    "options_en": [
+      "Foreign investors",
+      "The people of India",
+      "Only the government",
+      "Only religious organizations"
+    ],
+    "options_hi": [
+      "विदेशी निवेशक",
+      "भारत के लोग",
+      "केवल सरकार",
+      "केवल धार्मिक संगठन"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Schemes are planned for the benefit of the people",
+    "explanation_hi": "योजनाओं की योजना लोगों के लाभ के लिए बनाई जाती है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "In Phase I, which of the following is NOT identified?",
+    "question_hi": "चरण I में, निम्नलिखित में से किसकी पहचान नहीं की जाती है?",
+    "options_en": [
+      "Buildings",
+      "Census Houses",
+      "Individual's place of birth",
+      "Households"
+    ],
+    "options_hi": [
+      "भवन",
+      "जनगणना मकान",
+      "व्यक्ति का जन्म स्थान",
+      "परिवार"
+    ],
+    "correct_option": 2,
+    "explanation_en": "Individual particulars like place of birth are Phase II (Population Enumeration) tasks",
+    "explanation_hi": "जन्म स्थान जैसे व्यक्तिगत विवरण चरण II (जनसंख्या गणना) के कार्य हैं"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Census data forms the \"basis for evidence-based policy making\" because it helps policymakers to:",
+    "question_hi": "जनगणना डेटा \"साक्ष्य-आधारित नीति निर्माण का आधार\" (basis for evidence-based policy making) बनता है क्योंकि यह नीति निर्माताओं की मदद करता है:",
+    "options_en": [
+      "Design/budget targeted schemes.",
+      "Hide the data from the public.",
+      "Increase the population.",
+      "Build more offices."
+    ],
+    "options_hi": [
+      "लक्षित योजनाओं को डिजाइन/बजट करना।",
+      "डेटा को जनता से छिपाना।",
+      "जनसंख्या बढ़ाना।",
+      "और अधिक कार्यालय बनाना।"
+    ],
+    "correct_option": 0,
+    "explanation_en": "Evidence-based data allows for effective policy design and budgeting",
+    "explanation_hi": "साक्ष्य-आधारित डेटा प्रभावी नीति डिजाइन और बजट की अनुमति देता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What specific health purpose does Census data serve?",
+    "question_hi": "जनगणना डेटा किस विशिष्ट स्वास्थ्य उद्देश्य को पूरा करता है?",
+    "options_en": [
+      "Curing the common cold.",
+      "Identifying vulnerable populations and planning emergency responses.",
+      "Only counting the number of doctors.",
+      "Direct surgery."
+    ],
+    "options_hi": [
+      "सामान्य सर्दी का इलाज करना।",
+      "कमजोर आबादी की पहचान करना और आपातकालीन प्रतिक्रियाओं की योजना बनाना।",
+      "केवल डॉक्टरों की संख्या गिनना।",
+      "प्रत्यक्ष सर्जरी।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It's used for public health purposes and health infrastructure planning",
+    "explanation_hi": "इसका उपयोग सार्वजनिक स्वास्थ्य उद्देश्यों और स्वास्थ्य बुनियादी ढांचे की योजना के लिए किया जाता है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "The HLO app fetching facility allows Enumerators to edit what records?",
+    "question_hi": "HLO ऐप लाने (fetching) की सुविधा प्रगणकों को कौन से रिकॉर्ड संपादित करने की अनुमति देती है?",
+    "options_en": [
+      "Only their own personal records.",
+      "Self-enumerated Census house records.",
+      "Records from the 2011 Census.",
+      "Bank records."
+    ],
+    "options_hi": [
+      "केवल उनके अपने निजी रिकॉर्ड।",
+      "स्व-गणित जनगणना मकान रिकॉर्ड।",
+      "2011 की जनगणना के रिकॉर्ड।",
+      "बैंक रिकॉर्ड।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "It allows fetching and editing of self-enumerated data",
+    "explanation_hi": "यह स्व-गणित डेटा को लाने और संपादन की अनुमति देता"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Which specific \"national goal\" is mentioned multiple times?",
+    "question_hi": "किस विशिष्ट \"राष्ट्रीय लक्ष्य\" (national goal) का कई बार उल्लेख किया गया है?",
+    "options_en": [
+      "Digital India",
+      "Viksit Bharat",
+      "Clean India",
+      "Industrial Revolution"
+    ],
+    "options_hi": [
+      "डिजिटल इंडिया",
+      "विकसित भारत",
+      "स्वच्छ भारत",
+      "औद्योगिक क्रांति"
+    ],
+    "correct_option": 1,
+    "explanation_en": "The manual links Census data to the objectives of a Viksit Bharat",
+    "explanation_hi": "नियमावली जनगणना डेटा को विकसित भारत के उद्देश्यों से जोड़ती है 2,"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "How many Censuses were conducted before Independence?",
+    "question_hi": "स्वतंत्रता से पहले कितनी जनगणनाएं आयोजित की गई थीं?",
+    "options_en": [
+      "16",
+      "8",
+      "10",
+      "5"
+    ],
+    "options_hi": [
+      "16",
+      "8",
+      "10",
+      "5"
+    ],
+    "correct_option": 1,
+    "explanation_en": "If 2027 is the 16th and the 8th after Independence, then 8 were conducted before 1,",
+    "explanation_hi": "यदि 2027 16वीं है और स्वतंत्रता के बाद 8वीं है, तो पहले 8 आयोजित की गई थीं"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "Which document is described as a \"true reflection of the national spirit of unity in diversity\"?",
+    "question_hi": "किस दस्तावेज को \"विविधता में एकता की राष्ट्रीय भावना का सच्चा प्रतिबिंब\" कहा गया है?",
+    "options_en": [
+      "The Constitution",
+      "Participation in the Census",
+      "The Union List",
+      "The HLO App"
+    ],
+    "options_hi": [
+      "संविधान",
+      "जनगणना में भागीदारी",
+      "संघ सूची",
+      "HLO ऐप"
+    ],
+    "correct_option": 1,
+    "explanation_en": "Participation by functionaries and the people is a true reflection of this spirit",
+    "explanation_hi": "पदाधिकारियों और लोगों द्वारा भागीदारी इस भावना का सच्चा प्रतिबिंब है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is the \"foundation\" for the Census of India 2027?",
+    "question_hi": "भारत की जनगणना 2027 की \"नींव\" (foundation) क्या है?",
+    "options_en": [
+      "The Internet.",
+      "Enumerators and Supervisors.",
+      "The HLO App.",
+      "Only the Charge Officer."
+    ],
+    "options_hi": [
+      "इंटरनेट।",
+      "प्रगणक और पर्यवेक्षक।",
+      "HLO ऐप।",
+      "केवल चार्ज ऑफिसर।"
+    ],
+    "correct_option": 1,
+    "explanation_en": "They are described as the backbone of the Census",
+    "explanation_hi": "उन्हें जनगणना की रीढ़ और नींव के रूप में वर्णित किया गया है"
+  },
+  {
+    "chapter": 1,
+    "topic": "Introduction to Census",
+    "difficulty": "hard",
+    "question_en": "What is the minimum storage requirement for iOS devices to run the Census app?",
+    "question_hi": "जनगणना ऐप चलाने के लिए iOS उपकरणों के लिए न्यूनतम स्टोरेज की क्या आवश्यकता है?",
+    "options_en": [
+      "4 GB",
+      "8 GB",
+      "16 GB",
+      "32 GB"
+    ],
+    "options_hi": [
+      "4 GB",
+      "8 GB",
+      "16 GB",
+      "32 GB"
+    ],
+    "correct_option": 1,
+    "explanation_en": "8 GB storage is the minimum requirement for both platforms",
+    "explanation_hi": "दोनों प्लेटफार्मों के लिए 8 GB स्टोरेज न्यूनतम आवश्यकता है"
   }
 ]

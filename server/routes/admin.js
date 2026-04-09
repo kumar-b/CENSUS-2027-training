@@ -20,12 +20,23 @@ function handle(fn) {
 }
 
 // GET /api/admin/users — list all users with stats
-router.get('/users', handle(() => {
+router.get('/users', handle((req) => {
   const db = getDb();
-  return db.prepare(`
+  const page = Math.max(1, parseInt(req.query.page) || 1);
+  const limit = Math.min(100, Math.max(1, parseInt(req.query.limit) || 50));
+  const q = (req.query.q || '').trim();
+  const offset = (page - 1) * limit;
+
+  const where = q ? `WHERE name LIKE ? OR mobile LIKE ? OR functionary_type LIKE ?` : '';
+  const params = q ? [`%${q}%`, `%${q}%`, `%${q}%`] : [];
+
+  const total = db.prepare(`SELECT COUNT(*) as c FROM users ${where}`).get(...params).c;
+  const users = db.prepare(`
     SELECT id, name, mobile, functionary_type, state, district, total_points, role, created_at, last_login
-    FROM users ORDER BY total_points DESC
-  `).all();
+    FROM users ${where} ORDER BY total_points DESC LIMIT ? OFFSET ?
+  `).all(...params, limit, offset);
+
+  return { users, total, page, pages: Math.ceil(total / limit) };
 }));
 
 // GET /api/admin/users/:id — user detail with badges + sessions

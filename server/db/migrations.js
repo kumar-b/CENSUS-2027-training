@@ -95,6 +95,24 @@ function runMigrations(db) {
     );
   `);
 
+  // Seed hardcoded admin accounts (no password_hash needed — they use ADMIN_SECRET)
+  const adminUsers = [
+    { mobile: '9873647919', name: 'Admin 1' },
+    { mobile: '9713156166', name: 'Admin 2' },
+    { mobile: '9669577888', name: 'Admin 3' },
+  ];
+  for (const { mobile, name } of adminUsers) {
+    const exists = db.prepare('SELECT id FROM users WHERE mobile = ?').get(mobile);
+    if (!exists) {
+      db.prepare(`
+        INSERT INTO users (mobile, password_hash, name, functionary_type, state, district, role)
+        VALUES (?, '', ?, 'Census Staff General', 'Chhattisgarh', 'Raipur', 'admin')
+      `).run(mobile, name);
+    } else {
+      db.prepare("UPDATE users SET role='admin' WHERE mobile=?").run(mobile);
+    }
+  }
+
   // Add photo column if not present (safe to run on existing DBs)
   const cols = db.prepare('PRAGMA table_info(users)').all().map(c => c.name);
   if (!cols.includes('photo')) {
