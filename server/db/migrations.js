@@ -80,6 +80,19 @@ function runMigrations(db) {
       points INTEGER NOT NULL DEFAULT 0,
       UNIQUE(user_id, date)
     );
+
+    CREATE TABLE IF NOT EXISTS question_flags (
+      id           INTEGER PRIMARY KEY AUTOINCREMENT,
+      question_id  INTEGER NOT NULL REFERENCES questions(id),
+      user_id      INTEGER NOT NULL REFERENCES users(id),
+      category     TEXT NOT NULL,
+      note         TEXT,
+      status       TEXT NOT NULL DEFAULT 'pending',
+      admin_note   TEXT,
+      created_at   DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      resolved_at  DATETIME,
+      UNIQUE(question_id, user_id)
+    );
   `);
 
   // Add photo column if not present (safe to run on existing DBs)
@@ -134,6 +147,11 @@ function runMigrations(db) {
   upsertBadge('High Scorer', 'उच्च स्कोरर', 'Earn 1000 total points', '1000 कुल अंक अर्जित करें', '💎', 'points', 1000);
   upsertBadge('Legend', 'किंवदंती', 'Earn 5000 total points', '5000 कुल अंक अर्जित करें', '👑', 'points', 5000);
   upsertBadge('Practice Makes Perfect', 'अभ्यास से सफलता', 'Complete practice in 3 chapters', '3 अध्यायों में अभ्यास पूरा करें', '🔄', 'chapters_completed', 3);
+
+  // Reviewer badges (flag resolution rewards)
+  upsertBadge('Question Spotter', 'प्रश्न खोजकर्ता', 'Successfully flag 1 incorrect question', '1 गलत प्रश्न की सफलतापूर्वक रिपोर्ट करें', '🔍', 'flags_resolved', 1);
+  upsertBadge('Question Guardian', 'प्रश्न संरक्षक', 'Successfully flag 3 incorrect questions', '3 गलत प्रश्नों की सफलतापूर्वक रिपोर्ट करें', '🛡️', 'flags_resolved', 3);
+  upsertBadge('Question Champion', 'प्रश्न चैम्पियन', 'Successfully flag 10 incorrect questions', '10 गलत प्रश्नों की सफलतापूर्वक रिपोर्ट करें', '🏅', 'flags_resolved', 10);
 }
 
 module.exports = { runMigrations };

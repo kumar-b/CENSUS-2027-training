@@ -78,6 +78,12 @@ function awardBadges(userId) {
         "SELECT DISTINCT mode FROM quiz_sessions WHERE user_id=? AND completed=1"
       ).all(userId).map(r => r.mode);
       earned = ['daily', 'timed', 'practice'].every(m => modes.includes(m));
+
+    } else if (badge.criteria_type === 'flags_resolved') {
+      const count = db.prepare(
+        "SELECT COUNT(*) as c FROM question_flags WHERE user_id=? AND status='resolved'"
+      ).get(userId).c;
+      earned = count >= badge.criteria_value;
     }
 
     if (earned) {
