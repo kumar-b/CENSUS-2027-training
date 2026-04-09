@@ -49,7 +49,14 @@ router.get('/users/:id', handle((req) => {
     FROM quiz_sessions WHERE user_id=? ORDER BY started_at DESC LIMIT 50
   `).all(userId);
 
-  return { user, badges, sessions };
+  const flags = db.prepare(`
+    SELECT f.id, f.category, f.status, f.created_at, substr(q.question_en, 1, 80) as question_excerpt
+    FROM question_flags f
+    JOIN questions q ON q.id = f.question_id
+    WHERE f.user_id = ? ORDER BY f.created_at DESC LIMIT 20
+  `).all(userId);
+
+  return { user, badges, sessions, flags };
 }));
 
 // PATCH /api/admin/users/:id/reset-password

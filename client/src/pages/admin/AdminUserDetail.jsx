@@ -39,7 +39,7 @@ export default function AdminUserDetail() {
 
   if (!data) return <div className="p-6 text-center text-gray-400">{t('loading')}</div>;
 
-  const { user, badges, sessions } = data;
+  const { user, badges, sessions, flags: userFlags } = data;
 
   return (
     <div className="px-4 py-6 space-y-6">
@@ -124,6 +124,25 @@ export default function AdminUserDetail() {
                   <p className="text-sm font-bold text-indigo-600">{s.score}</p>
                   <p className="text-xs text-gray-400">/{s.max_score}</p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      {/* Flags submitted */}
+      {userFlags?.length > 0 && (
+        <div>
+          <p className="text-sm font-semibold text-gray-500 mb-2">{t('flagsSubmitted')}</p>
+          <div className="space-y-1.5">
+            {userFlags.map((f) => (
+              <div key={f.id} className="flex items-center justify-between bg-white border border-gray-100 rounded-xl px-4 py-2.5">
+                <p className="text-xs text-gray-600 flex-1 truncate">{f.question_excerpt}…</p>
+                <span className={`text-xs font-semibold ml-2 px-2 py-0.5 rounded-full flex-shrink-0 ${
+                  f.status === 'resolved' ? 'bg-green-100 text-green-700' :
+                  f.status === 'approved' ? 'bg-blue-100 text-blue-700' :
+                  f.status === 'dismissed' ? 'bg-red-100 text-red-600' :
+                  'bg-gray-100 text-gray-600'
+                }`}>{f.status}</span>
               </div>
             ))}
           </div>

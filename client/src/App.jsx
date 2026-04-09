@@ -19,6 +19,9 @@ import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminUserList from './pages/admin/AdminUserList';
 import AdminUserDetail from './pages/admin/AdminUserDetail';
 import AdminBadgeManager from './pages/admin/AdminBadgeManager';
+import MyFlagsPage from './pages/MyFlagsPage';
+import AdminFlagList from './pages/admin/AdminFlagList';
+import AdminFlagDetail from './pages/admin/AdminFlagDetail';
 
 function Layout({ children }) {
   const { user } = useAuthStore();
@@ -60,11 +63,14 @@ export default function App() {
           <Route path="/results" element={<ProtectedRoute><ResultsPage /></ProtectedRoute>} />
           <Route path="/leaderboard" element={<ProtectedRoute><LeaderboardPage /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
+          <Route path="/flags/mine" element={<ProtectedRoute><MyFlagsPage /></ProtectedRoute>} />
 
           <Route path="/admin" element={<ProtectedRoute adminOnly><AdminDashboard /></ProtectedRoute>} />
           <Route path="/admin/users" element={<ProtectedRoute adminOnly><AdminUserList /></ProtectedRoute>} />
           <Route path="/admin/users/:id" element={<ProtectedRoute adminOnly><AdminUserDetail /></ProtectedRoute>} />
           <Route path="/admin/badges" element={<ProtectedRoute adminOnly><AdminBadgeManager /></ProtectedRoute>} />
+          <Route path="/admin/flags" element={<ProtectedRoute adminOnly><AdminFlagList /></ProtectedRoute>} />
+          <Route path="/admin/flags/:id" element={<ProtectedRoute adminOnly><AdminFlagDetail /></ProtectedRoute>} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
