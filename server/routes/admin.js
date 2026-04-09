@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const authenticate = require('../middleware/auth');
 const adminOnly = require('../middleware/adminOnly');
 const { getDb } = require('../db/database');
+const { listFlags, getFlagDetail, updateFlagStatus, updateFlagQuestion, resolveFlag } = require('../services/flagService');
 
 // All admin routes require authentication + admin role
 router.use(authenticate, adminOnly);
@@ -98,8 +99,9 @@ router.get('/stats', handle(() => {
     "SELECT COUNT(DISTINCT user_id) as c FROM quiz_sessions WHERE date(started_at)=?"
   ).get(todayDate).c;
   const badgesAwarded = db.prepare('SELECT COUNT(*) as c FROM user_badges').get().c;
+  const pendingFlags = db.prepare("SELECT COUNT(*) as c FROM question_flags WHERE status='pending'").get().c;
 
-  return { totalUsers, totalSessions, todayActive, badgesAwarded };
+  return { totalUsers, totalSessions, todayActive, badgesAwarded, pendingFlags };
 }));
 
 // GET /api/admin/badges — list all badges with earned counts
@@ -110,6 +112,37 @@ router.get('/badges', handle(() => {
     FROM badges b LEFT JOIN user_badges ub ON ub.badge_id = b.id
     GROUP BY b.id ORDER BY b.id
   `).all();
+}));
+
+// GET /api/admin/flags?status=pending
+router.get('/flags', handle((req) => {
+  return listFlags({ status: req.query.status });
+}));
+
+// GET /api/admin/flags/:id
+router.get('/flags/:id', handle((req) => {
+  return getFlagDetail(Number(req.params.id));
+}));
+
+// PATCH /api/admin/flags/:id/status
+// Body: { status: 'approved'|'dismissed', adminNote? }
+router.patch('/flags/:id/status', handle((req) => {
+  const { status, adminNote } = req.body;
+  updateFlagStatus({ flagId: Number(req.params.id), status, adminNote });
+  return { success: true };
+}));
+
+// PATCH /api/admin/flags/:id/question
+// Body: { question_en?, question_hi?, options_en?, options_hi?, correct_option?, explanation_en?, explanation_hi? }
+router.patch('/flags/:id/question', handle((req) => {
+  updateFlagQuestion({ flagId: Number(req.params.id), fields: req.body });
+  return { success: true };
+}));
+
+// POST /api/admin/flags/:id/resolve
+// Body: { adminNote? }
+router.post('/flags/:id/resolve', handle((req) => {
+  return resolveFlag({ flagId: Number(req.params.id), adminNote: req.body.adminNote });
 }));
 
 module.exports = router;

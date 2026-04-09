@@ -9,6 +9,7 @@ const quizRoutes = require('./routes/quiz');
 const leaderboardRoutes = require('./routes/leaderboard');
 const userRoutes = require('./routes/user');
 const adminRoutes = require('./routes/admin');
+const flagRoutes = require('./routes/flags');
 
 const app = express();
 app.use(cors());
@@ -23,6 +24,7 @@ app.use('/api/quiz', quizRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/flags', flagRoutes);
 
 app.get('/api/health', (req, res) => res.json({ ok: true }));
 
