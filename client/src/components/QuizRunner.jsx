@@ -8,13 +8,14 @@ import QuizTimer from './QuizTimer';
 export default function QuizRunner({ mode, timerSeconds }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { questions, currentIndex, submitAnswer, completeSession, result } = useQuizStore();
+  const { questions, currentIndex, answers, submitAnswer, completeSession, nextQuestion } = useQuizStore();
 
   const [answered, setAnswered] = useState(null);
   const [answerResult, setAnswerResult] = useState(null);
   const [submitting, setSubmitting] = useState(false);
   const [streak, setStreak] = useState(0);
   const [timeExpired, setTimeExpired] = useState(false);
+  const [flaggedQuestionIds, setFlaggedQuestionIds] = useState(new Set());
 
   const question = questions[currentIndex];
   const isLast = currentIndex === questions.length - 1;
@@ -30,11 +31,14 @@ export default function QuizRunner({ mode, timerSeconds }) {
   };
 
   const handleNext = async () => {
+    const wasLast = isLast;
     setAnswered(null);
     setAnswerResult(null);
-    if (isLast) {
+    if (wasLast) {
       const res = await completeSession();
-      navigate('/results', { state: { result: res } });
+      navigate('/results', { state: { result: res, questions, answers } });
+    } else {
+      nextQuestion();
     }
   };
 
@@ -42,8 +46,12 @@ export default function QuizRunner({ mode, timerSeconds }) {
     if (timeExpired) return;
     setTimeExpired(true);
     const res = await completeSession();
-    navigate('/results', { state: { result: res } });
+    navigate('/results', { state: { result: res, questions, answers } });
   }, [timeExpired, completeSession, navigate]);
+
+  const handleFlagged = (questionId) => {
+    setFlaggedQuestionIds((prev) => new Set([...prev, questionId]));
+  };
 
   if (!question) {
     return <div className="flex items-center justify-center py-20 text-gray-400">{t('loading')}</div>;
@@ -51,7 +59,6 @@ export default function QuizRunner({ mode, timerSeconds }) {
 
   return (
     <div className="px-4 py-4 space-y-4">
-      {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           {streak >= 3 && (
@@ -70,6 +77,8 @@ export default function QuizRunner({ mode, timerSeconds }) {
         result={answerResult}
         currentIndex={currentIndex}
         total={questions.length}
+        flaggedQuestionIds={flaggedQuestionIds}
+        onFlagged={handleFlagged}
       />
 
       {answered !== null && (
