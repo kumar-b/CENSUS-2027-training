@@ -1,4 +1,5 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, forwardRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
 import api from '../api/client';
@@ -82,6 +83,38 @@ function compressImage(file) {
   });
 }
 
+// Badge canvas rendered off-screen for html2canvas capture
+const BadgeCanvas = forwardRef(function BadgeCanvas({ badge, user }, ref) {
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: 'absolute',
+        left: '-9999px',
+        fontFamily: 'sans-serif',
+        background: 'white',
+        border: '4px solid #4f46e5',
+        borderRadius: '16px',
+        padding: '32px 24px',
+        textAlign: 'center',
+        width: '280px',
+      }}
+    >
+      <p style={{ color: '#4f46e5', fontWeight: 'bold', fontSize: '14px', margin: '0 0 16px' }}>जनगणना 2027 · Census 2027</p>
+      <div style={{ fontSize: '72px', lineHeight: 1, margin: '0 0 16px' }}>{badge.icon}</div>
+      <p style={{ color: '#111827', fontWeight: 'bold', fontSize: '18px', margin: '0 0 6px' }}>{badge.name_en}</p>
+      {badge.name_hi && <p style={{ color: '#4b5563', fontSize: '14px', margin: '0 0 10px' }}>{badge.name_hi}</p>}
+      <p style={{ color: '#6b7280', fontSize: '12px', margin: '0 0 16px', lineHeight: 1.4 }}>{badge.description_en}</p>
+      <div style={{ borderTop: '1px solid #c7d2fe', paddingTop: '12px' }}>
+        <p style={{ color: '#374151', fontWeight: '600', fontSize: '14px', margin: '0 0 2px' }}>{user.name}</p>
+        <p style={{ color: '#9ca3af', fontSize: '11px', margin: 0 }}>
+          {new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </p>
+      </div>
+    </div>
+  );
+});
+
 function triggerDownload(canvas, filename) {
   canvas.toBlob((blob) => {
     const blobUrl = URL.createObjectURL(blob);
@@ -98,17 +131,32 @@ function triggerDownload(canvas, filename) {
 export default function ProfilePage() {
   const { t } = useTranslation();
   const { user, updateUser } = useAuthStore();
+  const navigate = useNavigate();
   const [profile, setProfile] = useState(null);
+  const [pendingFlagsCount, setPendingFlagsCount] = useState(0);
   const [showCert, setShowCert] = useState(false);
   const [uploading, setUploading] = useState(false);
+  const [downloadingBadge, setDownloadingBadge] = useState(null);
   const certRef = useRef(null);
+  const badgeRef = useRef(null);
   const photoInputRef = useRef(null);
 
   useEffect(() => {
     api.get('/user/me').then(({ data }) => setProfile(data)).catch(() => {});
+    api.get('/flags/mine').then(({ data }) => {
+      setPendingFlagsCount(data.filter(f => f.status === 'pending').length);
+    }).catch(() => {});
   }, []);
 
   const photo = profile?.user?.photo || user?.photo || null;
+
+  const downloadBadge = async (badge) => {
+    setDownloadingBadge(badge);
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(r, 200))));
+    const canvas = await html2canvas(badgeRef.current, { scale: 2, useCORS: true, allowTaint: false });
+    triggerDownload(canvas, `census2027-badge-${badge.name_en.replace(/\s+/g, '-')}.png`);
+    setDownloadingBadge(null);
+  };
 
   const getCertCanvas = async () => {
     if (!showCert) {
@@ -203,6 +251,11 @@ export default function ProfilePage() {
         {uploading && <p className="text-indigo-100 text-xs mt-2">Uploading photo…</p>}
       </div>
 
+      {/* Hidden badge canvas for download */}
+      {downloadingBadge && user && (
+        <BadgeCanvas ref={badgeRef} badge={downloadingBadge} user={user} />
+      )}
+
       {/* Badges */}
       <div>
         <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">{t('badges')}</h3>
@@ -211,10 +264,18 @@ export default function ProfilePage() {
             {profile.badges.map((b) => (
               <div key={b.id} className="bg-white rounded-xl border border-gray-200 p-3 flex items-center gap-2 shadow-sm">
                 <span className="text-2xl">{b.icon}</span>
-                <div>
+                <div className="flex-1 min-w-0">
                   <p className="font-medium text-gray-800 text-sm">{b.name_en}</p>
                   <p className="text-xs text-gray-400 leading-tight">{b.description_en}</p>
                 </div>
+                <button
+                  onClick={() => downloadBadge(b)}
+                  disabled={!!downloadingBadge}
+                  className="flex-shrink-0 text-gray-400 hover:text-indigo-600 transition-colors disabled:opacity-40"
+                  title={t('downloadBadge')}
+                >
+                  ⬇
+                </button>
               </div>
             ))}
           </div>
@@ -222,6 +283,25 @@ export default function ProfilePage() {
           <p className="text-gray-400 text-sm">{t('noBadges')}</p>
         )}
       </div>
+
+      {/* My Reports */}
+      <button
+        onClick={() => navigate('/flags/mine')}
+        className="w-full bg-white border border-gray-200 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-indigo-300 transition-colors"
+      >
+        <div className="flex items-center gap-3">
+          <span className="text-xl">⚑</span>
+          <span className="font-medium text-gray-800 text-sm">{t('myReports')}</span>
+        </div>
+        <div className="flex items-center gap-2">
+          {pendingFlagsCount > 0 && (
+            <span className="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded-full">
+              {pendingFlagsCount} pending
+            </span>
+          )}
+          <span className="text-gray-300 text-sm">›</span>
+        </div>
+      </button>
 
       {/* Certificate */}
       <div>
