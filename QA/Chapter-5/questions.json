@@ -2534,7 +2534,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Which code is used for 'Transgender Person' in the Sex question?",
-    "question_hi": "यदि मकान का उपयोग आवासीय उपयोग के बिना 'स्कूल/कॉलेज आदि' के रूप में किया जाता है, तो कौन सा कोड उपयोग होता है?",
+    "question_hi": "लिंग प्रश्न में 'किन्नर व्यक्ति' के लिए कौन सा कोड उपयोग किया जाता है?",
     "options_en": [
       "1",
       "2",
@@ -2542,14 +2542,14 @@
       "4"
     ],
     "options_hi": [
+      "1",
+      "2",
       "3",
-      "4",
-      "5",
-      "6"
+      "4"
     ],
     "correct_option": 2,
     "explanation_en": "Code ‘3’ is selected for a Transgender head of household",
-    "explanation_hi": "कोड ‘4’ उन शैक्षणिक संस्थानों के लिए है जहाँ रहने की सुविधा नहीं है 1,"
+    "explanation_hi": "घर के किन्नर मुखिया के लिए कोड '3' चुना जाता है"
   },
   {
     "chapter": 5,
@@ -2578,7 +2578,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "What code is used for 'Livable' condition of a census house?",
-    "question_hi": "'अस्पताल/डिस्पेंसरी आदि' के रूप में उपयोग किए जाने वाले मकान को कौन सा कोड आवंटित किया जाता है?",
+    "question_hi": "जनगणना मकान की 'रहने योग्य' स्थिति के लिए कौन सा कोड उपयोग किया जाता है?",
     "options_en": [
       "1",
       "2",
@@ -2586,14 +2586,14 @@
       "0"
     ],
     "options_hi": [
-      "4",
-      "5",
-      "6",
-      "7"
+      "1",
+      "2",
+      "3",
+      "0"
     ],
     "correct_option": 1,
     "explanation_en": "Houses requiring minor repairs are categorized as ‘Livable’ (Code 2)",
-    "explanation_hi": "कोड ‘6’ उन चिकित्सा केंद्रों के लिए है जो संस्थागत परिवार की श्रेणी में नहीं आते 1,"
+    "explanation_hi": "मामूली मरम्मत की आवश्यकता वाले मकानों को 'रहने योग्य' (कोड 2) के रूप में वर्गीकृत किया जाता है"
   },
   {
     "chapter": 5,
@@ -2644,7 +2644,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "A Census House used as a 'Hospital/dispensary etc.' is assigned which code?",
-    "question_hi": "'फैक्ट्री/वर्कशॉप/वर्कशेड' किस कोड के उदाहरण हैं?",
+    "question_hi": "'अस्पताल/डिस्पेंसरी आदि' के रूप में उपयोग किए जाने वाले जनगणना मकान को कौन सा कोड दिया जाता है?",
     "options_en": [
       "4",
       "5",
@@ -2652,14 +2652,14 @@
       "7"
     ],
     "options_hi": [
-      "3",
-      "7",
-      "8",
-      "9"
+      "4",
+      "5",
+      "6",
+      "7"
     ],
     "correct_option": 2,
     "explanation_en": "Code ‘6’ is used for medical centers that do not qualify as Institutional Households 1,",
-    "explanation_hi": "कोड ‘7’ उन स्थानों के लिए है जहाँ निर्माण, प्रसंस्करण या मरम्मत का काम होता है 1,"
+    "explanation_hi": "कोड '6' उन चिकित्सा केंद्रों के लिए उपयोग किया जाता है जो संस्थागत परिवार के रूप में योग्य नहीं हैं"
   },
   {
     "chapter": 5,
@@ -2688,7 +2688,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "If a Census House is used as a 'Hotel/lodge/guest house etc.', which code is selected?",
-    "question_hi": "कोड 1-8 द्वारा कवर नहीं किए गए 'अन्य गैर-आवासीय उपयोग' के लिए कौन सा कोड है?",
+    "question_hi": "यदि जनगणना मकान का उपयोग 'होटल/लॉज/गेस्ट हाउस आदि' के रूप में किया जाता है, तो कौन सा कोड चुना जाता है?",
     "options_en": [
       "3",
       "4",
@@ -2696,14 +2696,14 @@
       "6"
     ],
     "options_hi": [
-      "0",
-      "9",
-      "10",
-      "7"
+      "3",
+      "4",
+      "5",
+      "6"
     ],
     "correct_option": 2,
     "explanation_en": "Code ‘5’ is for establishments used exclusively for temporary stay or transit 1,",
-    "explanation_hi": "कोड ‘9’ विविध गैर-आवासीय उपयोगों जैसे क्लब, सामुदायिक केंद्र आदि को कवर करता है 1,"
+    "explanation_hi": "कोड '5' उन प्रतिष्ठानों के लिए है जो केवल अस्थायी निवास या पारगमन के लिए उपयोग किए जाते हैं"
   },
   {
     "chapter": 5,
@@ -3150,7 +3150,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "If a Census House is used as a 'Goshala' (cattle shed), what is the appropriate code?",
-    "question_hi": "प्रश्न यदि किसी परिवार को ऐसे नल से पीने का पानी मिलता है जिसे रासायनिक रूप से उपचारित किया गया है, तो कोड क्या है?",
+    "question_hi": "यदि जनगणना मकान का उपयोग 'गोशाला' (पशु शाला) के रूप में किया जाता है, तो उचित कोड क्या है?",
     "options_en": [
       "0",
       "3",
@@ -3158,14 +3158,14 @@
       "9"
     ],
     "options_hi": [
-      "1",
-      "2",
+      "0",
       "3",
-      "4"
+      "8",
+      "9"
     ],
     "correct_option": 3,
     "explanation_en": "Cattle sheds fall under 'Other non-residential use' (Code 9)",
-    "explanation_hi": "उपचारित स्रोत से नल के पानी के लिए कोड '1' है 6,"
+    "explanation_hi": "पशु शालाएं 'अन्य गैर-आवासीय उपयोग' (कोड 9) के अंतर्गत आती हैं"
   },
   {
     "chapter": 5,
@@ -3458,7 +3458,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q If a household head belongs to a Scheduled Caste (SC), what code should be selected?",
-    "question_hi": "प्रश्न प्रश्न 17 में टैंकर या गाड़ी जैसे 'अन्य स्रोत' के लिए कोड क्या है?",
+    "question_hi": "प्रश्न यदि घर के मुखिया अनुसूचित जाति (SC) से संबंधित हैं, तो कौन सा कोड चुना जाना चाहिए?",
     "options_en": [
       "1",
       "2",
@@ -3466,14 +3466,14 @@
       "4"
     ],
     "options_hi": [
-      "9",
-      "0",
-      "8",
-      "7"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "correct_option": 0,
     "explanation_en": "Code '1' is designated for SC in the code list for Question 13 2,",
-    "explanation_hi": "टैंकर/गाड़ी, वर्षा जल आदि जैसे 'अन्य स्रोत' के लिए कोड '0' का उपयोग किया जाता है 7,"
+    "explanation_hi": "प्रश्न 13 की कोड सूची के अनुसार SC के लिए कोड '1' निर्धारित है"
   },
   {
     "chapter": 5,
@@ -3788,7 +3788,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What code is used for 'River/canal' as a source of drinking water?",
-    "question_hi": "प्रश्न यदि ग्रामीण क्षेत्र में पीने के पानी का स्रोत 500 मीटर से अधिक दूर है तो किस कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न पीने के पानी के स्रोत के रूप में 'नदी/नहर' के लिए कौन सा कोड उपयोग किया जाता है?",
     "options_en": [
       "6",
       "7",
@@ -3796,14 +3796,14 @@
       "9"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "6",
+      "7",
+      "8",
+      "9"
     ],
     "correct_option": 1,
     "explanation_en": "Code '7' is used for River/canal 7,",
-    "explanation_hi": "यदि ग्रामीण क्षेत्रों में स्रोत परिसर से 500 मीटर या उससे अधिक की दूरी पर स्थित है, तो कोड '3-दूर' चुना जाता है"
+    "explanation_hi": "नदी/नहर के लिए कोड '7' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
@@ -4756,7 +4756,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "Q In Rural areas, if the water source is 600 meters away, what is the code for Question 18?",
-    "question_hi": "प्रश्न यदि कोई परिवार \"सैन्य बैरक\" (military barrack) में रहता है, तो उनकी स्वामित्व कोड क्या है यदि वे इसके मालिक नहीं हैं या किराया नहीं देते हैं?",
+    "question_hi": "प्रश्न ग्रामीण क्षेत्रों में, यदि जल स्रोत 600 मीटर दूर है, तो प्रश्न 18 के लिए कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -4765,13 +4765,13 @@
     ],
     "options_hi": [
       "1",
+      "2",
       "3",
-      "4",
-      "2"
+      "0"
     ],
     "correct_option": 2,
     "explanation_en": "A distance of 500 meters or more in Rural areas is categorized as Code '3-Away'",
-    "explanation_hi": "ऐसे मामले जहाँ आवास प्रदान किया जाता है (जैसे बैरक) और न तो मालिकाना है और न ही किराये पर, उन्हें कोड '4' के रूप में वर्गीकृत किया गया है"
+    "explanation_hi": "ग्रामीण क्षेत्रों में 500 मीटर या उससे अधिक की दूरी को कोड '3-दूर' के रूप में वर्गीकृत किया जाता है"
   },
   {
     "chapter": 5,
@@ -5020,7 +5020,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q A household pumps water from a bore-well to a tank on the roof, which then supplies a tap in their kitchen. What code is used for the source?",
-    "question_hi": "प्रश्न यदि कोई परिवार रोशनी के किसी भी स्रोत का उपयोग नहीं करता है, तो कौन सा कोड चुना जाता है?",
+    "question_hi": "प्रश्न एक परिवार बोरवेल से पानी पंप करके छत पर टंकी में भरता है, जो फिर रसोई में नल को आपूर्ति करती है। स्रोत के लिए कौन सा कोड उपयोग किया जाता है?",
     "options_en": [
       "1",
       "2",
@@ -5028,21 +5028,21 @@
       "4"
     ],
     "options_hi": [
-      "0",
-      "6",
+      "1",
+      "2",
       "5",
       "4"
     ],
     "correct_option": 1,
     "explanation_en": "Untreated water pumped from a borehole to a tap is categorized as Code '2-Tap water from un-treated source'",
-    "explanation_hi": "असाधारण परिस्थितियों में जहाँ किसी स्रोत का उपयोग नहीं किया जाता है, 'रोशनी नहीं' के लिए कोड '6' का उपयोग किया जाता है 2,"
+    "explanation_hi": "बोरहोल से नल तक पंप किया गया अनुपचारित पानी कोड '2-अनुपचारित स्रोत से नल का पानी' के रूप में वर्गीकृत है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If a household draws water from a well that has a permanent cover on top, what is the code?",
-    "question_hi": "प्रश्न 'विशेष रूप से केवल घरेलू उपयोग के लिए' उपयोग किए जाने वाले शौचालय का कोड क्या है?",
+    "question_hi": "प्रश्न यदि कोई परिवार ऐसे कुएं से पानी लेता है जिसके ऊपर स्थायी ढक्कन है, तो कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -5053,11 +5053,11 @@
       "1",
       "2",
       "3",
-      "4"
+      "0"
     ],
     "correct_option": 2,
     "explanation_en": "Code '3-Well' includes both covered and un-covered/un-protected wells",
-    "explanation_hi": "प्रश्न 20 के लिए, विशेष रूप से परिवार द्वारा उपयोग किए जाने वाले शौचालयों के लिए कोड '1' है 2,"
+    "explanation_hi": "कोड '3-कुआं' में ढका और बिना ढका/असुरक्षित दोनों प्रकार के कुएं शामिल हैं"
   },
   {
     "chapter": 5,
@@ -5218,7 +5218,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If drinking water is supplied by private estate agencies through pipes without chemical treatment, what is the code?",
-    "question_hi": "प्रश्न यदि अपशिष्ट जल के लिए 'कोई जल निकासी नहीं' है, तो कौन सा कोड चुना जाता है?",
+    "question_hi": "प्रश्न यदि पीने का पानी निजी संपदा एजेंसियों द्वारा बिना रासायनिक उपचार के पाइपों के माध्यम से आपूर्ति किया जाता है, तो कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -5228,12 +5228,12 @@
     "options_hi": [
       "1",
       "2",
-      "3",
+      "9",
       "0"
     ],
     "correct_option": 1,
     "explanation_en": "Piped water without treatment, even from private agencies, is Code '2-Tap water from un-treated source'",
-    "explanation_hi": "अपशिष्ट जल के लिए कोई जल निकासी प्रणाली उपलब्ध न होने पर कोड '3' का उपयोग किया जाता है 2,"
+    "explanation_hi": "निजी एजेंसियों से भी बिना उपचार के पाइप का पानी कोड '2-अनुपचारित स्रोत से नल का पानी' है"
   },
   {
     "chapter": 5,
@@ -5262,7 +5262,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If a household lives in a \"military barrack,\" what is their ownership code if they don't own it or pay rent?",
-    "question_hi": "प्रश्न यदि नहाने के लिए 'बिना छत वाला घेरा' (Enclosure without roof) है, तो किस कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न यदि कोई परिवार 'सैन्य बैरक' में रहता है, तो उनका स्वामित्व कोड क्या है यदि वे इसके मालिक नहीं हैं और किराया नहीं देते?",
     "options_en": [
       "1",
       "3",
@@ -5271,13 +5271,13 @@
     ],
     "options_hi": [
       "1",
-      "2",
       "3",
-      "0"
+      "4",
+      "2"
     ],
     "correct_option": 2,
     "explanation_en": "Cases where accommodation is provided (like barracks) and is neither owned nor rented are categorized as Code '4'",
-    "explanation_hi": "नहाने के लिए उपयोग किए जाने वाले बिना छत वाले घेरे के लिए कोड '2' है 2,"
+    "explanation_hi": "जहां आवास प्रदान किया जाता है (जैसे बैरक) और न तो स्वामित्व है और न किराया, वहां कोड '4' का उपयोग होता है"
   },
   {
     "chapter": 5,
@@ -5328,7 +5328,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q A household is renting a kothi and has no other house anywhere in India. What is the code?",
-    "question_hi": "प्रश्न यदि कोई परिवार 'खाना नहीं बनाता' है तो किस कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न एक परिवार एक कोठी किराए पर लेता है और भारत में कहीं भी उनका अपना घर नहीं है। कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -5337,13 +5337,13 @@
     ],
     "options_hi": [
       "1",
+      "2",
       "3",
-      "5",
-      "7"
+      "4"
     ],
     "correct_option": 2,
     "explanation_en": "Renting and not owning any house anywhere in India is Code '3'",
-    "explanation_hi": "जब कोई परिवार किसी भी कारण से खाना नहीं बनाता है, तो कोड '7' का उपयोग किया जाता है 2,"
+    "explanation_hi": "किराए पर रहना और भारत में कहीं भी घर न होना कोड '3' है"
   },
   {
     "chapter": 5,
@@ -5526,7 +5526,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q In the Census of India 2027, what is the code for 'Electricity' as the main source of lighting?",
-    "question_hi": "प्रश्न उस 'सेवा शौचालय' (Service latrine) का कोड क्या है जहाँ मानव द्वारा मल हटाया जाता है?",
+    "question_hi": "प्रश्न भारत की जनगणना 2027 में प्रकाश के मुख्य स्रोत के रूप में 'बिजली' का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -5534,14 +5534,14 @@
       "4"
     ],
     "options_hi": [
-      "7",
-      "8",
-      "9",
-      "0"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "correct_option": 0,
     "explanation_en": "Code '1' is assigned for Electricity as per the instructions for Question 19 1,",
-    "explanation_hi": "सेवा शौचालयों के लिए कोड '8' है जहाँ मानव द्वारा मल हटाया जाता है 2,"
+    "explanation_hi": "प्रश्न 19 के निर्देशों के अनुसार बिजली के लिए कोड '1' निर्धारित है"
   },
   {
     "chapter": 5,
@@ -5570,7 +5570,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q If a household does not use any source of lighting, which code is selected?",
-    "question_hi": "प्रश्न यदि कोई परिवार 'घर के अंदर लेकिन रसोई में नहीं' खाना बनाता है और उसके पास एलपीजी/पीएनजी नहीं है, तो कोड क्या है?",
+    "question_hi": "प्रश्न यदि कोई परिवार प्रकाश के किसी भी स्रोत का उपयोग नहीं करता है, तो कौन सा कोड चुना जाता है?",
     "options_en": [
       "0",
       "6",
@@ -5578,21 +5578,21 @@
       "4"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
+      "0",
+      "6",
+      "5",
       "4"
     ],
     "correct_option": 1,
     "explanation_en": "Code '6' is used for 'No lighting' in exceptional circumstances where no source is used 2,",
-    "explanation_hi": "बिना एलपीजी/पीएनजी कनेक्शन के घर के अंदर लेकिन रसोई में नहीं खाना बनाने के लिए कोड '4' का उपयोग किया जाता है 6,"
+    "explanation_hi": "असाधारण परिस्थितियों में जहां कोई स्रोत नहीं है, 'कोई प्रकाश नहीं' के लिए कोड '6' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What is the code for a latrine used 'Exclusively for household use only'?",
-    "question_hi": "प्रश्न यदि कोई परिवार 'घर के बाहर/खुले में' खाना बनाता है और उसके पास एलपीजी/पीएनजी कनेक्शन है, तो किस कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न 'केवल घर के उपयोग के लिए' उपयोग किए जाने वाले शौचालय का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -5600,14 +5600,14 @@
       "4"
     ],
     "options_hi": [
-      "4",
-      "5",
-      "6",
-      "7"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "correct_option": 0,
     "explanation_en": "For Question 20, Code '1' is for latrines used exclusively by the household 2,",
-    "explanation_hi": "एलपीजी/पीएनजी कनेक्शन के साथ घर के बाहर/खुले में खाना बनाने के लिए कोड '5' है 6,"
+    "explanation_hi": "प्रश्न 20 के लिए, कोड '1' केवल घर द्वारा उपयोग किए जाने वाले शौचालयों के लिए है"
   },
   {
     "chapter": 5,
@@ -5702,7 +5702,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q Which code is used for a flush/pour-flush latrine connected to a 'Piped sewer system'?",
-    "question_hi": "प्रश्न प्रश्न 24 में 'खाना नहीं बनाना' के लिए कोड क्या है?",
+    "question_hi": "प्रश्न 'पाइप सीवर प्रणाली' से जुड़े फ्लश/पोर-फ्लश शौचालय के लिए कौन सा कोड उपयोग किया जाता है?",
     "options_en": [
       "1",
       "2",
@@ -5710,14 +5710,14 @@
       "4"
     ],
     "options_hi": [
-      "0",
-      "9",
-      "7",
-      "6"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "correct_option": 0,
     "explanation_en": "Code '1' is designated for the Piped sewer system 2,",
-    "explanation_hi": "'खाना नहीं बनाना' के लिए कोड '7' निर्धारित कोड है 2,"
+    "explanation_hi": "पाइप सीवर प्रणाली के लिए कोड '1' निर्धारित है"
   },
   {
     "chapter": 5,
@@ -5878,7 +5878,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What code is used if a household 'does not cook'?",
-    "question_hi": "प्रश्न प्रश्न 21 में, 'जानवरों द्वारा सेवा किए जाने वाले मल' (Night soil serviced by animals) के लिए कोड क्या है?",
+    "question_hi": "प्रश्न यदि कोई परिवार 'खाना नहीं पकाता' तो कौन सा कोड उपयोग किया जाता है?",
     "options_en": [
       "1",
       "3",
@@ -5886,14 +5886,14 @@
       "7"
     ],
     "options_hi": [
-      "0",
-      "8",
-      "9",
-      "3"
+      "1",
+      "3",
+      "5",
+      "7"
     ],
     "correct_option": 3,
     "explanation_en": "Code '7' is used when a household does not cook due to any reason 2,",
-    "explanation_hi": "जब मल की सफाई जानवरों द्वारा की जाती है तो कोड '9' का उपयोग किया जाता है"
+    "explanation_hi": "कोड '7' तब उपयोग किया जाता है जब परिवार किसी भी कारण से खाना नहीं पकाता"
   },
   {
     "chapter": 5,
@@ -6054,7 +6054,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What is the code for a 'Single Pit latrine' with a slab/ventilated improved pit?",
-    "question_hi": "प्रश्न यदि कोई परिवार 'पेट्रोमैक्स लाइट' (petromax lights) का उपयोग करता है, तो किस रोशनी स्रोत कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न स्लैब/हवादार बेहतर गड्ढे वाले 'एकल गड्ढे शौचालय' का कोड क्या है?",
     "options_en": [
       "4",
       "5",
@@ -6062,21 +6062,21 @@
       "7"
     ],
     "options_hi": [
-      "1",
-      "2",
       "4",
-      "5"
+      "5",
+      "6",
+      "7"
     ],
     "correct_option": 2,
     "explanation_en": "Code '6' is used for a Single Pit latrine with a slab or ventilated improved pit 2,",
-    "explanation_hi": "पेट्रोमैक्स लाइट को स्पष्ट रूप से कोड '5-अन्य' के अंतर्गत सूचीबद्ध किया गया है"
+    "explanation_hi": "स्लैब या हवादार बेहतर गड्ढे वाले एकल गड्ढे शौचालय के लिए कोड '6' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What is the code for a 'Service latrine' where night soil is removed by human beings?",
-    "question_hi": "प्रश्न स्लैब/हवादार उन्नत गड्ढे वाले 'जुड़वां गड्ढे वाले शौचालय' (Twin pit latrine) का कोड क्या है?",
+    "question_hi": "प्रश्न 'सेवा शौचालय' जहां मनुष्यों द्वारा मल हटाया जाता है, उसका कोड क्या है?",
     "options_en": [
       "7",
       "8",
@@ -6084,14 +6084,14 @@
       "0"
     ],
     "options_hi": [
-      "3",
-      "4",
-      "5",
-      "6"
+      "7",
+      "8",
+      "9",
+      "0"
     ],
     "correct_option": 1,
     "explanation_en": "Code '8' is for Service latrines where night soil is removed by human beings 2,",
-    "explanation_hi": "स्लैब या हवादार उन्नत गड्ढे वाले जुड़वां गड्ढे वाले शौचालय के लिए कोड '4' है"
+    "explanation_hi": "कोड '8' सेवा शौचालयों के लिए है जहां मनुष्यों द्वारा मल हटाया जाता है"
   },
   {
     "chapter": 5,
@@ -6120,7 +6120,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q If a household cooks 'inside the house but not in a kitchen' and has no LPG/PNG, what is the code?",
-    "question_hi": "प्रश्न यदि अपशिष्ट जल 'अनियंत्रित गड्ढे' में बहता है और पानी 'अनियंत्रित तरीके' से बहता है, तो कौन सा कोड?",
+    "question_hi": "प्रश्न यदि परिवार 'घर के अंदर लेकिन रसोई में नहीं' खाना पकाता है और LPG/PNG नहीं है, तो कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -6131,11 +6131,11 @@
       "1",
       "2",
       "3",
-      "0"
+      "4"
     ],
     "correct_option": 3,
     "explanation_en": "Code '4' is used for cooking inside the house but not in a kitchen, without an LPG/PNG connection 6,",
-    "explanation_hi": "अनियंत्रित गड्ढे/तरीके से बहने वाले पानी के लिए कोड '2-खुली जल निकासी' चुना जाता है"
+    "explanation_hi": "घर के अंदर लेकिन रसोई में नहीं, LPG/PNG कनेक्शन के बिना खाना पकाने के लिए कोड '4' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
@@ -6648,7 +6648,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "Q For Question 24, what is the code for 'Cooking in open/outside house' without LPG/PNG?",
-    "question_hi": "प्रश्न प्रश्न 24 में, यदि खाना अलग 'कोठी' में बनाया जाता है और उनके पास एलपीजी है, तो कौन सा कोड?",
+    "question_hi": "प्रश्न प्रश्न 24 के लिए, LPG/PNG के बिना 'खुले/घर के बाहर खाना पकाने' का कोड क्या है?",
     "options_en": [
       "4",
       "5",
@@ -6656,14 +6656,14 @@
       "7"
     ],
     "options_hi": [
-      "1",
-      "3",
+      "4",
       "5",
+      "6",
       "7"
     ],
     "correct_option": 2,
     "explanation_en": "Code '6' is for cooking in the open/outside the house without an LPG/PNG connection 6,",
-    "explanation_hi": "'रसोई' खाना पकाने के लिए एक अलग कमरा है। यदि कोठी में ऐसा कमरा और एलपीजी है, तो कोड '1' चुनें"
+    "explanation_hi": "LPG/PNG कनेक्शन के बिना खुले/घर के बाहर खाना पकाने के लिए कोड '6' है"
   },
   {
     "chapter": 5,
@@ -6714,7 +6714,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "Q In Question 19, 'biogas' for lighting is code:",
-    "question_hi": "प्रश्न यदि कोई परिवार रोशनी के लिए 'खाद्य तेल' (edible oil) का उपयोग करता है, तो कौन सा कोड?",
+    "question_hi": "प्रश्न प्रश्न 19 में प्रकाश के लिए 'बायोगैस' का कोड है:",
     "options_en": [
       "3",
       "4",
@@ -6722,14 +6722,14 @@
       "1"
     ],
     "options_hi": [
-      "1",
-      "2",
+      "3",
       "4",
-      "5"
+      "5",
+      "1"
     ],
     "correct_option": 2,
     "explanation_en": "Biogas is grouped under 'Any Other' (Code 5)",
-    "explanation_hi": "रोशनी के लिए उपयोग किए जाने वाले खाद्य और अखाद्य तेल 'अन्य तेल' (कोड 4) के अंतर्गत आते हैं"
+    "explanation_hi": "बायोगैस को 'अन्य कोई भी' (कोड 5) के अंतर्गत रखा गया है"
   },
   {
     "chapter": 5,
@@ -6824,7 +6824,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "Q If a household has 'no drainage' at all for waste water, what code is used?",
-    "question_hi": "प्रश्न यदि मल की सफाई 'जानवरों द्वारा' की जाती है, तो कौन सा कोड?",
+    "question_hi": "प्रश्न यदि किसी परिवार में अपशिष्ट जल के लिए 'कोई जल निकासी नहीं' है, तो कौन सा कोड उपयोग किया जाता है?",
     "options_en": [
       "0",
       "1",
@@ -6832,14 +6832,14 @@
       "3"
     ],
     "options_hi": [
-      "8",
-      "9",
       "0",
+      "1",
+      "2",
       "3"
     ],
     "correct_option": 3,
     "explanation_en": "Select Code '3' if there is no drainage system to carry away waste water 2,",
-    "explanation_hi": "जानवरों द्वारा साफ किए जाने वाले मल के लिए कोड '9' का उपयोग किया जाता है"
+    "explanation_hi": "यदि अपशिष्ट जल बाहर ले जाने के लिए कोई जल निकासी प्रणाली नहीं है तो कोड '3' चुनें"
   },
   {
     "chapter": 5,
@@ -7242,7 +7242,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If a household uses 'edible oil' for lighting, which code?",
-    "question_hi": "प्रश्न यदि कोई परिवार खाना पकाने के लिए 'उपलों' का उपयोग करता है, तो कौन सा कोड दर्ज किया जाना चाहिए?",
+    "question_hi": "प्रश्न यदि कोई परिवार प्रकाश के लिए 'खाद्य तेल' का उपयोग करता है, तो कौन सा कोड?",
     "options_en": [
       "1",
       "2",
@@ -7252,19 +7252,19 @@
     "options_hi": [
       "1",
       "2",
-      "3",
-      "4"
+      "4",
+      "5"
     ],
     "correct_option": 2,
     "explanation_en": "Edible and non-edible oils used for lighting are covered under 'Other oil' (Code 4) 1,",
-    "explanation_hi": "उपलों (Cowdung cake) के लिए कोड '3' का उपयोग किया जाता है"
+    "explanation_hi": "प्रकाश के लिए उपयोग किए गए खाद्य और अखाद्य तेल 'अन्य तेल' (कोड 4) के अंतर्गत आते हैं"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If a latrine is connected to a system that flushes excreta to a 'plot', what is the code?",
-    "question_hi": "प्रश्न खाना पकाने के मुख्य ईंधन के रूप में 'बिजली' का कोड क्या है?",
+    "question_hi": "प्रश्न यदि शौचालय ऐसी प्रणाली से जुड़ा है जो मल को 'प्लॉट' में फ्लश करती है, तो कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -7272,14 +7272,14 @@
       "0"
     ],
     "options_hi": [
-      "6",
-      "7",
-      "8",
-      "9"
+      "1",
+      "2",
+      "3",
+      "0"
     ],
     "correct_option": 2,
     "explanation_en": "Flushed to a yard/plot is Code '3-Other system'",
-    "explanation_hi": "ईंधन श्रेणी में बिजली के लिए विशिष्ट कोड '7' है"
+    "explanation_hi": "यार्ड/प्लॉट में फ्लश करना कोड '3-अन्य प्रणाली' है"
   },
   {
     "chapter": 5,
@@ -7330,7 +7330,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q What is the code for 'Single pit latrine' without slab/open pit?",
-    "question_hi": "प्रश्न प्रश्न 27 (टेलीविजन) में, 'नहीं' के लिए कोड क्या है?",
+    "question_hi": "प्रश्न स्लैब के बिना/खुले गड्ढे वाले 'एकल गड्ढे शौचालय' का कोड क्या है?",
     "options_en": [
       "4",
       "5",
@@ -7338,21 +7338,21 @@
       "7"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "5"
+      "4",
+      "5",
+      "6",
+      "7"
     ],
     "correct_option": 3,
     "explanation_en": "Code '7' is for a Single pit latrine without a slab or with an open pit 2,",
-    "explanation_hi": "यदि परिवार के पास टेलीविजन नहीं है, तो कोड '5-नहीं' का उपयोग किया जाता है"
+    "explanation_hi": "कोड '7' स्लैब के बिना या खुले गड्ढे वाले एकल गड्ढे शौचालय के लिए है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If night soil is 'serviced by animals', which code?",
-    "question_hi": "प्रश्न टेलीविजन देखने के लिए 'दूरदर्शन फ्री डिश' का कोड क्या है?",
+    "question_hi": "प्रश्न यदि मल 'जानवरों द्वारा सेवित' है, तो कौन सा कोड?",
     "options_en": [
       "8",
       "9",
@@ -7360,21 +7360,21 @@
       "3"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "8",
+      "9",
+      "0",
+      "3"
     ],
     "correct_option": 1,
     "explanation_en": "Code '9' is used for night soil serviced by animals 2,",
-    "explanation_hi": "दूरदर्शन फ्री डिश के लिए कोड '1' निर्धारित किया गया है"
+    "explanation_hi": "जानवरों द्वारा सेवित मल के लिए कोड '9' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If waste water is connected to a system designed to 'carry it away' but the pipes are 'open', which code?",
-    "question_hi": "प्रश्न यदि किसी परिवार के पास टीवी के लिए 'केबल कनेक्शन' है, तो कौन सा कोड चुना जाता है?",
+    "question_hi": "प्रश्न यदि अपशिष्ट जल ऐसी प्रणाली से जुड़ा है जो उसे 'बाहर ले जाने' के लिए बनाई गई है लेकिन पाइप 'खुले' हैं, तो कौन सा कोड?",
     "options_en": [
       "1",
       "2",
@@ -7385,11 +7385,11 @@
       "1",
       "2",
       "3",
-      "4"
+      "0"
     ],
     "correct_option": 1,
     "explanation_en": "If connected to a system but it is 'open drainage', select Code '2' 2,",
-    "explanation_hi": "केबल कनेक्शन के लिए कोड '3' है"
+    "explanation_hi": "यदि किसी प्रणाली से जुड़ा है लेकिन 'खुली जल निकासी' है, तो कोड '2' चुनें"
   },
   {
     "chapter": 5,
@@ -7440,7 +7440,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If a household has a separate room for cooking but NO LPG/PNG connection, what is the code?",
-    "question_hi": "प्रश्न प्रश्न 29 (लैपटॉप/कंप्यूटर) में 'हाँ' के लिए कोड क्या है?",
+    "question_hi": "प्रश्न यदि परिवार के पास खाना पकाने के लिए अलग कमरा है लेकिन LPG/PNG कनेक्शन नहीं है, तो कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -7450,19 +7450,19 @@
     "options_hi": [
       "1",
       "2",
-      "3",
-      "0"
+      "4",
+      "6"
     ],
     "correct_option": 1,
     "explanation_en": "Separate room (kitchen) but no LPG/PNG connection is Code '2' 2,",
-    "explanation_hi": "यदि परिवार के पास लैपटॉप या कंप्यूटर है, तो कोड '1-हाँ' का उपयोग किया जाता है"
+    "explanation_hi": "अलग कमरा (रसोई) लेकिन LPG/PNG कनेक्शन नहीं, कोड '2' है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If a household has an LPG connection but uses it 'only' in an unenclosed space outside, which code?",
-    "question_hi": "प्रश्न प्रश्न 29 (लैपटॉप/कंप्यूटर) में 'नहीं' के लिए कोड क्या है?",
+    "question_hi": "प्रश्न यदि किसी परिवार के पास LPG कनेक्शन है लेकिन वे इसे 'केवल' बाहर खुले स्थान में उपयोग करते हैं, तो कोड क्या है?",
     "options_en": [
       "1",
       "3",
@@ -7471,13 +7471,13 @@
     ],
     "options_hi": [
       "1",
-      "2",
       "3",
-      "4"
+      "5",
+      "7"
     ],
     "correct_option": 2,
     "explanation_en": "Cooking in an unenclosed space/outside with LPG is Code '5' 6,",
-    "explanation_hi": "यदि परिवार के पास लैपटॉप या कंप्यूटर नहीं है, तो कोड '2-नहीं' का उपयोग किया जाता है"
+    "explanation_hi": "LPG के साथ बिना घेरे वाले स्थान/बाहर खाना पकाना कोड '5' है"
   },
   {
     "chapter": 5,
@@ -7528,7 +7528,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If a household uses 'wood' for lighting, which code?",
-    "question_hi": "प्रश्न यदि कोई परिवार 'मोबाइल फोन' पर रेडियो सुनता है, तो प्रश्न 26 के लिए कोड क्या है?",
+    "question_hi": "प्रश्न यदि कोई परिवार प्रकाश के लिए 'लकड़ी' का उपयोग करता है, तो कौन सा कोड?",
     "options_en": [
       "2",
       "4",
@@ -7536,21 +7536,21 @@
       "6"
     ],
     "options_hi": [
-      "1",
       "2",
-      "3",
-      "4"
+      "4",
+      "5",
+      "6"
     ],
     "correct_option": 2,
     "explanation_en": "Wood used for lighting is exceptional and falls under 'Any Other' (Code 5)",
-    "explanation_hi": "मोबाइल या स्मार्टफोन पर रेडियो एक्सेस करने के लिए कोड '2' है"
+    "explanation_hi": "प्रकाश के लिए उपयोग की गई लकड़ी असाधारण है और 'अन्य कोई भी' (कोड 5) के अंतर्गत आती है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q In Question 20, if a household has NO latrine but uses a 'mobile toilet', what is the access code?",
-    "question_hi": "प्रश्न प्रश्न 25 में, 'फसल अवशेष' को किस कोड द्वारा दर्शाया गया है?",
+    "question_hi": "प्रश्न प्रश्न 20 में, यदि किसी परिवार के पास शौचालय नहीं है लेकिन 'मोबाइल शौचालय' का उपयोग करता है, तो पहुंच कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -7561,18 +7561,18 @@
       "1",
       "2",
       "3",
-      "0"
+      "4"
     ],
     "correct_option": 2,
     "explanation_en": "A mobile toilet is considered a 'Public Latrine' (Code 3)",
-    "explanation_hi": "फसल अवशेष (Crop residue) के लिए कोड '2' है"
+    "explanation_hi": "मोबाइल शौचालय को 'सार्वजनिक शौचालय' (कोड 3) माना जाता है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q What is the code for 'Piped sewer system' connection for flush latrines?",
-    "question_hi": "प्रश्न टीवी के लिए 'अन्य DTH/डिश' (सशुल्क सेवाएं) का कोड क्या है?",
+    "question_hi": "प्रश्न फ्लश शौचालयों के लिए 'पाइप सीवर प्रणाली' कनेक्शन का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -7583,11 +7583,11 @@
       "1",
       "2",
       "3",
-      "4"
+      "0"
     ],
     "correct_option": 0,
     "explanation_en": "Code '1' is for connection to a piped sewer system 2,",
-    "explanation_hi": "दूरदर्शन के अलावा अन्य DTH/डिश सेवाओं के लिए कोड '2' है"
+    "explanation_hi": "पाइप सीवर प्रणाली से कनेक्शन के लिए कोड '1' है"
   },
   {
     "chapter": 5,
@@ -7616,7 +7616,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Q If waste water 'flows to some form of drainage system' and the 'water flows in an unregulated manner', which code?",
-    "question_hi": "प्रश्न खाना पकाने के ईंधन के रूप में 'कोयला/लिग्नाइट/चारकोल' को इस प्रकार दर्ज किया जाता है:",
+    "question_hi": "प्रश्न यदि अपशिष्ट जल 'किसी जल निकासी प्रणाली में प्रवाहित होता है' और 'पानी अनियंत्रित तरीके से बहता है', तो कौन सा कोड?",
     "options_en": [
       "1",
       "2",
@@ -7627,11 +7627,11 @@
       "1",
       "2",
       "3",
-      "4"
+      "0"
     ],
     "correct_option": 1,
     "explanation_en": "Unregulated flow is categorized as 'Open drainage' (Code 2)",
-    "explanation_hi": "कोड '4' में कोयला, लिग्नाइट और चारकोल शामिल हैं"
+    "explanation_hi": "अनियंत्रित प्रवाह को 'खुली जल निकासी' (कोड 2) के रूप में वर्गीकृत किया जाता है"
   },
   {
     "chapter": 5,
@@ -7770,7 +7770,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question If a household uses 'LPG/PNG' as the main fuel, which code is used?",
-    "question_hi": "प्रश्न यदि किसी परिवार के पास रेडियो के लिए उपयोग किया जाने वाला 'iPod' है, तो प्रश्न 26 के लिए किस कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न यदि कोई परिवार मुख्य ईंधन के रूप में 'LPG/PNG' उपयोग करता है, तो कौन सा कोड उपयोग किया जाता है?",
     "options_en": [
       "5",
       "6",
@@ -7778,21 +7778,21 @@
       "8"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "5",
+      "6",
+      "7",
+      "8"
     ],
     "correct_option": 1,
     "explanation_en": "Code '6' is designated for Liquefied Petroleum Gas (LPG) and Piped Natural Gas (PNG)",
-    "explanation_hi": "पारंपरिक सेट या मोबाइल के अलावा अन्य उपकरणों जैसे iPod के माध्यम से रेडियो एक्सेस करना कोड '3' है"
+    "explanation_hi": "द्रवीभूत पेट्रोलियम गैस (LPG) और पाइप्ड प्राकृतिक गैस (PNG) के लिए कोड '6' निर्धारित है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question If a household uses 'Cowdung cakes' for cooking, which code should be entered?",
-    "question_hi": "प्रश्न 'डायरेक्ट-टू-होम' (DTH) सेवाओं को किस प्रश्न में वर्गीकृत किया गया है?",
+    "question_hi": "प्रश्न यदि कोई परिवार खाना पकाने के लिए 'उपले' (गोबर के कंडे) का उपयोग करता है, तो कौन सा कोड दर्ज किया जाना चाहिए?",
     "options_en": [
       "1",
       "2",
@@ -7800,21 +7800,21 @@
       "4"
     ],
     "options_hi": [
-      "25",
-      "26",
-      "27",
-      "28"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "correct_option": 2,
     "explanation_en": "Code '3' is used for Cowdung cakes",
-    "explanation_hi": "DTH सेवाएँ प्रश्न 27 (टेलीविज़न) के लिए प्लेटफॉर्म विकल्पों का हिस्सा हैं"
+    "explanation_hi": "उपले के लिए कोड '3' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question What is the code for 'Electricity' as the main cooking fuel?",
-    "question_hi": "प्रश्न 'डायल-अप' इंटरनेट एक्सेस प्रश्न 28 के किस कोड में शामिल है?",
+    "question_hi": "प्रश्न मुख्य खाना पकाने के ईंधन के रूप में 'बिजली' का कोड क्या है?",
     "options_en": [
       "6",
       "7",
@@ -7822,21 +7822,21 @@
       "9"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "6",
+      "7",
+      "8",
+      "9"
     ],
     "correct_option": 1,
     "explanation_en": "The specific code for electricity in the fuel category is '7'",
-    "explanation_hi": "कंप्यूटर के माध्यम से डायल-अप एक्सेस कोड '1' के अंतर्गत आता है"
+    "explanation_hi": "ईंधन श्रेणी में बिजली के लिए विशिष्ट कोड '7' है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question For 'Radio/Transistor' (Question 26), what is the code for 'No'?",
-    "question_hi": "प्रश्न यदि कोई परिवार पाइप द्वारा आपूर्ति की जाने वाली 'प्राकृतिक गैस' का उपयोग करता है, तो किस ईंधन कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न 'रेडियो/ट्रांजिस्टर' (प्रश्न 26) के लिए 'नहीं' का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -7844,14 +7844,14 @@
       "4"
     ],
     "options_hi": [
-      "8",
-      "6",
-      "5",
-      "0"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "correct_option": 3,
     "explanation_en": "If the household has no radio/transistor, code '4-No' is selected",
-    "explanation_hi": "PNG (पाइप्ड नेचुरल गैस) का अर्थ पाइप द्वारा आपूर्ति की जाने वाली प्राकृतिक गैस है और यह कोड '6' है"
+    "explanation_hi": "यदि परिवार के पास रेडियो/ट्रांजिस्टर नहीं है तो कोड '4-नहीं' चुना जाता है"
   },
   {
     "chapter": 5,
@@ -7880,7 +7880,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question In Question 27 (Television), what is the code for 'No'?",
-    "question_hi": "प्रश्न प्रश्न 25 में, 'कोई अन्य' ईंधन का कोड क्या है?",
+    "question_hi": "प्रश्न प्रश्न 27 (टेलीविजन) में 'नहीं' का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -7888,14 +7888,14 @@
       "5"
     ],
     "options_hi": [
-      "9",
-      "0",
       "1",
-      "2"
+      "2",
+      "3",
+      "5"
     ],
     "correct_option": 3,
     "explanation_en": "If the household does not have a television, code '5-No' is used",
-    "explanation_hi": "'अन्य' ईंधन प्रकारों के लिए कोड '0' का उपयोग किया जाता है"
+    "explanation_hi": "यदि परिवार के पास टेलीविजन नहीं है तो कोड '5-नहीं' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
@@ -7990,7 +7990,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question If a household uses 'Solar Energy' as the main fuel, what is the code?",
-    "question_hi": "प्रश्न यदि कोई परिवार 'इनडोर एंटीना' के माध्यम से टीवी देखता है, तो प्रश्न 27 के लिए कौन सा कोड चुना जाता है?",
+    "question_hi": "प्रश्न यदि कोई परिवार मुख्य ईंधन के रूप में 'सौर ऊर्जा' का उपयोग करता है, तो कोड क्या है?",
     "options_en": [
       "7",
       "8",
@@ -7998,14 +7998,14 @@
       "0"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "7",
+      "8",
+      "9",
+      "0"
     ],
     "correct_option": 2,
     "explanation_en": "Solar energy for cooking is given code '9'",
-    "explanation_hi": "DTH या केबल के अलावा किसी अन्य मोड (जैसे इनडोर एंटीना) के माध्यम से देखे जाने वाले टेलीविजन चैनलों को '4-कोई अन्य' के रूप में चुना जाता है"
+    "explanation_hi": "खाना पकाने के लिए सौर ऊर्जा को कोड '9' दिया जाता है"
   },
   {
     "chapter": 5,
@@ -8056,7 +8056,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question In Question 25, which code represents 'Crop Residue'?",
-    "question_hi": "प्रश्न प्रश्न 25 में, किस कोड में 'अरहर के डंठल' और 'मूंगफली के छिलके' शामिल हैं?",
+    "question_hi": "प्रश्न प्रश्न 25 में 'फसल अवशेष' को कौन सा कोड दर्शाता है?",
     "options_en": [
       "1",
       "2",
@@ -8067,11 +8067,11 @@
       "1",
       "2",
       "3",
-      "4"
+      "0"
     ],
     "correct_option": 1,
     "explanation_en": "The code for crop residue is '2'",
-    "explanation_hi": "कोड '2-फसल अवशेष' में कपास/अरहर के डंठल, नारियल के छिलके और मूंगफली के छिलके जैसे अवशेष शामिल हैं"
+    "explanation_hi": "फसल अवशेष का कोड '2' है"
   },
   {
     "chapter": 5,
@@ -8100,7 +8100,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question If a household uses 'Kerosene' as the main fuel, the code is:",
-    "question_hi": "प्रश्न यदि कोई परिवार 'Tata Play' (सशुल्क DTH) जैसी सेवा के माध्यम से टीवी देखता है, तो कोड क्या है?",
+    "question_hi": "प्रश्न यदि कोई परिवार मुख्य ईंधन के रूप में 'मिट्टी का तेल' (केरोसीन) उपयोग करता है, तो कोड है:",
     "options_en": [
       "4",
       "5",
@@ -8108,14 +8108,14 @@
       "7"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "4",
+      "5",
+      "6",
+      "7"
     ],
     "correct_option": 1,
     "explanation_en": "The code for Kerosene is '5'",
-    "explanation_hi": "भुगतान पर अन्य DTH/डिश सेवाओं को कोड '2' के रूप में चुना जाता है"
+    "explanation_hi": "केरोसीन का कोड '5' है"
   },
   {
     "chapter": 5,
@@ -8298,7 +8298,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question If a household uses 'Natural Gas' supplied through pipes, which fuel code is used?",
-    "question_hi": "प्रश्न स्मार्टफोन पर 'सेलुलर' डेटा के माध्यम से इंटरनेट का उपयोग करना Q28 के लिए कौन सा कोड है?",
+    "question_hi": "प्रश्न यदि कोई परिवार पाइपों के माध्यम से आपूर्ति की गई 'प्राकृतिक गैस' का उपयोग करता है, तो कौन सा ईंधन कोड उपयोग किया जाता है?",
     "options_en": [
       "8",
       "6",
@@ -8306,14 +8306,14 @@
       "0"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "8",
+      "6",
+      "5",
+      "0"
     ],
     "correct_option": 1,
     "explanation_en": "PNG stands for Piped Natural Gas and is code '6'",
-    "explanation_hi": "स्मार्टफोन पर सेलुलर नेटवर्क के माध्यम से एक्सेस किया गया इंटरनेट कोड '2' है"
+    "explanation_hi": "PNG का मतलब पाइप्ड प्राकृतिक गैस है और इसका कोड '6' है"
   },
   {
     "chapter": 5,
@@ -8342,7 +8342,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Question In Question 25, what is the code for 'Any Other' fuel?",
-    "question_hi": "प्रश्न यदि 'चारकोल' मुख्य खाना पकाने का ईंधन है, तो कौन सा कोड उपयोग किया जाता है?",
+    "question_hi": "प्रश्न प्रश्न 25 में 'अन्य कोई भी' ईंधन का कोड क्या है?",
     "options_en": [
       "9",
       "0",
@@ -8350,14 +8350,14 @@
       "2"
     ],
     "options_hi": [
+      "9",
+      "0",
       "1",
-      "2",
-      "4",
-      "5"
+      "2"
     ],
     "correct_option": 1,
     "explanation_en": "Code '0' is used for 'Other' fuel types",
-    "explanation_hi": "चारकोल को कोड '4' में शामिल किया गया है"
+    "explanation_hi": "अन्य ईंधन प्रकारों के लिए कोड '0' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
@@ -9354,7 +9354,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Question Under which code is 'Wireless/Wi-Fi' internet access listed in Question 28?",
-    "question_hi": "प्रश्न यदि परिवार के पास कोई टेलीफोन या मोबाइल फोन नहीं है, तो किस कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न प्रश्न 28 में 'वायरलेस/वाई-फाई' इंटरनेट एक्सेस किस कोड के अंतर्गत सूचीबद्ध है?",
     "options_en": [
       "1",
       "2",
@@ -9363,13 +9363,13 @@
     ],
     "options_hi": [
       "1",
+      "2",
       "3",
-      "4",
-      "5"
+      "4"
     ],
     "correct_option": 0,
     "explanation_en": "Wireless/Wi-Fi accessed through a computer is part of the examples for code '1'",
-    "explanation_hi": "यदि कोई संचार उपकरण उपलब्ध नहीं है, तो कोड '5' चुना जाता है"
+    "explanation_hi": "कंप्यूटर के माध्यम से एक्सेस किया गया वायरलेस/वाई-फाई कोड '1' के उदाहरणों का हिस्सा है"
   },
   {
     "chapter": 5,
@@ -9750,7 +9750,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "hard",
     "question_en": "Question If a household uses a 'Solar Cooker', what is the fuel code?",
-    "question_hi": "प्रश्न प्रश्न 31 में, यदि किसी परिवार के पास साइकिल और स्कूटर दोनों हैं, तो किस कोड का उपयोग किया जाता है?",
+    "question_hi": "प्रश्न यदि कोई परिवार 'सोलर कुकर' का उपयोग करता है, तो ईंधन कोड क्या है?",
     "options_en": [
       "7",
       "8",
@@ -9758,14 +9758,14 @@
       "0"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "7",
+      "8",
+      "9",
+      "0"
     ],
     "correct_option": 2,
     "explanation_en": "Solar energy for cooking is code '9'",
-    "explanation_hi": "प्रश्न 31 में \"दोनों\" के लिए कोड '3' चुना जाता है"
+    "explanation_hi": "खाना पकाने के लिए सौर ऊर्जा का कोड '9' है"
   },
   {
     "chapter": 5,
@@ -9860,7 +9860,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What is the code for a \"Smartphone\" in Question 30?",
-    "question_hi": "प्रश्न यदि कोई परिवार मुख्य रूप से \"मुढ़ी\" (पफ्ड राइस) जैसे चावल के उत्पाद खाता है, तो कौन सा कोड चुना जाता है?",
+    "question_hi": "प्रश्न प्रश्न 30 में 'स्मार्टफोन' का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -9870,12 +9870,12 @@
     "options_hi": [
       "1",
       "2",
-      "6",
-      "5"
+      "3",
+      "4"
     ],
     "correct_option": 1,
     "explanation_en": "Code ‘2’ is designated for Smartphones 1,",
-    "explanation_hi": "मुढ़ी, खोई और लावा जैसे उत्पाद कोड '1-चावल' के अंतर्गत आते हैं"
+    "explanation_hi": "स्मार्टफोन के लिए कोड '2' निर्धारित है"
   },
   {
     "chapter": 5,
@@ -9926,7 +9926,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q In Question 31, what is the code for possessing only a \"Bicycle\"?",
-    "question_hi": "प्रश्न यदि कोई परिवार मुख्य रूप से \"ओट्स\" खाता है, तो कौन सा कोड चुना जाता है?",
+    "question_hi": "प्रश्न प्रश्न 31 में केवल 'साइकिल' रखने का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -9935,20 +9935,20 @@
     ],
     "options_hi": [
       "1",
-      "4",
-      "5",
-      "6"
+      "2",
+      "3",
+      "4"
     ],
     "correct_option": 0,
     "explanation_en": "Code ‘1’ is for possessing a bicycle only 1,",
-    "explanation_hi": "ओट्स को कोड '6-अन्य' के अंतर्गत सूचीबद्ध किया गया है"
+    "explanation_hi": "केवल साइकिल रखने के लिए कोड '1' है"
   },
   {
     "chapter": 5,
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What is the code for possessing only a \"Scooter/Motorcycle/Moped\"?",
-    "question_hi": "प्रश्न प्रश्न 30 के लिए कोड सूची में \"अन्य बेसिक मोबाइल\" का कोड क्या है?",
+    "question_hi": "प्रश्न केवल 'स्कूटर/मोटरसाइकिल/मोपेड' रखने का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -9959,11 +9959,11 @@
       "1",
       "2",
       "3",
-      "5"
+      "4"
     ],
     "correct_option": 1,
     "explanation_en": "Code ‘2’ covers two-wheeled motorized vehicles 1,",
-    "explanation_hi": "कोड '3' \"अन्य बेसिक मोबाइल\" के लिए है"
+    "explanation_hi": "कोड '2' दोपहिया मोटर वाहनों को कवर करता है"
   },
   {
     "chapter": 5,
@@ -9992,7 +9992,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q For Question 32 (Car/Jeep/Van), what is the code for \"Yes\"?",
-    "question_hi": "प्रश्न प्रश्न 31 में \"दोनों\" (साइकिल और मोटर चालित वाहन) के लिए कोड क्या है?",
+    "question_hi": "प्रश्न प्रश्न 32 (कार/जीप/वैन) के लिए 'हाँ' का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -10003,11 +10003,11 @@
       "1",
       "2",
       "3",
-      "4"
+      "0"
     ],
     "correct_option": 0,
     "explanation_en": "Code ‘1’ indicates the household possesses a car, jeep, or van 2,",
-    "explanation_hi": "दोनों प्रकार के दोपहिया वाहन होने पर कोड '3' निर्धारित है"
+    "explanation_hi": "कोड '1' इंगित करता है कि परिवार के पास कार, जीप या वैन है"
   },
   {
     "chapter": 5,
@@ -10036,7 +10036,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What is the code for \"Wheat\" as the main cereal in Question 33?",
-    "question_hi": "प्रश्न एक परिवार के पास एक लैंडलाइन और दो स्मार्टफोन हैं। प्रश्न 30 के लिए सही कोड क्या है?",
+    "question_hi": "प्रश्न प्रश्न 33 में मुख्य अनाज के रूप में 'गेहूं' का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -10046,12 +10046,12 @@
     "options_hi": [
       "1",
       "2",
-      "4",
-      "5"
+      "3",
+      "4"
     ],
     "correct_option": 1,
     "explanation_en": "Code ‘2’ is used for Wheat 2,",
-    "explanation_hi": "चूँकि उनके पास लैंडलाइन और मोबाइल (स्मार्टफोन) दोनों हैं, इसलिए कोड '4-दोनों' चुना जाता है"
+    "explanation_hi": "गेहूं के लिए कोड '2' उपयोग किया जाता है"
   },
   {
     "chapter": 5,
@@ -10080,7 +10080,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q Which code represents \"Bajra\" in Question 33?",
-    "question_hi": "प्रश्न एक परिवार के पास एक मोटर चालित स्कूटर और एक मोटरसाइकिल है लेकिन साइकिल नहीं है। प्रश्न 31 के लिए कोड क्या है?",
+    "question_hi": "प्रश्न प्रश्न 33 में 'बाजरा' को कौन सा कोड दर्शाता है?",
     "options_en": [
       "3",
       "4",
@@ -10088,14 +10088,14 @@
       "6"
     ],
     "options_hi": [
-      "1",
-      "2",
       "3",
-      "4"
+      "4",
+      "5",
+      "6"
     ],
     "correct_option": 1,
     "explanation_en": "Code ‘4’ is for Bajra 2,",
-    "explanation_hi": "कोड '2' केवल दोपहिया मोटर चालित वाहन होने के लिए है"
+    "explanation_hi": "बाजरे के लिए कोड '4' है"
   },
   {
     "chapter": 5,
@@ -10124,7 +10124,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q How many digits must the mobile number entered in Question 34 be?",
-    "question_hi": "प्रश्न एक परिवार मुख्य रूप से गेहूँ की रोटी, मैदा और दलिया का उपभोग करता है। प्रश्न 33 के लिए कौन सा कोड चुना जाता है?",
+    "question_hi": "प्रश्न प्रश्न 34 में दर्ज किया जाने वाला मोबाइल नंबर कितने अंकों का होना चाहिए?",
     "options_en": [
       "8",
       "9",
@@ -10132,14 +10132,14 @@
       "12"
     ],
     "options_hi": [
-      "1",
-      "2",
-      "5",
-      "6"
+      "8",
+      "9",
+      "10",
+      "12"
     ],
     "correct_option": 2,
     "explanation_en": "The manual specifies a functional/active 10-digit mobile number",
-    "explanation_hi": "ये सभी गेहूँ आधारित उत्पाद हैं जो कोड '2' के अंतर्गत आते हैं"
+    "explanation_hi": "मैनुअल में 10 अंकों का कार्यात्मक/सक्रिय मोबाइल नंबर निर्दिष्ट है"
   },
   {
     "chapter": 5,
@@ -10344,7 +10344,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q If a household mainly eats rice products like \"muri\" (puffed rice), what code is selected?",
-    "question_hi": "प्रश्न मुख्य अनाज के रूप में खाए जाने वाले \"बाजरा उत्पादों\" का कोड क्या होगा?",
+    "question_hi": "प्रश्न यदि कोई परिवार मुख्य रूप से 'मुरी' (मुरमुरे/पफ्ड राइस) जैसे चावल उत्पाद खाता है, तो कौन सा कोड चुना जाता है?",
     "options_en": [
       "1",
       "2",
@@ -10352,14 +10352,14 @@
       "5"
     ],
     "options_hi": [
+      "1",
       "2",
-      "3",
-      "4",
+      "6",
       "5"
     ],
     "correct_option": 0,
     "explanation_en": "Rice products like muri, khoi, and lawa fall under Code ‘1-Rice’",
-    "explanation_hi": "बाजरा उत्पाद कोड '4-बाजरा' के अंतर्गत आते हैं"
+    "explanation_hi": "मुरी, खोई और लावा जैसे चावल उत्पाद कोड '1-चावल' के अंतर्गत आते हैं"
   },
   {
     "chapter": 5,
@@ -10476,7 +10476,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "easy",
     "question_en": "Q What is the code for \"Both\" (Bicycle and Motorized vehicle) in Q31?",
-    "question_hi": "प्रश्न \"सूजी\" का सेवन किस अनाज कोड के अंतर्गत आता है?",
+    "question_hi": "प्रश्न प्रश्न 31 में 'दोनों' (साइकिल और मोटर वाहन) का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -10487,11 +10487,11 @@
       "1",
       "2",
       "3",
-      "5"
+      "4"
     ],
     "correct_option": 2,
     "explanation_en": "Code ‘3’ is designated for having both types of two-wheelers",
-    "explanation_hi": "सूजी गेहूँ का उत्पाद है, कोड '2'"
+    "explanation_hi": "दोनों प्रकार के दोपहिया वाहन रखने के लिए कोड '3' निर्धारित है"
   },
   {
     "chapter": 5,
@@ -10674,7 +10674,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "Q If a household consumes \"Jowar biscuits\" as their primary cereal source, what is the code?",
-    "question_hi": "प्रश्न \"जौ\" को किस श्रेणी में दर्ज किया गया है?",
+    "question_hi": "प्रश्न यदि कोई परिवार मुख्य अनाज स्रोत के रूप में 'ज्वार बिस्कुट' का सेवन करता है, तो कोड क्या है?",
     "options_en": [
       "2",
       "3",
@@ -10682,14 +10682,14 @@
       "0"
     ],
     "options_hi": [
-      "1",
       "2",
-      "4",
-      "6"
+      "3",
+      "6",
+      "0"
     ],
     "correct_option": 1,
     "explanation_en": "Jowar products, specifically mentioned as jowar biscuits, fall under Code ‘3’",
-    "explanation_hi": "जौ कोड '6-अन्य' है"
+    "explanation_hi": "ज्वार उत्पाद, विशेष रूप से ज्वार बिस्कुट, कोड '3' के अंतर्गत आते हैं"
   },
   {
     "chapter": 5,
@@ -11026,7 +11026,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "Q \"Suji\" (Semolina) consumption falls under which cereal code?",
-    "question_hi": "प्रश्न लैंडलाइन और बेसिक मोबाइल फोन रखने वाले परिवार के लिए कोड क्या है, जिसके पास स्मार्टफोन नहीं है?",
+    "question_hi": "प्रश्न 'सूजी' (रवा/सेमोलिना) का सेवन किस अनाज कोड के अंतर्गत आता है?",
     "options_en": [
       "1",
       "2",
@@ -11037,11 +11037,11 @@
       "1",
       "2",
       "3",
-      "4"
+      "5"
     ],
     "correct_option": 1,
     "explanation_en": "Suji is a wheat product, Code ‘2’",
-    "explanation_hi": "कोड 4 लैंडलाइन और मोबाइल (दोनों में से कोई भी प्रकार) को दर्शाता है"
+    "explanation_hi": "सूजी एक गेहूं उत्पाद है, कोड '2'"
   },
   {
     "chapter": 5,
@@ -11180,7 +11180,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "Q Under which category is \"Barley\" recorded?",
-    "question_hi": "प्रश्न प्राथमिक अनाज स्रोत के रूप में \"ज्वार बिस्कुट\" को कोड किया गया है:",
+    "question_hi": "प्रश्न 'जौ' (बार्ली) किस श्रेणी में दर्ज किया जाता है?",
     "options_en": [
       "1",
       "2",
@@ -11188,14 +11188,14 @@
       "6"
     ],
     "options_hi": [
+      "1",
       "2",
-      "3",
-      "6",
-      "0"
+      "4",
+      "6"
     ],
     "correct_option": 3,
     "explanation_en": "Barley is Code ‘6-Any other’",
-    "explanation_hi": "ज्वार के उत्पादों में ज्वार के बिस्कुट शामिल हैं, कोड"
+    "explanation_hi": "जौ कोड '6-अन्य कोई भी' है"
   },
   {
     "chapter": 5,
