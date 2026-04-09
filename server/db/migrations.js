@@ -95,6 +95,15 @@ function runMigrations(db) {
     );
   `);
 
+  // Deduplicate questions (keep lowest id per question_en), then enforce uniqueness
+  // Must run before CREATE UNIQUE INDEX — safe no-op if no duplicates exist
+  db.exec(`
+    DELETE FROM questions WHERE id NOT IN (
+      SELECT MIN(id) FROM questions GROUP BY question_en
+    );
+    CREATE UNIQUE INDEX IF NOT EXISTS idx_questions_unique ON questions(question_en);
+  `);
+
   // Seed hardcoded admin accounts (no password_hash needed — they use ADMIN_SECRET)
   const adminUsers = [
     { mobile: '9873647919', name: 'Admin 1' },
