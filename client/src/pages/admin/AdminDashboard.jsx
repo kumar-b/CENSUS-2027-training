@@ -24,7 +24,7 @@ export default function AdminDashboard() {
     <div className="px-4 py-6 space-y-6">
       <h2 className="text-xl font-bold text-gray-800">{t('adminDashboard')}</h2>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-3 gap-3">
         <StatCard label={t('totalUsers')} value={stats?.totalUsers} color="bg-indigo-50" />
         <StatCard label={t('totalSessions')} value={stats?.totalSessions} color="bg-green-50" />
         <StatCard label={t('todayActive')} value={stats?.todayActive} color="bg-amber-50" />
@@ -55,7 +55,7 @@ export default function AdminDashboard() {
           <p className="text-sm text-gray-400">Review user-reported question issues</p>
           {stats?.pendingFlags > 0 && (
             <span className="inline-block mt-1 bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded-full">
-              {stats.pendingFlags} pending
+              {stats.pendingFlags} {t('flagPending')}
             </span>
           )}
         </Link>

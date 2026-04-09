@@ -136,7 +136,7 @@ export default function AdminUserDetail() {
           <div className="space-y-1.5">
             {userFlags.map((f) => (
               <div key={f.id} className="flex items-center justify-between bg-white border border-gray-100 rounded-xl px-4 py-2.5">
-                <p className="text-xs text-gray-600 flex-1 truncate">{f.question_excerpt}…</p>
+                <p className="text-xs text-gray-600 flex-1 truncate">{f.question_excerpt}</p>
                 <span className={`text-xs font-semibold ml-2 px-2 py-0.5 rounded-full flex-shrink-0 ${
                   f.status === 'resolved' ? 'bg-green-100 text-green-700' :
                   f.status === 'approved' ? 'bg-blue-100 text-blue-700' :
