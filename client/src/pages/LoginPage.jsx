@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
 import LanguageToggle from '../components/LanguageToggle';
+import { BuildingIcon } from '../components/Icons';
 
 export default function LoginPage() {
   const { t } = useTranslation();
@@ -24,55 +25,78 @@ export default function LoginPage() {
       await login(form.mobile, form.password);
       navigate('/');
     } catch (err) {
-      setError(err.response?.data?.error || t('error'));
+      const serverMsg = err.response?.data?.error;
+      if (err.response?.status === 403) {
+        setError(serverMsg || 'Account pending admin approval');
+      } else {
+        setError(serverMsg || t('error'));
+      }
     } finally { setBusy(false); }
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-50 to-white px-4">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4" style={{ background: 'linear-gradient(160deg, var(--tc-primary-light) 0%, var(--tc-bg) 50%, #F7D8A8 100%)' }}>
       <div className="absolute top-4 right-4"><LanguageToggle /></div>
       <div className="w-full max-w-sm">
-        <h1 className="text-3xl font-bold text-indigo-700 text-center mb-1">जनगणना 2027</h1>
-        <p className="text-center text-gray-500 mb-8 text-sm">Census Training Platform</p>
 
-        <form onSubmit={submit} className="bg-white rounded-2xl shadow-md p-6 space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800">{t('login')}</h2>
+        {/* Header */}
+        <div className="text-center mb-8">
+          <div className="flex justify-center mb-3">
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center" style={{ background: 'var(--tc-primary)', boxShadow: '0 4px 0 var(--tc-primary-dark)' }}>
+              <BuildingIcon size={32} color="#fff" sw={1.5} />
+            </div>
+          </div>
+          <h1 className="text-3xl font-black" style={{ color: 'var(--tc-primary-dark)', letterSpacing: '-0.5px' }}>जनगणना 2027</h1>
+          <p className="text-sm font-bold mt-1" style={{ color: 'var(--tc-text-sec)' }}>Census Training Platform</p>
+        </div>
 
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+        {/* Form card */}
+        <div className="rounded-2xl p-6 space-y-4" style={{ background: 'var(--tc-card)', border: '2px solid var(--tc-border)', boxShadow: '0 6px 0 var(--tc-border)' }}>
+          <h2 className="text-lg font-black" style={{ color: 'var(--tc-text)' }}>{t('login')}</h2>
+
+          {error && (
+            <div className="rounded-xl px-3 py-2 text-sm font-bold" style={{ background: '#FFEAEA', color: '#C1440E', border: '2px solid #FFBBBB' }}>
+              {error}
+            </div>
+          )}
 
           <div>
-            <label className="block text-sm text-gray-600 mb-1">{t('mobile')}</label>
+            <label className="sec-label block">{t('mobile')}</label>
             <input
               type="tel" maxLength={10} required
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="fancy-input"
+              placeholder="10-digit mobile number"
               value={form.mobile}
               onChange={(e) => setForm({ ...form, mobile: e.target.value })}
             />
           </div>
 
           <div>
-            <label className="block text-sm text-gray-600 mb-1">
+            <label className="sec-label block">
               {isAdmin ? 'Admin Passphrase' : t('password')}
             </label>
             <input
               type="password" required
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="fancy-input"
+              placeholder="••••••"
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
             />
           </div>
 
           <button
-            type="submit" disabled={busy}
-            className="w-full bg-indigo-600 text-white rounded-lg py-2.5 font-semibold hover:bg-indigo-700 disabled:opacity-60 transition-colors"
+            type="button"
+            onClick={submit}
+            disabled={busy}
+            className="btn-3d btn-primary"
           >
             {busy ? t('loading') : t('login')}
           </button>
-        </form>
+        </div>
 
-        <p className="text-center text-sm text-gray-500 mt-4">
+        <p className="text-center text-sm font-bold mt-5" style={{ color: 'var(--tc-text-sec)' }}>
           {t('noAccount')}{' '}
-          <Link to="/register" className="text-indigo-600 font-medium hover:underline">{t('register')}</Link>
+          <Link to="/register" className="font-black underline" style={{ color: 'var(--tc-primary)' }}>{t('register')}</Link>
         </p>
       </div>
     </div>

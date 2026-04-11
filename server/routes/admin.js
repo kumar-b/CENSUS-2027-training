@@ -19,24 +19,54 @@ function handle(fn) {
   };
 }
 
-// GET /api/admin/users — list all users with stats
+// GET /api/admin/users — list all users with stats; supports ?q= search and ?status= filter
 router.get('/users', handle((req) => {
   const db = getDb();
   const page = Math.max(1, parseInt(req.query.page) || 1);
   const limit = Math.min(100, Math.max(1, parseInt(req.query.limit) || 50));
   const q = (req.query.q || '').trim();
+  const statusFilter = req.query.status || '';
   const offset = (page - 1) * limit;
 
-  const where = q ? `WHERE name LIKE ? OR mobile LIKE ? OR functionary_type LIKE ?` : '';
-  const params = q ? [`%${q}%`, `%${q}%`, `%${q}%`] : [];
+  const conditions = [];
+  const params = [];
+
+  if (q) {
+    conditions.push('(name LIKE ? OR mobile LIKE ? OR functionary_type LIKE ?)');
+    params.push(`%${q}%`, `%${q}%`, `%${q}%`);
+  }
+  if (['pending', 'approved', 'rejected'].includes(statusFilter)) {
+    conditions.push('status = ?');
+    params.push(statusFilter);
+  }
+
+  const where = conditions.length ? `WHERE ${conditions.join(' AND ')}` : '';
 
   const total = db.prepare(`SELECT COUNT(*) as c FROM users ${where}`).get(...params).c;
   const users = db.prepare(`
-    SELECT id, name, mobile, functionary_type, state, district, total_points, role, created_at, last_login
-    FROM users ${where} ORDER BY total_points DESC LIMIT ? OFFSET ?
+    SELECT id, name, mobile, functionary_type, state, district, total_points, role, status, created_at, last_login
+    FROM users ${where} ORDER BY created_at DESC LIMIT ? OFFSET ?
   `).all(...params, limit, offset);
 
   return { users, total, page, pages: Math.ceil(total / limit) };
+}));
+
+// PATCH /api/admin/users/:id/status — approve or reject a user
+// Body: { status: 'approved' | 'rejected' }
+router.patch('/users/:id/status', handle((req) => {
+  const db = getDb();
+  const userId = Number(req.params.id);
+  const { status } = req.body;
+
+  if (!['approved', 'rejected'].includes(status)) {
+    throw Object.assign(new Error('Invalid status'), { status: 400 });
+  }
+
+  const user = db.prepare('SELECT id FROM users WHERE id=?').get(userId);
+  if (!user) throw Object.assign(new Error('User not found'), { status: 404 });
+
+  db.prepare('UPDATE users SET status=? WHERE id=?').run(status, userId);
+  return { success: true };
 }));
 
 // GET /api/admin/users/:id — user detail with badges + sessions
@@ -45,7 +75,7 @@ router.get('/users/:id', handle((req) => {
   const userId = Number(req.params.id);
 
   const user = db.prepare(
-    'SELECT id, name, mobile, functionary_type, state, district, total_points, role, created_at, last_login FROM users WHERE id=?'
+    'SELECT id, name, mobile, functionary_type, state, district, total_points, role, status, created_at, last_login FROM users WHERE id=?'
   ).get(userId);
   if (!user) throw Object.assign(new Error('User not found'), { status: 404 });
 
@@ -119,8 +149,9 @@ router.get('/stats', handle(() => {
   ).get(todayDate).c;
   const badgesAwarded = db.prepare('SELECT COUNT(*) as c FROM user_badges').get().c;
   const pendingFlags = db.prepare("SELECT COUNT(*) as c FROM question_flags WHERE status='pending'").get().c;
+  const pendingApprovals = db.prepare("SELECT COUNT(*) as c FROM users WHERE status='pending'").get().c;
 
-  return { totalUsers, totalSessions, todayActive, badgesAwarded, pendingFlags };
+  return { totalUsers, totalSessions, todayActive, badgesAwarded, pendingFlags, pendingApprovals };
 }));
 
 // GET /api/admin/badges — list all badges with earned counts

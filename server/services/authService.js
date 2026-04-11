@@ -41,6 +41,13 @@ function login({ mobile, password }) {
   }
   if (!valid) throw Object.assign(new Error('Invalid credentials'), { status: 401 });
 
+  if (user.status === 'pending') {
+    throw Object.assign(new Error('Account pending admin approval'), { status: 403 });
+  }
+  if (user.status === 'rejected') {
+    throw Object.assign(new Error('Account access denied'), { status: 403 });
+  }
+
   db.prepare('UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?').run(user.id);
 
   return { tokens: issueTokens(user), user: safeUser(user) };

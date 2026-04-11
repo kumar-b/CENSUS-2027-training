@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useQuizStore } from '../store/quizStore';
 import QuizQuestion from './QuizQuestion';
 import QuizTimer from './QuizTimer';
+import { FlameIcon } from './Icons';
 
 export default function QuizRunner({ mode, timerSeconds }) {
   const { t } = useTranslation();
@@ -54,7 +55,7 @@ export default function QuizRunner({ mode, timerSeconds }) {
   };
 
   if (!question) {
-    return <div className="flex items-center justify-center py-20 text-gray-400">{t('loading')}</div>;
+    return <div className="flex items-center justify-center py-20 font-bold" style={{ color: 'var(--tc-text-muted)' }}>{t('loading')}</div>;
   }
 
   return (
@@ -62,7 +63,10 @@ export default function QuizRunner({ mode, timerSeconds }) {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           {streak >= 3 && (
-            <span className="text-sm font-semibold text-orange-500">🔥 ×{streak}</span>
+            <span className="flex items-center gap-1 text-sm font-black px-3 py-1 rounded-full"
+              style={{ background: '#FFF0D0', color: '#AA6520', border: '2px solid #D4843A' }}>
+              <FlameIcon size={14} color="#D4843A" /> ×{streak}
+            </span>
           )}
         </div>
         {timerSeconds && (
@@ -84,9 +88,9 @@ export default function QuizRunner({ mode, timerSeconds }) {
       {answered !== null && (
         <button
           onClick={handleNext}
-          className="w-full bg-indigo-600 text-white rounded-xl py-3 font-semibold hover:bg-indigo-700 transition-colors"
+          className="btn-3d btn-primary"
         >
-          {isLast ? t('finish') : t('next')}
+          {isLast ? t('finish') : t('next') + ' →'}
         </button>
       )}
     </div>

@@ -22,7 +22,8 @@ export default function LanguageToggle() {
   return (
     <button
       onClick={toggle}
-      className="px-3 py-1 rounded-full text-sm font-medium border border-indigo-300 text-indigo-700 bg-indigo-50 hover:bg-indigo-100 transition-colors"
+      className="px-3 py-1 rounded-full text-sm font-black transition-all"
+      style={{ border: '2px solid var(--tc-primary)', color: 'var(--tc-primary-dark)', background: 'var(--tc-primary-light)', boxShadow: '0 2px 0 var(--tc-primary-dark)' }}
     >
       {current === 'en' ? 'हिं' : 'EN'}
     </button>

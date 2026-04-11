@@ -26,18 +26,39 @@ import AdminFlagDetail from './pages/admin/AdminFlagDetail';
 function Layout({ children }) {
   const { user } = useAuthStore();
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center">
-      <div className="w-full max-w-2xl bg-gray-50 relative shadow-sm">
+    <div className="min-h-screen flex justify-center" style={{ background: 'var(--tc-bg)' }}>
+      <div className="w-full max-w-2xl flex flex-col shadow-sm" style={{ background: 'var(--tc-bg)', minHeight: '100svh' }}>
         {user && (
-          <header className="flex items-center justify-between px-4 py-3 bg-white border-b border-gray-200 sticky top-0 z-40">
-            <span className="font-bold text-indigo-700 text-lg">जनगणना 2027</span>
+          <header
+            className="sticky top-0 z-40 flex-shrink-0 flex items-center gap-3 px-3 py-2"
+            style={{
+              background: 'var(--tc-card)',
+              borderBottom: '2px solid var(--tc-border)',
+            }}
+          >
+            <img
+              src="/cg-logo.svg"
+              alt="Chhattisgarh Government"
+              className="h-10 w-10 object-contain flex-shrink-0"
+              onError={(e) => { e.target.style.display = 'none'; }}
+            />
+            <div className="flex flex-col leading-tight flex-1 min-w-0">
+              <span className="font-black text-base" style={{ color: 'var(--tc-primary-dark)' }}>जनगणना 2027</span>
+              <span className="font-semibold text-xs truncate" style={{ color: 'var(--tc-text-sec)' }}>
+                District Administration, Raipur
+              </span>
+            </div>
             <LanguageToggle />
           </header>
         )}
-        <main>
+        <main className="flex-1 overflow-y-auto">
           {children}
         </main>
-        {user && <BottomNav />}
+        {user && (
+          <div className="sticky bottom-0 z-50 flex-shrink-0">
+            <BottomNav />
+          </div>
+        )}
       </div>
     </div>
   );

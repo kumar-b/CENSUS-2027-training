@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../../store/authStore';
 import api from '../../api/client';
+import BadgeIcon from '../../components/BadgeIcon';
 
 export default function AdminUserDetail() {
   const { t } = useTranslation();
@@ -37,6 +38,13 @@ export default function AdminUserDetail() {
     } catch {}
   };
 
+  const updateStatus = async (status) => {
+    try {
+      await api.patch(`/admin/users/${id}/status`, { status });
+      setData((d) => ({ ...d, user: { ...d.user, status } }));
+    } catch {}
+  };
+
   if (!data) return <div className="p-6 text-center text-gray-400">{t('loading')}</div>;
 
   const { user, badges, sessions, flags: userFlags } = data;
@@ -50,7 +58,14 @@ export default function AdminUserDetail() {
 
       {/* User info */}
       <div className="bg-white rounded-2xl border border-gray-200 p-5 space-y-2">
-        <p className="font-bold text-gray-800 text-lg">{user.name}</p>
+        <div className="flex items-start justify-between gap-2">
+          <p className="font-bold text-gray-800 text-lg">{user.name}</p>
+          <span className={`text-xs font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ${
+            user.status === 'approved' ? 'bg-green-100 text-green-700' :
+            user.status === 'rejected' ? 'bg-red-100 text-red-600' :
+            'bg-orange-100 text-orange-700'
+          }`}>{user.status}</span>
+        </div>
         <p className="text-sm text-gray-500">{user.mobile} · {user.functionary_type}</p>
         <p className="text-sm text-gray-400">{user.district}, {user.state}</p>
         <div className="flex gap-4 pt-2">
@@ -59,6 +74,39 @@ export default function AdminUserDetail() {
           <div><p className="text-2xl font-bold text-gray-700">{sessions.length}</p><p className="text-xs text-gray-400">Sessions</p></div>
         </div>
       </div>
+
+      {/* Approval management */}
+      {user.role !== 'admin' && (
+        <div className="bg-white rounded-2xl border border-gray-200 p-4">
+          <p className="text-sm font-semibold text-gray-600 mb-2">Account Status</p>
+          <div className="flex gap-2">
+            {user.status !== 'approved' && (
+              <button
+                onClick={() => updateStatus('approved')}
+                className="flex-1 py-2.5 rounded-xl text-sm font-medium bg-green-50 border border-green-200 text-green-700 hover:bg-green-100 transition-colors"
+              >
+                Approve
+              </button>
+            )}
+            {user.status !== 'rejected' && (
+              <button
+                onClick={() => updateStatus('rejected')}
+                className="flex-1 py-2.5 rounded-xl text-sm font-medium bg-red-50 border border-red-200 text-red-600 hover:bg-red-100 transition-colors"
+              >
+                Reject
+              </button>
+            )}
+            {user.status === 'rejected' && (
+              <button
+                onClick={() => updateStatus('pending')}
+                className="flex-1 py-2.5 rounded-xl text-sm font-medium bg-gray-50 border border-gray-200 text-gray-600 hover:bg-gray-100 transition-colors"
+              >
+                Reset to Pending
+              </button>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Role management (can't demote yourself) */}
       {currentUser?.id !== user.id && (
@@ -100,7 +148,7 @@ export default function AdminUserDetail() {
           <div className="flex flex-wrap gap-2">
             {badges.map((b) => (
               <div key={b.id} className="flex items-center gap-1.5 bg-yellow-50 border border-yellow-100 rounded-xl px-3 py-1.5">
-                <span>{b.icon}</span>
+                <BadgeIcon icon={b.icon} size={18} color="#C1440E" />
                 <span className="text-xs font-medium text-gray-700">{b.name_en}</span>
               </div>
             ))}

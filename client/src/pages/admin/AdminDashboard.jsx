@@ -30,9 +30,23 @@ export default function AdminDashboard() {
         <StatCard label={t('todayActive')} value={stats?.todayActive} color="bg-amber-50" />
         <StatCard label={t('badgesAwarded')} value={stats?.badgesAwarded} color="bg-purple-50" />
         <StatCard label={t('pendingFlags')} value={stats?.pendingFlags} color="bg-red-50" />
+        <StatCard label="Pending Approvals" value={stats?.pendingApprovals} color="bg-orange-50" />
       </div>
 
       <div className="space-y-2">
+        <Link
+          to="/admin/users?status=pending"
+          className="block w-full border-2 rounded-2xl px-5 py-4 text-left shadow-sm transition-colors"
+          style={stats?.pendingApprovals > 0 ? { background: '#FFF7ED', borderColor: '#FDBA74' } : { background: 'white', borderColor: '#E5E7EB' }}
+        >
+          <p className="font-semibold text-gray-800">⏳ Pending Approvals</p>
+          <p className="text-sm text-gray-400">Approve or reject new user registrations</p>
+          {stats?.pendingApprovals > 0 && (
+            <span className="inline-block mt-1 bg-orange-100 text-orange-700 text-xs font-bold px-2 py-0.5 rounded-full">
+              {stats.pendingApprovals} awaiting approval
+            </span>
+          )}
+        </Link>
         <Link
           to="/admin/users"
           className="block w-full bg-white border border-gray-200 rounded-2xl px-5 py-4 text-left shadow-sm hover:border-indigo-300 transition-colors"

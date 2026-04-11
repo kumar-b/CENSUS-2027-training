@@ -23,12 +23,12 @@ router.get('/me', authenticate, handle((req) => {
   ).get(userId);
   if (!user) throw Object.assign(new Error('User not found'), { status: 404 });
 
-  const badges = db.prepare(`
-    SELECT b.* FROM badges b
-    JOIN user_badges ub ON ub.badge_id = b.id
-    WHERE ub.user_id = ?
-    ORDER BY ub.earned_at DESC
-  `).all(userId);
+  const earnedIds = new Set(
+    db.prepare('SELECT badge_id FROM user_badges WHERE user_id=?').all(userId).map(r => r.badge_id)
+  );
+
+  const allBadges = db.prepare('SELECT * FROM badges ORDER BY id ASC').all();
+  const badges = allBadges.map(b => ({ ...b, earned: earnedIds.has(b.id) }));
 
   const sessions = db.prepare(`
     SELECT id, mode, chapter, score, max_score, streak_max, completed, started_at, completed_at

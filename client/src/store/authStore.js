@@ -33,11 +33,8 @@ export const useAuthStore = create((set) => ({
   },
 
   register: async (payload) => {
-    const { data } = await api.post('/auth/register', payload);
-    localStorage.setItem('accessToken', data.accessToken);
-    localStorage.setItem('refreshToken', data.refreshToken);
-    set({ user: data.user });
-    return data.user;
+    await api.post('/auth/register', payload);
+    // No tokens issued — user must be approved by admin before login
   },
 
   logout: () => {

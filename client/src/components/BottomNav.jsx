@@ -28,13 +28,47 @@ export default function BottomNav() {
   const { t } = useTranslation();
   const { user } = useAuthStore();
 
-  const navClass = ({ isActive }) =>
-    `flex flex-col items-center gap-0.5 py-2 px-3 text-xs transition-colors ${
-      isActive ? 'text-indigo-600' : 'text-gray-500 hover:text-gray-700'
-    }`;
+  const navClass = ({ isActive }) => isActive ? 'active-nav-item nav-item' : 'nav-item';
 
   return (
-    <nav className="sticky bottom-0 bg-white border-t border-gray-200 flex justify-around z-50">
+    <nav
+      className="flex justify-around"
+      style={{
+        background: 'var(--tc-card)',
+        borderTop: '2px solid var(--tc-border)',
+        paddingBottom: 'env(safe-area-inset-bottom, 0px)',
+      }}
+    >
+      <style>{`
+        .nav-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3px;
+          padding: 10px 16px 12px;
+          font-size: 0.6rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          color: var(--tc-text-muted);
+          text-decoration: none;
+          position: relative;
+          min-width: 60px;
+          transition: color 0.15s;
+        }
+        .active-nav-item {
+          color: var(--tc-primary-dark);
+        }
+        .active-nav-item::before {
+          content: '';
+          position: absolute;
+          top: 0; left: 50%;
+          transform: translateX(-50%);
+          width: 36px; height: 3px;
+          background: var(--tc-primary);
+          border-radius: 0 0 4px 4px;
+        }
+      `}</style>
       <NavLink to="/" end className={navClass}><HomeIcon />{t('home')}</NavLink>
       <NavLink to="/leaderboard" className={navClass}><TrophyIcon />{t('leaderboard')}</NavLink>
       <NavLink to="/profile" className={navClass}><UserIcon />{t('profile')}</NavLink>

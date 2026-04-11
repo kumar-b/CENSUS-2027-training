@@ -14,16 +14,20 @@ export default function QuizTimer({ totalSeconds, onExpire }) {
   const mins = String(Math.floor(remaining / 60)).padStart(2, '0');
   const secs = String(remaining % 60).padStart(2, '0');
   const pct = (remaining / totalSeconds) * 100;
-  const color = remaining < 30 ? 'text-red-600' : remaining < 60 ? 'text-amber-600' : 'text-gray-700';
+  const urgent = remaining < 30;
+  const warning = remaining < 60;
 
   return (
     <div className="flex items-center gap-2">
-      <span className="text-xs text-gray-500">{t('timeLeft')}</span>
-      <span className={`font-mono font-bold text-lg ${color}`}>{mins}:{secs}</span>
-      <div className="w-16 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+      <span className="text-xs font-bold" style={{ color: 'var(--tc-text-muted)' }}>{t('timeLeft')}</span>
+      <span className="font-mono font-black text-lg"
+        style={{ color: urgent ? '#C1440E' : warning ? '#D4843A' : 'var(--tc-text)' }}>
+        {mins}:{secs}
+      </span>
+      <div className="w-16 rounded-full overflow-hidden" style={{ height: '6px', background: 'var(--tc-surface)', border: '1.5px solid var(--tc-border)' }}>
         <div
-          className={`h-full rounded-full transition-all ${remaining < 30 ? 'bg-red-500' : 'bg-indigo-500'}`}
-          style={{ width: `${pct}%` }}
+          className="h-full rounded-full transition-all"
+          style={{ width: `${pct}%`, background: urgent ? '#C1440E' : 'var(--tc-primary)' }}
         />
       </div>
     </div>

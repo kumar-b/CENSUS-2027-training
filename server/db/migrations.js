@@ -128,6 +128,16 @@ function runMigrations(db) {
     db.exec('ALTER TABLE users ADD COLUMN photo TEXT');
   }
 
+  // Add status column if not present (pending/approved/rejected)
+  if (!cols.includes('status')) {
+    db.exec("ALTER TABLE users ADD COLUMN status TEXT NOT NULL DEFAULT 'pending'");
+    // Auto-approve all existing users so they aren't locked out
+    db.exec("UPDATE users SET status = 'approved' WHERE status = 'pending'");
+  }
+
+  // Ensure admin users are always approved
+  db.exec("UPDATE users SET status = 'approved' WHERE role = 'admin'");
+
   // Fix Chapter Master badge: criteria_type should be 'perfect_chapter', not 'chapters_completed' with value 1
   db.prepare(
     "UPDATE badges SET criteria_type='perfect_chapter', description_en='Score 100% on a full chapter practice', description_hi='अध्याय अभ्यास में 100% अंक प्राप्त करें' WHERE name_en='Chapter Master'"

@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { register, login, refresh, issueTokens, safeUser } = require('../services/authService');
-const { getDb } = require('../db/database');
+const { register, login, refresh } = require('../services/authService');
 
 function handle(fn) {
   return async (req, res) => {
@@ -14,13 +13,10 @@ function handle(fn) {
   };
 }
 
-// POST /api/auth/register — returns { accessToken, refreshToken, user }
+// POST /api/auth/register — returns { message } (user must be approved by admin before login)
 router.post('/register', handle(({ mobile, password, name, functionary_type, state, district }) => {
-  const registered = register({ mobile, password, name, functionary_type, state, district });
-  const db = getDb();
-  const user = db.prepare('SELECT * FROM users WHERE id = ?').get(registered.id);
-  const { accessToken, refreshToken } = issueTokens(user);
-  return { accessToken, refreshToken, user: safeUser(user) };
+  register({ mobile, password, name, functionary_type, state, district });
+  return { message: 'Registration submitted. Please wait for admin approval.' };
 }));
 
 // POST /api/auth/login — returns { accessToken, refreshToken, user }

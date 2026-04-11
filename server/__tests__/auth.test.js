@@ -8,7 +8,7 @@ process.env.JWT_REFRESH_SECRET = 'test-secret-refresh';
 process.env.QA_DIR = path.join(__dirname, '../tmp/no-qa');
 
 const { register, login, refresh } = require('../services/authService');
-const { closeDb } = require('../db/database');
+const { getDb, closeDb } = require('../db/database');
 
 afterAll(() => {
   closeDb();
@@ -28,6 +28,8 @@ test('register creates a new user', () => {
   const result = register(user);
   expect(result.id).toBeDefined();
   expect(result.mobile).toBe(user.mobile);
+  // Approve the test user so login tests can proceed
+  getDb().prepare("UPDATE users SET status='approved' WHERE mobile=?").run(user.mobile);
 });
 
 test('register rejects duplicate mobile', () => {

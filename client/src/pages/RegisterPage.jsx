@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
 import LanguageToggle from '../components/LanguageToggle';
+import { BuildingIcon } from '../components/Icons';
 
 const FUNCTIONARY_TYPES = [
   'Enumerator',
@@ -14,7 +15,6 @@ const FUNCTIONARY_TYPES = [
 
 export default function RegisterPage() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const register = useAuthStore((s) => s.register);
   const [form, setForm] = useState({
     name: '', mobile: '', password: '',
@@ -22,6 +22,7 @@ export default function RegisterPage() {
   });
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const set = (k, v) => setForm((f) => ({ ...f, [k]: v }));
 
@@ -34,34 +35,73 @@ export default function RegisterPage() {
     setBusy(true);
     try {
       await register(form);
-      navigate('/');
+      setSubmitted(true);
     } catch (err) {
       setError(err.response?.data?.error || t('error'));
     } finally { setBusy(false); }
   };
 
+  if (submitted) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8" style={{ background: 'linear-gradient(160deg, var(--tc-primary-light) 0%, var(--tc-bg) 50%, #F7D8A8 100%)' }}>
+        <div className="w-full max-w-sm">
+          <div className="rounded-2xl p-8 text-center space-y-4" style={{ background: 'var(--tc-card)', border: '2px solid var(--tc-border)', boxShadow: '0 6px 0 var(--tc-border)' }}>
+            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto text-3xl" style={{ background: 'var(--tc-primary-light)' }}>
+              ⏳
+            </div>
+            <h2 className="text-xl font-black" style={{ color: 'var(--tc-primary-dark)' }}>Registration Submitted!</h2>
+            <p className="text-sm font-medium" style={{ color: 'var(--tc-text-sec)' }}>
+              Your account is pending approval by the admin. You will be able to log in once your account is approved.
+            </p>
+            <p className="text-xs" style={{ color: 'var(--tc-text-sec)' }}>
+              पंजीकरण सफल हुआ। व्यवस्थापक की स्वीकृति मिलने के बाद आप लॉगिन कर सकेंगे।
+            </p>
+            <Link to="/login" className="btn-3d btn-primary block mt-2">
+              {t('login')}
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-50 to-white px-4 py-8">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8" style={{ background: 'linear-gradient(160deg, var(--tc-primary-light) 0%, var(--tc-bg) 50%, #F7D8A8 100%)' }}>
       <div className="absolute top-4 right-4"><LanguageToggle /></div>
       <div className="w-full max-w-sm">
-        <h1 className="text-3xl font-bold text-indigo-700 text-center mb-1">जनगणना 2027</h1>
-        <p className="text-center text-gray-500 mb-6 text-sm">Census Training Platform</p>
 
-        <form onSubmit={submit} className="bg-white rounded-2xl shadow-md p-6 space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800">{t('register')}</h2>
+        {/* Header */}
+        <div className="text-center mb-6">
+          <div className="flex justify-center mb-2">
+            <div className="w-14 h-14 rounded-2xl flex items-center justify-center" style={{ background: 'var(--tc-primary)', boxShadow: '0 4px 0 var(--tc-primary-dark)' }}>
+              <BuildingIcon size={28} color="#fff" sw={1.5} />
+            </div>
+          </div>
+          <h1 className="text-3xl font-black" style={{ color: 'var(--tc-primary-dark)' }}>जनगणना 2027</h1>
+          <p className="text-sm font-bold mt-1" style={{ color: 'var(--tc-text-sec)' }}>Census Training Platform</p>
+        </div>
 
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+        {/* Form card */}
+        <form onSubmit={submit} className="rounded-2xl p-6 space-y-4" style={{ background: 'var(--tc-card)', border: '2px solid var(--tc-border)', boxShadow: '0 6px 0 var(--tc-border)' }}>
+          <h2 className="text-lg font-black" style={{ color: 'var(--tc-text)' }}>{t('register')}</h2>
+
+          {error && (
+            <div className="rounded-xl px-3 py-2 text-sm font-bold" style={{ background: '#FFEAEA', color: '#C1440E', border: '2px solid #FFBBBB' }}>
+              {error}
+            </div>
+          )}
 
           {[
-            { key: 'name', label: t('name'), type: 'text' },
-            { key: 'mobile', label: t('mobile'), type: 'tel', maxLength: 10 },
-            { key: 'password', label: t('password'), type: 'password' },
-          ].map(({ key, label, type, maxLength }) => (
+            { key: 'name', label: t('name'), type: 'text', placeholder: 'Full name' },
+            { key: 'mobile', label: t('mobile'), type: 'tel', maxLength: 10, placeholder: '10-digit number' },
+            { key: 'password', label: t('password'), type: 'password', placeholder: '6+ characters' },
+          ].map(({ key, label, type, maxLength, placeholder }) => (
             <div key={key}>
-              <label className="block text-sm text-gray-600 mb-1">{label}</label>
+              <label className="sec-label block">{label}</label>
               <input
                 type={type} required maxLength={maxLength}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="fancy-input"
+                placeholder={placeholder}
                 value={form[key]}
                 onChange={(e) => set(key, e.target.value)}
               />
@@ -69,14 +109,14 @@ export default function RegisterPage() {
           ))}
 
           <div>
-            <label className="block text-sm text-gray-600 mb-1">{t('functionary_type')}</label>
+            <label className="sec-label block">{t('functionary_type')}</label>
             <select
               required
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="fancy-input"
               value={form.functionary_type}
               onChange={(e) => set('functionary_type', e.target.value)}
             >
-              <option value="">—</option>
+              <option value="">— Select role —</option>
               {FUNCTIONARY_TYPES.map((ft) => (
                 <option key={ft} value={ft}>{t(`functionary.${ft}`)}</option>
               ))}
@@ -85,19 +125,19 @@ export default function RegisterPage() {
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-sm text-gray-600 mb-1">{t('state')}</label>
+              <label className="sec-label block">{t('state')}</label>
               <input
                 type="text" required
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="fancy-input"
                 value={form.state}
                 onChange={(e) => set('state', e.target.value)}
               />
             </div>
             <div>
-              <label className="block text-sm text-gray-600 mb-1">{t('district')}</label>
+              <label className="sec-label block">{t('district')}</label>
               <input
                 type="text" required
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="fancy-input"
                 value={form.district}
                 onChange={(e) => set('district', e.target.value)}
               />
@@ -106,15 +146,15 @@ export default function RegisterPage() {
 
           <button
             type="submit" disabled={busy}
-            className="w-full bg-indigo-600 text-white rounded-lg py-2.5 font-semibold hover:bg-indigo-700 disabled:opacity-60 transition-colors"
+            className="btn-3d btn-primary"
           >
             {busy ? t('loading') : t('register')}
           </button>
         </form>
 
-        <p className="text-center text-sm text-gray-500 mt-4">
+        <p className="text-center text-sm font-bold mt-5" style={{ color: 'var(--tc-text-sec)' }}>
           {t('haveAccount')}{' '}
-          <Link to="/login" className="text-indigo-600 font-medium hover:underline">{t('login')}</Link>
+          <Link to="/login" className="font-black underline" style={{ color: 'var(--tc-primary)' }}>{t('login')}</Link>
         </p>
       </div>
     </div>

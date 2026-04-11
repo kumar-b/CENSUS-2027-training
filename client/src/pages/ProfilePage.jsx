@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
 import api from '../api/client';
 import html2canvas from 'html2canvas';
+import { FlagIcon, DownloadIcon, ScrollIcon } from '../components/Icons';
+import BadgeIcon from '../components/BadgeIcon';
 
 const MODE_ICON = { daily: '🌟', timed: '⏱', practice: '📖' };
 
@@ -18,48 +20,178 @@ function DefaultAvatar({ size = 80 }) {
   );
 }
 
-function CertificateCanvas({ user, photo, canvasRef }) {
+function CertificateCanvas({ user, totalPoints, photo, badges = [], canvasRef }) {
+  const dateStr = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+  const earnedBadges = badges.filter(b => b.earned);
+  const font = '"Nunito", "Arial", sans-serif';
+  const pts = String(totalPoints ?? user?.total_points ?? 0);
+
   return (
     <div
       ref={canvasRef}
       style={{
-        fontFamily: 'serif',
-        background: 'white',
-        border: '4px solid #4f46e5',
-        borderRadius: '16px',
-        padding: '32px',
-        textAlign: 'center',
-        width: '320px',
+        fontFamily: font,
+        background: '#FDF6EE',
+        width: '100%',
+        maxWidth: '420px',
         margin: '0 auto',
+        border: '5px solid #9A3409',
+        outline: '2px solid #C9970A',
+        outlineOffset: '-9px',
+        borderRadius: '4px',
+        overflow: 'hidden',
       }}
     >
-      <p style={{ color: '#4f46e5', fontWeight: 'bold', fontSize: '18px', margin: '0 0 4px' }}>जनगणना 2027</p>
-      <p style={{ color: '#9ca3af', fontSize: '12px', margin: '0 0 16px' }}>Census Training Platform</p>
-
-      {photo && (
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '12px' }}>
+      {/* Header bar */}
+      <div style={{
+        background: '#9A3409',
+        padding: '12px 16px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '12px',
+      }}>
+        {/* Logo in white circle */}
+        <div style={{
+          width: '48px', height: '48px', borderRadius: '50%',
+          background: '#fff', display: 'flex', alignItems: 'center',
+          justifyContent: 'center', flexShrink: 0, padding: '4px',
+        }}>
           <img
-            src={photo}
-            alt="Profile"
-            style={{ width: '64px', height: '64px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #c7d2fe' }}
+            src="/cg-logo.svg"
+            alt="CG Govt"
+            style={{ width: '38px', height: '38px', objectFit: 'contain', display: 'block' }}
             crossOrigin="anonymous"
           />
         </div>
-      )}
-
-      <div style={{ borderTop: '1px solid #c7d2fe', borderBottom: '1px solid #c7d2fe', padding: '16px 0', margin: '8px 0' }}>
-        <p style={{ color: '#6b7280', fontSize: '13px', margin: '0 0 4px' }}>This is to certify that</p>
-        <p style={{ color: '#111827', fontWeight: 'bold', fontSize: '20px', margin: '0 0 4px' }}>{user.name}</p>
-        <p style={{ color: '#6b7280', fontSize: '13px', margin: '0 0 2px' }}>{user.functionary_type}</p>
-        <p style={{ color: '#9ca3af', fontSize: '11px', margin: 0 }}>{user.district}, {user.state}</p>
+        <div style={{ flex: 1 }}>
+          <p style={{ color: '#fff', fontWeight: '800', fontSize: '13px', margin: 0, fontFamily: font }}>
+            छत्तीसगढ़ शासन
+          </p>
+          <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '11px', margin: '2px 0 0', fontFamily: font }}>
+            District Administration, Raipur
+          </p>
+        </div>
+        <div style={{ textAlign: 'right' }}>
+          <p style={{ color: '#FAE0D3', fontWeight: '800', fontSize: '13px', margin: 0, fontFamily: font }}>जनगणना 2027</p>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '10px', margin: '2px 0 0', fontFamily: font }}>Census 2027</p>
+        </div>
       </div>
 
-      <p style={{ color: '#6b7280', fontSize: '13px', margin: '8px 0 4px' }}>has earned</p>
-      <p style={{ color: '#4f46e5', fontWeight: 'bold', fontSize: '36px', margin: '0 0 4px' }}>{user.total_points}</p>
-      <p style={{ color: '#6b7280', fontSize: '13px', margin: '0 0 12px' }}>training points</p>
-      <p style={{ color: '#d1d5db', fontSize: '11px', margin: 0 }}>
-        {new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
-      </p>
+      {/* Orange accent rule */}
+      <div style={{ height: '3px', background: 'linear-gradient(90deg, #C9970A, #D4843A, #C9970A)' }} />
+
+      {/* Body */}
+      <div style={{ padding: '20px 24px', textAlign: 'center' }}>
+
+        {/* Title */}
+        <p style={{ color: '#C1440E', fontSize: '11px', letterSpacing: '3px', textTransform: 'uppercase', margin: '0 0 4px', fontWeight: '800', fontFamily: font }}>
+          Certificate of Training
+        </p>
+        <p style={{ color: '#7A5C4A', fontSize: '13px', margin: '0 0 14px', fontFamily: font, fontWeight: '600' }}>
+          प्रशिक्षण प्रमाण पत्र
+        </p>
+
+        {/* Divider */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: '0 0 16px' }}>
+          <div style={{ flex: 1, height: '1px', background: '#E8D5C0' }} />
+          <div style={{ color: '#C9970A', fontSize: '14px' }}>✦</div>
+          <div style={{ flex: 1, height: '1px', background: '#E8D5C0' }} />
+        </div>
+
+        <p style={{ color: '#7A5C4A', fontSize: '12px', margin: '0 0 10px', fontFamily: font, fontStyle: 'italic' }}>
+          This is to certify that
+        </p>
+
+        {/* Profile photo */}
+        {photo && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
+            <img
+              src={photo}
+              alt="Profile"
+              style={{ width: '72px', height: '72px', borderRadius: '50%', objectFit: 'cover', border: '3px solid #C9970A' }}
+              crossOrigin="anonymous"
+            />
+          </div>
+        )}
+
+        {/* Name */}
+        <p style={{ color: '#2C1810', fontWeight: '900', fontSize: '22px', margin: '0 0 4px', letterSpacing: '0.3px', fontFamily: font }}>
+          {user.name}
+        </p>
+        <p style={{ color: '#7A5C4A', fontSize: '12px', margin: '0 0 2px', fontFamily: font, fontWeight: '600' }}>
+          {user.functionary_type}
+        </p>
+        <p style={{ color: '#AD8B78', fontSize: '11px', margin: '0 0 14px', fontFamily: font }}>
+          {user.district}, {user.state}
+        </p>
+
+        <p style={{ color: '#7A5C4A', fontSize: '12px', margin: '0 0 12px', fontFamily: font, fontStyle: 'italic' }}>
+          has successfully taken part in the Census 2027 Training Program and earned
+        </p>
+
+        {/* Points box */}
+        <div style={{
+          display: 'inline-flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center',
+          border: '2px solid #C9970A',
+          borderRadius: '8px',
+          padding: '10px 28px',
+          margin: '0 0 16px',
+          background: '#FFFAF4',
+          minWidth: '140px',
+        }}>
+          <div style={{ position: 'relative', zIndex: 2, color: '#C1440E', fontWeight: '900', fontSize: '36px', margin: 0, lineHeight: '1.1', fontFamily: font, textAlign: 'center', width: '100%' }}>
+            {pts}
+          </div>
+          <div style={{ position: 'relative', zIndex: 2, color: '#AD8B78', fontSize: '10px', margin: '2px 0 0', fontFamily: font, letterSpacing: '1.5px', textTransform: 'uppercase', fontWeight: '700', textAlign: 'center', width: '100%' }}>
+            Training Points
+          </div>
+        </div>
+
+        {/* Badges */}
+        {earnedBadges.length > 0 && (
+          <div style={{ marginBottom: '14px' }}>
+            <p style={{ color: '#C1440E', fontSize: '10px', fontWeight: '800', letterSpacing: '2px', textTransform: 'uppercase', margin: '0 0 10px', fontFamily: font }}>
+              Badges Earned
+            </p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
+              {earnedBadges.map((b) => (
+                <div key={b.id} style={{
+                  display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px',
+                  background: '#FFFAF4', border: '1.5px solid #E8D5C0',
+                  borderRadius: '10px', padding: '7px 8px', width: '62px',
+                }}>
+                  <BadgeIcon icon={b.icon} size={22} color="#C1440E" />
+                  <p style={{ color: '#2C1810', fontSize: '8px', margin: 0, textAlign: 'center', lineHeight: 1.2, fontFamily: font, fontWeight: '700' }}>
+                    {b.name_en}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Divider */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: '0 0 12px' }}>
+          <div style={{ flex: 1, height: '1px', background: '#E8D5C0' }} />
+          <div style={{ color: '#C9970A', fontSize: '10px' }}>✦</div>
+          <div style={{ flex: 1, height: '1px', background: '#E8D5C0' }} />
+        </div>
+
+        <p style={{ color: '#AD8B78', fontSize: '10px', margin: 0, fontFamily: font }}>
+          Issued on {dateStr}
+        </p>
+      </div>
+
+      {/* Footer bar */}
+      <div style={{ background: '#9A3409', padding: '7px 16px', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+        <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '9px', margin: 0, fontFamily: font }}>
+          censusindia.gov.in/census.website
+        </p>
+      </div>
     </div>
   );
 }
@@ -85,31 +217,77 @@ function compressImage(file) {
 
 // Badge canvas rendered off-screen for html2canvas capture
 const BadgeCanvas = forwardRef(function BadgeCanvas({ badge, user }, ref) {
+  const font = '"Nunito", "Arial", sans-serif';
+  const dateStr = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
   return (
     <div
       ref={ref}
       style={{
         position: 'absolute',
         left: '-9999px',
-        fontFamily: 'sans-serif',
-        background: 'white',
-        border: '4px solid #4f46e5',
-        borderRadius: '16px',
-        padding: '32px 24px',
-        textAlign: 'center',
-        width: '280px',
+        fontFamily: font,
+        background: '#FDF6EE',
+        width: '320px',
+        border: '5px solid #9A3409',
+        outline: '2px solid #C9970A',
+        outlineOffset: '-9px',
+        borderRadius: '4px',
+        overflow: 'hidden',
       }}
     >
-      <p style={{ color: '#4f46e5', fontWeight: 'bold', fontSize: '14px', margin: '0 0 16px' }}>जनगणना 2027 · Census 2027</p>
-      <div style={{ fontSize: '72px', lineHeight: 1, margin: '0 0 16px' }}>{badge.icon}</div>
-      <p style={{ color: '#111827', fontWeight: 'bold', fontSize: '18px', margin: '0 0 6px' }}>{badge.name_en}</p>
-      {badge.name_hi && <p style={{ color: '#4b5563', fontSize: '14px', margin: '0 0 10px' }}>{badge.name_hi}</p>}
-      <p style={{ color: '#6b7280', fontSize: '12px', margin: '0 0 16px', lineHeight: 1.4 }}>{badge.description_en}</p>
-      <div style={{ borderTop: '1px solid #c7d2fe', paddingTop: '12px' }}>
-        <p style={{ color: '#374151', fontWeight: '600', fontSize: '14px', margin: '0 0 2px' }}>{user.name}</p>
-        <p style={{ color: '#9ca3af', fontSize: '11px', margin: 0 }}>
-          {new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
+      {/* Header */}
+      <div style={{ background: '#9A3409', padding: '10px 14px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, padding: '3px' }}>
+          <img src="/cg-logo.svg" alt="CG Govt" style={{ width: '32px', height: '32px', objectFit: 'contain', display: 'block' }} crossOrigin="anonymous" />
+        </div>
+        <div style={{ flex: 1 }}>
+          <p style={{ color: '#fff', fontWeight: '800', fontSize: '12px', margin: 0, fontFamily: font }}>छत्तीसगढ़ शासन</p>
+          <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '10px', margin: '1px 0 0', fontFamily: font }}>District Administration, Raipur</p>
+        </div>
+        <p style={{ color: '#FAE0D3', fontWeight: '800', fontSize: '12px', margin: 0, fontFamily: font }}>जनगणना 2027</p>
+      </div>
+
+      {/* Gold accent */}
+      <div style={{ height: '3px', background: 'linear-gradient(90deg, #C9970A, #D4843A, #C9970A)' }} />
+
+      {/* Body */}
+      <div style={{ padding: '20px 24px', textAlign: 'center' }}>
+        <p style={{ color: '#C1440E', fontSize: '9px', letterSpacing: '3px', textTransform: 'uppercase', margin: '0 0 14px', fontWeight: '800', fontFamily: font }}>
+          Badge of Achievement · उपलब्धि बैज
         </p>
+
+        {/* Badge icon in gold ring */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '14px' }}>
+          <div style={{ width: '90px', height: '90px', borderRadius: '50%', border: '3px solid #C9970A', background: '#FFFAF4', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 0 6px #F5E6C8' }}>
+            <BadgeIcon icon={badge.icon} size={46} color="#C1440E" />
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: '0 0 12px' }}>
+          <div style={{ flex: 1, height: '1px', background: '#E8D5C0' }} />
+          <div style={{ color: '#C9970A', fontSize: '12px' }}>✦</div>
+          <div style={{ flex: 1, height: '1px', background: '#E8D5C0' }} />
+        </div>
+
+        <p style={{ color: '#2C1810', fontWeight: '900', fontSize: '18px', margin: '0 0 3px', fontFamily: font }}>{badge.name_en}</p>
+        {badge.name_hi && <p style={{ color: '#7A5C4A', fontSize: '13px', margin: '0 0 10px', fontFamily: font, fontWeight: '600' }}>{badge.name_hi}</p>}
+        <p style={{ color: '#AD8B78', fontSize: '11px', margin: '0 0 16px', lineHeight: 1.5, fontFamily: font }}>{badge.description_en}</p>
+
+        {/* Divider */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: '0 0 12px' }}>
+          <div style={{ flex: 1, height: '1px', background: '#E8D5C0' }} />
+          <div style={{ color: '#C9970A', fontSize: '10px' }}>✦</div>
+          <div style={{ flex: 1, height: '1px', background: '#E8D5C0' }} />
+        </div>
+
+        <p style={{ color: '#2C1810', fontWeight: '900', fontSize: '15px', margin: '0 0 3px', fontFamily: font }}>{user.name}</p>
+        <p style={{ color: '#AD8B78', fontSize: '10px', margin: 0, fontFamily: font }}>Awarded on {dateStr}</p>
+      </div>
+
+      {/* Footer */}
+      <div style={{ background: '#9A3409', padding: '6px 14px', display: 'flex', justifyContent: 'flex-end' }}>
+        <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '9px', margin: 0, fontFamily: font }}>censusindia.gov.in/census.website</p>
       </div>
     </div>
   );
@@ -142,10 +320,14 @@ export default function ProfilePage() {
   const photoInputRef = useRef(null);
 
   useEffect(() => {
-    api.get('/user/me').then(({ data }) => setProfile(data)).catch(() => {});
+    api.get('/user/me').then(({ data }) => {
+      setProfile(data);
+      // Keep authStore in sync so total_points is always current
+      updateUser({ total_points: data.user.total_points });
+    }).catch(() => { });
     api.get('/flags/mine').then(({ data }) => {
       setPendingFlagsCount(data.filter(f => f.status === 'pending').length);
-    }).catch(() => {});
+    }).catch(() => { });
   }, []);
 
   const photo = profile?.user?.photo || user?.photo || null;
@@ -174,14 +356,6 @@ export default function ProfilePage() {
     triggerDownload(canvas, `census2027-certificate-${user.name}.png`);
   };
 
-  const shareWhatsApp = async () => {
-    const text = encodeURIComponent(`I earned ${user.total_points} points on the Census 2027 Training Platform! 🏆`);
-    window.open(`https://wa.me/?text=${text}`, '_blank');
-  };
-
-  const shareUrl = encodeURIComponent(window.location.origin);
-  const shareText = encodeURIComponent(`I earned ${user?.total_points} points on Census 2027 Training! 🏆`);
-
   const handlePhotoChange = async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -191,7 +365,7 @@ export default function ProfilePage() {
       await api.patch('/user/me', { photo: base64 });
       updateUser({ photo: base64 });
       setProfile((p) => p ? { ...p, user: { ...p.user, photo: base64 } } : p);
-    } catch {}
+    } catch { }
     setUploading(false);
   };
 
@@ -200,19 +374,20 @@ export default function ProfilePage() {
       await api.patch('/user/me', { photo: null });
       updateUser({ photo: null });
       setProfile((p) => p ? { ...p, user: { ...p.user, photo: null } } : p);
-    } catch {}
+    } catch { }
   };
 
   return (
-    <div className="px-4 py-6 space-y-6">
-      {/* Profile card */}
-      <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-5 text-white">
+    <div className="pb-6">
+      {/* Profile header */}
+      <div className="px-4 pt-5 pb-6" style={{ background: 'linear-gradient(135deg, var(--tc-primary) 0%, var(--tc-orange) 100%)' }}>
         <div className="flex items-start gap-4">
           {/* Avatar */}
           <div className="relative flex-shrink-0">
             <button
               onClick={() => photoInputRef.current?.click()}
-              className="block rounded-full overflow-hidden border-2 border-white/50 hover:border-white transition-all"
+              className="block rounded-full overflow-hidden transition-all"
+              style={{ border: '3px solid rgba(255,255,255,0.6)' }}
               title="Change photo"
               disabled={uploading}
             >
@@ -225,7 +400,8 @@ export default function ProfilePage() {
             {photo && (
               <button
                 onClick={removePhoto}
-                className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full text-white text-xs flex items-center justify-center hover:bg-red-600"
+                className="absolute -top-1 -right-1 w-5 h-5 rounded-full text-white text-xs flex items-center justify-center"
+                style={{ background: '#C1440E', border: '2px solid #fff' }}
                 title="Remove photo"
               >×</button>
             )}
@@ -239,146 +415,147 @@ export default function ProfilePage() {
           </div>
 
           <div className="flex-1 min-w-0">
-            <h2 className="text-xl font-bold truncate">{user?.name}</h2>
-            <p className="text-indigo-100 text-sm">{user?.functionary_type}</p>
-            <p className="text-indigo-200 text-xs">{user?.district}, {user?.state}</p>
+            <h2 className="text-xl font-black truncate" style={{ color: '#fff' }}>{user?.name}</h2>
+            <p className="text-sm font-bold" style={{ color: 'rgba(255,255,255,0.85)' }}>{user?.functionary_type}</p>
+            <p className="text-xs font-semibold" style={{ color: 'rgba(255,255,255,0.7)' }}>{user?.district}, {user?.state}</p>
           </div>
           <div className="text-right flex-shrink-0">
-            <p className="text-3xl font-bold">{user?.total_points}</p>
-            <p className="text-indigo-200 text-xs">{t('totalPoints')}</p>
+            <p className="text-3xl font-black" style={{ color: '#fff' }}>{user?.total_points}</p>
+            <p className="text-xs font-bold" style={{ color: 'rgba(255,255,255,0.75)' }}>{t('totalPoints')}</p>
           </div>
         </div>
-        {uploading && <p className="text-indigo-100 text-xs mt-2">Uploading photo…</p>}
+        {uploading && <p className="text-xs mt-2 font-bold" style={{ color: 'rgba(255,255,255,0.8)' }}>Uploading photo…</p>}
       </div>
 
-      {/* Hidden badge canvas for download */}
-      {downloadingBadge && user && (
-        <BadgeCanvas ref={badgeRef} badge={downloadingBadge} user={user} />
-      )}
+      <div className="px-4 space-y-5 mt-5">
 
-      {/* Badges */}
-      <div>
-        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">{t('badges')}</h3>
-        {profile?.badges?.length > 0 ? (
-          <div className="grid grid-cols-2 gap-2">
-            {profile.badges.map((b) => (
-              <div key={b.id} className="bg-white rounded-xl border border-gray-200 p-3 flex items-center gap-2 shadow-sm">
-                <span className="text-2xl">{b.icon}</span>
-                <div className="flex-1 min-w-0">
-                  <p className="font-medium text-gray-800 text-sm">{b.name_en}</p>
-                  <p className="text-xs text-gray-400 leading-tight">{b.description_en}</p>
-                </div>
-                <button
-                  onClick={() => downloadBadge(b)}
-                  disabled={!!downloadingBadge}
-                  className="flex-shrink-0 text-gray-400 hover:text-indigo-600 transition-colors disabled:opacity-40"
-                  title={t('downloadBadge')}
-                >
-                  ⬇
-                </button>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="text-gray-400 text-sm">{t('noBadges')}</p>
+        {/* Hidden badge canvas for download */}
+        {downloadingBadge && user && (
+          <BadgeCanvas ref={badgeRef} badge={downloadingBadge} user={user} />
         )}
-      </div>
 
-      {/* My Reports */}
-      <button
-        onClick={() => navigate('/flags/mine')}
-        className="w-full bg-white border border-gray-200 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-indigo-300 transition-colors"
-      >
-        <div className="flex items-center gap-3">
-          <span className="text-xl">⚑</span>
-          <span className="font-medium text-gray-800 text-sm">{t('myReports')}</span>
-        </div>
-        <div className="flex items-center gap-2">
-          {pendingFlagsCount > 0 && (
-            <span className="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded-full">
-              {pendingFlagsCount} pending
-            </span>
+        {/* Badges */}
+        <div>
+          <p className="sec-label">{t('badges')}</p>
+          {profile?.badges?.length > 0 ? (
+            <>
+              <p className="text-xs font-semibold mb-2" style={{ color: 'var(--tc-text-muted)' }}>
+                {profile.badges.filter(b => b.earned).length} / {profile.badges.length} earned
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                {profile.badges.map((b) => (
+                  <div key={b.id}
+                    className="rounded-xl p-3 flex items-center gap-2"
+                    style={{
+                      background: b.earned ? 'var(--tc-card)' : 'var(--tc-bg)',
+                      border: `2px solid ${b.earned ? 'var(--tc-border)' : 'var(--tc-border)'}`,
+                      boxShadow: b.earned ? '0 3px 0 var(--tc-border)' : 'none',
+                      opacity: b.earned ? 1 : 0.5,
+                    }}>
+                    <BadgeIcon icon={b.icon} size={28} color={b.earned ? 'var(--tc-primary)' : 'var(--tc-text-muted)'} />
+                    <div className="flex-1 min-w-0">
+                      <p className="font-bold text-xs" style={{ color: b.earned ? 'var(--tc-text)' : 'var(--tc-text-muted)' }}>{b.name_en}</p>
+                      <p className="text-xs font-semibold leading-tight" style={{ color: 'var(--tc-text-muted)' }}>{b.description_en}</p>
+                    </div>
+                    {b.earned ? (
+                      <button
+                        onClick={() => downloadBadge(b)}
+                        disabled={!!downloadingBadge}
+                        className="flex-shrink-0 disabled:opacity-40"
+                        style={{ color: 'var(--tc-text-muted)' }}
+                        title={t('downloadBadge')}
+                      ><DownloadIcon size={16} color="var(--tc-text-muted)" /></button>
+                    ) : (
+                      <span className="flex-shrink-0 text-sm">🔒</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <p className="text-sm font-semibold" style={{ color: 'var(--tc-text-muted)' }}>{t('noBadges')}</p>
           )}
-          <span className="text-gray-300 text-sm">›</span>
         </div>
-      </button>
 
-      {/* Certificate */}
-      <div>
-        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">{t('certificate')}</h3>
+        {/* My Reports */}
         <button
-          onClick={() => setShowCert(!showCert)}
-          className="w-full bg-indigo-50 border border-indigo-200 text-indigo-700 rounded-xl py-2.5 font-medium text-sm hover:bg-indigo-100 transition-colors"
+          onClick={() => navigate('/flags/mine')}
+          className="w-full rounded-2xl px-4 py-3 flex items-center justify-between"
+          style={{ background: 'var(--tc-card)', border: '2px solid var(--tc-border)', boxShadow: '0 3px 0 var(--tc-border)' }}
         >
-          {showCert ? 'Hide Certificate' : t('downloadCertificate')}
+          <div className="flex items-center gap-3">
+            <FlagIcon size={18} color="var(--tc-text-sec)" />
+            <span className="font-bold text-sm" style={{ color: 'var(--tc-text)' }}>{t('myReports')}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            {pendingFlagsCount > 0 && (
+              <span className="text-xs font-black px-2 py-0.5 rounded-full" style={{ background: '#FFF0D0', color: '#AA6520', border: '2px solid #D4843A' }}>
+                {pendingFlagsCount} pending
+              </span>
+            )}
+            <span className="font-black" style={{ color: 'var(--tc-text-muted)' }}>›</span>
+          </div>
         </button>
 
-        {showCert && user && (
-          <div className="mt-4 space-y-4">
-            <CertificateCanvas user={user} photo={photo} canvasRef={certRef} />
+        {/* Certificate */}
+        <div>
+          <p className="sec-label">{t('certificate')}</p>
+          <button
+            onClick={() => setShowCert(!showCert)}
+            className="btn-3d btn-ghost"
+            style={{ fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+          >
+            <ScrollIcon size={16} color="var(--tc-primary-dark)" />
+            {showCert ? 'Hide Certificate' : t('downloadCertificate')}
+          </button>
 
-            <div className="grid grid-cols-2 gap-2">
+          {showCert && user && (
+            <div className="mt-4 space-y-4">
+              <CertificateCanvas
+                user={profile?.user || user}
+                totalPoints={profile?.user?.total_points ?? user?.total_points ?? 0}
+                photo={photo}
+                badges={profile?.badges || []}
+                canvasRef={certRef}
+              />
+
               <button
                 onClick={downloadCert}
-                className="bg-gray-800 text-white rounded-xl py-2.5 text-sm font-medium hover:bg-gray-900 transition-colors"
+                className="w-full rounded-xl py-2.5 text-sm font-bold"
+                style={{ background: '#2C1810', color: '#fff', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
               >
-                ⬇ {t('download')}
+                <DownloadIcon size={15} color="#fff" /> {t('download')}
               </button>
-              <button
-                onClick={shareWhatsApp}
-                className="bg-green-500 text-white rounded-xl py-2.5 text-sm font-medium hover:bg-green-600 transition-colors"
-              >
-                WhatsApp
-              </button>
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}&quote=${shareText}`}
-                target="_blank" rel="noopener noreferrer"
-                className="bg-blue-600 text-white rounded-xl py-2.5 text-sm font-medium hover:bg-blue-700 transition-colors text-center"
-              >
-                Facebook
-              </a>
-              <a
-                href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`}
-                target="_blank" rel="noopener noreferrer"
-                className="bg-sky-500 text-white rounded-xl py-2.5 text-sm font-medium hover:bg-sky-600 transition-colors text-center"
-              >
-                Twitter / X
-              </a>
             </div>
-            <button
-              onClick={downloadCert}
-              className="w-full bg-pink-50 border border-pink-200 text-pink-600 rounded-xl py-2.5 text-sm font-medium hover:bg-pink-100 transition-colors"
-            >
-              📷 {t('downloadForInstagram')}
-            </button>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
 
-      {/* Recent activity */}
-      <div>
-        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">{t('recentActivity')}</h3>
-        {profile?.recentSessions?.length > 0 ? (
-          <div className="space-y-2">
-            {profile.recentSessions.map((s) => (
-              <div key={s.id} className="bg-white rounded-xl border border-gray-100 px-4 py-3 flex items-center justify-between">
-                <div>
-                  <span className="text-sm mr-2">{MODE_ICON[s.mode]}</span>
-                  <span className="text-sm font-medium text-gray-700">
-                    {s.mode === 'practice' || s.mode === 'timed' ? `Chapter ${s.chapter}` : 'Daily'}
-                  </span>
-                  <p className="text-xs text-gray-400">{new Date(s.completed_at).toLocaleDateString('en-IN')}</p>
+        {/* Recent activity */}
+        <div>
+          <p className="sec-label">{t('recentActivity')}</p>
+          {profile?.recentSessions?.length > 0 ? (
+            <div className="space-y-2">
+              {profile.recentSessions.map((s) => (
+                <div key={s.id} className="rounded-xl px-4 py-3 flex items-center justify-between"
+                  style={{ background: 'var(--tc-card)', border: '2px solid var(--tc-border)' }}>
+                  <div>
+                    <span className="text-sm mr-2">{MODE_ICON[s.mode]}</span>
+                    <span className="text-sm font-bold" style={{ color: 'var(--tc-text)' }}>
+                      {s.mode === 'practice' || s.mode === 'timed' ? `Chapter ${s.chapter}` : 'Daily'}
+                    </span>
+                    <p className="text-xs font-semibold" style={{ color: 'var(--tc-text-muted)' }}>{new Date(s.completed_at).toLocaleDateString('en-IN')}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-black" style={{ color: 'var(--tc-primary)' }}>{s.score}</p>
+                    <p className="text-xs font-semibold" style={{ color: 'var(--tc-text-muted)' }}>/{s.max_score} pts</p>
+                  </div>
                 </div>
-                <div className="text-right">
-                  <p className="font-bold text-indigo-600">{s.score}</p>
-                  <p className="text-xs text-gray-400">/{s.max_score} pts</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="text-gray-400 text-sm">{t('noActivity')}</p>
-        )}
+              ))}
+            </div>
+          ) : (
+            <p className="text-sm font-semibold" style={{ color: 'var(--tc-text-muted)' }}>{t('noActivity')}</p>
+          )}
+        </div>
       </div>
     </div>
   );

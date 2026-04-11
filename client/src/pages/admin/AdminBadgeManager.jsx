@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import api from '../../api/client';
+import BadgeIcon from '../../components/BadgeIcon';
 
 export default function AdminBadgeManager() {
   const { t } = useTranslation();
@@ -21,7 +22,7 @@ export default function AdminBadgeManager() {
       <div className="space-y-2">
         {badges.map((b) => (
           <div key={b.id} className="bg-white rounded-xl border border-gray-100 px-4 py-3 flex items-center gap-3 shadow-sm">
-            <span className="text-3xl">{b.icon}</span>
+            <BadgeIcon icon={b.icon} size={32} color="#C1440E" />
             <div className="flex-1">
               <p className="font-semibold text-gray-800">{b.name_en}</p>
               <p className="text-xs text-gray-400">{b.description_en}</p>
