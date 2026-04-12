@@ -36,7 +36,7 @@ docker-compose.yml
 
 **Request flow:** Browser → Nginx (port 80) → static files for `/`, Express for `/api/*`
 
-**Database:** SQLite via `better-sqlite3`. File at `DB_PATH` env var (default `/data/census.db` in Docker). Schema is auto-created on first run via `server/db/migrations.js`. Tables: `users`, `questions`, `quiz_sessions`, `quiz_answers`, `badges`, `user_badges`, `daily_scores`.
+**Database:** SQLite via `better-sqlite3`. File at `DB_PATH` env var (default `/data/census.db` in Docker). Schema is auto-created on first run via `server/db/migrations.js`. Tables: `users`, `questions`, `quiz_sessions`, `quiz_answers`, `badges`, `user_badges`, `daily_scores`, `question_flags`, `challenges`, `challenge_participants`.
 
 **QA Seeder:** On server startup, `server/db/seeder.js` reads all `QA/*/questions.json` files and upserts into `questions` table. Add a new chapter folder + `questions.json`, restart server → questions imported automatically.
 
@@ -44,9 +44,11 @@ docker-compose.yml
 
 **Gamification scoring:** `points = BASE_POINTS[difficulty] × streakMultiplier(streak)`. Base: easy=10, medium=20, hard=30. Streak multipliers: ≥3→×1.5, ≥5→×2.0, ≥10→×3.0. Streak resets to 0 on a wrong answer and is session-scoped only.
 
-**Quiz modes:** `daily` (10 random questions, 60s each, once per day), `timed` (15 questions per chapter, 15min total), `practice` (all chapter questions, no timer, resumable — incomplete sessions are resumed on restart).
+**Quiz modes:** `daily` (10 random questions, 60s each, once per day), `timed` (10 questions per chapter, 10min total), `practice` (all chapter questions, no timer, resumable — incomplete sessions are resumed on restart), `challenge` (async head-to-head — see Challenge feature below).
 
-**Badges** are auto-awarded in `server/services/badgeService.js` after every `POST /api/quiz/complete`. Criteria types: `quizzes_completed`, `streak`, `daily_streak`, `perfect_timed`, `chapters_completed`, `points`, `daily_rank_1`.
+**Badges** are auto-awarded in `server/services/badgeService.js` after every `POST /api/quiz/complete`. Criteria types: `quizzes_completed`, `streak`, `daily_streak`, `perfect_timed`, `perfect_chapter`, `chapters_completed`, `points`, `daily_rank_1`, `total_correct`, `all_modes`, `flags_resolved`.
+
+**Challenge feature:** Async friend-vs-friend quiz. Creator picks chapter + question count (5/10/15) → server freezes a random question set → generates a 6-char code (e.g. `A1B2C3`). Friend enters the code → takes the same questions → both see a side-by-side score comparison. Challenges expire 48h after creation; DB rows are purged on startup after 7 days total. Challenge attempts are stored as normal `quiz_sessions` with `mode='challenge'` so they count toward leaderboard and badge criteria. Key files: `server/routes/challenges.js`, `server/services/quizService.js` (`startChallengeSession`), `client/src/pages/challenge/`.
 
 ## Development Commands
 
@@ -111,9 +113,11 @@ docker-compose exec api node -e "
 
 **API error shape:** `{ error: "message" }` with HTTP status. Service functions throw `Object.assign(new Error(msg), { status: 400 })` to propagate HTTP status through route handlers.
 
-**Admin access:** Same login URL (`/`). JWT role determines redirect — `admin` → `/admin`, `user` → `/home`. All `/api/admin/*` routes require `auth` + `adminOnly` middleware.
+**Admin access:** Same login URL (`/`). JWT role determines redirect — `admin` → `/admin`, `user` → `/`. All `/api/admin/*` routes require `auth` + `adminOnly` middleware.
 
-**Frontend state:** Zustand stores in `client/src/store/` — `authStore` (user, tokens, localStorage sync) and `quizStore` (active session questions/answers/index). Server state via React Query (`@tanstack/react-query`).
+**Question flagging:** Users can flag questions during a quiz (`server/routes/flags.js`). Admins review via `/admin/flags`. Resolving a flag awards 1000 pts to all users who flagged that question. Criteria type `flags_resolved` triggers reviewer badges.
+
+**Frontend state:** Zustand stores in `client/src/store/` — `authStore` (user, tokens, localStorage sync) and `quizStore` (active session questions/answers/index). Server state via React Query (`@tanstack/react-query`). `quizStore.loadSession(sessionId, questions)` bypasses `/quiz/start` to hydrate state from a pre-started session (used by challenge quiz).
 
 **Certificate sharing:** Generated client-side as PNG using `html2canvas` on a styled `<div>`. WhatsApp via `wa.me` link, Facebook/Twitter via share dialog URLs, Instagram requires manual download.
 

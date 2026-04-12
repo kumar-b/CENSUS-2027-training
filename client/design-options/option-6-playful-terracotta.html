@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Census 2027 — Playful Terracotta Design Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:       #C1440E;
+      --green-dark:  #9A3409;
+      --green-light: #FAE0D3;
+      --orange:      #D4843A;
+      --orange-dark: #AA6520;
+      --purple:      #2D6A4F;
+      --purple-dark: #1B4332;
+      --blue:        #D4843A;
+      --blue-dark:   #AA6520;
+      --red:         #C1440E;
+      --bg:          #FDF6EE;
+      --surface:     #F5E8D8;
+      --card-bg:     #FFFAF4;
+      --border:      #E8D5C0;
+      --text:        #2C1810;
+      --text-sec:    #7A5C4A;
+      --text-muted:  #AD8B78;
+      --xp:          #C9970A;
+      --xp-dark:     #AA6520;
+      --radius-xl:   20px;
+      --radius-lg:   14px;
+      --radius-md:   10px;
+      --radius-sm:   6px;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #F5E8D8 0%, #FDF6EE 50%, #F7D8A8 100%);
+      min-height: 100vh;
+      padding: 40px 20px 60px;
+      color: var(--text);
+    }
+
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .page-header h1 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      letter-spacing: -0.5px;
+    }
+    .page-header p {
+      font-size: 1rem;
+      color: var(--text-sec);
+      margin-top: 6px;
+      font-weight: 600;
+    }
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      border: 2px solid;
+    }
+    .badge-green  { background: var(--green-light); color: var(--green-dark); border-color: var(--green); }
+    .badge-orange { background: #FFEDE6; color: var(--orange-dark); border-color: var(--orange); }
+    .badge-purple { background: #F3E8FF; color: var(--purple-dark); border-color: var(--purple); }
+    .badge-blue   { background: #E0F4FE; color: var(--blue-dark); border-color: var(--blue); }
+
+    /* ===== SCREENS GRID ===== */
+    .screens-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+      gap: 36px;
+      max-width: 1720px;
+      margin: 0 auto;
+    }
+
+    /* ===== PHONE FRAME ===== */
+    .phone-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .screen-label {
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-sec);
+    }
+    .phone-frame {
+      width: 390px;
+      min-height: 844px;
+      background: var(--bg);
+      border-radius: 46px;
+      border: 3px solid #d0d0d0;
+      box-shadow:
+        0 0 0 8px #f0f0f0,
+        0 8px 0 8px #d8d8d8,
+        0 32px 80px rgba(0,0,0,0.22),
+        0 8px 20px rgba(0,0,0,0.12);
+      overflow: hidden;
+      position: relative;
+    }
+    /* Notch */
+    .phone-frame::before {
+      content: '';
+      display: block;
+      width: 126px;
+      height: 34px;
+      background: #1a1a1a;
+      border-radius: 0 0 20px 20px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+
+    .screen-content {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    /* ===== SHARED COMPONENTS ===== */
+
+    /* Bottom Nav */
+    .bottom-nav {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      padding: 10px 0 20px;
+      background: var(--bg);
+      border-top: 2px solid var(--border);
+    }
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      min-width: 60px;
+    }
+    .nav-icon {
+      width: 24px; height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-icon svg {
+      width: 22px; height: 22px;
+      fill: none;
+      stroke: var(--text-muted);
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .nav-label {
+      font-size: 0.62rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text-sec);
+    }
+    .nav-item.active .nav-icon svg { stroke: var(--green); }
+    .nav-item.active .nav-label { color: var(--green-dark); }
+    .nav-item.active {
+      position: relative;
+    }
+    .nav-item.active::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 4px;
+      background: var(--green);
+      border-radius: 0 0 4px 4px;
+    }
+    .nav-active-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-top: 2px;
+    }
+
+    /* Progress Bar */
+    .prog-track {
+      background: var(--surface);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 2px solid var(--border);
+    }
+    .prog-fill {
+      height: 100%;
+      border-radius: 999px;
+      position: relative;
+    }
+    .prog-fill::after {
+      content: '';
+      position: absolute;
+      top: 3px; left: 8px;
+      width: 30%; height: 4px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 999px;
+    }
+
+    /* Pill Button */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 14px 22px;
+      border-radius: var(--radius-xl);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.08s;
+    }
+    .btn-green {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 4px 0 var(--green-dark), 0 6px 12px rgba(88,204,2,0.3);
+      border: 2px solid var(--green-dark);
+    }
+    .btn-green:hover { transform: translateY(-1px); }
+    .btn-orange {
+      background: var(--orange);
+      color: #fff;
+      box-shadow: 0 4px 0 var(--orange-dark), 0 6px 12px rgba(255,107,53,0.3);
+      border: 2px solid var(--orange-dark);
+    }
+    .btn-blue {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 4px 0 var(--blue-dark), 0 6px 12px rgba(28,176,246,0.3);
+      border: 2px solid var(--blue-dark);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--green-dark);
+      border: 2px solid var(--green);
+    }
+    .btn-full { width: 100%; }
+
+    /* Stat Card */
+    .stat-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 14px;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 1.7rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text-sec);
+      margin-top: 4px;
+    }
+    .stat-icon { font-size: 1.4rem; margin-bottom: 4px; }
+
+    /* Section Title */
+    .sec-title {
+      font-size: 0.72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-sec);
+      margin-bottom: 10px;
+    }
+
+    /* ===== SCREEN 1 — LOGIN ===== */
+    .s1 { }
+
+    .s1-top {
+      background: linear-gradient(180deg, #FAE0D3 0%, #FDF6EE 100%);
+      padding: 20px 24px 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Mascot SVG */
+    .mascot-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .s1-title {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      letter-spacing: -0.5px;
+    }
+    .s1-tagline {
+      font-size: 0.88rem;
+      color: var(--text-sec);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .lang-pills {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .lang-pill {
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      border: 2px solid;
+      cursor: pointer;
+    }
+    .lang-pill.active-lang {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green-dark);
+      box-shadow: 0 3px 0 var(--green-dark);
+    }
+    .lang-pill.inactive-lang {
+      background: var(--surface);
+      color: var(--text-sec);
+      border-color: var(--border);
+    }
+
+    .s1-form {
+      padding: 20px 24px 24px;
+    }
+    .input-group {
+      margin-bottom: 14px;
+    }
+    .input-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-sec);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .fancy-input {
+      width: 100%;
+      padding: 13px 16px;
+      border: 2.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+      background: var(--surface);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .fancy-input:focus { border-color: var(--green); }
+    .fancy-input.focused { border-color: var(--green); background: #FAE0D3; }
+
+    .s1-divider {
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-sec);
+      margin: 16px 0;
+      position: relative;
+    }
+    .s1-divider::before, .s1-divider::after {
+      content: '';
+      position: absolute;
+      top: 50%; width: 38%; height: 1.5px;
+      background: var(--border);
+    }
+    .s1-divider::before { left: 0; }
+    .s1-divider::after { right: 0; }
+
+    .s1-login-link {
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-sec);
+      margin-top: 16px;
+    }
+    .s1-login-link span {
+      color: var(--blue);
+      font-weight: 800;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .confetti-strip {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      padding: 10px 0 4px;
+      flex-wrap: wrap;
+    }
+    .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      animation: bob 2s ease-in-out infinite;
+    }
+    .dot:nth-child(2) { animation-delay: 0.2s; border-radius: 2px; width: 8px; height: 8px; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    .dot:nth-child(4) { animation-delay: 0.1s; border-radius: 2px; transform: rotate(45deg); }
+    .dot:nth-child(5) { animation-delay: 0.3s; }
+    .dot:nth-child(6) { animation-delay: 0.5s; border-radius: 2px; width: 8px; height: 8px; }
+    .dot:nth-child(7) { animation-delay: 0.15s; }
+    .dot:nth-child(8) { animation-delay: 0.35s; border-radius: 2px; }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    /* ===== SCREEN 2 — HOME ===== */
+    .s2-topbar {
+      background: var(--bg);
+      padding: 14px 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--border);
+    }
+    .streak-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #FFF3E0;
+      border: 2px solid #FFB74D;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #E65100;
+    }
+    .xp-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #FFFDE7;
+      border: 2px solid var(--xp);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #B8860B;
+    }
+    .hearts-badge {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--red);
+    }
+
+    .s2-body { padding: 16px 20px; }
+
+    .daily-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .daily-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .daily-label { font-size: 0.72rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-sec); }
+    .daily-count { font-size: 0.78rem; font-weight: 800; color: var(--green-dark); }
+
+    /* Pulsing CTA card */
+    .challenge-card {
+      background: var(--green);
+      border: 2.5px solid var(--green-dark);
+      border-radius: var(--radius-xl);
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 5px 0 var(--green-dark);
+      cursor: pointer;
+    }
+    .challenge-card::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 120%;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.25);
+      animation: pulse-ring 2s ease-out infinite;
+    }
+    .challenge-card::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+      height: 110%;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.15);
+      animation: pulse-ring 2s ease-out infinite 0.5s;
+    }
+    @keyframes pulse-ring {
+      0% { transform: translate(-50%, -50%) scale(0.85); opacity: 1; }
+      100% { transform: translate(-50%, -50%) scale(1.15); opacity: 0; }
+    }
+    .challenge-top { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.8); margin-bottom: 4px; }
+    .challenge-title { font-size: 1.05rem; font-weight: 900; color: #fff; }
+    .challenge-arrow { font-size: 1.2rem; float: right; }
+    .challenge-xp {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #fff;
+      margin-top: 8px;
+    }
+
+    .quiz-modes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .quiz-mode-card {
+      background: var(--card-bg);
+      border: 2.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.1s;
+      box-shadow: 0 3px 0 var(--border);
+    }
+    .quiz-mode-card:hover { transform: translateY(-2px); }
+    .qm-top {
+      height: 8px;
+    }
+    .qm-body { padding: 12px 12px 14px; }
+    .qm-icon { font-size: 1.4rem; margin-bottom: 6px; }
+    .qm-name { font-size: 0.78rem; font-weight: 900; color: var(--text); }
+    .qm-desc { font-size: 0.65rem; font-weight: 600; color: var(--text-sec); margin-top: 2px; }
+    .quiz-mode-card.wide {
+      grid-column: span 2;
+      display: flex;
+      align-items: center;
+    }
+    .quiz-mode-card.wide .qm-top {
+      width: 8px;
+      height: auto;
+      align-self: stretch;
+    }
+
+    .achievements-row {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scrollbar-width: none;
+      margin-bottom: 6px;
+    }
+    .achievements-row::-webkit-scrollbar { display: none; }
+    .ach-card {
+      flex: 0 0 70px;
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 6px;
+      text-align: center;
+      box-shadow: 0 3px 0 var(--border);
+    }
+    .ach-card.unlocked { border-color: var(--xp); box-shadow: 0 3px 0 var(--xp-dark); }
+    .ach-icon { font-size: 1.5rem; }
+    .ach-label { font-size: 0.58rem; font-weight: 800; color: var(--text-sec); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.2px; }
+    .ach-card.locked .ach-icon { filter: grayscale(1) opacity(0.35); }
+
+    /* ===== SCREEN 3 — LEADERBOARD ===== */
+    .s3-header {
+      background: linear-gradient(135deg, var(--green) 0%, #D4843A 100%);
+      padding: 18px 20px 22px;
+      text-align: center;
+    }
+    .s3-header h2 { font-size: 1.3rem; font-weight: 900; color: #fff; letter-spacing: 0.3px; }
+    .s3-header .trophy { font-size: 2rem; display: block; margin-bottom: 6px; }
+
+    .rank-banner {
+      background: linear-gradient(90deg, var(--green-light), #F7D8A8);
+      border: 2px solid var(--green);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      margin: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .rank-banner-icon { font-size: 1.3rem; }
+    .rank-banner-text .rank-num { font-size: 0.95rem; font-weight: 900; color: var(--green-dark); }
+    .rank-banner-text .rank-pct { font-size: 0.72rem; font-weight: 700; color: var(--green-dark); }
+
+    .tabs-row {
+      display: flex;
+      gap: 8px;
+      padding: 0 16px;
+      margin-bottom: 14px;
+    }
+    .tab-pill {
+      flex: 1;
+      text-align: center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      border: 2px solid var(--border);
+      color: var(--text-sec);
+      cursor: pointer;
+    }
+    .tab-pill.active {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green-dark);
+      box-shadow: 0 3px 0 var(--green-dark);
+    }
+
+    /* Podium */
+    .podium-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 8px;
+      padding: 0 20px 16px;
+    }
+    .podium-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .podium-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.9rem;
+      color: #fff;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      margin-bottom: 4px;
+      position: relative;
+    }
+    .podium-crown { position: absolute; top: -16px; font-size: 1.1rem; }
+    .podium-name { font-size: 0.65rem; font-weight: 800; text-align: center; max-width: 70px; }
+    .podium-xp { font-size: 0.6rem; font-weight: 700; color: var(--text-sec); }
+    .podium-block {
+      width: 100%;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.9);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+    .p1-block { height: 60px; background: linear-gradient(180deg, #FFD700, #FFA000); }
+    .p2-block { height: 44px; background: linear-gradient(180deg, #C0C0C0, #9E9E9E); }
+    .p3-block { height: 32px; background: linear-gradient(180deg, #CD7F32, #A0522D); }
+
+    .rank-list { padding: 0 16px; margin-bottom: 8px; }
+    .rank-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 10px;
+      border-radius: var(--radius-md);
+      margin-bottom: 6px;
+      border: 2px solid transparent;
+      transition: background 0.15s;
+    }
+    .rank-row.you {
+      background: #FAE0D3;
+      border-color: var(--green);
+      animation: gentle-bounce 3s ease-in-out infinite;
+    }
+    @keyframes gentle-bounce {
+      0%, 100% { box-shadow: 0 2px 8px rgba(193,68,14,0.2); }
+      50% { box-shadow: 0 4px 14px rgba(193,68,14,0.4); }
+    }
+    .rank-badge {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .rank-badge.top { background: var(--green); color: #fff; border: 2px solid var(--green-dark); }
+    .rank-badge.mid { background: var(--surface); color: var(--text-sec); border: 2px solid var(--border); }
+    .rank-avatar {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      font-weight: 900;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .rank-info { flex: 1; }
+    .rank-name { font-size: 0.8rem; font-weight: 800; color: var(--text); }
+    .rank-state { font-size: 0.65rem; font-weight: 600; color: var(--text-sec); }
+    .rank-xp { font-size: 0.82rem; font-weight: 900; color: var(--xp-dark); display: flex; align-items: center; gap: 2px; }
+    .you-arrow { font-size: 0.7rem; color: var(--green-dark); font-weight: 900; }
+
+    /* ===== SCREEN 4 — PROFILE ===== */
+    .s4-header {
+      background: linear-gradient(135deg, var(--green) 0%, #D4843A 100%);
+      padding: 20px 20px 28px;
+      position: relative;
+    }
+    .s4-avatar-wrap {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+    }
+    .s4-avatar {
+      width: 70px; height: 70px;
+      border-radius: 50%;
+      background: #fff;
+      border: 4px solid rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      position: relative;
+      flex-shrink: 0;
+    }
+    .level-badge {
+      position: absolute;
+      bottom: -8px; right: -8px;
+      background: var(--xp);
+      border: 3px solid #fff;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 0.65rem;
+      font-weight: 900;
+      color: #5a3a00;
+      white-space: nowrap;
+    }
+    .s4-name { font-size: 1.15rem; font-weight: 900; color: #fff; }
+    .s4-title { font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,0.8); margin-top: 2px; }
+    .xp-bar-wrap { margin-top: 16px; }
+    .xp-bar-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 5px;
+    }
+    .xp-bar-track {
+      background: rgba(255,255,255,0.25);
+      border-radius: 999px;
+      height: 12px;
+      overflow: hidden;
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+    .xp-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--xp), #FFF176);
+      border-radius: 999px;
+      position: relative;
+    }
+    .xp-bar-fill::after {
+      content:'';
+      position: absolute;
+      top: 2px; left: 6px;
+      width: 30%; height: 4px;
+      background: rgba(255,255,255,0.45);
+      border-radius: 999px;
+    }
+
+    .s4-body { padding: 16px 20px; }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .streak-feature {
+      background: linear-gradient(135deg, #FAE0D3, #F7D8A8);
+      border: 2.5px solid #D4843A;
+      border-radius: var(--radius-xl);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 0 #9A3409;
+    }
+    .streak-flame { font-size: 2.2rem; animation: flame 1.5s ease-in-out infinite; }
+    @keyframes flame {
+      0%, 100% { transform: scale(1) rotate(-3deg); }
+      50% { transform: scale(1.08) rotate(3deg); }
+    }
+    .streak-text .streak-num { font-size: 1.2rem; font-weight: 900; color: #9A3409; }
+    .streak-text .streak-sub { font-size: 0.72rem; font-weight: 700; color: #7A3008; }
+    .streak-text .streak-motiv { font-size: 0.68rem; font-weight: 600; color: #9A3409; margin-top: 2px; font-style: italic; }
+
+    .badges-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .badge-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 6px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .badge-card.unlocked { border-color: var(--xp); box-shadow: 0 3px 0 var(--xp-dark); }
+    .badge-card.locked {
+      opacity: 0.75;
+    }
+    .badge-card.locked::before {
+      content: '';
+      position: absolute;
+      top: 3px; right: 4px;
+      width: 11px; height: 11px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11' fill='none'%3E%3Crect x='1.5' y='4.5' width='8' height='6' rx='1.2' stroke='%237A5C4A' stroke-width='1.3'/%3E%3Cpath d='M3.2 4.5V3C3.2 1.3 7.8 1.3 7.8 3V4.5' stroke='%237A5C4A' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;
+    }
+    .badge-emoji { font-size: 1.5rem; }
+    .badge-name { font-size: 0.55rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2px; color: var(--text-sec); margin-top: 4px; }
+    .lock-progress {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--border);
+    }
+    .lock-prog-fill {
+      height: 100%;
+      background: var(--purple);
+    }
+
+    .share-section {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 14px;
+      border: 2px solid var(--border);
+    }
+    .share-title { font-size: 0.72rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-sec); margin-bottom: 10px; }
+    .share-buttons {
+      display: flex;
+      gap: 8px;
+    }
+    .share-btn {
+      flex: 1;
+      padding: 9px 10px;
+      border-radius: var(--radius-md);
+      font-size: 0.7rem;
+      font-weight: 800;
+      border: 2px solid;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 3px 0;
+    }
+    .share-wa { background: #25D366; color: #fff; border-color: #1aa351; box-shadow-color: #1aa351; box-shadow: 0 3px 0 #1aa351; }
+    .share-tw { background: #1DA1F2; color: #fff; border-color: #0d89d3; box-shadow: 0 3px 0 #0d89d3; }
+    .share-copy { background: var(--surface); color: var(--text-sec); border-color: var(--border); box-shadow: 0 3px 0 var(--border); }
+
+    /* ===== CONFETTI DECORATION ===== */
+    .confetti-wrap {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .conf-dot {
+      position: absolute;
+      border-radius: 50%;
+      animation: confetti-fall 4s linear infinite;
+      opacity: 0;
+    }
+    @keyframes confetti-fall {
+      0%   { opacity: 0; transform: translateY(-10px) rotate(0deg); }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { opacity: 0; transform: translateY(110px) rotate(360deg); }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .screens-grid { grid-template-columns: repeat(2, 390px); justify-content: center; }
+    }
+    @media (max-width: 600px) {
+      .screens-grid { grid-template-columns: 390px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1><svg width="26" height="26" viewBox="0 0 26 26" fill="none" style="display:inline-block;vertical-align:middle;margin-right:6px"><path d="M5 14L13 6L21 14" stroke="#C1440E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="7" y="13" width="12" height="9" rx="1.5" fill="rgba(193,68,14,0.15)" stroke="#C1440E" stroke-width="1.5"/><circle cx="20" cy="9" r="5" fill="#2D6A4F"/><path d="M17.5 9L19 11L22.5 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Option 6 — Playful Terracotta</h1>
+    <p>Gamified layout · Warm earthy palette · Census 2027 Training</p>
+    <div class="badge-row">
+      <span class="badge badge-green">Terracotta Primary</span>
+      <span class="badge badge-orange">Ochre Warmth</span>
+      <span class="badge badge-purple">Forest Success</span>
+      <span class="badge badge-blue">Gold XP</span>
+    </div>
+  </header>
+
+  <!-- SCREENS GRID -->
+  <div class="screens-grid">
+
+    <!-- ============================================================ -->
+    <!-- SCREEN 1 — LOGIN -->
+    <!-- ============================================================ -->
+    <div class="phone-wrap">
+      <span class="screen-label">Screen 1 — Login</span>
+      <div class="phone-frame">
+        <div class="screen-content">
+          <div class="s1-top">
+
+            <!-- Confetti dots -->
+            <div class="confetti-wrap" aria-hidden="true">
+              <div class="conf-dot" style="width:8px;height:8px;background:#C1440E;left:10%;animation-delay:0s;animation-duration:3.5s;"></div>
+              <div class="conf-dot" style="width:6px;height:6px;background:#D4843A;left:25%;animation-delay:0.7s;animation-duration:4s;border-radius:2px;"></div>
+              <div class="conf-dot" style="width:7px;height:7px;background:#2D6A4F;left:55%;animation-delay:1.2s;animation-duration:3.8s;"></div>
+              <div class="conf-dot" style="width:5px;height:5px;background:#C9970A;left:75%;animation-delay:0.3s;animation-duration:4.2s;border-radius:2px;"></div>
+              <div class="conf-dot" style="width:8px;height:8px;background:#F4956A;left:88%;animation-delay:1.8s;animation-duration:3.3s;"></div>
+            </div>
+
+            <!-- Census Owl Mascot SVG -->
+            <div class="mascot-wrap">
+              <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Body -->
+                <ellipse cx="55" cy="68" rx="32" ry="30" fill="#C1440E"/>
+                <!-- Wings -->
+                <ellipse cx="22" cy="74" rx="12" ry="18" fill="#9A3409" transform="rotate(-15 22 74)"/>
+                <ellipse cx="88" cy="74" rx="12" ry="18" fill="#9A3409" transform="rotate(15 88 74)"/>
+                <!-- Head -->
+                <circle cx="55" cy="42" r="28" fill="#C1440E"/>
+                <!-- Ear tufts -->
+                <ellipse cx="38" cy="18" rx="7" ry="11" fill="#9A3409" transform="rotate(-15 38 18)"/>
+                <ellipse cx="72" cy="18" rx="7" ry="11" fill="#9A3409" transform="rotate(15 72 18)"/>
+                <!-- Face white -->
+                <ellipse cx="55" cy="44" rx="20" ry="18" fill="#FAE0D3"/>
+                <!-- Eyes bg -->
+                <circle cx="44" cy="40" r="10" fill="#FFFFFF"/>
+                <circle cx="66" cy="40" r="10" fill="#FFFFFF"/>
+                <!-- Eye rings -->
+                <circle cx="44" cy="40" r="10" fill="none" stroke="#9A3409" stroke-width="2.5"/>
+                <circle cx="66" cy="40" r="10" fill="none" stroke="#9A3409" stroke-width="2.5"/>
+                <!-- Pupils -->
+                <circle cx="45" cy="40" r="5.5" fill="#2C1810"/>
+                <circle cx="67" cy="40" r="5.5" fill="#2C1810"/>
+                <!-- Eye shine -->
+                <circle cx="47" cy="37" r="2" fill="#FFFFFF"/>
+                <circle cx="69" cy="37" r="2" fill="#FFFFFF"/>
+                <!-- Beak -->
+                <path d="M50 51 L55 58 L60 51 Q55 47 50 51Z" fill="#C9970A"/>
+                <!-- Belly -->
+                <ellipse cx="55" cy="78" rx="18" ry="14" fill="#F4956A" opacity="0.6"/>
+                <!-- Clipboard -->
+                <rect x="42" y="85" width="26" height="20" rx="4" fill="#FFFAF4" stroke="#9A3409" stroke-width="2"/>
+                <rect x="47" y="82" width="16" height="5" rx="2.5" fill="#9A3409"/>
+                <line x1="46" y1="92" x2="64" y2="92" stroke="#E8D5C0" stroke-width="1.5"/>
+                <line x1="46" y1="96" x2="60" y2="96" stroke="#E8D5C0" stroke-width="1.5"/>
+                <!-- Checkmark on clipboard -->
+                <path d="M49 93.5 L52 97 L62 88" stroke="#C1440E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="s1-title">Census 2027</div>
+            <div class="s1-tagline">Learn. Compete. Succeed!</div>
+
+            <!-- Language Pills -->
+            <div class="lang-pills">
+              <span class="lang-pill active-lang">English</span>
+              <span class="lang-pill inactive-lang">हिन्दी</span>
+              <span class="lang-pill inactive-lang">বাংলা</span>
+              <span class="lang-pill inactive-lang">తెలుగు</span>
+            </div>
+
+            <!-- Confetti strip -->
+            <div class="confetti-strip">
+              <span class="dot" style="background:#C1440E;"></span>
+              <span class="dot" style="background:#D4843A;"></span>
+              <span class="dot" style="background:#2D6A4F;"></span>
+              <span class="dot" style="background:#C9970A;"></span>
+              <span class="dot" style="background:#F4956A;"></span>
+              <span class="dot" style="background:#C1440E;"></span>
+              <span class="dot" style="background:#D4843A;"></span>
+              <span class="dot" style="background:#2D6A4F;"></span>
+            </div>
+          </div>
+
+          <div class="s1-form">
+            <div class="input-group">
+              <label class="input-label">Employee ID</label>
+              <input class="fancy-input focused" type="text" value="EMP-2027-0842" readonly />
+            </div>
+            <div class="input-group">
+              <label class="input-label">Password</label>
+              <input class="fancy-input" type="password" value="••••••••" readonly />
+            </div>
+
+            <button class="btn btn-green btn-full" style="margin-top: 4px; font-size: 1rem; padding: 16px;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="white" stroke-width="1.3" stroke-linecap="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><path d="M8 2C8 2 13 4 13 9C13 12 11 14.5 8 15C5 14.5 3 12 3 9C3 4 8 2 8 2Z"/><circle cx="8" cy="7.5" r="2" fill="white" stroke="none"/><path d="M6 12L8 15.5L10 12"/></svg> GET STARTED
+            </button>
+
+            <div class="s1-divider">or continue with</div>
+
+            <button class="btn btn-blue btn-full" style="font-size: 0.88rem; padding: 13px;">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><path d="M2 12.5H12M7 4L12 7.5H2L7 4Z"/><rect x="2.5" y="7.5" width="2" height="5" rx="0.3"/><rect x="6" y="7.5" width="2" height="5" rx="0.3"/><rect x="9.5" y="7.5" width="2" height="5" rx="0.3"/></svg> Government SSO Login
+            </button>
+
+            <div class="s1-login-link">
+              New here? <span>Create account →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCREEN 2 — HOME -->
+    <!-- ============================================================ -->
+    <div class="phone-wrap">
+      <span class="screen-label">Screen 2 — Home Dashboard</span>
+      <div class="phone-frame">
+        <div class="screen-content">
+
+          <!-- Top Bar -->
+          <div class="s2-topbar">
+            <div class="streak-badge"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="display:inline-block;vertical-align:middle;margin-right:3px"><path d="M6.5 1C6.5 1 10 4.5 9.5 7.5C9.2 9.5 8 11.5 6.5 11.5C5 11.5 3.8 9.5 3.5 7.5C3.2 5.5 4 4 4.7 3C4.5 4.8 5.3 5.5 6.3 5.2C6 3 6.5 1 6.5 1Z" fill="#C1440E"/></svg> 5 Day Streak</div>
+            <div style="display:flex;align-items:center;gap:4px;font-size:0.7rem;font-weight:900;color:var(--red)">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="#C1440E"><path d="M6 10.5C5 9.5 1.5 7 1.5 4.2C1.5 2.6 2.8 1.5 4 1.5C5 1.5 5.7 2 6 2.7C6.3 2 7 1.5 8 1.5C9.2 1.5 10.5 2.6 10.5 4.2C10.5 7 7 9.5 6 10.5Z"/></svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="#C1440E"><path d="M6 10.5C5 9.5 1.5 7 1.5 4.2C1.5 2.6 2.8 1.5 4 1.5C5 1.5 5.7 2 6 2.7C6.3 2 7 1.5 8 1.5C9.2 1.5 10.5 2.6 10.5 4.2C10.5 7 7 9.5 6 10.5Z"/></svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="#C1440E"><path d="M6 10.5C5 9.5 1.5 7 1.5 4.2C1.5 2.6 2.8 1.5 4 1.5C5 1.5 5.7 2 6 2.7C6.3 2 7 1.5 8 1.5C9.2 1.5 10.5 2.6 10.5 4.2C10.5 7 7 9.5 6 10.5Z"/></svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="#C1440E"><path d="M6 10.5C5 9.5 1.5 7 1.5 4.2C1.5 2.6 2.8 1.5 4 1.5C5 1.5 5.7 2 6 2.7C6.3 2 7 1.5 8 1.5C9.2 1.5 10.5 2.6 10.5 4.2C10.5 7 7 9.5 6 10.5Z"/></svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="#C1440E"><path d="M6 10.5C5 9.5 1.5 7 1.5 4.2C1.5 2.6 2.8 1.5 4 1.5C5 1.5 5.7 2 6 2.7C6.3 2 7 1.5 8 1.5C9.2 1.5 10.5 2.6 10.5 4.2C10.5 7 7 9.5 6 10.5Z"/></svg>
+            </div>
+            <div class="xp-badge"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="display:inline-block;vertical-align:middle;margin-right:3px"><path d="M6 1.5L7.5 4.5H11L8.5 6.5L9.5 10L6 8L2.5 10L3.5 6.5L1 4.5H4.5L6 1.5Z" fill="#C9970A"/></svg> 1,240 XP</div>
+          </div>
+
+          <div class="s2-body">
+
+            <!-- Greeting -->
+            <div style="font-size:1rem;font-weight:900;color:var(--text);margin-bottom:14px;">
+              Good morning, Priya!
+              <div style="font-size:0.72rem;font-weight:600;color:var(--text-sec);margin-top:2px;">Ready to conquer today's quiz?</div>
+            </div>
+
+            <!-- Daily Goal Progress -->
+            <div class="daily-card">
+              <div class="daily-top">
+                <span class="daily-label"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="display:inline-block;vertical-align:middle;margin-right:3px"><rect x="1.5" y="2.5" width="10" height="9" rx="1.5" stroke="#7A5C4A" stroke-width="1.2"/><path d="M1.5 5.5H11.5" stroke="#7A5C4A" stroke-width="1.2"/><path d="M4 1V4M9 1V4" stroke="#7A5C4A" stroke-width="1.2" stroke-linecap="round"/></svg> Daily Goal</span>
+                <span class="daily-count">8 / 10 questions</span>
+              </div>
+              <div class="prog-track" style="height:14px;">
+                <div class="prog-fill" style="width:80%;background:linear-gradient(90deg,var(--green),#D4843A);height:100%;"></div>
+              </div>
+              <div style="font-size:0.65rem;font-weight:700;color:var(--green-dark);margin-top:6px;">2 more to reach daily goal!</div>
+            </div>
+
+            <!-- Today's Challenge -->
+            <div class="challenge-card">
+              <div class="challenge-top"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.3" stroke-linecap="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><path d="M4.5 2H9.5V8C9.5 9.7 8.4 11 7 11C5.6 11 4.5 9.7 4.5 8V2Z" stroke-linejoin="round"/><path d="M4.5 3.5H3C3 5 3 7.5 4.5 7.5M9.5 3.5H11C11 5 11 7.5 9.5 7.5M7 11V13M5.5 13H8.5"/></svg> Today's Challenge</div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div class="challenge-title">Population Count Quiz <span class="challenge-arrow">→</span></div>
+              </div>
+              <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);font-weight:600;margin-top:4px;">10 questions · 5 min · Chapter 3</div>
+              <div style="display:flex;gap:8px;margin-top:10px;">
+                <span class="challenge-xp"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle;margin-right:2px"><path d="M5.5 1L6.8 4H10.5L7.5 6L8.5 9.5L5.5 7.5L2.5 9.5L3.5 6L0.5 4H4.2L5.5 1Z" fill="rgba(255,255,255,0.9)"/></svg> +150 XP</span>
+                <span class="challenge-xp"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle;margin-right:2px"><path d="M5.5 0.8C5.5 0.8 8.5 3.8 8 6.5C7.7 8.3 6.7 10 5.5 10C4.3 10 3.3 8.3 3 6.5C2.7 4.8 3.5 3.3 4 2.5C3.9 4 4.6 4.7 5.5 4.5C5.2 2.5 5.5 0.8 5.5 0.8Z" fill="rgba(255,255,255,0.9)"/></svg> Streak Bonus</span>
+              </div>
+            </div>
+
+            <!-- Quiz Modes -->
+            <div class="sec-title">QUIZ MODES</div>
+            <div class="quiz-modes-grid">
+              <div class="quiz-mode-card">
+                <div class="qm-top" style="background:#D4843A;"></div>
+                <div class="qm-body">
+                  <div class="qm-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="14" r="8" stroke="#D4843A" stroke-width="1.6"/><path d="M12 9.5V14L15 16.5" stroke="#D4843A" stroke-width="1.6" stroke-linecap="round"/><path d="M9 4.5H15M12 4.5V7" stroke="#D4843A" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+                  <div class="qm-name">Speed Round</div>
+                  <div class="qm-desc">30 sec/question</div>
+                </div>
+              </div>
+              <div class="quiz-mode-card">
+                <div class="qm-top" style="background:#C9970A;"></div>
+                <div class="qm-body">
+                  <div class="qm-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19C12 19 7 17.5 5 18.5V7C7 6 12 7.5 12 7.5C12 6.5 17 5 19 6V18C17 17 12 18.5 12 18.5Z" stroke="#C9970A" stroke-width="1.6" stroke-linejoin="round" fill="rgba(201,151,10,0.1)"/><line x1="12" y1="7.5" x2="12" y2="19" stroke="#C9970A" stroke-width="1.2"/></svg></div>
+                  <div class="qm-name">Practice</div>
+                  <div class="qm-desc">Learn at your pace</div>
+                </div>
+              </div>
+              <div class="quiz-mode-card wide">
+                <div class="qm-top" style="background:#2D6A4F;"></div>
+                <div class="qm-body" style="display:flex;align-items:center;gap:12px;">
+                  <div class="qm-icon" style="margin-bottom:0;font-size:1.6rem;"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M7 7L14 14M21 7L14 14M14 14V22" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 5L9 3M23 5L19 3M5 5V10M23 5V10" stroke="#2D6A4F" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+                  <div>
+                    <div class="qm-name">Challenge Friend</div>
+                    <div class="qm-desc">Invite & compete live</div>
+                  </div>
+                  <div style="margin-left:auto;background:#2D6A4F;color:#fff;padding:5px 12px;border-radius:999px;font-size:0.65rem;font-weight:800;border:2px solid #1B4332;box-shadow:0 2px 0 #1B4332;">LIVE</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="sec-title">ACHIEVEMENTS</div>
+            <div class="achievements-row">
+              <div class="ach-card unlocked">
+                <div class="ach-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="15" r="7" fill="rgba(201,151,10,0.15)" stroke="#C9970A" stroke-width="1.5"/><path d="M10 8L12 4L14 8" stroke="#C9970A" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M12 12L13 14.5H15.5L13.5 16L14.2 18.5L12 17L9.8 18.5L10.5 16L8.5 14.5H11L12 12Z" fill="#C9970A"/></svg></div>
+                <div class="ach-label">First Win</div>
+              </div>
+              <div class="ach-card unlocked">
+                <div class="ach-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 18 7.5 17 13C16.5 16.5 14.5 20 12 20C9.5 20 7.5 16.5 7 13C6.5 9.5 8.5 6.5 10 5C9.5 8 11 9.5 12.5 9C12 6 12 2 12 2Z" fill="#C1440E"/></svg></div>
+                <div class="ach-label">5 Day</div>
+              </div>
+              <div class="ach-card unlocked">
+                <div class="ach-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 3L9 13H14L9.5 22L21 10H15.5L15 3Z" fill="#D4843A"/></svg></div>
+                <div class="ach-label">Speed</div>
+              </div>
+              <div class="ach-card locked">
+                <div class="ach-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 19H19V16.5L16 10L12 15.5L8 10L5 16.5V19Z" fill="rgba(201,151,10,0.2)" stroke="#C9970A" stroke-width="1.4" stroke-linejoin="round"/><circle cx="7" cy="9" r="1.5" fill="#C9970A"/><circle cx="12" cy="7" r="1.5" fill="#C9970A"/><circle cx="17" cy="9" r="1.5" fill="#C9970A"/></svg></div>
+                <div class="ach-label">Top 10</div>
+              </div>
+              <div class="ach-card locked">
+                <div class="ach-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4L19 11L12 21L5 11L12 4Z" fill="rgba(45,106,79,0.15)" stroke="#2D6A4F" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 11H19" stroke="#2D6A4F" stroke-width="1" opacity="0.5"/></svg></div>
+                <div class="ach-label">Perfect</div>
+              </div>
+              <div class="ach-card locked">
+                <div class="ach-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3L14.5 9H21L15.5 13L17.5 20L12 16.5L6.5 20L8.5 13L3 9H9.5L12 3Z" fill="rgba(201,151,10,0.2)" stroke="#C9970A" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+                <div class="ach-label">Legend</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Nav -->
+          <div class="bottom-nav">
+            <div class="nav-item active">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><path d="M3 9.5L11 3L19 9.5V19C19 19.6 18.6 20 18 20H14V15H8V20H4C3.4 20 3 19.6 3 19V9.5Z"/></svg></div>
+              <span class="nav-label">Home</span>
+              <div class="nav-active-dot"></div>
+            </div>
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><rect x="3" y="3" width="16" height="16" rx="3"/><path d="M7 11H15M7 7H15M7 15H11"/></svg></div>
+              <span class="nav-label">Quiz</span>
+            </div>
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><path d="M11 3L13.5 8.5H19L14.5 12L16 17.5L11 14.5L6 17.5L7.5 12L3 8.5H8.5L11 3Z"/></svg></div>
+              <span class="nav-label">Ranks</span>
+            </div>
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><circle cx="11" cy="8" r="4"/><path d="M3 19C3 15.7 6.6 13 11 13C15.4 13 19 15.7 19 19"/></svg></div>
+              <span class="nav-label">Profile</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCREEN 3 — LEADERBOARD -->
+    <!-- ============================================================ -->
+    <div class="phone-wrap">
+      <span class="screen-label">Screen 3 — Leaderboard</span>
+      <div class="phone-frame">
+        <div class="screen-content">
+
+          <!-- Header -->
+          <div class="s3-header">
+            <span class="trophy"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="rgba(255,255,255,0.95)" stroke-width="2" stroke-linecap="round" style="display:block;margin:0 auto"><path d="M11 5H23V17C23 20.3 20.3 22 17 22C13.7 22 11 20.3 11 17V5Z" stroke-linejoin="round"/><path d="M11 8H8C8 11 8 16 11 16M23 8H26C26 11 26 16 23 16M17 22V27M13 27H21"/></svg></span>
+            <h2>LEADERBOARD</h2>
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.8);font-weight:600;margin-top:4px;">Maharashtra Region · 842 players</div>
+          </div>
+
+          <!-- Rank Banner -->
+          <div class="rank-banner">
+            <span class="rank-banner-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#9A3409" stroke-width="1.4"/><circle cx="11" cy="11" r="5" stroke="#9A3409" stroke-width="1.4"/><circle cx="11" cy="11" r="2.2" fill="#C1440E"/></svg></span>
+            <div class="rank-banner-text">
+              <div class="rank-num">You're Rank #12 ↑</div>
+              <div class="rank-pct"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="display:inline-block;vertical-align:middle;margin-right:3px"><path d="M1.5 9L4 6L7 7.5L10.5 3" stroke="#9A3409" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 3H10.5V5" stroke="#9A3409" stroke-width="1.4" stroke-linecap="round"/></svg> Top 15% · +3 from yesterday!</div>
+            </div>
+            <div style="margin-left:auto;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9A3409" stroke-width="1.5" stroke-linecap="round"><path d="M12 3C12 3 19 6 19 12C19 16.5 16.5 20 12 22C7.5 20 5 16.5 5 12C5 6 12 3 12 3Z"/><circle cx="12" cy="10" r="3" fill="#C1440E" opacity="0.8" stroke="none"/><path d="M9.5 17L12 22L14.5 17"/></svg></div>
+          </div>
+
+          <!-- Tabs -->
+          <div class="tabs-row">
+            <span class="tab-pill active">Daily</span>
+            <span class="tab-pill">Weekly</span>
+            <span class="tab-pill">All Time</span>
+          </div>
+
+          <!-- Podium -->
+          <div class="podium-wrap">
+            <!-- 2nd -->
+            <div class="podium-col">
+              <div class="podium-avatar" style="background:linear-gradient(135deg,#9E9E9E,#757575);width:40px;height:40px;font-size:0.8rem;">AK</div>
+              <div class="podium-name">Arjun K.</div>
+              <div class="podium-xp">2,180 XP</div>
+              <div class="podium-block p2-block">2</div>
+            </div>
+            <!-- 1st -->
+            <div class="podium-col">
+              <div class="podium-avatar" style="background:linear-gradient(135deg,#FFD700,#FFA000);width:52px;height:52px;font-size:1rem;">RS</div>
+              <div style="position:absolute;margin-top:-58px;margin-left:28px;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 16H17V13.5L14 8L10 13L6 8L3 13.5V16Z" fill="rgba(201,151,10,0.5)" stroke="#C9970A" stroke-width="1.3" stroke-linejoin="round"/><circle cx="5" cy="7" r="1.5" fill="#C9970A"/><circle cx="10" cy="5.5" r="1.5" fill="#C9970A"/><circle cx="15" cy="7" r="1.5" fill="#C9970A"/></svg></div>
+              <div class="podium-name" style="font-size:0.7rem;font-weight:900;">Riya S.</div>
+              <div class="podium-xp">2,840 XP</div>
+              <div class="podium-block p1-block">1</div>
+            </div>
+            <!-- 3rd -->
+            <div class="podium-col">
+              <div class="podium-avatar" style="background:linear-gradient(135deg,#CD7F32,#A0522D);width:36px;height:36px;font-size:0.75rem;">VM</div>
+              <div class="podium-name">Vijay M.</div>
+              <div class="podium-xp">1,950 XP</div>
+              <div class="podium-block p3-block">3</div>
+            </div>
+          </div>
+
+          <!-- Rank List -->
+          <div class="rank-list">
+
+            <div class="rank-row">
+              <div class="rank-badge top">4</div>
+              <div class="rank-avatar" style="background:linear-gradient(135deg,#C1440E,#9A3409);">SP</div>
+              <div class="rank-info">
+                <div class="rank-name">Sneha P.</div>
+                <div class="rank-state">Pune · <svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle"><path d="M5.5 0.8C5.5 0.8 8.5 3.5 8 6C7.7 7.8 6.7 9.5 5.5 9.5C4.3 9.5 3.3 7.8 3 6C2.7 4.3 3.5 3 4 2.3C3.9 3.6 4.6 4.3 5.5 4C5.2 2.2 5.5 0.8 5.5 0.8Z" fill="#C1440E"/></svg> 12 streak</div>
+              </div>
+              <div class="rank-xp"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle;margin-right:2px"><path d="M5.5 1L6.8 4H10.5L7.5 6L8.5 9.5L5.5 7.5L2.5 9.5L3.5 6L0.5 4H4.2L5.5 1Z" fill="#C9970A"/></svg> 1,820</div>
+            </div>
+
+            <div class="rank-row">
+              <div class="rank-badge top">5</div>
+              <div class="rank-avatar" style="background:linear-gradient(135deg,#2D6A4F,#1B4332);">NK</div>
+              <div class="rank-info">
+                <div class="rank-name">Nikhil K.</div>
+                <div class="rank-state">Nashik · <svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle"><path d="M5.5 0.8C5.5 0.8 8.5 3.5 8 6C7.7 7.8 6.7 9.5 5.5 9.5C4.3 9.5 3.3 7.8 3 6C2.7 4.3 3.5 3 4 2.3C3.9 3.6 4.6 4.3 5.5 4C5.2 2.2 5.5 0.8 5.5 0.8Z" fill="#C1440E"/></svg> 8 streak</div>
+              </div>
+              <div class="rank-xp"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle;margin-right:2px"><path d="M5.5 1L6.8 4H10.5L7.5 6L8.5 9.5L5.5 7.5L2.5 9.5L3.5 6L0.5 4H4.2L5.5 1Z" fill="#C9970A"/></svg> 1,720</div>
+            </div>
+
+            <div class="rank-row">
+              <div class="rank-badge top">8</div>
+              <div class="rank-avatar" style="background:linear-gradient(135deg,#D4843A,#AA6520);">PR</div>
+              <div class="rank-info">
+                <div class="rank-name">Preethi R.</div>
+                <div class="rank-state">Mumbai · <svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle"><path d="M5.5 0.8C5.5 0.8 8.5 3.5 8 6C7.7 7.8 6.7 9.5 5.5 9.5C4.3 9.5 3.3 7.8 3 6C2.7 4.3 3.5 3 4 2.3C3.9 3.6 4.6 4.3 5.5 4C5.2 2.2 5.5 0.8 5.5 0.8Z" fill="#C1440E"/></svg> 6 streak</div>
+              </div>
+              <div class="rank-xp"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle;margin-right:2px"><path d="M5.5 1L6.8 4H10.5L7.5 6L8.5 9.5L5.5 7.5L2.5 9.5L3.5 6L0.5 4H4.2L5.5 1Z" fill="#C9970A"/></svg> 1,580</div>
+            </div>
+
+            <!-- YOU -->
+            <div class="rank-row you">
+              <div class="rank-badge top">12</div>
+              <div class="rank-avatar" style="background:linear-gradient(135deg,#C1440E,#9A3409);">PD</div>
+              <div class="rank-info">
+                <div class="rank-name" style="color:#9A3409;">Priya D. (You)</div>
+                <div class="rank-state">Nagpur · <svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle"><path d="M5.5 0.8C5.5 0.8 8.5 3.5 8 6C7.7 7.8 6.7 9.5 5.5 9.5C4.3 9.5 3.3 7.8 3 6C2.7 4.3 3.5 3 4 2.3C3.9 3.6 4.6 4.3 5.5 4C5.2 2.2 5.5 0.8 5.5 0.8Z" fill="#C1440E"/></svg> 5 streak</div>
+              </div>
+              <div class="rank-xp"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle;margin-right:2px"><path d="M5.5 1L6.8 4H10.5L7.5 6L8.5 9.5L5.5 7.5L2.5 9.5L3.5 6L0.5 4H4.2L5.5 1Z" fill="#C9970A"/></svg> 1,240</div>
+              <div class="you-arrow">↑↑</div>
+            </div>
+
+            <div class="rank-row">
+              <div class="rank-badge mid">15</div>
+              <div class="rank-avatar" style="background:#9E9E9E;">RT</div>
+              <div class="rank-info">
+                <div class="rank-name">Rahul T.</div>
+                <div class="rank-state">Kolhapur</div>
+              </div>
+              <div class="rank-xp" style="color:var(--text-sec);"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="display:inline-block;vertical-align:middle;margin-right:2px"><path d="M5.5 1L6.8 4H10.5L7.5 6L8.5 9.5L5.5 7.5L2.5 9.5L3.5 6L0.5 4H4.2L5.5 1Z" fill="#AD8B78"/></svg> 1,140</div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Nav -->
+          <div class="bottom-nav">
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><path d="M3 9.5L11 3L19 9.5V19C19 19.6 18.6 20 18 20H14V15H8V20H4C3.4 20 3 19.6 3 19V9.5Z"/></svg></div>
+              <span class="nav-label">Home</span>
+            </div>
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><rect x="3" y="3" width="16" height="16" rx="3"/><path d="M7 11H15M7 7H15M7 15H11"/></svg></div>
+              <span class="nav-label">Quiz</span>
+            </div>
+            <div class="nav-item active">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><path d="M11 3L13.5 8.5H19L14.5 12L16 17.5L11 14.5L6 17.5L7.5 12L3 8.5H8.5L11 3Z"/></svg></div>
+              <span class="nav-label">Ranks</span>
+              <div class="nav-active-dot"></div>
+            </div>
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><circle cx="11" cy="8" r="4"/><path d="M3 19C3 15.7 6.6 13 11 13C15.4 13 19 15.7 19 19"/></svg></div>
+              <span class="nav-label">Profile</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCREEN 4 — PROFILE -->
+    <!-- ============================================================ -->
+    <div class="phone-wrap">
+      <span class="screen-label">Screen 4 — Profile</span>
+      <div class="phone-frame">
+        <div class="screen-content">
+
+          <!-- Header -->
+          <div class="s4-header">
+            <div class="s4-avatar-wrap">
+              <div class="s4-avatar">
+                PD
+                <div class="level-badge">LVL 12</div>
+              </div>
+              <div>
+                <div class="s4-name">Priya Deshmukh</div>
+                <div class="s4-title"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.1" stroke-linecap="round" style="display:inline-block;vertical-align:middle;margin-right:3px"><path d="M1.5 11H10.5M6 3L10.5 5.5H1.5L6 3Z"/><rect x="2" y="5.5" width="1.5" height="5.5" rx="0.2"/><rect x="5.25" y="5.5" width="1.5" height="5.5" rx="0.2"/><rect x="8.5" y="5.5" width="1.5" height="5.5" rx="0.2"/></svg> Census Enumerator · Nagpur District</div>
+                <div style="display:flex;gap:6px;margin-top:6px;">
+                  <span style="background:rgba(255,255,255,0.2);border-radius:999px;padding:3px 10px;font-size:0.65rem;font-weight:800;color:#fff;border:1.5px solid rgba(255,255,255,0.4);display:flex;align-items:center;gap:4px;"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 0.8C5.5 0.8 8.5 3.5 8 6C7.7 7.8 6.7 9.5 5.5 9.5C4.3 9.5 3.3 7.8 3 6C2.7 4.3 3.5 3 4 2.3C3.9 3.6 4.6 4.3 5.5 4C5.2 2.2 5.5 0.8 5.5 0.8Z" fill="rgba(255,255,255,0.9)"/></svg> 5 days</span>
+                  <span style="background:rgba(255,255,255,0.2);border-radius:999px;padding:3px 10px;font-size:0.65rem;font-weight:800;color:#fff;border:1.5px solid rgba(255,255,255,0.4);display:flex;align-items:center;gap:4px;"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M5.5 1L6.8 4H10.5L7.5 6L8.5 9.5L5.5 7.5L2.5 9.5L3.5 6L0.5 4H4.2L5.5 1Z" fill="rgba(255,255,255,0.9)"/></svg> 1,240 XP</span>
+                </div>
+              </div>
+            </div>
+            <div class="xp-bar-wrap">
+              <div class="xp-bar-labels">
+                <span>Level 12 Progress</span>
+                <span>1,240 / 1,500 XP</span>
+              </div>
+              <div class="xp-bar-track">
+                <div class="xp-bar-fill" style="width:83%;"></div>
+              </div>
+              <div style="font-size:0.65rem;color:rgba(255,255,255,0.75);font-weight:600;margin-top:4px;">260 XP to Level 13! Keep going 🚀</div>
+            </div>
+          </div>
+
+          <div class="s4-body">
+
+            <!-- Stats Grid -->
+            <div class="sec-title">MY STATS</div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="9" fill="rgba(45,106,79,0.1)" stroke="#2D6A4F" stroke-width="1.5"/><path d="M9.5 14L12.5 17.5L18.5 10" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div class="stat-num" style="color:#C1440E;">247</div>
+                <div class="stat-label">Questions Done</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="9" stroke="#D4843A" stroke-width="1.5"/><circle cx="14" cy="14" r="5.5" stroke="#D4843A" stroke-width="1.5"/><circle cx="14" cy="14" r="2.5" fill="#C1440E"/></svg></div>
+                <div class="stat-num" style="color:#2D6A4F;">84%</div>
+                <div class="stat-label">Accuracy</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="16" r="9" stroke="#2D6A4F" stroke-width="1.5"/><path d="M14 10V16L17 19" stroke="#2D6A4F" stroke-width="1.8" stroke-linecap="round"/><path d="M11 5H17M14 5V8" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+                <div class="stat-num" style="color:#D4843A;">14.2s</div>
+                <div class="stat-label">Avg. Speed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="7" width="20" height="17" rx="2.5" stroke="#C9970A" stroke-width="1.5"/><path d="M4 12H24" stroke="#C9970A" stroke-width="1.5"/><path d="M9 5V9M19 5V9" stroke="#C9970A" stroke-width="1.5" stroke-linecap="round"/><circle cx="9.5" cy="17" r="1.2" fill="#C9970A"/><circle cx="14" cy="17" r="1.2" fill="#C9970A"/><circle cx="18.5" cy="17" r="1.2" fill="#C9970A"/></svg></div>
+                <div class="stat-num" style="color:#C9970A;">18</div>
+                <div class="stat-label">Days Active</div>
+              </div>
+            </div>
+
+            <!-- Streak Feature Card -->
+            <div class="streak-feature">
+              <div class="streak-flame"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 3C18 3 28 11 26.5 20C25.5 26 22 30.5 18 31.5C14 30.5 10.5 26 9.5 20C8.5 14 12 8.5 14.5 6C14 10 16.5 12.5 19 12C18 8 18 3 18 3Z" fill="#C1440E"/></svg></div>
+              <div class="streak-text">
+                <div class="streak-num">5 Day Streak!</div>
+                <div class="streak-sub">Don't break the chain</div>
+                <div class="streak-motiv">"Champions train every single day"</div>
+              </div>
+              <div style="margin-left:auto;text-align:center;">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="21" r="8" fill="rgba(201,151,10,0.2)" stroke="#C9970A" stroke-width="1.8"/><path d="M13 11L16 6L19 11" stroke="#C9970A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M14 18.5L16 22L18 18.5" stroke="#9A3409" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div style="font-size:0.6rem;font-weight:800;color:#7A3008;text-transform:uppercase;">Bonus<br>Active</div>
+              </div>
+            </div>
+
+            <!-- Badges Grid -->
+            <div class="sec-title">BADGES</div>
+            <div class="badges-grid">
+              <div class="badge-card unlocked">
+                <div class="badge-emoji"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="17" r="7" fill="rgba(201,151,10,0.15)" stroke="#C9970A" stroke-width="1.5"/><path d="M11 9L14 5L17 9" stroke="#C9970A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M14 13L15.2 16H18L15.8 17.4L16.5 20.5L14 19L11.5 20.5L12.2 17.4L10 16H12.8L14 13Z" fill="#C9970A"/></svg></div>
+                <div class="badge-name">First Win</div>
+              </div>
+              <div class="badge-card unlocked">
+                <div class="badge-emoji"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3C14 3 20 8.5 19 15C18.4 19 16 23 14 23C12 23 9.6 19 9 15C8.4 11 10 7.5 11.5 6C11 9 12.5 11 14 10.5C13.5 7.5 14 3 14 3Z" fill="#C1440E"/></svg></div>
+                <div class="badge-name">5-Streak</div>
+              </div>
+              <div class="badge-card unlocked">
+                <div class="badge-emoji"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M16 4L10 15H16L10.5 25L22 12H16L16 4Z" fill="#D4843A"/></svg></div>
+                <div class="badge-name">Speedster</div>
+              </div>
+              <div class="badge-card unlocked">
+                <div class="badge-emoji"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 22C14 22 8 20 6 21.5V9C8 7.5 14 9.5 14 9.5C14 9.5 20 7.5 22 9V21.5C20 20 14 22 14 22Z" stroke="#7A5C4A" stroke-width="1.6" stroke-linejoin="round" fill="rgba(122,92,74,0.1)"/><line x1="14" y1="9.5" x2="14" y2="22" stroke="#7A5C4A" stroke-width="1.2"/></svg></div>
+                <div class="badge-name">Chapter 1</div>
+              </div>
+              <div class="badge-card locked">
+                <div class="badge-emoji"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 22H23V19L19.5 11L14 18L8.5 11L5 19V22Z" fill="rgba(201,151,10,0.2)" stroke="#C9970A" stroke-width="1.5" stroke-linejoin="round"/><circle cx="7.5" cy="9.5" r="2" fill="#C9970A"/><circle cx="14" cy="7" r="2" fill="#C9970A"/><circle cx="20.5" cy="9.5" r="2" fill="#C9970A"/></svg></div>
+                <div class="badge-name">Top 10</div>
+                <div class="lock-progress"><div class="lock-prog-fill" style="width:60%;background:#C1440E;"></div></div>
+              </div>
+              <div class="badge-card locked">
+                <div class="badge-emoji"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L22 12L14 24L6 12L14 4Z" fill="rgba(45,106,79,0.15)" stroke="#2D6A4F" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 12H22M14 4L9.5 12M14 4L18.5 12" stroke="#2D6A4F" stroke-width="1" opacity="0.4"/></svg></div>
+                <div class="badge-name">Perfect 10</div>
+                <div class="lock-progress"><div class="lock-prog-fill" style="width:30%;background:#2D6A4F;"></div></div>
+              </div>
+              <div class="badge-card locked">
+                <div class="badge-emoji"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L17 11H24L18.5 15L20.5 22.5L14 18.5L7.5 22.5L9.5 15L4 11H11L14 4Z" fill="rgba(201,151,10,0.2)" stroke="#C9970A" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+                <div class="badge-name">Legend</div>
+                <div class="lock-progress"><div class="lock-prog-fill" style="width:15%;background:#C9970A;"></div></div>
+              </div>
+              <div class="badge-card locked">
+                <div class="badge-emoji"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4C14 4 21 7 21 14C21 18.5 18.5 22.5 14 24.5C9.5 22.5 7 18.5 7 14C7 7 14 4 14 4Z" stroke="#C1440E" stroke-width="1.5" fill="rgba(193,68,14,0.1)"/><circle cx="14" cy="12" r="3" fill="#C1440E" opacity="0.8"/><path d="M11 19L14 24.5L17 19" stroke="#C1440E" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></div>
+                <div class="badge-name">30-Streak</div>
+                <div class="lock-progress"><div class="lock-prog-fill" style="width:17%;background:#D4843A;"></div></div>
+              </div>
+            </div>
+
+            <!-- Share Progress -->
+            <div class="share-section">
+              <div class="share-title"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="display:inline-block;vertical-align:middle;margin-right:4px"><path d="M6.5 2L7.5 4.8H10.5L8 6.5L9 10L6.5 8.3L4 10L5 6.5L2.5 4.8H5.5L6.5 2Z" fill="#C9970A"/></svg> Share Your Progress</div>
+              <div class="share-buttons">
+                <div class="share-btn share-wa"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" style="display:inline-block;vertical-align:middle;margin-right:3px"><path d="M9.5 6.5C9.5 8.2 8.1 9.5 6.5 9.5C5.8 9.5 5.1 9.3 4.5 8.9L2 9.5L2.6 7C2.2 6.4 2 5.7 2 6.5C2 4.8 3.3 3.5 5.5 3.5"/><path d="M9.5 3C9.5 4 8.5 4.8 7.3 4.8" fill="none"/></svg> WhatsApp</div>
+                <div class="share-btn share-tw"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:3px"><path d="M5.5 1.5L8.5 4.5M5.5 1.5L2.5 4.5M5.5 1.5V9M1.5 9.5H9.5"/></svg> Share</div>
+                <div class="share-btn share-copy"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="#7A5C4A" stroke-width="1.2" stroke-linecap="round" style="display:inline-block;vertical-align:middle;margin-right:3px"><rect x="3" y="3" width="7" height="7" rx="1"/><path d="M3 3V2C3 1.4 3.4 1 4 1H9C9.6 1 10 1.4 10 2V8C10 8.6 9.6 9 9 9H8"/></svg> Copy</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Nav -->
+          <div class="bottom-nav">
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><path d="M3 9.5L11 3L19 9.5V19C19 19.6 18.6 20 18 20H14V15H8V20H4C3.4 20 3 19.6 3 19V9.5Z"/></svg></div>
+              <span class="nav-label">Home</span>
+            </div>
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><rect x="3" y="3" width="16" height="16" rx="3"/><path d="M7 11H15M7 7H15M7 15H11"/></svg></div>
+              <span class="nav-label">Quiz</span>
+            </div>
+            <div class="nav-item">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><path d="M11 3L13.5 8.5H19L14.5 12L16 17.5L11 14.5L6 17.5L7.5 12L3 8.5H8.5L11 3Z"/></svg></div>
+              <span class="nav-label">Ranks</span>
+            </div>
+            <div class="nav-item active">
+              <div class="nav-icon"><svg viewBox="0 0 22 22"><circle cx="11" cy="8" r="4"/><path d="M3 19C3 15.7 6.6 13 11 13C15.4 13 19 15.7 19 19"/></svg></div>
+              <span class="nav-label">Profile</span>
+              <div class="nav-active-dot"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END SCREEN 4 -->
+
+  </div><!-- end screens-grid -->
+
+</body>
+</html>

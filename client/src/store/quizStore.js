@@ -38,5 +38,8 @@ export const useQuizStore = create((set, get) => ({
     return data;
   },
 
+  // Load a pre-started session (used by challenge quiz — bypasses the /quiz/start endpoint)
+  loadSession: (sessionId, questions) => set({ sessionId, questions, currentIndex: 0, answers: [], result: null }),
+
   reset: () => set({ sessionId: null, questions: [], currentIndex: 0, answers: [], result: null }),
 }));

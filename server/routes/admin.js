@@ -138,6 +138,27 @@ router.patch('/users/:id/role', handle((req) => {
   return { success: true };
 }));
 
+// DELETE /api/admin/users/:id — delete a non-admin user and all their data
+router.delete('/users/:id', handle((req) => {
+  const db = getDb();
+  const userId = Number(req.params.id);
+
+  const target = db.prepare('SELECT id, role FROM users WHERE id = ?').get(userId);
+  if (!target) throw Object.assign(new Error('User not found'), { status: 404 });
+  if (target.role === 'admin') throw Object.assign(new Error('Cannot delete admin users'), { status: 403 });
+
+  db.prepare('DELETE FROM question_flags WHERE user_id = ?').run(userId);
+  db.prepare('DELETE FROM user_badges WHERE user_id = ?').run(userId);
+  db.prepare('DELETE FROM daily_scores WHERE user_id = ?').run(userId);
+  db.prepare('DELETE FROM challenge_participants WHERE user_id = ?').run(userId);
+  db.prepare('DELETE FROM challenges WHERE creator_id = ?').run(userId);
+  db.prepare('DELETE FROM quiz_answers WHERE session_id IN (SELECT id FROM quiz_sessions WHERE user_id = ?)').run(userId);
+  db.prepare('DELETE FROM quiz_sessions WHERE user_id = ?').run(userId);
+  db.prepare('DELETE FROM users WHERE id = ?').run(userId);
+
+  return { success: true };
+}));
+
 // GET /api/admin/stats — aggregate stats
 router.get('/stats', handle(() => {
   const db = getDb();

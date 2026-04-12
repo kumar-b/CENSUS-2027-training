@@ -22,6 +22,11 @@ import AdminBadgeManager from './pages/admin/AdminBadgeManager';
 import MyFlagsPage from './pages/MyFlagsPage';
 import AdminFlagList from './pages/admin/AdminFlagList';
 import AdminFlagDetail from './pages/admin/AdminFlagDetail';
+import ChallengeLandingPage from './pages/challenge/ChallengeLandingPage';
+import CreateChallengePage from './pages/challenge/CreateChallengePage';
+import JoinChallengePage from './pages/challenge/JoinChallengePage';
+import ChallengeQuizPage from './pages/challenge/ChallengeQuizPage';
+import ChallengeResultsPage from './pages/challenge/ChallengeResultsPage';
 
 function Layout({ children }) {
   const { user } = useAuthStore();
@@ -85,6 +90,13 @@ export default function App() {
           <Route path="/leaderboard" element={<ProtectedRoute><LeaderboardPage /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
           <Route path="/flags/mine" element={<ProtectedRoute><MyFlagsPage /></ProtectedRoute>} />
+
+          <Route path="/challenge" element={<ProtectedRoute><ChallengeLandingPage /></ProtectedRoute>} />
+          <Route path="/challenge/create" element={<ProtectedRoute><CreateChallengePage /></ProtectedRoute>} />
+          <Route path="/challenge/join" element={<ProtectedRoute><JoinChallengePage /></ProtectedRoute>} />
+          <Route path="/challenge/:code/quiz" element={<ProtectedRoute><ChallengeQuizPage /></ProtectedRoute>} />
+          <Route path="/challenge/:code/results" element={<ProtectedRoute><ChallengeResultsPage /></ProtectedRoute>} />
+          <Route path="/challenge/:code" element={<ProtectedRoute><JoinChallengePage /></ProtectedRoute>} />
 
           <Route path="/admin" element={<ProtectedRoute adminOnly><AdminDashboard /></ProtectedRoute>} />
           <Route path="/admin/users" element={<ProtectedRoute adminOnly><AdminUserList /></ProtectedRoute>} />

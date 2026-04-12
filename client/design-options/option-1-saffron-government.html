@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option 1 — Saffron & Government</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans', sans-serif; background: #F0EDE8; padding: 32px 16px; min-height: 100vh; }
+h1.page-title { text-align: center; font-size: 22px; font-weight: 700; color: #2C1A00; margin-bottom: 8px; letter-spacing: 0.3px; }
+p.page-sub { text-align: center; color: #7A6A55; font-size: 14px; margin-bottom: 32px; }
+.screens { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+.screen-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.screen-label { font-size: 12px; font-weight: 600; color: #7A6A55; text-transform: uppercase; letter-spacing: 1px; }
+.phone { width: 360px; background: #FAFAF8; border-radius: 36px; box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; border: 6px solid #2C1A00; }
+.phone-inner { min-height: 720px; overflow-y: auto; position: relative; }
+
+/* ---- COLORS ---- */
+:root {
+  --saffron: #FF9933;
+  --saffron-dark: #E07800;
+  --saffron-light: #FFF3E0;
+  --green: #138808;
+  --green-light: #E8F5E2;
+  --navy: #000080;
+  --navy-light: #E8E8F5;
+  --bg: #FAFAF8;
+  --card: #FFFFFF;
+  --text: #1A1A1A;
+  --text2: #555555;
+  --border: #E8E0D4;
+}
+
+/* ---- SHARED ---- */
+.bottom-nav { display: flex; background: #fff; border-top: 2px solid var(--border); padding: 8px 0 10px; }
+.nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11px; color: #888; cursor: pointer; padding: 2px 0; }
+.nav-item.active { color: var(--saffron); }
+.nav-icon { font-size: 20px; }
+.badge-pill { display: inline-flex; align-items: center; gap: 4px; background: var(--saffron-light); color: var(--saffron-dark); font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 20px; border: 1px solid #FFCC80; }
+.section-title { font-size: 11px; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px; }
+.card { background: var(--card); border-radius: 14px; border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+
+/* ---- SCREEN 1: LOGIN ---- */
+.login-screen { padding: 40px 20px 24px; display: flex; flex-direction: column; align-items: center; }
+.chakra { width: 64px; height: 64px; margin-bottom: 12px; }
+.app-title { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 30px; font-weight: 700; color: var(--saffron); line-height: 1.1; margin-bottom: 4px; }
+.app-sub { font-size: 12px; color: var(--text2); margin-bottom: 28px; text-align: center; }
+.login-card { width: 100%; background: var(--card); border-radius: 18px; border: 1px solid var(--border); box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 22px; }
+.field-label { font-size: 12px; font-weight: 600; color: var(--text2); margin-bottom: 5px; }
+.field-input { width: 100%; border: 1.5px solid var(--border); border-radius: 10px; padding: 10px 14px; font-size: 14px; color: var(--text); background: var(--bg); margin-bottom: 14px; outline: none; }
+.field-input:focus { border-color: var(--saffron); }
+.btn-primary { width: 100%; background: var(--saffron); color: #fff; border: none; border-radius: 10px; padding: 12px; font-size: 15px; font-weight: 700; cursor: pointer; box-shadow: 0 3px 0 var(--saffron-dark); margin-top: 4px; letter-spacing: 0.3px; }
+.login-footer { text-align: center; margin-top: 16px; font-size: 13px; color: var(--text2); }
+.login-footer a { color: var(--navy); font-weight: 600; }
+.lang-toggle { position: absolute; top: 14px; right: 14px; display: flex; background: #fff; border: 1.5px solid var(--border); border-radius: 20px; overflow: hidden; font-size: 12px; }
+.lang-btn { padding: 4px 10px; cursor: pointer; }
+.lang-btn.active { background: var(--saffron); color: #fff; font-weight: 700; }
+
+/* ---- TRICOLOR STRIPE ---- */
+.tricolor-stripe { height: 5px; background: linear-gradient(to right, #FF9933 33.33%, #FFFFFF 33.33% 66.66%, #138808 66.66%); }
+
+/* ---- SCREEN 2: HOME ---- */
+.home-header { padding: 16px 16px 12px; background: #fff; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-start; }
+.greeting-sub { font-size: 12px; color: var(--text2); }
+.greeting-name { font-size: 18px; font-weight: 700; color: var(--text); }
+.home-body { padding: 14px 14px 0; }
+.quiz-card { display: flex; align-items: center; gap: 12px; padding: 14px 14px; background: var(--card); border-radius: 12px; border: 1px solid var(--border); margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); border-left-width: 4px; cursor: pointer; }
+.quiz-card.saffron { border-left-color: var(--saffron); }
+.quiz-card.green { border-left-color: var(--green); }
+.quiz-card.navy { border-left-color: var(--navy); }
+.quiz-icon { font-size: 28px; width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+.quiz-card.saffron .quiz-icon { background: var(--saffron-light); }
+.quiz-card.green .quiz-icon { background: var(--green-light); }
+.quiz-card.navy .quiz-icon { background: var(--navy-light); }
+.quiz-title { font-size: 14px; font-weight: 700; color: var(--text); }
+.quiz-desc { font-size: 12px; color: var(--text2); margin-top: 1px; }
+.quiz-arrow { margin-left: auto; color: #CCC; font-size: 18px; }
+.badge-chip { display: inline-flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; font-size: 12px; font-weight: 500; color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-right: 6px; margin-bottom: 6px; }
+
+/* ---- SCREEN 3: LEADERBOARD ---- */
+.lb-header { padding: 14px 16px 10px; background: #fff; border-bottom: 1px solid var(--border); }
+.lb-title { font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+.tab-row { display: flex; background: #F5F0EB; border-radius: 10px; padding: 3px; }
+.tab { flex: 1; text-align: center; padding: 7px; font-size: 13px; font-weight: 600; border-radius: 8px; color: #888; cursor: pointer; }
+.tab.active { background: #fff; color: var(--saffron); box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+.lb-body { padding: 12px 14px; }
+.rank-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 10px; margin-bottom: 6px; border: 1px solid var(--border); background: #fff; }
+.rank-row.me { background: #FFF8EE; border-color: #FFCC80; }
+.rank-num { font-size: 16px; font-weight: 700; width: 32px; text-align: center; }
+.rank-info { flex: 1; min-width: 0; }
+.rank-name { font-size: 13px; font-weight: 600; color: var(--text); }
+.rank-role { font-size: 11px; color: var(--text2); }
+.rank-pts { font-weight: 700; color: var(--saffron-dark); font-size: 14px; }
+
+/* ---- SCREEN 4: PROFILE ---- */
+.profile-header { background: linear-gradient(135deg, var(--saffron) 0%, #FF6B00 100%); padding: 20px 16px 16px; color: #fff; }
+.profile-avatar-row { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+.avatar { width: 60px; height: 60px; border-radius: 50%; background: rgba(255,255,255,0.3); border: 2.5px solid rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; font-size: 24px; }
+.profile-name { font-size: 18px; font-weight: 700; }
+.profile-role { font-size: 12px; opacity: 0.9; }
+.profile-district { font-size: 11px; opacity: 0.7; }
+.profile-pts { font-size: 28px; font-weight: 700; }
+.profile-pts-label { font-size: 11px; opacity: 0.8; }
+.stats-row { display: flex; gap: 8px; padding: 12px 14px; }
+.stat-card { flex: 1; background: var(--card); border-radius: 10px; border: 1px solid var(--border); padding: 10px 6px; text-align: center; }
+.stat-val { font-size: 18px; font-weight: 700; color: var(--saffron-dark); }
+.stat-label { font-size: 10px; color: var(--text2); margin-top: 2px; }
+.profile-body { padding: 0 14px 14px; }
+.badge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.badge-card { background: var(--card); border-radius: 10px; border: 1px solid var(--border); padding: 10px; display: flex; align-items: flex-start; gap: 8px; }
+.badge-emoji { font-size: 24px; }
+.badge-name { font-size: 12px; font-weight: 600; color: var(--text); }
+.badge-desc { font-size: 10px; color: var(--text2); }
+.btn-outline-saffron { width: 100%; background: transparent; color: var(--saffron-dark); border: 2px solid var(--saffron); border-radius: 10px; padding: 11px; font-size: 14px; font-weight: 600; cursor: pointer; margin-bottom: 12px; }
+.activity-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #fff; border-radius: 10px; border: 1px solid var(--border); margin-bottom: 6px; }
+.activity-mode { font-size: 13px; font-weight: 600; color: var(--text); }
+.activity-date { font-size: 11px; color: var(--text2); }
+.activity-score { font-size: 14px; font-weight: 700; color: var(--saffron-dark); }
+</style>
+</head>
+<body>
+<h1 class="page-title">Option 1 — Saffron & Government</h1>
+<p class="page-sub">Official GOI style · Institutional · Tricolor palette · Noto Sans</p>
+
+<div class="screens">
+
+  <!-- SCREEN 1: LOGIN -->
+  <div class="screen-wrap">
+    <div class="screen-label">Login</div>
+    <div class="phone">
+      <div class="tricolor-stripe"></div>
+      <div class="phone-inner" style="min-height:720px">
+        <div class="lang-toggle">
+          <span class="lang-btn active">EN</span>
+          <span class="lang-btn">हि</span>
+        </div>
+        <div class="login-screen">
+          <svg class="chakra" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="28" stroke="#000080" stroke-width="3" fill="none"/>
+            <circle cx="32" cy="32" r="4" fill="#000080"/>
+            <circle cx="32" cy="32" r="20" stroke="#000080" stroke-width="1.5" fill="none"/>
+            <g stroke="#000080" stroke-width="2">
+              <line x1="32" y1="12" x2="32" y2="52"/>
+              <line x1="12" y1="32" x2="52" y2="32"/>
+              <line x1="18.3" y1="18.3" x2="45.7" y2="45.7"/>
+              <line x1="45.7" y1="18.3" x2="18.3" y2="45.7"/>
+              <line x1="12.6" y1="24" x2="51.4" y2="40"/>
+              <line x1="12.6" y1="40" x2="51.4" y2="24"/>
+              <line x1="24" y1="12.6" x2="40" y2="51.4"/>
+              <line x1="40" y1="12.6" x2="24" y2="51.4"/>
+            </g>
+            <circle cx="32" cy="12" r="2" fill="#000080"/>
+            <circle cx="32" cy="52" r="2" fill="#000080"/>
+            <circle cx="12" cy="32" r="2" fill="#000080"/>
+            <circle cx="52" cy="32" r="2" fill="#000080"/>
+          </svg>
+          <div class="app-title">जनगणना 2027</div>
+          <div class="app-sub">Census Training Platform · Raipur District, CG</div>
+          <div class="login-card">
+            <div class="field-label">Mobile Number</div>
+            <input class="field-input" type="tel" placeholder="10-digit mobile" value="9876543210">
+            <div class="field-label">Password</div>
+            <input class="field-input" type="password" placeholder="Enter password" value="••••••••">
+            <button class="btn-primary">Login / लॉगिन</button>
+          </div>
+          <div class="login-footer">
+            New here? <a href="#">Register / पंजीकरण करें</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: HOME -->
+  <div class="screen-wrap">
+    <div class="screen-label">Home</div>
+    <div class="phone">
+      <div class="tricolor-stripe"></div>
+      <div class="phone-inner" style="min-height:720px; display:flex; flex-direction:column;">
+        <div class="home-header">
+          <div>
+            <div class="greeting-sub">Welcome back / स्वागत है,</div>
+            <div class="greeting-name">Ramesh Kumar</div>
+          </div>
+          <div class="badge-pill">⭐ 1,240 pts</div>
+        </div>
+        <div class="home-body" style="flex:1; overflow-y:auto;">
+          <div style="margin-bottom:14px;">
+            <div class="section-title">Quiz Modes</div>
+            <div class="quiz-card saffron">
+              <div class="quiz-icon">🌟</div>
+              <div>
+                <div class="quiz-title">Daily Quiz · आज का क्विज़</div>
+                <div class="quiz-desc">10 random questions · 60s each</div>
+              </div>
+              <div class="quiz-arrow">›</div>
+            </div>
+            <div class="quiz-card green">
+              <div class="quiz-icon">⏱</div>
+              <div>
+                <div class="quiz-title">Timed Quiz · समयबद्ध</div>
+                <div class="quiz-desc">15 questions · 15 min · by chapter</div>
+              </div>
+              <div class="quiz-arrow">›</div>
+            </div>
+            <div class="quiz-card navy">
+              <div class="quiz-icon">📖</div>
+              <div>
+                <div class="quiz-title">Practice · अभ्यास</div>
+                <div class="quiz-desc">All questions · no timer · resumable</div>
+              </div>
+              <div class="quiz-arrow">›</div>
+            </div>
+          </div>
+          <div>
+            <div class="section-title">Recent Badges</div>
+            <div>
+              <span class="badge-chip">🎯 First Quiz</span>
+              <span class="badge-chip">🔥 3-Day Streak</span>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="nav-item active"><span class="nav-icon">🏠</span>Home</div>
+          <div class="nav-item"><span class="nav-icon">🏆</span>Leaderboard</div>
+          <div class="nav-item"><span class="nav-icon">👤</span>Profile</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 3: LEADERBOARD -->
+  <div class="screen-wrap">
+    <div class="screen-label">Leaderboard</div>
+    <div class="phone">
+      <div class="tricolor-stripe"></div>
+      <div class="phone-inner" style="min-height:720px; display:flex; flex-direction:column;">
+        <div class="lb-header">
+          <div class="lb-title">Leaderboard · शीर्ष</div>
+          <div class="tab-row">
+            <div class="tab active">Daily · आज</div>
+            <div class="tab">Overall · कुल</div>
+          </div>
+        </div>
+        <div class="lb-body" style="flex:1;">
+          <div class="rank-row">
+            <div class="rank-num">🥇</div>
+            <div class="rank-info"><div class="rank-name">Sunita Verma</div><div class="rank-role">Enumerator</div></div>
+            <div class="rank-pts">320 pts</div>
+          </div>
+          <div class="rank-row">
+            <div class="rank-num">🥈</div>
+            <div class="rank-info"><div class="rank-name">Mahesh Sahu</div><div class="rank-role">Supervisor</div></div>
+            <div class="rank-pts">285 pts</div>
+          </div>
+          <div class="rank-row">
+            <div class="rank-num">🥉</div>
+            <div class="rank-info"><div class="rank-name">Priya Tiwari</div><div class="rank-role">Enumerator</div></div>
+            <div class="rank-pts">260 pts</div>
+          </div>
+          <div class="rank-row">
+            <div class="rank-num" style="color:#999; font-size:13px">#4</div>
+            <div class="rank-info"><div class="rank-name">Arun Patel</div><div class="rank-role">Supervisor</div></div>
+            <div class="rank-pts" style="color:#777">240 pts</div>
+          </div>
+          <div class="rank-row">
+            <div class="rank-num" style="color:#999; font-size:13px">#5</div>
+            <div class="rank-info"><div class="rank-name">Kavita Sharma</div><div class="rank-role">Enumerator</div></div>
+            <div class="rank-pts" style="color:#777">215 pts</div>
+          </div>
+          <div style="margin-top: 10px; padding: 0 2px;">
+            <div class="rank-row me">
+              <div class="rank-num" style="color: var(--saffron-dark); font-size:13px">#12</div>
+              <div class="rank-info"><div class="rank-name">Ramesh Kumar <span style="font-size:11px; color:var(--saffron); font-weight:400">(You)</span></div><div class="rank-role">Enumerator</div></div>
+              <div class="rank-pts">160 pts</div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="nav-item"><span class="nav-icon">🏠</span>Home</div>
+          <div class="nav-item active"><span class="nav-icon">🏆</span>Leaderboard</div>
+          <div class="nav-item"><span class="nav-icon">👤</span>Profile</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 4: PROFILE -->
+  <div class="screen-wrap">
+    <div class="screen-label">Profile</div>
+    <div class="phone">
+      <div class="tricolor-stripe"></div>
+      <div class="phone-inner" style="min-height:720px; display:flex; flex-direction:column;">
+        <div class="profile-header">
+          <div class="profile-avatar-row">
+            <div class="avatar">👤</div>
+            <div style="flex:1">
+              <div class="profile-name">Ramesh Kumar</div>
+              <div class="profile-role">Enumerator · Ward 12</div>
+              <div class="profile-district">Raipur District, Chhattisgarh</div>
+            </div>
+            <div style="text-align:right">
+              <div class="profile-pts">1,240</div>
+              <div class="profile-pts-label">Total Points</div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-row">
+          <div class="stat-card"><div class="stat-val">1,240</div><div class="stat-label">Points</div></div>
+          <div class="stat-card"><div class="stat-val">34</div><div class="stat-label">Quizzes</div></div>
+          <div class="stat-card"><div class="stat-val">5</div><div class="stat-label">Badges</div></div>
+        </div>
+        <div class="profile-body" style="flex:1; overflow-y:auto;">
+          <div class="section-title">Badges / बैज</div>
+          <div class="badge-grid">
+            <div class="badge-card"><span class="badge-emoji">🎯</span><div><div class="badge-name">First Quiz</div><div class="badge-desc">Completed first quiz</div></div></div>
+            <div class="badge-card"><span class="badge-emoji">🔥</span><div><div class="badge-name">On Fire</div><div class="badge-desc">3-day streak</div></div></div>
+            <div class="badge-card"><span class="badge-emoji">📚</span><div><div class="badge-name">Scholar</div><div class="badge-desc">All chapters done</div></div></div>
+            <div class="badge-card"><span class="badge-emoji">🏅</span><div><div class="badge-name">Top Scorer</div><div class="badge-desc">Ranked #1 daily</div></div></div>
+          </div>
+          <button class="btn-outline-saffron">📜 View Certificate / प्रमाण पत्र</button>
+          <div class="section-title">Recent Activity</div>
+          <div class="activity-row">
+            <div><div class="activity-mode">🌟 Daily Quiz</div><div class="activity-date">Today, 10:30 AM</div></div>
+            <div class="activity-score">200/200</div>
+          </div>
+          <div class="activity-row">
+            <div><div class="activity-mode">⏱ Timed · Ch. 4</div><div class="activity-date">Yesterday</div></div>
+            <div class="activity-score">180/300</div>
+          </div>
+          <div class="activity-row">
+            <div><div class="activity-mode">📖 Practice · Ch. 5</div><div class="activity-date">Apr 9</div></div>
+            <div class="activity-score">240/400</div>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="nav-item"><span class="nav-icon">🏠</span>Home</div>
+          <div class="nav-item"><span class="nav-icon">🏆</span>Leaderboard</div>
+          <div class="nav-item active"><span class="nav-icon">👤</span>Profile</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

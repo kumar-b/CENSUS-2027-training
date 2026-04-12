@@ -3,13 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../store/authStore';
 import api from '../api/client';
-import { StarIcon, ClockIcon, BookIcon } from '../components/Icons';
+import { StarIcon, ClockIcon, BookIcon, UsersIcon } from '../components/Icons';
 import BadgeIcon from '../components/BadgeIcon';
+import LevelProgressBar from '../components/LevelProgressBar';
 
 const MODE_COLORS = {
-  daily:    { top: '#C1440E', topDark: '#9A3409', bg: '#FAE0D3', border: '#C1440E' },
-  timed:    { top: '#D4843A', topDark: '#AA6520', bg: '#FFF0E0', border: '#D4843A' },
-  practice: { top: '#2D6A4F', topDark: '#1B4332', bg: '#E8F5EE', border: '#2D6A4F' },
+  daily:     { top: '#C1440E', topDark: '#9A3409', bg: '#FAE0D3', border: '#C1440E' },
+  timed:     { top: '#D4843A', topDark: '#AA6520', bg: '#FFF0E0', border: '#D4843A' },
+  practice:  { top: '#2D6A4F', topDark: '#1B4332', bg: '#E8F5EE', border: '#2D6A4F' },
+  challenge: { top: '#7C3AED', topDark: '#5B21B6', bg: '#EDE9FE', border: '#7C3AED' },
 };
 
 export default function HomePage() {
@@ -49,6 +51,14 @@ export default function HomePage() {
       badge: 'Anytime',
       onClick: () => navigate('/quiz/practice'),
     },
+    {
+      key: 'challenge',
+      label: t('challengeFriend'),
+      desc: t('challengeFriendDesc'),
+      Icon: UsersIcon,
+      badge: 'NEW',
+      onClick: () => navigate('/challenge'),
+    },
   ];
 
   const initials = user?.name?.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2) || '?';
@@ -57,22 +67,25 @@ export default function HomePage() {
     <div className="px-4 py-5 space-y-5 pb-4">
 
       {/* Greeting banner */}
-      <div className="rounded-2xl p-4 flex items-center justify-between"
+      <div className="rounded-2xl p-4 flex flex-col gap-3"
         style={{ background: 'linear-gradient(135deg, var(--tc-primary) 0%, var(--tc-orange) 100%)', boxShadow: '0 5px 0 var(--tc-primary-dark)' }}>
-        <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-full flex items-center justify-center font-black text-base flex-shrink-0"
-            style={{ background: 'rgba(255,255,255,0.25)', color: '#fff', border: '2.5px solid rgba(255,255,255,0.5)' }}>
-            {initials}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-11 h-11 rounded-full flex items-center justify-center font-black text-base flex-shrink-0"
+              style={{ background: 'rgba(255,255,255,0.25)', color: '#fff', border: '2.5px solid rgba(255,255,255,0.5)' }}>
+              {initials}
+            </div>
+            <div>
+              <p className="text-xs font-bold" style={{ color: 'rgba(255,255,255,0.8)' }}>{t('welcome')}</p>
+              <p className="font-black text-base" style={{ color: '#fff' }}>{user?.name}</p>
+            </div>
           </div>
-          <div>
-            <p className="text-xs font-bold" style={{ color: 'rgba(255,255,255,0.8)' }}>{t('welcome')}</p>
-            <p className="font-black text-base" style={{ color: '#fff' }}>{user?.name}</p>
+          <div className="text-right">
+            <p className="font-black text-2xl" style={{ color: '#fff' }}>{user?.total_points ?? 0}</p>
+            <p className="text-xs font-bold" style={{ color: 'rgba(255,255,255,0.8)' }}>{t('totalPoints')}</p>
           </div>
         </div>
-        <div className="text-right">
-          <p className="font-black text-2xl" style={{ color: '#fff' }}>{user?.total_points ?? 0}</p>
-          <p className="text-xs font-bold" style={{ color: 'rgba(255,255,255,0.8)' }}>{t('totalPoints')}</p>
-        </div>
+        <LevelProgressBar totalPoints={user?.total_points ?? 0} compact />
       </div>
 
       {/* Quiz mode cards */}

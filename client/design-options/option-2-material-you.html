@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option 2 — Material You (M3)</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', system-ui, sans-serif; background: #ECF0FB; padding: 32px 16px; }
+h1.pt { text-align: center; font-size: 22px; font-weight: 700; color: #1A1B1F; margin-bottom: 6px; }
+p.ps { text-align: center; color: #44464F; font-size: 14px; margin-bottom: 32px; }
+.screens { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+.sw { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.sl { font-size: 12px; font-weight: 600; color: #44464F; text-transform: uppercase; letter-spacing: 1px; }
+.phone { width: 360px; background: #F8F9FF; border-radius: 36px; box-shadow: 0 8px 40px rgba(21,101,192,0.15), 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; border: 6px solid #1A1B1F; }
+
+:root {
+  --pri: #1565C0;
+  --pri-c: #D3E4FF;
+  --sec: #5C6BC0;
+  --surf: #F8F9FF;
+  --surf-v: #E1E2EC;
+  --on-s: #1A1B1F;
+  --on-sv: #44464F;
+  --outline: #74767F;
+  --emerald: #10B981;
+  --purple: #7C3AED;
+}
+
+/* Bottom nav */
+.bnav { display: flex; background: #fff; border-top: 1px solid #E1E2EC; padding: 4px 0 10px; }
+.ni { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11px; color: var(--on-sv); padding: 4px 8px; position: relative; }
+.ni.active { color: var(--pri); }
+.ni.active .ni-bg { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 64px; height: 32px; background: var(--pri-c); border-radius: 16px; }
+.ni-icon { font-size: 20px; position: relative; z-index: 1; }
+.ni-label { position: relative; z-index: 1; }
+
+/* LOGIN */
+.login-wrap { padding: 40px 24px 32px; display: flex; flex-direction: column; align-items: center; }
+.m3-illus { width: 80px; height: 80px; margin-bottom: 16px; }
+.m3-title { font-family: 'Google Sans', sans-serif; font-size: 28px; font-weight: 700; color: var(--on-s); margin-bottom: 4px; text-align: center; }
+.m3-sub { font-size: 13px; color: var(--on-sv); margin-bottom: 32px; text-align: center; }
+.m3-field { width: 100%; position: relative; margin-bottom: 16px; }
+.m3-field label { position: absolute; top: 12px; left: 16px; font-size: 14px; color: var(--on-sv); pointer-events: none; transition: all 0.15s; }
+.m3-field input { width: 100%; background: var(--surf-v); border: none; border-bottom: 2px solid var(--outline); border-radius: 4px 4px 0 0; padding: 20px 16px 8px; font-size: 15px; color: var(--on-s); outline: none; }
+.m3-field input:focus { border-bottom-color: var(--pri); }
+.m3-btn { width: 100%; background: var(--pri); color: #fff; border: none; border-radius: 100px; padding: 13px; font-size: 15px; font-weight: 500; letter-spacing: 0.5px; cursor: pointer; margin-top: 4px; }
+.m3-btn-text { width: 100%; background: transparent; color: var(--pri); border: none; border-radius: 100px; padding: 11px; font-size: 14px; font-weight: 500; cursor: pointer; margin-top: 8px; }
+.lang-chip-row { position: absolute; top: 14px; right: 14px; display: flex; gap: 6px; }
+.lang-chip { padding: 4px 12px; border-radius: 100px; font-size: 12px; font-weight: 500; border: 1.5px solid var(--outline); color: var(--on-sv); background: transparent; }
+.lang-chip.active { background: var(--pri-c); border-color: var(--pri); color: var(--pri); }
+
+/* HOME */
+.m3-app-bar { background: var(--surf); padding: 12px 16px; border-bottom: 1px solid #E1E2EC; display: flex; align-items: center; justify-content: space-between; }
+.m3-app-title { font-family: 'Google Sans', sans-serif; font-size: 18px; font-weight: 500; color: var(--on-s); }
+.m3-pts-chip { background: var(--pri-c); color: var(--pri); font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 100px; }
+.home-body { padding: 16px; overflow-y: auto; }
+.welcome-text { font-family: 'Google Sans', sans-serif; font-size: 20px; font-weight: 500; color: var(--on-s); margin-bottom: 14px; }
+.chip-row { display: flex; gap: 8px; margin-bottom: 16px; overflow-x: auto; padding-bottom: 4px; }
+.chip { display: flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 100px; font-size: 13px; font-weight: 500; white-space: nowrap; border: 1.5px solid var(--outline); color: var(--on-sv); background: transparent; }
+.chip.done { background: var(--pri-c); border-color: var(--pri); color: var(--pri); }
+.m3-card { background: #fff; border-radius: 20px; padding: 14px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(21,101,192,0.06); display: flex; align-items: center; gap: 14px; }
+.m3-icon-c { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+.m3-card-title { font-size: 14px; font-weight: 600; color: var(--on-s); }
+.m3-card-sub { font-size: 12px; color: var(--on-sv); margin-top: 1px; }
+.m3-card-arrow { margin-left: auto; color: var(--on-sv); font-size: 18px; }
+.sec-title { font-size: 11px; font-weight: 700; color: var(--on-sv); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px; margin-top: 4px; }
+.badge-scroll { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.badge-m3 { background: #fff; border-radius: 16px; padding: 10px 14px; display: flex; align-items: center; gap: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); white-space: nowrap; }
+
+/* LEADERBOARD */
+.lb-head { padding: 14px 16px 12px; background: var(--surf); border-bottom: 1px solid #E1E2EC; }
+.lb-title { font-family: 'Google Sans', sans-serif; font-size: 20px; font-weight: 500; color: var(--on-s); margin-bottom: 10px; }
+.m3-tabs { display: flex; border-bottom: 2px solid #E1E2EC; }
+.m3-tab { flex: 1; text-align: center; padding: 10px; font-size: 13px; font-weight: 500; color: var(--on-sv); position: relative; cursor: pointer; }
+.m3-tab.active { color: var(--pri); }
+.m3-tab.active::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: var(--pri); border-radius: 2px; }
+.lb-body { padding: 12px 16px; }
+.top3 { display: flex; gap: 6px; margin-bottom: 14px; }
+.podium-card { flex: 1; background: #fff; border-radius: 16px; padding: 10px 6px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.podium-card.first { background: var(--pri-c); }
+.podium-medal { font-size: 22px; }
+.podium-name { font-size: 11px; font-weight: 600; color: var(--on-s); margin-top: 4px; }
+.podium-pts { font-size: 12px; font-weight: 700; color: var(--pri); }
+.m3-list-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #F0F0F5; }
+.m3-list-item.me { background: var(--pri-c); margin: 0 -16px; padding: 10px 16px; border-radius: 0; }
+.rank-circle { width: 32px; height: 32px; border-radius: 50%; background: var(--surf-v); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: var(--on-sv); flex-shrink: 0; }
+.rank-circle.top { background: var(--pri-c); color: var(--pri); }
+.list-name { font-size: 13px; font-weight: 500; color: var(--on-s); }
+.list-role { font-size: 11px; color: var(--on-sv); }
+.list-pts { margin-left: auto; font-size: 14px; font-weight: 700; color: var(--pri); }
+
+/* PROFILE */
+.prof-head { background: linear-gradient(145deg, var(--pri) 0%, #1976D2 100%); padding: 20px 16px; color: #fff; }
+.prof-row { display: flex; align-items: center; gap: 14px; }
+.prof-av { width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,0.25); border: 2px solid rgba(255,255,255,0.6); display: flex; align-items: center; justify-content: center; font-size: 28px; position: relative; }
+.prof-cam { position: absolute; bottom: 0; right: 0; width: 22px; height: 22px; background: var(--pri-c); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; }
+.prof-name { font-family: 'Google Sans', sans-serif; font-size: 18px; font-weight: 500; }
+.prof-role { font-size: 12px; opacity: 0.85; margin-top: 2px; }
+.prof-pts { text-align: right; }
+.prof-pts-val { font-size: 26px; font-weight: 700; }
+.prof-pts-l { font-size: 11px; opacity: 0.75; }
+.stats-grid { display: flex; gap: 8px; padding: 12px 16px; }
+.stat-m3 { flex: 1; background: #fff; border-radius: 16px; padding: 12px 8px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.stat-val { font-size: 20px; font-weight: 700; color: var(--pri); }
+.stat-lbl { font-size: 10px; color: var(--on-sv); margin-top: 2px; }
+.prof-body { padding: 0 16px 16px; overflow-y: auto; }
+.badge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.badge-m3c { background: #fff; border-radius: 16px; padding: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.badge-m3c-icon { font-size: 26px; margin-bottom: 6px; }
+.badge-m3c-name { font-size: 12px; font-weight: 600; color: var(--on-s); }
+.badge-m3c-desc { font-size: 10px; color: var(--on-sv); margin-top: 2px; }
+.cert-card { background: var(--pri-c); border-radius: 16px; padding: 14px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; }
+.cert-text { font-size: 13px; font-weight: 500; color: var(--pri); }
+.cert-btn { background: var(--pri); color: #fff; border: none; border-radius: 100px; padding: 7px 16px; font-size: 12px; font-weight: 500; cursor: pointer; }
+.act-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #F0F0F5; }
+.act-mode { font-size: 13px; font-weight: 500; color: var(--on-s); }
+.act-date { font-size: 11px; color: var(--on-sv); }
+.act-score { font-size: 13px; font-weight: 700; color: var(--pri); }
+</style>
+</head>
+<body>
+<h1 class="pt">Option 2 — Material You (M3)</h1>
+<p class="ps">Google Material Design 3 · Clean · Adaptive · Familiar to Android users</p>
+
+<div class="screens">
+
+  <!-- LOGIN -->
+  <div class="sw"><div class="sl">Login</div>
+  <div class="phone"><div style="min-height:720px; position:relative; display:flex; flex-direction:column;">
+    <div class="lang-chip-row"><span class="lang-chip active">EN</span><span class="lang-chip">हि</span></div>
+    <div class="login-wrap">
+      <svg class="m3-illus" viewBox="0 0 80 80" fill="none">
+        <rect x="12" y="20" width="56" height="44" rx="6" fill="#D3E4FF"/>
+        <rect x="20" y="28" width="40" height="4" rx="2" fill="#1565C0"/>
+        <rect x="20" y="36" width="28" height="3" rx="1.5" fill="#5C6BC0" opacity="0.6"/>
+        <rect x="20" y="43" width="32" height="3" rx="1.5" fill="#5C6BC0" opacity="0.6"/>
+        <circle cx="62" cy="56" r="14" fill="#1565C0"/>
+        <path d="M55 56 L60 61 L69 51" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="m3-title">जनगणना 2027</div>
+      <div class="m3-sub">Census Training Platform · Raipur</div>
+      <div class="m3-field">
+        <label>Mobile Number</label>
+        <input type="tel" value="9876543210" style="pointer-events:none">
+      </div>
+      <div class="m3-field">
+        <label>Password</label>
+        <input type="password" value="••••••" style="pointer-events:none">
+      </div>
+      <button class="m3-btn">Sign in</button>
+      <button class="m3-btn-text">Create account</button>
+    </div>
+  </div></div></div>
+
+  <!-- HOME -->
+  <div class="sw"><div class="sl">Home</div>
+  <div class="phone"><div style="min-height:720px; display:flex; flex-direction:column;">
+    <div class="m3-app-bar">
+      <div class="m3-app-title">Census 2027</div>
+      <div class="m3-pts-chip">⭐ 1,240 pts</div>
+    </div>
+    <div class="home-body" style="flex:1;">
+      <div class="welcome-text">Good morning, Ramesh 👋</div>
+      <div class="chip-row">
+        <div class="chip done">✓ Daily Quiz</div>
+        <div class="chip">Timed Quiz</div>
+        <div class="chip">Practice</div>
+      </div>
+      <div class="m3-card">
+        <div class="m3-icon-c" style="background:#D3E4FF;">🌟</div>
+        <div><div class="m3-card-title">Daily Quiz</div><div class="m3-card-sub">10 questions · 60s each · Done today</div></div>
+        <div class="m3-card-arrow">›</div>
+      </div>
+      <div class="m3-card">
+        <div class="m3-icon-c" style="background:#E8F5E9;">⏱</div>
+        <div><div class="m3-card-title">Timed Quiz</div><div class="m3-card-sub">15 questions · 15 min · by chapter</div></div>
+        <div class="m3-card-arrow">›</div>
+      </div>
+      <div class="m3-card">
+        <div class="m3-icon-c" style="background:#EDE7F6;">📖</div>
+        <div><div class="m3-card-title">Practice</div><div class="m3-card-sub">All questions · no timer · resumable</div></div>
+        <div class="m3-card-arrow">›</div>
+      </div>
+      <div class="sec-title">Your Badges</div>
+      <div class="badge-scroll">
+        <div class="badge-m3"><span>🎯</span><span style="font-size:12px;font-weight:500;">First Quiz</span></div>
+        <div class="badge-m3"><span>🔥</span><span style="font-size:12px;font-weight:500;">On Fire</span></div>
+        <div class="badge-m3"><span>📚</span><span style="font-size:12px;font-weight:500;">Scholar</span></div>
+      </div>
+    </div>
+    <div class="bnav">
+      <div class="ni active"><div class="ni-bg"></div><span class="ni-icon">🏠</span><span class="ni-label">Home</span></div>
+      <div class="ni"><span class="ni-icon">🏆</span><span class="ni-label">Leaderboard</span></div>
+      <div class="ni"><span class="ni-icon">👤</span><span class="ni-label">Profile</span></div>
+    </div>
+  </div></div></div>
+
+  <!-- LEADERBOARD -->
+  <div class="sw"><div class="sl">Leaderboard</div>
+  <div class="phone"><div style="min-height:720px; display:flex; flex-direction:column;">
+    <div class="lb-head">
+      <div class="lb-title">Leaderboard</div>
+      <div class="m3-tabs">
+        <div class="m3-tab active">Today</div>
+        <div class="m3-tab">All Time</div>
+      </div>
+    </div>
+    <div class="lb-body" style="flex:1; overflow-y:auto;">
+      <div class="top3">
+        <div class="podium-card"><div class="podium-medal">🥈</div><div class="podium-name">Mahesh S.</div><div class="podium-pts">285</div></div>
+        <div class="podium-card first"><div class="podium-medal">🥇</div><div class="podium-name">Sunita V.</div><div class="podium-pts">320</div></div>
+        <div class="podium-card"><div class="podium-medal">🥉</div><div class="podium-name">Priya T.</div><div class="podium-pts">260</div></div>
+      </div>
+      <div class="m3-list-item">
+        <div class="rank-circle top">4</div>
+        <div><div class="list-name">Arun Patel</div><div class="list-role">Supervisor</div></div>
+        <div class="list-pts">240</div>
+      </div>
+      <div class="m3-list-item">
+        <div class="rank-circle top">5</div>
+        <div><div class="list-name">Kavita Sharma</div><div class="list-role">Enumerator</div></div>
+        <div class="list-pts">215</div>
+      </div>
+      <div class="m3-list-item">
+        <div class="rank-circle">6</div>
+        <div><div class="list-name">Dinesh Kumar</div><div class="list-role">Enumerator</div></div>
+        <div class="list-pts">190</div>
+      </div>
+      <div style="height:12px"></div>
+      <div class="m3-list-item me">
+        <div class="rank-circle top">12</div>
+        <div><div class="list-name">Ramesh Kumar <span style="font-size:10px;color:var(--pri)">(You)</span></div><div class="list-role">Enumerator</div></div>
+        <div class="list-pts">160</div>
+      </div>
+    </div>
+    <div class="bnav">
+      <div class="ni"><span class="ni-icon">🏠</span><span class="ni-label">Home</span></div>
+      <div class="ni active"><div class="ni-bg"></div><span class="ni-icon">🏆</span><span class="ni-label">Leaderboard</span></div>
+      <div class="ni"><span class="ni-icon">👤</span><span class="ni-label">Profile</span></div>
+    </div>
+  </div></div></div>
+
+  <!-- PROFILE -->
+  <div class="sw"><div class="sl">Profile</div>
+  <div class="phone"><div style="min-height:720px; display:flex; flex-direction:column;">
+    <div class="prof-head">
+      <div class="prof-row">
+        <div class="prof-av">👤<div class="prof-cam">📷</div></div>
+        <div style="flex:1">
+          <div class="prof-name">Ramesh Kumar</div>
+          <div class="prof-role">Enumerator · Raipur District</div>
+        </div>
+        <div class="prof-pts"><div class="prof-pts-val">1,240</div><div class="prof-pts-l">Total Points</div></div>
+      </div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-m3"><div class="stat-val">1,240</div><div class="stat-lbl">Points</div></div>
+      <div class="stat-m3"><div class="stat-val">34</div><div class="stat-lbl">Quizzes</div></div>
+      <div class="stat-m3"><div class="stat-val">78%</div><div class="stat-lbl">Accuracy</div></div>
+    </div>
+    <div class="prof-body" style="flex:1; overflow-y:auto;">
+      <div style="font-size:11px;font-weight:700;color:var(--on-sv);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:10px;">Achievements</div>
+      <div class="badge-grid">
+        <div class="badge-m3c"><div class="badge-m3c-icon">🎯</div><div class="badge-m3c-name">First Quiz</div><div class="badge-m3c-desc">Completed first quiz</div></div>
+        <div class="badge-m3c"><div class="badge-m3c-icon">🔥</div><div class="badge-m3c-name">On Fire</div><div class="badge-m3c-desc">3-day streak</div></div>
+        <div class="badge-m3c"><div class="badge-m3c-icon">📚</div><div class="badge-m3c-name">Scholar</div><div class="badge-m3c-desc">All chapters done</div></div>
+        <div class="badge-m3c"><div class="badge-m3c-icon">🏅</div><div class="badge-m3c-name">Top Scorer</div><div class="badge-m3c-desc">Ranked #1 today</div></div>
+      </div>
+      <div class="cert-card">
+        <div><div class="cert-text">📜 Your Certificate</div><div style="font-size:11px;color:var(--pri);opacity:0.8;margin-top:3px;">Share your achievement</div></div>
+        <button class="cert-btn">Download</button>
+      </div>
+      <div style="font-size:11px;font-weight:700;color:var(--on-sv);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:8px;">Recent Activity</div>
+      <div class="act-item"><div><div class="act-mode">🌟 Daily Quiz</div><div class="act-date">Today, 10:30 AM</div></div><div class="act-score">200/200</div></div>
+      <div class="act-item"><div><div class="act-mode">⏱ Timed · Ch.4</div><div class="act-date">Yesterday</div></div><div class="act-score">180/300</div></div>
+      <div class="act-item"><div><div class="act-mode">📖 Practice · Ch.5</div><div class="act-date">Apr 9</div></div><div class="act-score">240/400</div></div>
+    </div>
+    <div class="bnav">
+      <div class="ni"><span class="ni-icon">🏠</span><span class="ni-label">Home</span></div>
+      <div class="ni"><span class="ni-icon">🏆</span><span class="ni-label">Leaderboard</span></div>
+      <div class="ni active"><div class="ni-bg"></div><span class="ni-icon">👤</span><span class="ni-label">Profile</span></div>
+    </div>
+  </div></div></div>
+
+</div>
+</body>
+</html>

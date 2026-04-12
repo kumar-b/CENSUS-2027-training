@@ -6,7 +6,7 @@ import QuizQuestion from './QuizQuestion';
 import QuizTimer from './QuizTimer';
 import { FlameIcon } from './Icons';
 
-export default function QuizRunner({ mode, timerSeconds }) {
+export default function QuizRunner({ mode, timerSeconds, onComplete }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { questions, currentIndex, answers, submitAnswer, completeSession, nextQuestion } = useQuizStore();
@@ -37,7 +37,11 @@ export default function QuizRunner({ mode, timerSeconds }) {
     setAnswerResult(null);
     if (wasLast) {
       const res = await completeSession();
-      navigate('/results', { state: { result: res, questions, answers } });
+      if (onComplete) {
+        onComplete(res, { questions, answers });
+      } else {
+        navigate('/results', { state: { result: res, questions, answers } });
+      }
     } else {
       nextQuestion();
     }
@@ -47,8 +51,12 @@ export default function QuizRunner({ mode, timerSeconds }) {
     if (timeExpired) return;
     setTimeExpired(true);
     const res = await completeSession();
-    navigate('/results', { state: { result: res, questions, answers } });
-  }, [timeExpired, completeSession, navigate]);
+    if (onComplete) {
+      onComplete(res, { questions, answers });
+    } else {
+      navigate('/results', { state: { result: res, questions, answers } });
+    }
+  }, [timeExpired, completeSession, navigate, onComplete, questions, answers]);
 
   const handleFlagged = (questionId) => {
     setFlaggedQuestionIds((prev) => new Set([...prev, questionId]));

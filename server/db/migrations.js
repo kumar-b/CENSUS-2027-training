@@ -189,6 +189,39 @@ function runMigrations(db) {
   upsertBadge('Question Spotter', 'प्रश्न खोजकर्ता', 'Successfully flag 1 incorrect question', '1 गलत प्रश्न की सफलतापूर्वक रिपोर्ट करें', '🔍', 'flags_resolved', 1);
   upsertBadge('Question Guardian', 'प्रश्न संरक्षक', 'Successfully flag 3 incorrect questions', '3 गलत प्रश्नों की सफलतापूर्वक रिपोर्ट करें', '🛡️', 'flags_resolved', 3);
   upsertBadge('Question Champion', 'प्रश्न चैम्पियन', 'Successfully flag 10 incorrect questions', '10 गलत प्रश्नों की सफलतापूर्वक रिपोर्ट करें', '🏅', 'flags_resolved', 10);
+
+  // Challenge tables
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS challenges (
+      id             INTEGER PRIMARY KEY AUTOINCREMENT,
+      code           TEXT UNIQUE NOT NULL,
+      creator_id     INTEGER NOT NULL REFERENCES users(id),
+      chapter        INTEGER,
+      question_count INTEGER NOT NULL DEFAULT 10,
+      question_ids   TEXT NOT NULL,
+      status         TEXT NOT NULL DEFAULT 'open',
+      created_at     DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      expires_at     DATETIME NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS challenge_participants (
+      id           INTEGER PRIMARY KEY AUTOINCREMENT,
+      challenge_id INTEGER NOT NULL REFERENCES challenges(id),
+      user_id      INTEGER NOT NULL REFERENCES users(id),
+      session_id   INTEGER REFERENCES quiz_sessions(id),
+      completed_at DATETIME,
+      UNIQUE(challenge_id, user_id)
+    );
+  `);
+
+  // Cleanup: delete challenges expired more than 5 days ago (>7 days old total)
+  // quiz_sessions rows are kept so points/badges are preserved
+  db.exec(`
+    DELETE FROM challenge_participants WHERE challenge_id IN (
+      SELECT id FROM challenges WHERE expires_at < datetime('now', '-5 days')
+    );
+    DELETE FROM challenges WHERE expires_at < datetime('now', '-5 days');
+  `);
 }
 
 module.exports = { runMigrations };

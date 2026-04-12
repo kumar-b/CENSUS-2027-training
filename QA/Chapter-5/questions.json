@@ -713,7 +713,7 @@
       "Guess the material",
       "Skip these questions",
       "Ask the neighbors and record",
-      "Mark as Code"
+      "Mark as Code 0"
     ],
     "options_hi": [
       "सामग्री का अनुमान लगाएं",
@@ -1062,16 +1062,16 @@
     "question_en": "What is the wall code for 'Ekra' material used in some regions?",
     "question_hi": "कुछ क्षेत्रों में उपयोग की जाने वाली 'एकरा' (Ekra) सामग्री के लिए दीवार का कोड क्या है?",
     "options_en": [
-      "Code",
-      "Code",
-      "Code",
-      "Code"
+      "Code 1",
+      "Code 2",
+      "Code 3",
+      "Code 4"
     ],
     "options_hi": [
-      "कोड",
-      "कोड",
-      "कोड",
-      "कोड"
+      "कोड 1",
+      "कोड 2",
+      "कोड 3",
+      "कोड 4"
     ],
     "correct_option": 0,
     "explanation_en": "Ekra is recorded under Code '1' (Grass/thatch/bamboo etc.)",
@@ -1414,16 +1414,16 @@
     "question_en": "Stones duly packed with lime or cement mortar for walls are assigned which code?",
     "question_hi": "दीवारों के लिए चूने या सीमेंट के गारे से ठीक से भरे गए पत्थरों को कौन सा कोड आवंटित किया गया है?",
     "options_en": [
-      "Code",
-      "Code",
-      "Code",
-      "Code"
+      "Code 5",
+      "Code 6",
+      "Code 7",
+      "Code 8"
     ],
     "options_hi": [
-      "कोड",
-      "कोड",
-      "कोड",
-      "कोड"
+      "कोड 5",
+      "कोड 6",
+      "कोड 7",
+      "कोड 8"
     ],
     "correct_option": 1,
     "explanation_en": "Packed stone is Code '6', whereas loose stone is Code '5'",
@@ -1744,16 +1744,16 @@
     "question_en": "How are Mosaic and Floor tiles categorized in the paper schedule?",
     "question_hi": "पेपर शेड्यूल में मोज़ेक और फर्श की टाइलों को कैसे वर्गीकृत किया जाता है?",
     "options_en": [
-      "Code",
-      "Code",
-      "Code",
-      "Code"
+      "Code 5",
+      "Code 6",
+      "Code 7",
+      "Code 8"
     ],
     "options_hi": [
-      "कोड",
-      "कोड",
-      "कोड",
-      "कोड"
+      "कोड 5",
+      "कोड 6",
+      "कोड 7",
+      "कोड 8"
     ],
     "correct_option": 1,
     "explanation_en": "This is the designated code for these materials in the paper HLO schedule",
@@ -1989,7 +1989,7 @@
       "At the last building on the starting side",
       "Opposite to where the first number was allotted",
       "At the town boundary",
-      "At building number"
+      "At building number 100"
     ],
     "options_hi": [
       "शुरुआती पक्ष की अंतिम इमारत पर",
@@ -2008,15 +2008,15 @@
     "question_en": "How are 'Institutional Households' like hotels or hospitals primarily recorded for house use?",
     "question_hi": "होटलों या अस्पतालों जैसे 'संस्थागत परिवारों' (Institutional Households) को मकान के उपयोग के लिए मुख्य रूप से कैसे रिकॉर्ड किया जाता है?",
     "options_en": [
-      "Code",
+      "Code 4",
       "Code 5 or 6 (Non-residential)",
-      "Code",
+      "Code 2",
       "They are skipped"
     ],
     "options_hi": [
-      "कोड",
+      "कोड 4",
       "कोड 5 या 6 (गैर-आवासीय)",
-      "कोड",
+      "कोड 2",
       "वे छोड़ दिए जाते हैं"
     ],
     "correct_option": 1,
@@ -2272,13 +2272,13 @@
     "question_en": "If the wall material is plastered and the respondent is unaware of the internal material, use:",
     "question_hi": "यदि दीवार सामग्री प्लास्टर की गई है और उत्तरदाता आंतरिक सामग्री से अनजान है, तो प्रयोग करें:",
     "options_en": [
-      "Code",
+      "Code 1",
       "Ask the neighbor",
       "Select Code 0 (Any other)",
       "Leave blank"
     ],
     "options_hi": [
-      "कोड",
+      "कोड 1",
       "पड़ोसी से पूछें",
       "कोड 0 चुनें (कोई अन्य)",
       "खाली छोड़ दें"
@@ -3040,7 +3040,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "If the respondent is not available for a 'Locked' house, how should the Enumerator try to obtain the mobile number?",
-    "question_hi": "प्र. 'नर्सिंग होम' जो संस्थागत घर के रूप में योग्य नहीं हैं, वे किस कोड का उदाहरण हैं?",
+    "question_hi": "यदि 'बंद' घर के लिए उत्तरदाता उपलब्ध नहीं है, तो गणक को मोबाइल नंबर प्राप्त करने का प्रयास कैसे करना चाहिए?",
     "options_en": [
       "Guess it",
       "Ask the neighbors",
@@ -3048,14 +3048,14 @@
       "Return another day multiple times"
     ],
     "options_hi": [
-      "4",
-      "5",
-      "6",
-      "9"
+      "अनुमान लगाएं",
+      "पड़ोसियों से पूछें",
+      "खाली छोड़ दें",
+      "अन्य दिन कई बार वापस आएं"
     ],
     "correct_option": 1,
-    "explanation_en": "If a mobile number is available from neighbors for a locked house, it should be entered 2,",
-    "explanation_hi": "अस्पताल, डिस्पेंसरी और नर्सिंग होम के लिए कोड '6' है।"
+    "explanation_en": "If a mobile number is available from neighbors for a locked house, it should be entered",
+    "explanation_hi": "यदि बंद घर के लिए पड़ोसियों से मोबाइल नंबर उपलब्ध हो, तो उसे दर्ज किया जाना चाहिए।"
   },
   {
     "chapter": 5,
@@ -3306,10 +3306,10 @@
     "question_en": "If a Census House is found 'dilapidated' but is currently used as a residence, what are the entries for Q7 and Q8?",
     "question_hi": "यदि कोई जनगणना मकान 'जीर्ण-शीर्ण' (dilapidated) स्थिति में पाया जाता है लेकिन वर्तमान में उसे आवास के रूप में उपयोग किया जा रहा है, तो Q7 और Q8 के लिए क्या प्रविष्टियां होंगी?",
     "options_en": [
-      "Q7: 1, Q8:",
-      "Q7: 0, Q8:",
-      "Q7: 1, Q8:",
-      "Q7: 9, Q8:"
+      "Q7: 1, Q8: 3",
+      "Q7: 0, Q8: 1",
+      "Q7: 1, Q8: 2",
+      "Q7: 9, Q8: 0"
     ],
     "options_hi": [
       "Q7: 1, Q8: 3",
@@ -3329,7 +3329,7 @@
     "question_hi": "यदि कोड 2 (आवास-सह-अन्य) का चयन किया जाता है लेकिन 'क्या संस्थागत है' को टिक नहीं किया जाता है, तो डिफ़ॉल्ट परिवार क्रमांक क्या होगा?",
     "options_en": [
       "999",
-      "It is auto-incremented starting from",
+      "It is auto-incremented starting from 001",
       "000",
       "It stays blank"
     ],
@@ -3516,7 +3516,7 @@
       "4"
     ],
     "correct_option": 0,
-    "explanation_en": "Code '1' is used for an 'Owned' house in Question 14 2,",
+    "explanation_en": "Code '1' is used for an 'Owned' house in Question 14",
     "explanation_hi": "प्रश्न 14 में 'स्वामित्व वाले' मकान के लिए कोड '1' का उपयोग किया जाता है।"
   },
   {
@@ -3538,7 +3538,7 @@
       "4"
     ],
     "correct_option": 1,
-    "explanation_en": "Code '2' is selected for households living in a rented house but having their own house elsewhere in India 2,",
+    "explanation_en": "Code '2' is selected for households living in a rented house but having their own house elsewhere in India",
     "explanation_hi": "किराए के मकान में रहने वाले लेकिन भारत में कहीं और अपना घर होने वाले परिवारों के लिए कोड '2' का चयन किया जाता है।"
   },
   {
@@ -3560,7 +3560,7 @@
       "4"
     ],
     "correct_option": 2,
-    "explanation_en": "Code '3' is selected for households living in a rented house and not owning any other house in India 2,",
+    "explanation_en": "Code '3' is selected for households living in a rented house and not owning any other house in India",
     "explanation_hi": "किराए के मकान में रहने वाले और भारत में कहीं और घर न होने वाले परिवारों के लिए कोड '3' का चयन किया जाता है।"
   },
   {
@@ -3615,7 +3615,7 @@
     "question_hi": "Q आवास कक्ष (dwelling room) के लिए आवश्यक न्यूनतम चौड़ाई क्या है?",
     "options_en": [
       "1 meter",
-      "5 meters",
+      "1.5 meters",
       "2 meters",
       "5 meters"
     ],
@@ -3626,7 +3626,7 @@
       "5 मीटर"
     ],
     "correct_option": 1,
-    "explanation_en": "A dwelling room should have a minimum breadth of at least 5 meters",
+    "explanation_en": "A dwelling room should have a minimum breadth of at least 1.5 meters",
     "explanation_hi": "एक आवास कक्ष की न्यूनतम चौड़ाई कम से कम 1.5 मीटर (संभावित मैनुअल सुधार, यहाँ 1.5 या जो लागू हो) होनी चाहिए।"
   },
   {
@@ -3670,8 +3670,8 @@
       "4"
     ],
     "correct_option": 0,
-    "explanation_en": "Code '1' is for Tap water from a treated source 6,",
-    "explanation_hi": "उपचारित स्रोत (treated source) से नल के पानी के लिए कोड '1' है 6,"
+    "explanation_en": "Code '1' is for Tap water from a treated source",
+    "explanation_hi": "उपचारित स्रोत (treated source) से नल के पानी के लिए कोड '1' है"
   },
   {
     "chapter": 5,
@@ -3714,8 +3714,8 @@
       "4"
     ],
     "correct_option": 2,
-    "explanation_en": "Code '3' is designated for Well 7,",
-    "explanation_hi": "कुएं के लिए कोड '3' निर्दिष्ट है 7,"
+    "explanation_en": "Code '3' is designated for Well",
+    "explanation_hi": "कुएं के लिए कोड '3' निर्दिष्ट है"
   },
   {
     "chapter": 5,
@@ -3736,7 +3736,7 @@
       "200 मीटर के भीतर"
     ],
     "correct_option": 1,
-    "explanation_en": "In Rural areas, \"Near premises\" means within a distance of 500 meters 9-",
+    "explanation_en": "In Rural areas, \"Near premises\" means within a distance of 500 meters",
     "explanation_hi": "ग्रामीण क्षेत्रों में, 'परिसर के पास' का अर्थ 500 मीटर की दूरी के भीतर है।"
   },
   {
@@ -3758,7 +3758,7 @@
       "1 किलोमीटर के भीतर"
     ],
     "correct_option": 0,
-    "explanation_en": "In Urban areas, \"Near premises\" means within a range of 100 meters 9-",
+    "explanation_en": "In Urban areas, \"Near premises\" means within a range of 100 meters ",
     "explanation_hi": "शहरी क्षेत्रों में, 'परिसर के पास' का अर्थ 100 मीटर की सीमा के भीतर है।"
   },
   {
@@ -3802,7 +3802,7 @@
       "9"
     ],
     "correct_option": 1,
-    "explanation_en": "Code '7' is used for River/canal 7,",
+    "explanation_en": "Code '7' is used for River/canal",
     "explanation_hi": "नदी/नहर के लिए कोड '7' उपयोग किया जाता है"
   },
   {
@@ -3824,7 +3824,7 @@
       "8"
     ],
     "correct_option": 1,
-    "explanation_en": "Code '6' is used for Spring 7,",
+    "explanation_en": "Code '6' is used for Spring",
     "explanation_hi": "झरना के लिए कोड '6' का उपयोग किया जाता है।"
   },
   {
@@ -3846,8 +3846,8 @@
       "0"
     ],
     "correct_option": 1,
-    "explanation_en": "Code '8' is used for Tank/pond/lake 7,",
-    "explanation_hi": "टैंक/तालाब/झील के लिए कोड '8' का उपयोग किया जाता है 7,"
+    "explanation_en": "Code '8' is used for Tank/pond/lake",
+    "explanation_hi": "टैंक/तालाब/झील के लिए कोड '8' का उपयोग किया जाता है"
   },
   {
     "chapter": 5,
@@ -3868,7 +3868,7 @@
       "केवल तभी जब वह breadwinner हो"
     ],
     "correct_option": 0,
-    "explanation_en": "Code '1' is used for Male head of household 1,",
+    "explanation_en": "Code '1' is used for Male head of household",
     "explanation_hi": "परिवार के पुरुष मुखिया के लिए कोड '1' का उपयोग किया जाता है।"
   },
   {
@@ -4088,7 +4088,7 @@
       "1"
     ],
     "correct_option": 1,
-    "explanation_en": "Code '9' is used for Packaged/Bottled water 7,",
+    "explanation_en": "Code '9' is used for Packaged/Bottled water ",
     "explanation_hi": "पैकेज्ड/बोतलबंद पानी के लिए कोड '9' का उपयोग किया जाता है।"
   },
   {
@@ -4184,7 +4184,7 @@
     "topic": "Filling up of the Houselisting and Housing Census Questions",
     "difficulty": "medium",
     "question_en": "Q A family is living in an unauthorized manner in an abandoned building. What is the ownership code?",
-    "question_hi": "प्र. एक परिवार পরিত্যক্ত इमारत में अनधिकृत तरीके से रह रहा है। स्वामित्व का कोड क्या है?",
+    "question_hi": "प्र. एक परिवार परित्यक्त इमारत में अनधिकृत तरीके से रह रहा है। स्वामित्व का कोड क्या है?",
     "options_en": [
       "1",
       "2",
@@ -4232,13 +4232,13 @@
     "options_en": [
       "No limit",
       "Total person in household (Q.10)",
-      "Total person in household (Q.10) minus",
+      "Total person in household (Q.10) minus 1",
       "10"
     ],
     "options_hi": [
       "कोई सीमा नहीं",
       "परिवार में कुल व्यक्ति (Q.10)",
-      "परिवार में कुल व्यक्ति (Q.10) शून्य 1",
+      "परिवार में कुल व्यक्ति (Q.10) माइनस 1",
       "10"
     ],
     "correct_option": 2,
@@ -4374,8 +4374,8 @@
       "नहीं, ऊंचाई बहुत कम है"
     ],
     "correct_option": 1,
-    "explanation_en": "A dwelling room must have a breadth of at least 5 meters. 1 meter is less than this minimum requirement",
-    "explanation_hi": "एक आवास कक्ष की चौड़ाई कम से कम 1.5/5 मीटर होनी चाहिए। 1 मीटर इस न्यूनतम आवश्यकता से कम है।"
+    "explanation_en": "A dwelling room must have a breadth of at least 1.5 meters. 1 meter is less than this minimum requirement",
+    "explanation_hi": "एक आवास कक्ष की चौड़ाई कम से कम 1.5 मीटर होनी चाहिए। 1 मीटर इस न्यूनतम आवश्यकता से कम है।"
   },
   {
     "chapter": 5,
@@ -4450,10 +4450,10 @@
     "question_en": "Q A household consists of 5 people. How many married couples can they possibly have at most?",
     "question_hi": "Q एक परिवार में 5 लोग हैं। अधिकतम कितने विवाहित जोड़े हो सकते हैं?",
     "options_en": [
-      "Maximum",
-      "Maximum",
-      "Maximum",
-      "Maximum"
+      "Maximum 1",
+      "Maximum 2",
+      "Maximum 3",
+      "Maximum 4"
     ],
     "options_hi": [
       "अधिकतम 1",
@@ -4462,7 +4462,7 @@
       "अधिकतम 4"
     ],
     "correct_option": 1,
-    "explanation_en": "The maximum number of couples cannot exceed the Total persons minus (5 - 1 = 4)",
+    "explanation_en": "The maximum number of couples cannot exceed the Total persons minus 1 (5 - 1 = 4)",
     "explanation_hi": "जोड़ों की अधिकतम संख्या कुल व्यक्तियों माइनस 1 (5 - 1 = 4) से अधिक नहीं हो सकती।"
   },
   {
@@ -4484,8 +4484,8 @@
       "7"
     ],
     "correct_option": 2,
-    "explanation_en": "Code '0-Other source' is used for drinking water sources like tankers/carts 7,",
-    "explanation_hi": "कोड '0-अन्य स्रोत' (Other source) का उपयोग टैंकरों/गाड़ियों जैसे पीने के पानी के स्रोतों के लिए किया जाता है 7,"
+    "explanation_en": "Code '0-Other source' is used for drinking water sources like tankers/carts",
+    "explanation_hi": "कोड '0-अन्य स्रोत' (Other source) का उपयोग टैंकरों/गाड़ियों जैसे पीने के पानी के स्रोतों के लिए किया जाता है।"
   },
   {
     "chapter": 5,
@@ -4528,8 +4528,8 @@
       "4"
     ],
     "correct_option": 1,
-    "explanation_en": "In Rural areas, \"Near premises\" is within 500 meters. 300 meters falls within this range, so Code 2 is used 9-",
-    "explanation_hi": "ग्रामीण क्षेत्रों में, \"परिसर के पास\" 500 मीटर के भीतर है। 300 मीटर इस दायरे में आता है, इसलिए कोड 2 का उपयोग किया जाता है 9-"
+    "explanation_en": "In Rural areas, \"Near premises\" is within 500 meters. 300 meters falls within this range, so Code 2 is used",
+    "explanation_hi": "ग्रामीण क्षेत्रों में, \"परिसर के पास\" 500 मीटर के भीतर है। 300 मीटर इस दायरे में आता है, इसलिए कोड 2 का उपयोग किया जाता है"
   },
   {
     "chapter": 5,
@@ -4682,8 +4682,8 @@
       "4"
     ],
     "correct_option": 1,
-    "explanation_en": "In Urban areas, \"Near premises\" is within 100 meters. 50 meters falls into this range, so Code '2' is selected 9-",
-    "explanation_hi": "शहरी क्षेत्रों में, \"परिसर के पास\" 100 मीटर के भीतर है। 50 मीटर इस श्रेणी में आता है, इसलिए कोड '2' का चयन किया गया है 9-"
+    "explanation_en": "In Urban areas, \"Near premises\" is within 100 meters. 50 meters falls into this range, so Code '2' is selected",
+    "explanation_hi": "शहरी क्षेत्रों में, \"परिसर के पास\" 100 मीटर के भीतर है। 50 मीटर इस श्रेणी में आता है, इसलिए कोड '2' का चयन किया गया है"
   },
   {
     "chapter": 5,
@@ -5540,7 +5540,7 @@
       "4"
     ],
     "correct_option": 0,
-    "explanation_en": "Code '1' is assigned for Electricity as per the instructions for Question 19 1,",
+    "explanation_en": "Code '1' is assigned for Electricity as per the instructions for Question 19",
     "explanation_hi": "प्रश्न 19 के निर्देशों के अनुसार बिजली के लिए कोड '1' निर्धारित है"
   },
   {
@@ -5650,7 +5650,7 @@
       "4"
     ],
     "correct_option": 2,
-    "explanation_en": "Code '3' is used for Public Latrines accessible to any member of the public 2,",
+    "explanation_en": "Code '3' is used for Public Latrines accessible to any member of the public",
     "explanation_hi": "जनता के किसी भी सदस्य की पहुंच वाले सार्वजनिक शौचालयों के लिए कोड '3' का उपयोग किया जाता है।"
   },
   {
@@ -5672,8 +5672,8 @@
       "4"
     ],
     "correct_option": 3,
-    "explanation_en": "Code '4' is for 'Open', referring to the use of open fields, bushes, etc. 2,",
-    "explanation_hi": "खुले मैदानों, झाड़ियों आदि के उपयोग को संदर्भित करने वाला कोड '4' 'खुले' (Open) के लिए है 2,"
+    "explanation_en": "Code '4' is for 'Open', referring to the use of open fields, bushes, etc.",
+    "explanation_hi": "खुले मैदानों, झाड़ियों आदि के उपयोग को संदर्भित करने वाला कोड '4' 'खुले' (Open) के लिए है"
   },
   {
     "chapter": 5,
@@ -5870,7 +5870,7 @@
       "4"
     ],
     "correct_option": 0,
-    "explanation_en": "Code '1' is for households cooking in a kitchen with an LPG/PNG connection 2,",
+    "explanation_en": "Code '1' is for households cooking in a kitchen with an LPG/PNG connection",
     "explanation_hi": "रसोई में LPG/PNG कनेक्शन के साथ खाना पकाने वाले परिवारों के लिए कोड '1' है।"
   },
   {
@@ -6496,16 +6496,16 @@
     "question_en": "Q If a household has an LPG connection but uses it 'only for heating water' and doesn't cook meals, what is recorded?",
     "question_hi": "Q यदि एक परिवार के पास एक LPG कनेक्शन है लेकिन वे इसका उपयोग 'केवल पानी गर्म करने' के लिए करते हैं और भोजन नहीं पकाते हैं, तो क्या दर्ज किया जाता है?",
     "options_en": [
-      "Code",
-      "Code",
+      "Code 5",
+      "Code 6",
       "Code 7-No cooking",
-      "Code"
+      "Code 8"
     ],
     "options_hi": [
-      "कोड",
-      "कोड",
+      "कोड 5",
+      "कोड 6",
       "कोड 7-खाना नहीं पकाना",
-      "कोड"
+      "कोड 8"
     ],
     "correct_option": 2,
     "explanation_en": "If a household 'does not cook', select Code '7' irrespective of the reason or presence of a kitchen/LPG",
@@ -8917,8 +8917,8 @@
     "question_hi": "Question एक परिवार के पास एक 'स्मार्ट टीवी' (Smart TV) है और वह उसका उपयोग इंटरनेट एक्सेस करने के लिए करता है। क्या यह Q28 में दर्ज है?",
     "options_en": [
       "No, only computer/phone",
-      "Yes, as code",
-      "Yes, as code",
+      "Yes, as code 3",
+      "Yes, as code 1",
       "Only if they have a keyboard"
     ],
     "options_hi": [
@@ -8961,8 +8961,8 @@
     "question_hi": "Question यदि किसी परिवार के पास 'कोई' रेडियो नहीं, 'कोई' टीवी नहीं और 'कोई' इंटरनेट नहीं है, तो किन प्रश्नों को छोड़ दिया जाता है?",
     "options_en": [
       "None, they are all asked",
-      "26, 27 and",
-      "Only 27 and",
+      "26, 27 and 28",
+      "Only 27 and 28",
       "25 to"
     ],
     "options_hi": [
@@ -9775,8 +9775,8 @@
     "question_hi": "Question क्या इंटरनेट वाली एक 'स्मार्टवॉच' (Smartwatch) को Q28 के लिए गिना जाता है?",
     "options_en": [
       "No",
-      "Yes, as code",
-      "Yes, as code",
+      "Yes, as code 3",
+      "Yes, as code 1",
       "Only if it can make calls"
     ],
     "options_hi": [
@@ -10303,7 +10303,7 @@
     "question_hi": "Q क्या प्रश्न 31 में \"मोपेड\" (Moped) को दोपहिया मोटर चालित वाहन माना जाता है?",
     "options_en": [
       "No, it is a bicycle",
-      "Yes, it is in Code",
+      "Yes, it is in Code 2",
       "Only if it uses petrol",
       "It has its own code (5)"
     ],
@@ -10721,7 +10721,7 @@
     "question_hi": "Q एक प्रगणक खाली घर का दौरा करता है और पड़ोसी से मालिक का सक्रिय मोबाइल नंबर प्राप्त करता है। सही प्रोटोकॉल क्या है?",
     "options_en": [
       "Do not record it as the house is vacant",
-      "Record the number in Question",
+      "Record the number in Question 34",
       "Only record it if the neighbor is a relative",
       "Ask the supervisor to find the owner"
     ],
@@ -10744,7 +10744,7 @@
     "options_en": [
       "Leave it blank or do not enter",
       "Enter the neighbor's number",
-      "Enter",
+      "Enter 9999999999",
       "Guess the number"
     ],
     "options_hi": [
@@ -11160,10 +11160,10 @@
     "question_en": "Q What if the landline is permanently broken but they have basic mobiles?",
     "question_hi": "प्र. क्या होगा यदि लैंडलाइन स्थायी रूप से खराब है लेकिन उनके पास बेसिक मोबाइल है?",
     "options_en": [
-      "Code",
-      "Code",
-      "Code",
-      "Code"
+      "Code 1",
+      "Code 2",
+      "Code 3",
+      "Code 4"
     ],
     "options_hi": [
       "कोड 1",
@@ -11402,10 +11402,10 @@
     "question_en": "Q If a household consumes \"cereal substitutes\" as their primary food source, what is the coding procedure?",
     "question_hi": "प्र. यदि कोई परिवार अपने प्राथमिक भोजन स्रोत के रूप में \"अनाज के विकल्प\" (cereal substitutes) का उपभोग करता है, तो कोडिंग प्रक्रिया क्या है?",
     "options_en": [
-      "Enter Code",
+      "Enter Code 1",
       "Enter Code 6-Any other",
       "Leave blank",
-      "Enter Code"
+      "Enter Code 2"
     ],
     "options_hi": [
       "कोड 1 दर्ज करें",

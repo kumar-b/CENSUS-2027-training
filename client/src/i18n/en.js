@@ -152,11 +152,42 @@ export default {
       'Census Staff General': 'Census Staff General',
     },
 
+    // Challenge a Friend
+    challengeFriend: 'Challenge a Friend',
+    challengeFriendDesc: 'Same questions, compare scores',
+    createChallenge: 'Create Challenge',
+    joinChallenge: 'Join Challenge',
+    enterCode: 'Enter Challenge Code',
+    yourCode: 'Your Challenge Code',
+    shareOnWhatsApp: 'Share on WhatsApp',
+    startMyAttempt: 'Start My Attempt',
+    waitingForOpponent: 'Waiting for opponent to finish…',
+    challengeResults: 'Challenge Results',
+    youWon: 'You Won!',
+    opponentWon: 'Opponent Won!',
+    itsATie: "It's a Tie!",
+    vs: 'vs',
+    allChapters: 'All Chapters',
+    codeExpired: 'This challenge has expired',
+    codeNotFound: 'Challenge code not found',
+    chooseDifficulty: 'Number of Questions',
+    chooseChapter: 'Chapter',
+    createAndShare: 'Create & Share',
+    codeCopied: 'Code copied!',
+    inviteText: 'Join my Census 2027 quiz challenge! Enter code {{code}} in the app.',
+
+    // Levels
+    level: 'Level',
+    levelProgress: 'Level {{level}} Progress',
+    xpToNext: '{{xp}} XP to Level {{next}}! Keep going 🚀',
+    maxLevel: 'Max Level Reached! 🏆',
+
     // Modes
     mode: {
       daily: 'Daily Quiz',
       timed: 'Timed Quiz',
       practice: 'Practice',
+      challenge: 'Challenge',
     },
 
     // Errors

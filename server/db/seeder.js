@@ -11,6 +11,7 @@ function seedQuestions() {
   }
 
   const db = getDb();
+
   const upsert = db.prepare(`
     INSERT INTO questions
       (chapter, topic, difficulty, question_en, question_hi,
@@ -18,7 +19,16 @@ function seedQuestions() {
     VALUES
       (@chapter, @topic, @difficulty, @question_en, @question_hi,
        @options_en, @options_hi, @correct_option, @explanation_en, @explanation_hi)
-    ON CONFLICT DO NOTHING
+    ON CONFLICT(question_en) DO UPDATE SET
+      chapter        = excluded.chapter,
+      topic          = excluded.topic,
+      difficulty     = excluded.difficulty,
+      question_hi    = excluded.question_hi,
+      options_en     = excluded.options_en,
+      options_hi     = excluded.options_hi,
+      correct_option = excluded.correct_option,
+      explanation_en = excluded.explanation_en,
+      explanation_hi = excluded.explanation_hi
   `);
 
   const topics = fs.readdirSync(QA_DIR, { withFileTypes: true })

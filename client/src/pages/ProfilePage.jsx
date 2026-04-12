@@ -6,6 +6,7 @@ import api from '../api/client';
 import html2canvas from 'html2canvas';
 import { FlagIcon, DownloadIcon, ScrollIcon } from '../components/Icons';
 import BadgeIcon from '../components/BadgeIcon';
+import LevelProgressBar from '../components/LevelProgressBar';
 
 const MODE_ICON = { daily: '🌟', timed: '⏱', practice: '📖' };
 
@@ -428,6 +429,12 @@ export default function ProfilePage() {
       </div>
 
       <div className="px-4 space-y-5 mt-5">
+
+        {/* Level progress */}
+        <div className="rounded-2xl px-4 py-3"
+          style={{ background: 'var(--tc-card)', border: '2px solid var(--tc-border)', boxShadow: '0 3px 0 var(--tc-border)' }}>
+          <LevelProgressBar totalPoints={profile?.user?.total_points ?? user?.total_points ?? 0} />
+        </div>
 
         {/* Hidden badge canvas for download */}
         {downloadingBadge && user && (

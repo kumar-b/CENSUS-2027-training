@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Census 2027 — Playful Gamified Design Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:       #58CC02;
+      --green-dark:  #46A302;
+      --green-light: #D7F5A8;
+      --orange:      #FF6B35;
+      --orange-dark: #D9521E;
+      --purple:      #CE82FF;
+      --purple-dark: #A855F7;
+      --blue:        #1CB0F6;
+      --blue-dark:   #0A8EC3;
+      --red:         #FF4B4B;
+      --bg:          #FFFFFF;
+      --surface:     #F7F7F7;
+      --card-bg:     #FFFFFF;
+      --border:      #E5E5E5;
+      --text:        #3C3C3C;
+      --text-sec:    #777777;
+      --xp:          #FFD700;
+      --xp-dark:     #E0A500;
+      --radius-xl:   20px;
+      --radius-lg:   14px;
+      --radius-md:   10px;
+      --radius-sm:   6px;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #e8f5d0 0%, #f0f4ff 50%, #fff3e0 100%);
+      min-height: 100vh;
+      padding: 40px 20px 60px;
+      color: var(--text);
+    }
+
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .page-header h1 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      letter-spacing: -0.5px;
+    }
+    .page-header p {
+      font-size: 1rem;
+      color: var(--text-sec);
+      margin-top: 6px;
+      font-weight: 600;
+    }
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      border: 2px solid;
+    }
+    .badge-green  { background: var(--green-light); color: var(--green-dark); border-color: var(--green); }
+    .badge-orange { background: #FFEDE6; color: var(--orange-dark); border-color: var(--orange); }
+    .badge-purple { background: #F3E8FF; color: var(--purple-dark); border-color: var(--purple); }
+    .badge-blue   { background: #E0F4FE; color: var(--blue-dark); border-color: var(--blue); }
+
+    /* ===== SCREENS GRID ===== */
+    .screens-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+      gap: 36px;
+      max-width: 1720px;
+      margin: 0 auto;
+    }
+
+    /* ===== PHONE FRAME ===== */
+    .phone-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .screen-label {
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-sec);
+    }
+    .phone-frame {
+      width: 390px;
+      min-height: 844px;
+      background: var(--bg);
+      border-radius: 46px;
+      border: 3px solid #d0d0d0;
+      box-shadow:
+        0 0 0 8px #f0f0f0,
+        0 8px 0 8px #d8d8d8,
+        0 32px 80px rgba(0,0,0,0.22),
+        0 8px 20px rgba(0,0,0,0.12);
+      overflow: hidden;
+      position: relative;
+    }
+    /* Notch */
+    .phone-frame::before {
+      content: '';
+      display: block;
+      width: 126px;
+      height: 34px;
+      background: #1a1a1a;
+      border-radius: 0 0 20px 20px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+
+    .screen-content {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    /* ===== SHARED COMPONENTS ===== */
+
+    /* Bottom Nav */
+    .bottom-nav {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      padding: 10px 0 20px;
+      background: var(--bg);
+      border-top: 2px solid var(--border);
+    }
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      min-width: 60px;
+    }
+    .nav-icon {
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+    .nav-label {
+      font-size: 0.62rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text-sec);
+    }
+    .nav-item.active .nav-icon { filter: none; }
+    .nav-item.active .nav-label { color: var(--green-dark); }
+    .nav-item.active {
+      position: relative;
+    }
+    .nav-item.active::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 4px;
+      background: var(--green);
+      border-radius: 0 0 4px 4px;
+    }
+    .nav-active-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-top: 2px;
+    }
+
+    /* Progress Bar */
+    .prog-track {
+      background: var(--surface);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 2px solid var(--border);
+    }
+    .prog-fill {
+      height: 100%;
+      border-radius: 999px;
+      position: relative;
+    }
+    .prog-fill::after {
+      content: '';
+      position: absolute;
+      top: 3px; left: 8px;
+      width: 30%; height: 4px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 999px;
+    }
+
+    /* Pill Button */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 14px 22px;
+      border-radius: var(--radius-xl);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.08s;
+    }
+    .btn-green {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 4px 0 var(--green-dark), 0 6px 12px rgba(88,204,2,0.3);
+      border: 2px solid var(--green-dark);
+    }
+    .btn-green:hover { transform: translateY(-1px); }
+    .btn-orange {
+      background: var(--orange);
+      color: #fff;
+      box-shadow: 0 4px 0 var(--orange-dark), 0 6px 12px rgba(255,107,53,0.3);
+      border: 2px solid var(--orange-dark);
+    }
+    .btn-blue {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 4px 0 var(--blue-dark), 0 6px 12px rgba(28,176,246,0.3);
+      border: 2px solid var(--blue-dark);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--green-dark);
+      border: 2px solid var(--green);
+    }
+    .btn-full { width: 100%; }
+
+    /* Stat Card */
+    .stat-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 14px;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 1.7rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text-sec);
+      margin-top: 4px;
+    }
+    .stat-icon { font-size: 1.4rem; margin-bottom: 4px; }
+
+    /* Section Title */
+    .sec-title {
+      font-size: 0.72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-sec);
+      margin-bottom: 10px;
+    }
+
+    /* ===== SCREEN 1 — LOGIN ===== */
+    .s1 { }
+
+    .s1-top {
+      background: linear-gradient(180deg, #e8f9d4 0%, #ffffff 100%);
+      padding: 20px 24px 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Mascot SVG */
+    .mascot-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .s1-title {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      letter-spacing: -0.5px;
+    }
+    .s1-tagline {
+      font-size: 0.88rem;
+      color: var(--text-sec);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .lang-pills {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .lang-pill {
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      border: 2px solid;
+      cursor: pointer;
+    }
+    .lang-pill.active-lang {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green-dark);
+      box-shadow: 0 3px 0 var(--green-dark);
+    }
+    .lang-pill.inactive-lang {
+      background: var(--surface);
+      color: var(--text-sec);
+      border-color: var(--border);
+    }
+
+    .s1-form {
+      padding: 20px 24px 24px;
+    }
+    .input-group {
+      margin-bottom: 14px;
+    }
+    .input-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-sec);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .fancy-input {
+      width: 100%;
+      padding: 13px 16px;
+      border: 2.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+      background: var(--surface);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .fancy-input:focus { border-color: var(--green); }
+    .fancy-input.focused { border-color: var(--green); background: #f0fde4; }
+
+    .s1-divider {
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-sec);
+      margin: 16px 0;
+      position: relative;
+    }
+    .s1-divider::before, .s1-divider::after {
+      content: '';
+      position: absolute;
+      top: 50%; width: 38%; height: 1.5px;
+      background: var(--border);
+    }
+    .s1-divider::before { left: 0; }
+    .s1-divider::after { right: 0; }
+
+    .s1-login-link {
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-sec);
+      margin-top: 16px;
+    }
+    .s1-login-link span {
+      color: var(--blue);
+      font-weight: 800;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .confetti-strip {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      padding: 10px 0 4px;
+      flex-wrap: wrap;
+    }
+    .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      animation: bob 2s ease-in-out infinite;
+    }
+    .dot:nth-child(2) { animation-delay: 0.2s; border-radius: 2px; width: 8px; height: 8px; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    .dot:nth-child(4) { animation-delay: 0.1s; border-radius: 2px; transform: rotate(45deg); }
+    .dot:nth-child(5) { animation-delay: 0.3s; }
+    .dot:nth-child(6) { animation-delay: 0.5s; border-radius: 2px; width: 8px; height: 8px; }
+    .dot:nth-child(7) { animation-delay: 0.15s; }
+    .dot:nth-child(8) { animation-delay: 0.35s; border-radius: 2px; }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    /* ===== SCREEN 2 — HOME ===== */
+    .s2-topbar {
+      background: var(--bg);
+      padding: 14px 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--border);
+    }
+    .streak-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #FFF3E0;
+      border: 2px solid #FFB74D;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #E65100;
+    }
+    .xp-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #FFFDE7;
+      border: 2px solid var(--xp);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #B8860B;
+    }
+    .hearts-badge {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--red);
+    }
+
+    .s2-body { padding: 16px 20px; }
+
+    .daily-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .daily-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .daily-label { font-size: 0.72rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-sec); }
+    .daily-count { font-size: 0.78rem; font-weight: 800; color: var(--green-dark); }
+
+    /* Pulsing CTA card */
+    .challenge-card {
+      background: var(--green);
+      border: 2.5px solid var(--green-dark);
+      border-radius: var(--radius-xl);
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 5px 0 var(--green-dark);
+      cursor: pointer;
+    }
+    .challenge-card::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 120%;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.25);
+      animation: pulse-ring 2s ease-out infinite;
+    }
+    .challenge-card::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+      height: 110%;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.15);
+      animation: pulse-ring 2s ease-out infinite 0.5s;
+    }
+    @keyframes pulse-ring {
+      0% { transform: translate(-50%, -50%) scale(0.85); opacity: 1; }
+      100% { transform: translate(-50%, -50%) scale(1.15); opacity: 0; }
+    }
+    .challenge-top { font-size: 0.68rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.8); margin-bottom: 4px; }
+    .challenge-title { font-size: 1.05rem; font-weight: 900; color: #fff; }
+    .challenge-arrow { font-size: 1.2rem; float: right; }
+    .challenge-xp {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #fff;
+      margin-top: 8px;
+    }
+
+    .quiz-modes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .quiz-mode-card {
+      background: var(--card-bg);
+      border: 2.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.1s;
+      box-shadow: 0 3px 0 var(--border);
+    }
+    .quiz-mode-card:hover { transform: translateY(-2px); }
+    .qm-top {
+      height: 8px;
+    }
+    .qm-body { padding: 12px 12px 14px; }
+    .qm-icon { font-size: 1.4rem; margin-bottom: 6px; }
+    .qm-name { font-size: 0.78rem; font-weight: 900; color: var(--text); }
+    .qm-desc { font-size: 0.65rem; font-weight: 600; color: var(--text-sec); margin-top: 2px; }
+    .quiz-mode-card.wide {
+      grid-column: span 2;
+      display: flex;
+      align-items: center;
+    }
+    .quiz-mode-card.wide .qm-top {
+      width: 8px;
+      height: auto;
+      align-self: stretch;
+    }
+
+    .achievements-row {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scrollbar-width: none;
+      margin-bottom: 6px;
+    }
+    .achievements-row::-webkit-scrollbar { display: none; }
+    .ach-card {
+      flex: 0 0 70px;
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 6px;
+      text-align: center;
+      box-shadow: 0 3px 0 var(--border);
+    }
+    .ach-card.unlocked { border-color: var(--xp); box-shadow: 0 3px 0 var(--xp-dark); }
+    .ach-icon { font-size: 1.5rem; }
+    .ach-label { font-size: 0.58rem; font-weight: 800; color: var(--text-sec); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.2px; }
+    .ach-card.locked .ach-icon { filter: grayscale(1) opacity(0.35); }
+
+    /* ===== SCREEN 3 — LEADERBOARD ===== */
+    .s3-header {
+      background: linear-gradient(135deg, var(--green) 0%, #89E219 100%);
+      padding: 18px 20px 22px;
+      text-align: center;
+    }
+    .s3-header h2 { font-size: 1.3rem; font-weight: 900; color: #fff; letter-spacing: 0.3px; }
+    .s3-header .trophy { font-size: 2rem; display: block; margin-bottom: 6px; }
+
+    .rank-banner {
+      background: linear-gradient(90deg, var(--green-light), #e0ffd0);
+      border: 2px solid var(--green);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      margin: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .rank-banner-icon { font-size: 1.3rem; }
+    .rank-banner-text .rank-num { font-size: 0.95rem; font-weight: 900; color: var(--green-dark); }
+    .rank-banner-text .rank-pct { font-size: 0.72rem; font-weight: 700; color: var(--green-dark); }
+
+    .tabs-row {
+      display: flex;
+      gap: 8px;
+      padding: 0 16px;
+      margin-bottom: 14px;
+    }
+    .tab-pill {
+      flex: 1;
+      text-align: center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      border: 2px solid var(--border);
+      color: var(--text-sec);
+      cursor: pointer;
+    }
+    .tab-pill.active {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green-dark);
+      box-shadow: 0 3px 0 var(--green-dark);
+    }
+
+    /* Podium */
+    .podium-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 8px;
+      padding: 0 20px 16px;
+    }
+    .podium-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .podium-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.9rem;
+      color: #fff;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      margin-bottom: 4px;
+      position: relative;
+    }
+    .podium-crown { position: absolute; top: -16px; font-size: 1.1rem; }
+    .podium-name { font-size: 0.65rem; font-weight: 800; text-align: center; max-width: 70px; }
+    .podium-xp { font-size: 0.6rem; font-weight: 700; color: var(--text-sec); }
+    .podium-block {
+      width: 100%;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.9);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+    .p1-block { height: 60px; background: linear-gradient(180deg, #FFD700, #FFA000); }
+    .p2-block { height: 44px; background: linear-gradient(180deg, #C0C0C0, #9E9E9E); }
+    .p3-block { height: 32px; background: linear-gradient(180deg, #CD7F32, #A0522D); }
+
+    .rank-list { padding: 0 16px; margin-bottom: 8px; }
+    .rank-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 10px;
+      border-radius: var(--radius-md);
+      margin-bottom: 6px;
+      border: 2px solid transparent;
+      transition: background 0.15s;
+    }
+    .rank-row.you {
+      background: #f0fde4;
+      border-color: var(--green);
+      animation: gentle-bounce 3s ease-in-out infinite;
+    }
+    @keyframes gentle-bounce {
+      0%, 100% { box-shadow: 0 2px 8px rgba(88,204,2,0.2); }
+      50% { box-shadow: 0 4px 14px rgba(88,204,2,0.4); }
+    }
+    .rank-badge {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .rank-badge.top { background: var(--green); color: #fff; border: 2px solid var(--green-dark); }
+    .rank-badge.mid { background: var(--surface); color: var(--text-sec); border: 2px solid var(--border); }
+    .rank-avatar {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      font-weight: 900;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .rank-info { flex: 1; }
+    .rank-name { font-size: 0.8rem; font-weight: 800; color: var(--text); }
+    .rank-state { font-size: 0.65rem; font-weight: 600; color: var(--text-sec); }
+    .rank-xp { font-size: 0.82rem; font-weight: 900; color: var(--xp-dark); display: flex; align-items: center; gap: 2px; }
+    .you-arrow { font-size: 0.7rem; color: var(--green-dark); font-weight: 900; }
+
+    /* ===== SCREEN 4 — PROFILE ===== */
+    .s4-header {
+      background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%);
+      padding: 20px 20px 28px;
+      position: relative;
+    }
+    .s4-avatar-wrap {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+    }
+    .s4-avatar {
+      width: 70px; height: 70px;
+      border-radius: 50%;
+      background: #fff;
+      border: 4px solid rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      position: relative;
+      flex-shrink: 0;
+    }
+    .level-badge {
+      position: absolute;
+      bottom: -8px; right: -8px;
+      background: var(--xp);
+      border: 3px solid #fff;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 0.65rem;
+      font-weight: 900;
+      color: #5a3a00;
+      white-space: nowrap;
+    }
+    .s4-name { font-size: 1.15rem; font-weight: 900; color: #fff; }
+    .s4-title { font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,0.8); margin-top: 2px; }
+    .xp-bar-wrap { margin-top: 16px; }
+    .xp-bar-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 5px;
+    }
+    .xp-bar-track {
+      background: rgba(255,255,255,0.25);
+      border-radius: 999px;
+      height: 12px;
+      overflow: hidden;
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+    .xp-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--xp), #FFF176);
+      border-radius: 999px;
+      position: relative;
+    }
+    .xp-bar-fill::after {
+      content:'';
+      position: absolute;
+      top: 2px; left: 6px;
+      width: 30%; height: 4px;
+      background: rgba(255,255,255,0.45);
+      border-radius: 999px;
+    }
+
+    .s4-body { padding: 16px 20px; }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .streak-feature {
+      background: linear-gradient(135deg, #FFF3E0, #FFECB3);
+      border: 2.5px solid #FFB74D;
+      border-radius: var(--radius-xl);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 0 #E65100;
+    }
+    .streak-flame { font-size: 2.2rem; animation: flame 1.5s ease-in-out infinite; }
+    @keyframes flame {
+      0%, 100% { transform: scale(1) rotate(-3deg); }
+      50% { transform: scale(1.08) rotate(3deg); }
+    }
+    .streak-text .streak-num { font-size: 1.2rem; font-weight: 900; color: #E65100; }
+    .streak-text .streak-sub { font-size: 0.72rem; font-weight: 700; color: #BF360C; }
+    .streak-text .streak-motiv { font-size: 0.68rem; font-weight: 600; color: #E65100; margin-top: 2px; font-style: italic; }
+
+    .badges-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .badge-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 6px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .badge-card.unlocked { border-color: var(--xp); box-shadow: 0 3px 0 var(--xp-dark); }
+    .badge-card.locked {
+      opacity: 0.75;
+    }
+    .badge-card.locked::before {
+      content: '🔒';
+      position: absolute;
+      top: 2px; right: 4px;
+      font-size: 0.6rem;
+    }
+    .badge-emoji { font-size: 1.5rem; }
+    .badge-name { font-size: 0.55rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2px; color: var(--text-sec); margin-top: 4px; }
+    .lock-progress {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--border);
+    }
+    .lock-prog-fill {
+      height: 100%;
+      background: var(--purple);
+    }
+
+    .share-section {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 14px;
+      border: 2px solid var(--border);
+    }
+    .share-title { font-size: 0.72rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-sec); margin-bottom: 10px; }
+    .share-buttons {
+      display: flex;
+      gap: 8px;
+    }
+    .share-btn {
+      flex: 1;
+      padding: 9px 10px;
+      border-radius: var(--radius-md);
+      font-size: 0.7rem;
+      font-weight: 800;
+      border: 2px solid;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 3px 0;
+    }
+    .share-wa { background: #25D366; color: #fff; border-color: #1aa351; box-shadow-color: #1aa351; box-shadow: 0 3px 0 #1aa351; }
+    .share-tw { background: #1DA1F2; color: #fff; border-color: #0d89d3; box-shadow: 0 3px 0 #0d89d3; }
+    .share-copy { background: var(--surface); color: var(--text-sec); border-color: var(--border); box-shadow: 0 3px 0 var(--border); }
+
+    /* ===== CONFETTI DECORATION ===== */
+    .confetti-wrap {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .conf-dot {
+      position: absolute;
+      border-radius: 50%;
+      animation: confetti-fall 4s linear infinite;
+      opacity: 0;
+    }
+    @keyframes confetti-fall {
+      0%   { opacity: 0; transform: translateY(-10px) rotate(0deg); }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { opacity: 0; transform: translateY(110px) rotate(360deg); }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .screens-grid { grid-template-columns: repeat(2, 390px); justify-content: center; }
+    }
+    @media (max-width: 600px) {
+      .screens-grid { grid-template-columns: 390px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>🎮 Option 5 — Playful Gamified</h1>
+    <p>Duolingo-inspired · Energetic · Rewarding · Census 2027 Training</p>
+    <div class="badge-row">
+      <span class="badge badge-green">Duolingo-style</span>
+      <span class="badge badge-orange">Edtech Vibes</span>
+      <span class="badge badge-purple">XP & Streaks</span>
+      <span class="badge badge-blue">Leaderboard</span>
+    </div>
+  </header>
+
+  <!-- SCREENS GRID -->
+  <div class="screens-grid">
+
+    <!-- ============================================================ -->
+    <!-- SCREEN 1 — LOGIN -->
+    <!-- ============================================================ -->
+    <div class="phone-wrap">
+      <span class="screen-label">Screen 1 — Login</span>
+      <div class="phone-frame">
+        <div class="screen-content">
+          <div class="s1-top">
+
+            <!-- Confetti dots -->
+            <div class="confetti-wrap" aria-hidden="true">
+              <div class="conf-dot" style="width:8px;height:8px;background:#58CC02;left:10%;animation-delay:0s;animation-duration:3.5s;"></div>
+              <div class="conf-dot" style="width:6px;height:6px;background:#FF6B35;left:25%;animation-delay:0.7s;animation-duration:4s;border-radius:2px;"></div>
+              <div class="conf-dot" style="width:7px;height:7px;background:#CE82FF;left:55%;animation-delay:1.2s;animation-duration:3.8s;"></div>
+              <div class="conf-dot" style="width:5px;height:5px;background:#FFD700;left:75%;animation-delay:0.3s;animation-duration:4.2s;border-radius:2px;"></div>
+              <div class="conf-dot" style="width:8px;height:8px;background:#1CB0F6;left:88%;animation-delay:1.8s;animation-duration:3.3s;"></div>
+            </div>
+
+            <!-- Census Owl Mascot SVG -->
+            <div class="mascot-wrap">
+              <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Body -->
+                <ellipse cx="55" cy="68" rx="32" ry="30" fill="#58CC02"/>
+                <!-- Wings -->
+                <ellipse cx="22" cy="74" rx="12" ry="18" fill="#46A302" transform="rotate(-15 22 74)"/>
+                <ellipse cx="88" cy="74" rx="12" ry="18" fill="#46A302" transform="rotate(15 88 74)"/>
+                <!-- Head -->
+                <circle cx="55" cy="42" r="28" fill="#58CC02"/>
+                <!-- Ear tufts -->
+                <ellipse cx="38" cy="18" rx="7" ry="11" fill="#46A302" transform="rotate(-15 38 18)"/>
+                <ellipse cx="72" cy="18" rx="7" ry="11" fill="#46A302" transform="rotate(15 72 18)"/>
+                <!-- Face white -->
+                <ellipse cx="55" cy="44" rx="20" ry="18" fill="#E8F9D4"/>
+                <!-- Eyes bg -->
+                <circle cx="44" cy="40" r="10" fill="#FFFFFF"/>
+                <circle cx="66" cy="40" r="10" fill="#FFFFFF"/>
+                <!-- Eye rings -->
+                <circle cx="44" cy="40" r="10" fill="none" stroke="#46A302" stroke-width="2.5"/>
+                <circle cx="66" cy="40" r="10" fill="none" stroke="#46A302" stroke-width="2.5"/>
+                <!-- Pupils -->
+                <circle cx="45" cy="40" r="5.5" fill="#3C3C3C"/>
+                <circle cx="67" cy="40" r="5.5" fill="#3C3C3C"/>
+                <!-- Eye shine -->
+                <circle cx="47" cy="37" r="2" fill="#FFFFFF"/>
+                <circle cx="69" cy="37" r="2" fill="#FFFFFF"/>
+                <!-- Beak -->
+                <path d="M50 51 L55 58 L60 51 Q55 47 50 51Z" fill="#FFD700"/>
+                <!-- Belly -->
+                <ellipse cx="55" cy="78" rx="18" ry="14" fill="#89E219" opacity="0.6"/>
+                <!-- Clipboard -->
+                <rect x="42" y="85" width="26" height="20" rx="4" fill="#FFFFFF" stroke="#46A302" stroke-width="2"/>
+                <rect x="47" y="82" width="16" height="5" rx="2.5" fill="#46A302"/>
+                <line x1="46" y1="92" x2="64" y2="92" stroke="#E5E5E5" stroke-width="1.5"/>
+                <line x1="46" y1="96" x2="60" y2="96" stroke="#E5E5E5" stroke-width="1.5"/>
+                <!-- Checkmark on clipboard -->
+                <path d="M49 93.5 L52 97 L62 88" stroke="#58CC02" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="s1-title">Census 2027</div>
+            <div class="s1-tagline">Learn. Compete. Succeed!</div>
+
+            <!-- Language Pills -->
+            <div class="lang-pills">
+              <span class="lang-pill active-lang">English</span>
+              <span class="lang-pill inactive-lang">हिन्दी</span>
+              <span class="lang-pill inactive-lang">বাংলা</span>
+              <span class="lang-pill inactive-lang">తెలుగు</span>
+            </div>
+
+            <!-- Confetti strip -->
+            <div class="confetti-strip">
+              <span class="dot" style="background:#58CC02;"></span>
+              <span class="dot" style="background:#FF6B35;"></span>
+              <span class="dot" style="background:#CE82FF;"></span>
+              <span class="dot" style="background:#FFD700;"></span>
+              <span class="dot" style="background:#1CB0F6;"></span>
+              <span class="dot" style="background:#58CC02;"></span>
+              <span class="dot" style="background:#FF6B35;"></span>
+              <span class="dot" style="background:#CE82FF;"></span>
+            </div>
+          </div>
+
+          <div class="s1-form">
+            <div class="input-group">
+              <label class="input-label">Employee ID</label>
+              <input class="fancy-input focused" type="text" value="EMP-2027-0842" readonly />
+            </div>
+            <div class="input-group">
+              <label class="input-label">Password</label>
+              <input class="fancy-input" type="password" value="••••••••" readonly />
+            </div>
+
+            <button class="btn btn-green btn-full" style="margin-top: 4px; font-size: 1rem; padding: 16px;">
+              🚀 GET STARTED
+            </button>
+
+            <div class="s1-divider">or continue with</div>
+
+            <button class="btn btn-blue btn-full" style="font-size: 0.88rem; padding: 13px;">
+              🏛️ Government SSO Login
+            </button>
+
+            <div class="s1-login-link">
+              New here? <span>Create account →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCREEN 2 — HOME -->
+    <!-- ============================================================ -->
+    <div class="phone-wrap">
+      <span class="screen-label">Screen 2 — Home Dashboard</span>
+      <div class="phone-frame">
+        <div class="screen-content">
+
+          <!-- Top Bar -->
+          <div class="s2-topbar">
+            <div class="streak-badge">🔥 5 Day Streak</div>
+            <div style="display:flex;align-items:center;gap:4px;font-size:0.7rem;font-weight:900;color:var(--red)">❤️ ❤️ ❤️ ❤️ ❤️</div>
+            <div class="xp-badge">⭐ 1,240 XP</div>
+          </div>
+
+          <div class="s2-body">
+
+            <!-- Greeting -->
+            <div style="font-size:1rem;font-weight:900;color:var(--text);margin-bottom:14px;">
+              Good morning, Priya! 👋
+              <div style="font-size:0.72rem;font-weight:600;color:var(--text-sec);margin-top:2px;">Ready to conquer today's quiz?</div>
+            </div>
+
+            <!-- Daily Goal Progress -->
+            <div class="daily-card">
+              <div class="daily-top">
+                <span class="daily-label">📅 Daily Goal</span>
+                <span class="daily-count">8 / 10 questions</span>
+              </div>
+              <div class="prog-track" style="height:14px;">
+                <div class="prog-fill" style="width:80%;background:linear-gradient(90deg,var(--green),#89E219);height:100%;"></div>
+              </div>
+              <div style="font-size:0.65rem;font-weight:700;color:var(--green-dark);margin-top:6px;">2 more to reach daily goal! 💪</div>
+            </div>
+
+            <!-- Today's Challenge -->
+            <div class="challenge-card">
+              <div class="challenge-top">🏆 Today's Challenge</div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div class="challenge-title">Population Count Quiz <span class="challenge-arrow">→</span></div>
+              </div>
+              <div style="font-size:0.72rem;color:rgba(255,255,255,0.85);font-weight:600;margin-top:4px;">10 questions · 5 min · Chapter 3</div>
+              <div style="display:flex;gap:8px;margin-top:10px;">
+                <span class="challenge-xp">⭐ +150 XP</span>
+                <span class="challenge-xp">🔥 Streak Bonus</span>
+              </div>
+            </div>
+
+            <!-- Quiz Modes -->
+            <div class="sec-title">QUIZ MODES</div>
+            <div class="quiz-modes-grid">
+              <div class="quiz-mode-card">
+                <div class="qm-top" style="background:var(--blue);"></div>
+                <div class="qm-body">
+                  <div class="qm-icon">⏱️</div>
+                  <div class="qm-name">Speed Round</div>
+                  <div class="qm-desc">30 sec/question</div>
+                </div>
+              </div>
+              <div class="quiz-mode-card">
+                <div class="qm-top" style="background:var(--orange);"></div>
+                <div class="qm-body">
+                  <div class="qm-icon">📚</div>
+                  <div class="qm-name">Practice</div>
+                  <div class="qm-desc">Learn at your pace</div>
+                </div>
+              </div>
+              <div class="quiz-mode-card wide">
+                <div class="qm-top" style="background:var(--purple);"></div>
+                <div class="qm-body" style="display:flex;align-items:center;gap:12px;">
+                  <div class="qm-icon" style="margin-bottom:0;font-size:1.6rem;">⚔️</div>
+                  <div>
+                    <div class="qm-name">Challenge Friend</div>
+                    <div class="qm-desc">Invite & compete live</div>
+                  </div>
+                  <div style="margin-left:auto;background:var(--purple);color:#fff;padding:5px 12px;border-radius:999px;font-size:0.65rem;font-weight:800;border:2px solid var(--purple-dark);box-shadow:0 2px 0 var(--purple-dark);">LIVE</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="sec-title">ACHIEVEMENTS</div>
+            <div class="achievements-row">
+              <div class="ach-card unlocked">
+                <div class="ach-icon">🥇</div>
+                <div class="ach-label">First Win</div>
+              </div>
+              <div class="ach-card unlocked">
+                <div class="ach-icon">🔥</div>
+                <div class="ach-label">5 Day</div>
+              </div>
+              <div class="ach-card unlocked">
+                <div class="ach-icon">⚡</div>
+                <div class="ach-label">Speed</div>
+              </div>
+              <div class="ach-card locked">
+                <div class="ach-icon">👑</div>
+                <div class="ach-label">Top 10</div>
+              </div>
+              <div class="ach-card locked">
+                <div class="ach-icon">💎</div>
+                <div class="ach-label">Perfect</div>
+              </div>
+              <div class="ach-card locked">
+                <div class="ach-icon">🌟</div>
+                <div class="ach-label">Legend</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Nav -->
+          <div class="bottom-nav">
+            <div class="nav-item active">
+              <span class="nav-icon">🏠</span>
+              <span class="nav-label">Home</span>
+              <div class="nav-active-dot"></div>
+            </div>
+            <div class="nav-item">
+              <span class="nav-icon">📖</span>
+              <span class="nav-label">Quiz</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-icon">🏆</span>
+              <span class="nav-label">Ranks</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-icon">👤</span>
+              <span class="nav-label">Profile</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCREEN 3 — LEADERBOARD -->
+    <!-- ============================================================ -->
+    <div class="phone-wrap">
+      <span class="screen-label">Screen 3 — Leaderboard</span>
+      <div class="phone-frame">
+        <div class="screen-content">
+
+          <!-- Header -->
+          <div class="s3-header">
+            <span class="trophy">🏆</span>
+            <h2>LEADERBOARD</h2>
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.8);font-weight:600;margin-top:4px;">Maharashtra Region · 842 players</div>
+          </div>
+
+          <!-- Rank Banner -->
+          <div class="rank-banner">
+            <span class="rank-banner-icon">🎯</span>
+            <div class="rank-banner-text">
+              <div class="rank-num">You're Rank #12 ↑</div>
+              <div class="rank-pct">📈 Top 15% · +3 from yesterday!</div>
+            </div>
+            <div style="margin-left:auto;font-size:1.5rem;">🚀</div>
+          </div>
+
+          <!-- Tabs -->
+          <div class="tabs-row">
+            <span class="tab-pill active">Daily</span>
+            <span class="tab-pill">Weekly</span>
+            <span class="tab-pill">All Time</span>
+          </div>
+
+          <!-- Podium -->
+          <div class="podium-wrap">
+            <!-- 2nd -->
+            <div class="podium-col">
+              <div class="podium-avatar" style="background:linear-gradient(135deg,#9E9E9E,#757575);width:40px;height:40px;font-size:0.8rem;">AK</div>
+              <div class="podium-name">Arjun K.</div>
+              <div class="podium-xp">2,180 XP</div>
+              <div class="podium-block p2-block">2</div>
+            </div>
+            <!-- 1st -->
+            <div class="podium-col">
+              <div class="podium-avatar" style="background:linear-gradient(135deg,#FFD700,#FFA000);width:52px;height:52px;font-size:1rem;">RS</div>
+              <div style="position:absolute;margin-top:-58px;margin-left:28px;font-size:1.3rem;">👑</div>
+              <div class="podium-name" style="font-size:0.7rem;font-weight:900;">Riya S.</div>
+              <div class="podium-xp">2,840 XP</div>
+              <div class="podium-block p1-block">1</div>
+            </div>
+            <!-- 3rd -->
+            <div class="podium-col">
+              <div class="podium-avatar" style="background:linear-gradient(135deg,#CD7F32,#A0522D);width:36px;height:36px;font-size:0.75rem;">VM</div>
+              <div class="podium-name">Vijay M.</div>
+              <div class="podium-xp">1,950 XP</div>
+              <div class="podium-block p3-block">3</div>
+            </div>
+          </div>
+
+          <!-- Rank List -->
+          <div class="rank-list">
+
+            <div class="rank-row">
+              <div class="rank-badge top">4</div>
+              <div class="rank-avatar" style="background:linear-gradient(135deg,#FF6B35,#D9521E);">SP</div>
+              <div class="rank-info">
+                <div class="rank-name">Sneha P.</div>
+                <div class="rank-state">Pune · 🔥 12 streak</div>
+              </div>
+              <div class="rank-xp">⭐ 1,820</div>
+            </div>
+
+            <div class="rank-row">
+              <div class="rank-badge top">5</div>
+              <div class="rank-avatar" style="background:linear-gradient(135deg,#CE82FF,#A855F7);">NK</div>
+              <div class="rank-info">
+                <div class="rank-name">Nikhil K.</div>
+                <div class="rank-state">Nashik · 🔥 8 streak</div>
+              </div>
+              <div class="rank-xp">⭐ 1,720</div>
+            </div>
+
+            <div class="rank-row">
+              <div class="rank-badge top">8</div>
+              <div class="rank-avatar" style="background:linear-gradient(135deg,#1CB0F6,#0A8EC3);">PR</div>
+              <div class="rank-info">
+                <div class="rank-name">Preethi R.</div>
+                <div class="rank-state">Mumbai · 🔥 6 streak</div>
+              </div>
+              <div class="rank-xp">⭐ 1,580</div>
+            </div>
+
+            <!-- YOU -->
+            <div class="rank-row you">
+              <div class="rank-badge top">12</div>
+              <div class="rank-avatar" style="background:linear-gradient(135deg,var(--green),var(--green-dark));">PD</div>
+              <div class="rank-info">
+                <div class="rank-name" style="color:var(--green-dark);">Priya D. (You) ✨</div>
+                <div class="rank-state">Nagpur · 🔥 5 streak</div>
+              </div>
+              <div class="rank-xp">⭐ 1,240</div>
+              <div class="you-arrow">↑↑</div>
+            </div>
+
+            <div class="rank-row">
+              <div class="rank-badge mid">15</div>
+              <div class="rank-avatar" style="background:#9E9E9E;">RT</div>
+              <div class="rank-info">
+                <div class="rank-name">Rahul T.</div>
+                <div class="rank-state">Kolhapur</div>
+              </div>
+              <div class="rank-xp" style="color:var(--text-sec);">⭐ 1,140</div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Nav -->
+          <div class="bottom-nav">
+            <div class="nav-item">
+              <span class="nav-icon">🏠</span>
+              <span class="nav-label">Home</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-icon">📖</span>
+              <span class="nav-label">Quiz</span>
+            </div>
+            <div class="nav-item active">
+              <span class="nav-icon">🏆</span>
+              <span class="nav-label">Ranks</span>
+              <div class="nav-active-dot"></div>
+            </div>
+            <div class="nav-item">
+              <span class="nav-icon">👤</span>
+              <span class="nav-label">Profile</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCREEN 4 — PROFILE -->
+    <!-- ============================================================ -->
+    <div class="phone-wrap">
+      <span class="screen-label">Screen 4 — Profile</span>
+      <div class="phone-frame">
+        <div class="screen-content">
+
+          <!-- Header -->
+          <div class="s4-header">
+            <div class="s4-avatar-wrap">
+              <div class="s4-avatar">
+                PD
+                <div class="level-badge">LVL 12</div>
+              </div>
+              <div>
+                <div class="s4-name">Priya Deshmukh</div>
+                <div class="s4-title">🏛️ Census Enumerator · Nagpur District</div>
+                <div style="display:flex;gap:6px;margin-top:6px;">
+                  <span style="background:rgba(255,255,255,0.2);border-radius:999px;padding:3px 10px;font-size:0.65rem;font-weight:800;color:#fff;border:1.5px solid rgba(255,255,255,0.4);">🔥 5 days</span>
+                  <span style="background:rgba(255,255,255,0.2);border-radius:999px;padding:3px 10px;font-size:0.65rem;font-weight:800;color:#fff;border:1.5px solid rgba(255,255,255,0.4);">⭐ 1,240 XP</span>
+                </div>
+              </div>
+            </div>
+            <div class="xp-bar-wrap">
+              <div class="xp-bar-labels">
+                <span>Level 12 Progress</span>
+                <span>1,240 / 1,500 XP</span>
+              </div>
+              <div class="xp-bar-track">
+                <div class="xp-bar-fill" style="width:83%;"></div>
+              </div>
+              <div style="font-size:0.65rem;color:rgba(255,255,255,0.75);font-weight:600;margin-top:4px;">260 XP to Level 13! Keep going 🚀</div>
+            </div>
+          </div>
+
+          <div class="s4-body">
+
+            <!-- Stats Grid -->
+            <div class="sec-title">MY STATS</div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-num" style="color:var(--green);">247</div>
+                <div class="stat-label">Questions Done</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-num" style="color:var(--blue);">84%</div>
+                <div class="stat-label">Accuracy</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">⏱️</div>
+                <div class="stat-num" style="color:var(--orange);">14.2s</div>
+                <div class="stat-label">Avg. Speed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">📅</div>
+                <div class="stat-num" style="color:var(--purple);">18</div>
+                <div class="stat-label">Days Active</div>
+              </div>
+            </div>
+
+            <!-- Streak Feature Card -->
+            <div class="streak-feature">
+              <div class="streak-flame">🔥</div>
+              <div class="streak-text">
+                <div class="streak-num">5 Day Streak!</div>
+                <div class="streak-sub">Don't break the chain</div>
+                <div class="streak-motiv">"Champions train every single day"</div>
+              </div>
+              <div style="margin-left:auto;text-align:center;">
+                <div style="font-size:1.6rem;font-weight:900;color:#E65100;">🏅</div>
+                <div style="font-size:0.6rem;font-weight:800;color:#BF360C;text-transform:uppercase;">Bonus<br>Active</div>
+              </div>
+            </div>
+
+            <!-- Badges Grid -->
+            <div class="sec-title">BADGES</div>
+            <div class="badges-grid">
+              <div class="badge-card unlocked">
+                <div class="badge-emoji">🥇</div>
+                <div class="badge-name">First Win</div>
+              </div>
+              <div class="badge-card unlocked">
+                <div class="badge-emoji">🔥</div>
+                <div class="badge-name">5-Streak</div>
+              </div>
+              <div class="badge-card unlocked">
+                <div class="badge-emoji">⚡</div>
+                <div class="badge-name">Speedster</div>
+              </div>
+              <div class="badge-card unlocked">
+                <div class="badge-emoji">📚</div>
+                <div class="badge-name">Chapter 1</div>
+              </div>
+              <div class="badge-card locked">
+                <div class="badge-emoji">👑</div>
+                <div class="badge-name">Top 10</div>
+                <div class="lock-progress"><div class="lock-prog-fill" style="width:60%;"></div></div>
+              </div>
+              <div class="badge-card locked">
+                <div class="badge-emoji">💎</div>
+                <div class="badge-name">Perfect 10</div>
+                <div class="lock-progress"><div class="lock-prog-fill" style="width:30%;background:var(--blue);"></div></div>
+              </div>
+              <div class="badge-card locked">
+                <div class="badge-emoji">🌟</div>
+                <div class="badge-name">Legend</div>
+                <div class="lock-progress"><div class="lock-prog-fill" style="width:15%;background:var(--xp);"></div></div>
+              </div>
+              <div class="badge-card locked">
+                <div class="badge-emoji">🚀</div>
+                <div class="badge-name">30-Streak</div>
+                <div class="lock-progress"><div class="lock-prog-fill" style="width:17%;background:var(--orange);"></div></div>
+              </div>
+            </div>
+
+            <!-- Share Progress -->
+            <div class="share-section">
+              <div class="share-title">🎉 Share Your Progress</div>
+              <div class="share-buttons">
+                <div class="share-btn share-wa">📱 WhatsApp</div>
+                <div class="share-btn share-tw">🐦 Twitter</div>
+                <div class="share-btn share-copy">📋 Copy</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Nav -->
+          <div class="bottom-nav">
+            <div class="nav-item">
+              <span class="nav-icon">🏠</span>
+              <span class="nav-label">Home</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-icon">📖</span>
+              <span class="nav-label">Quiz</span>
+            </div>
+            <div class="nav-item">
+              <span class="nav-icon">🏆</span>
+              <span class="nav-label">Ranks</span>
+            </div>
+            <div class="nav-item active">
+              <span class="nav-icon">👤</span>
+              <span class="nav-label">Profile</span>
+              <div class="nav-active-dot"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END SCREEN 4 -->
+
+  </div><!-- end screens-grid -->
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '../../store/authStore';
 import api from '../../api/client';
@@ -8,11 +8,14 @@ import BadgeIcon from '../../components/BadgeIcon';
 export default function AdminUserDetail() {
   const { t } = useTranslation();
   const { id } = useParams();
+  const navigate = useNavigate();
   const currentUser = useAuthStore((s) => s.user);
   const [data, setData] = useState(null);
   const [newPw, setNewPw] = useState('');
   const [pwMsg, setPwMsg] = useState('');
   const [pwError, setPwError] = useState('');
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
     api.get(`/admin/users/${id}`).then(({ data: d }) => setData(d)).catch(() => {});
@@ -43,6 +46,17 @@ export default function AdminUserDetail() {
       await api.patch(`/admin/users/${id}/status`, { status });
       setData((d) => ({ ...d, user: { ...d.user, status } }));
     } catch {}
+  };
+
+  const deleteUser = async () => {
+    setDeleting(true);
+    try {
+      await api.delete(`/admin/users/${id}`);
+      navigate('/admin/users');
+    } catch {
+      setDeleting(false);
+      setShowDeleteConfirm(false);
+    }
   };
 
   if (!data) return <div className="p-6 text-center text-gray-400">{t('loading')}</div>;
@@ -118,6 +132,47 @@ export default function AdminUserDetail() {
           >
             {user.role === 'admin' ? t('removeAdmin') : t('makeAdmin')}
           </button>
+        </div>
+      )}
+
+      {/* Delete user */}
+      {user.role !== 'admin' && (
+        <div className="bg-white rounded-2xl border border-red-100 p-4">
+          <p className="text-sm font-semibold text-gray-600 mb-2">Danger Zone</p>
+          <button
+            onClick={() => setShowDeleteConfirm(true)}
+            className="w-full py-2.5 rounded-xl text-sm font-medium bg-red-50 border border-red-200 text-red-600 hover:bg-red-100 transition-colors"
+          >
+            Delete User
+          </button>
+        </div>
+      )}
+
+      {/* Delete confirmation modal */}
+      {showDeleteConfirm && (
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 px-4">
+          <div className="bg-white rounded-2xl p-6 max-w-sm w-full shadow-xl space-y-4">
+            <p className="font-bold text-gray-800 text-lg">Delete User?</p>
+            <p className="text-sm text-gray-500">
+              This will permanently delete <span className="font-semibold text-gray-700">{user.name}</span> and all their data. This cannot be undone.
+            </p>
+            <div className="flex gap-3 pt-1">
+              <button
+                onClick={() => setShowDeleteConfirm(false)}
+                disabled={deleting}
+                className="flex-1 py-2.5 rounded-xl text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={deleteUser}
+                disabled={deleting}
+                className="flex-1 py-2.5 rounded-xl text-sm font-medium bg-red-600 text-white hover:bg-red-700 transition-colors disabled:opacity-60"
+              >
+                {deleting ? 'Deleting…' : 'Delete'}
+              </button>
+            </div>
+          </div>
         </div>
       )}
 

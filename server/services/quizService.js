@@ -62,13 +62,13 @@ function startSession({ userId, mode, chapter }) {
     }
   }
 
-  const questions = getQuestions({ mode, chapter: chapter || null });
+  const questions = getQuestions({ mode, chapter: chapter ?? null });
   const maxScore = questions.reduce((sum, q) => sum + (BASE_POINTS[q.difficulty] || 10) * 3, 0);
 
   const result = db.prepare(`
     INSERT INTO quiz_sessions (user_id, mode, chapter, max_score)
     VALUES (?, ?, ?, ?)
-  `).run(userId, mode, chapter || null, maxScore);
+  `).run(userId, mode, chapter ?? null, maxScore);
 
   return { sessionId: result.lastInsertRowid, questions, resumed: false };
 }
@@ -148,4 +148,24 @@ function completeSession(sessionId) {
   return { totalPoints, correctCount, totalQuestions: answers.length, streakMax };
 }
 
-module.exports = { startSession, submitAnswer, completeSession, hasCompletedDailyToday, calcPoints, streakMultiplier };
+// Start a challenge session with pre-selected question IDs (frozen at challenge creation)
+function startChallengeSession({ userId, questionIds }) {
+  const db = getDb();
+
+  // Fetch questions by IDs, preserving the frozen order
+  const placeholders = questionIds.map(() => '?').join(',');
+  const questionsById = db.prepare(`SELECT * FROM questions WHERE id IN (${placeholders})`).all(...questionIds);
+  // Preserve original order from questionIds array
+  const questions = questionIds.map(id => questionsById.find(q => q.id === id)).filter(Boolean);
+
+  const maxScore = questions.reduce((sum, q) => sum + (BASE_POINTS[q.difficulty] || 10) * 3, 0);
+
+  const result = db.prepare(`
+    INSERT INTO quiz_sessions (user_id, mode, chapter, max_score)
+    VALUES (?, 'challenge', NULL, ?)
+  `).run(userId, maxScore);
+
+  return { sessionId: result.lastInsertRowid, questions };
+}
+
+module.exports = { startSession, submitAnswer, completeSession, hasCompletedDailyToday, calcPoints, streakMultiplier, startChallengeSession };

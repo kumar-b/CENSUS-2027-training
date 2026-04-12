@@ -145,18 +145,49 @@ export default {
 
     // Functionary types
     functionary: {
-      Enumerator: 'गणक',
+      Enumerator: 'प्रगणक',
       Supervisor: 'पर्यवेक्षक',
       'Charge Officer': 'प्रभारी अधिकारी',
       'Field Trainer': 'क्षेत्र प्रशिक्षक',
       'Census Staff General': 'जनगणना कर्मचारी सामान्य',
     },
 
+    // Challenge a Friend
+    challengeFriend: 'दोस्त को चुनौती दें',
+    challengeFriendDesc: 'एक ही प्रश्न, स्कोर तुलना करें',
+    createChallenge: 'चुनौती बनाएं',
+    joinChallenge: 'चुनौती में शामिल हों',
+    enterCode: 'चुनौती कोड दर्ज करें',
+    yourCode: 'आपका चुनौती कोड',
+    shareOnWhatsApp: 'WhatsApp पर साझा करें',
+    startMyAttempt: 'मेरा प्रयास शुरू करें',
+    waitingForOpponent: 'प्रतिद्वंद्वी के समाप्त होने का इंतज़ार है…',
+    challengeResults: 'चुनौती परिणाम',
+    youWon: 'आप जीत गए!',
+    opponentWon: 'प्रतिद्वंद्वी जीत गया!',
+    itsATie: 'बराबरी रही!',
+    vs: 'बनाम',
+    allChapters: 'सभी अध्याय',
+    codeExpired: 'यह चुनौती समाप्त हो गई है',
+    codeNotFound: 'चुनौती कोड नहीं मिला',
+    chooseDifficulty: 'प्रश्नों की संख्या',
+    chooseChapter: 'अध्याय',
+    createAndShare: 'बनाएं और साझा करें',
+    codeCopied: 'कोड कॉपी हुआ!',
+    inviteText: 'मेरी Census 2027 क्विज़ चुनौती में शामिल हों! ऐप में कोड {{code}} दर्ज करें।',
+
+    // Levels
+    level: 'स्तर',
+    levelProgress: 'स्तर {{level}} प्रगति',
+    xpToNext: 'स्तर {{next}} के लिए {{xp}} XP और चाहिए! जारी रखें 🚀',
+    maxLevel: 'सर्वोच्च स्तर! 🏆',
+
     // Modes
     mode: {
       daily: 'दैनिक क्विज़',
       timed: 'टाइम्ड क्विज़',
       practice: 'अभ्यास',
+      challenge: 'चुनौती',
     },
 
     // Errors
